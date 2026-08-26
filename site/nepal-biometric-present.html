@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepal’s Biometric Present: Governance, Accessibility &amp; Accountability — Body &amp; Data</title>
+  <meta name="description" content="A comprehensive field investigation into the National Identity Card (NID) rollout across Kathmandu, Sarlahi, and Khotang by Body &amp; Data.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet Interactive OpenStreetMap Styles -->
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body data-reading-depth="full">
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main research text</a>
+
+  <!-- Header -->
+  <header class="report-header" role="banner">
+    <div class="site-container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-group" aria-label="Return to Research Library Home">
+          <span class="brand-title">Body &amp; Data</span>
+          <span class="badge badge-filled">Report</span>
+        </a>
+        <div class="header-pub-title">
+          <span class="pub-title-text">Nepal’s Biometric Present: Governance, Accessibility &amp; Accountability</span>
+        </div>
+        <nav class="header-controls" aria-label="Reading Options">
+          <button type="button" id="btn-depth-toggle" class="btn-depth-toggle" aria-pressed="true" title="Toggle between full academic text and plain executive summary">
+            <span class="depth-indicator-dot" aria-hidden="true"></span>
+            <span class="depth-label-text">Full Text</span>
+          </button>
+          <div role="group" aria-label="Text Size Controls" class="zoom-ctrl-group">
+            <button type="button" id="btn-zoom-out" class="zoom-btn" aria-label="Decrease text size">A−</button>
+            <div class="zoom-divider" aria-hidden="true"></div>
+            <button type="button" id="btn-zoom-in" class="zoom-btn" aria-label="Increase text size">A+</button>
+          </div>
+          <button type="button" id="btn-toc-toggle" class="btn-toc" aria-expanded="false" aria-controls="toc-drawer">
+            Contents
+          </button>
+        </nav>
+      </div>
+    </div>
+    <div class="progress-track" aria-hidden="true">
+      <div id="reading-progress-bar" class="progress-bar"></div>
+    </div>
+  </header>
+
+  <!-- Table of Contents Drawer Backdrop & Drawer -->
+  <div id="toc-backdrop" class="toc-drawer-backdrop" aria-hidden="true"></div>
+  <aside id="toc-drawer" class="toc-drawer" aria-label="Table of Contents">
+    <div class="toc-header">
+      <h2>Table of Contents</h2>
+      <button type="button" id="btn-toc-close" class="toc-close-btn" aria-label="Close Table of Contents">✕ Close</button>
+    </div>
+    <nav class="toc-nav">
+      <ol class="toc-list">
+        <li><a href="#glance" class="toc-link"><span class="toc-num">00</span><span class="toc-title">At a Glance</span></a></li>
+        <li><a href="#acronyms" class="toc-link"><span class="toc-num">01</span><span class="toc-title">Acronyms &amp; Terminologies</span></a></li>
+        <li><a href="#executive-summary" class="toc-link"><span class="toc-num">02</span><span class="toc-title">Executive Summary</span></a></li>
+        <li><a href="#introduction" class="toc-link"><span class="toc-num">03</span><span class="toc-title">I. Introduction &amp; The Concept of NID</span></a></li>
+        <li><a href="#birth-nid" class="toc-link"><span class="toc-num">04</span><span class="toc-title">II. The Birth of National Identity Card</span></a></li>
+        <li><a href="#timeline" class="toc-link"><span class="toc-num">05</span><span class="toc-title">16-Year Interactive Timeline (2009–2025)</span></a></li>
+        <li><a href="#government-working" class="toc-link"><span class="toc-num">06</span><span class="toc-title">III. How the Government is Working</span></a></li>
+        <li><a href="#friction" class="toc-link"><span class="toc-num">07</span><span class="toc-title">Enrolment Friction Walkthrough</span></a></li>
+        <li><a href="#disputes" class="toc-link"><span class="toc-num">08</span><span class="toc-title">IV. Disputes, Differences &amp; Exclusions</span></a></li>
+        <li><a href="#voices" class="toc-link"><span class="toc-num">09</span><span class="toc-title">Qualitative Voices Archive</span></a></li>
+        <li><a href="#privacy" class="toc-link"><span class="toc-num">10</span><span class="toc-title">V. Right to Privacy &amp; Dataflow Tracer</span></a></li>
+        <li><a href="#recommendations" class="toc-link"><span class="toc-num">11</span><span class="toc-title">VI. Way Forward: 18 Recommendations</span></a></li>
+        <li><a href="#references" class="toc-link"><span class="toc-num">12</span><span class="toc-title">Endnotes &amp; References</span></a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main" tabindex="-1">
+    <div class="site-container">
+      
+      <!-- Hero -->
+      <section class="hero-cover" aria-labelledby="report-main-title">
+        <div class="hero-meta-badges">
+          <span class="badge badge-filled">Field Investigation</span>
+          <span class="badge">Published: 2025</span>
+          <span class="badge badge-teal">Fieldwork: Kathmandu, Sarlahi &amp; Khotang</span>
+        </div>
+        <h1 id="report-main-title" class="hero-title">Nepal’s Biometric Present</h1>
+        <p class="hero-subtitle">Governance, Accessibility and Accountability</p>
+        <p class="hero-lead-text">
+          In November 2018, the Government of Nepal introduced the National Identity Card (NID) with the ambition of enrolling all citizens biometrically by 2023. This study investigates the social consequences, bureaucratic friction, and constitutional challenges of Nepal’s digital ID program across administrative centers and remote rural settlements.
+        </p>
+
+        <div class="hero-credits-grid">
+          <div class="hero-credit-item">
+            <p class="credit-label">Research Contribution</p>
+            <p class="credit-value">Bhaskar Gautam, Dovan Rai, Rita Baramu, Sapana Sanjeevani, Monika, Nuva Rai</p>
+          </div>
+          <div class="hero-credit-item">
+            <p class="credit-label">Local Coordinators</p>
+            <p class="credit-value">Irshat Khatoon (Sarlahi), Barsha Rai (Khotang)</p>
+          </div>
+          <div class="hero-credit-item">
+            <p class="credit-label">Copy-Editing &amp; Design</p>
+            <p class="credit-value">Shafali Uprety · Supriya Manandhar · Sixwasnine Design</p>
+          </div>
+          <div class="hero-credit-item">
+            <p class="credit-label">Support</p>
+            <p class="credit-value">Open Society Foundations (OSF)</p>
+          </div>
+        </div>
+
+        <div class="hero-action-buttons">
+          <a href="#introduction" class="btn btn-primary">Read Chapter I</a>
+          <a href="#glance" class="btn">View Key Findings</a>
+          <a href="#recommendations" class="btn">18 Recommendations</a>
+        </div>
+      </section>
+
+      <!-- Layout Grid -->
+      <div class="reading-layout">
+        <div class="reading-main-column">
+
+          <!-- AT A GLANCE -->
+          <section id="glance" class="report-section" aria-labelledby="heading-glance">
+            <p class="eyebrow section-eyebrow">Executive Overview</p>
+            <h2 id="heading-glance" class="section-title">At a Glance: The Biometric Rollout in Numbers</h2>
+            <p class="section-lead">The government set a target to enroll all citizens by 2023. By late 2024, despite massive enrollment pressure, the project exhibits a stark divide between data collection and functional service delivery.</p>
+
+            <div class="glance-card">
+              <h3 class="glance-card-title">Scale Comparison: Enrollment vs. Physical Card Delivery</h3>
+              <p class="glance-card-sub">To-scale proportion of citizens enrolled vs. actual printed smart cards handed over to applicants.</p>
+              
+              <div class="scale-bars-list">
+                <div class="scale-bar-item">
+                  <div class="bar-label-row">
+                    <span class="bar-label">Total Citizens Enrolled in NIDMIS</span>
+                    <span class="bar-value">16.35 Million (100%)</span>
+                  </div>
+                  <div class="scale-bar-track">
+                    <div class="scale-bar-fill" style="width: 100%; background-color: var(--accent-teal);"></div>
+                  </div>
+                  <p class="scale-bar-note">Over 50% of the national population biometrically captured at ward mobile camps and DAOs.</p>
+                </div>
+
+                <div class="scale-bar-item">
+                  <div class="bar-label-row">
+                    <span class="bar-label">Physical NID Cards Received by Citizens</span>
+                    <span class="bar-value">1.65 Million (10.1%)</span>
+                  </div>
+                  <div class="scale-bar-track">
+                    <div class="scale-bar-fill" style="width: 10.1%; background-color: var(--accent-crimson);"></div>
+                  </div>
+                  <p class="scale-bar-note">Only ~1 in 10 enrolled citizens has received their smart card. Most operate using paper NIN slips.</p>
+                </div>
+
+                <div class="scale-bar-item">
+                  <div class="bar-label-row">
+                    <span class="bar-label">Distributed Cards Rejected due to Information Errors</span>
+                    <span class="bar-value">161,113 Cards (9.8% of distributed)</span>
+                  </div>
+                  <div class="scale-bar-track">
+                    <div class="scale-bar-fill" style="width: 9.8%; background-color: var(--accent-gold);"></div>
+                  </div>
+                  <p class="scale-bar-note">Cardholders refused cards due to spelling errors, wrong addresses, and demographic mismatches.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stat Cards -->
+            <div class="stat-cards-grid">
+              <div class="stat-card">
+                <p class="stat-card-value">5M+</p>
+                <p class="stat-card-label">Excluded from Citizenship</p>
+                <p class="stat-card-note">Estimated residents in Nepal lacking citizenship certificates, making them automatically ineligible for NID enrollment.</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-card-value">12M</p>
+                <p class="stat-card-label">Procured Vendor Cards</p>
+                <p class="stat-card-note">Contract awarded to French contractor Idemia in 2021 without competitive bidding.</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-card-value">Rs 200–500</p>
+                <p class="stat-card-label">Cyber Café Intermediary Fee</p>
+                <p class="stat-card-note">Unregulated private fees charged to citizens for online pre-registration due to digital literacy hurdles.</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-card-value">4,200</p>
+                <p class="stat-card-label">Card Readers Distributed</p>
+                <p class="stat-card-note">Deployed across 333 local units, but most remain unutilized due to lack of electricity and connectivity.</p>
+              </div>
+            </div>
+
+            <div class="headline-finding-box">
+              <p class="finding-label">Headline Finding</p>
+              <p class="finding-text">
+                "The National ID in Nepal has developed primarily as an instrument of state surveillance and bureaucratic gatekeeping, rather than an enabler of welfare delivery. It reinforces historical inequalities around citizenship transmission while introducing biological and infrastructural hurdles for rural manual laborers, elderly citizens, and persons with disabilities."
+              </p>
+            </div>
+          </section>
+
+          <!-- ACRONYMS & TERMINOLOGIES -->
+          <section id="acronyms" class="report-section" aria-labelledby="heading-acronyms">
+            <p class="eyebrow section-eyebrow">Front Matter</p>
+            <h2 id="heading-acronyms" class="section-title">Acronyms &amp; Key Terminologies</h2>
+            
+            <div class="chapter-lede-box">
+              <p class="chapter-lede-text">Definitions and institutional abbreviations utilized across this study, drawn from global privacy frameworks (GDPR), national statutes, and field observations.</p>
+            </div>
+
+            <div class="stat-cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 24px;">
+              <div class="stat-card">
+                <p class="stat-card-label" style="color: var(--accent-crimson);">DONIDCR</p>
+                <p class="stat-card-note">Department of National Identity and Civil Registration (Ministry of Home Affairs).</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-card-label" style="color: var(--accent-crimson);">NIDMIS</p>
+                <p class="stat-card-note">National Identity Management Information System.</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-card-label" style="color: var(--accent-crimson);">DPI</p>
+                <p class="stat-card-note">Digital Public Infrastructure (Foundational identity, payments, and data sharing systems).</p>
+              </div>
+              <div class="stat-card">
+                <p class="stat-card-label" style="color: var(--accent-crimson);">UIDAI / Aadhaar</p>
+                <p class="stat-card-note">Unique Identification Authority of India 12-digit biometric identity system.</p>
+              </div>
+            </div>
+
+            <!-- Terminologies Grid -->
+            <div class="glossary-grid">
+              <div class="glossary-card">
+                <p class="glossary-term">Biometric Data</p>
+                <p class="glossary-def">Personal data capturing an individual's physical, physiological, or behavioral characteristics (fingerprints, facial geometry, iris scans) through technological processing to confirm unique identity. When collected without strong legal protections, it enables extra-judicial surveillance as individuals' bodies become quantifiable.</p>
+              </div>
+              <div class="glossary-card">
+                <p class="glossary-term">Datafication</p>
+                <p class="glossary-def">The process of transforming human activities, social interactions, and physical traits into quantifiable digital data stored and analyzed by public and private entities.</p>
+              </div>
+              <div class="glossary-card">
+                <p class="glossary-term">Digital Public Infrastructure (DPI)</p>
+                <p class="glossary-def">A set of foundational digital systems—primarily digital identification, fast payments, and data exchange—serving as intermediate building blocks for state service delivery.</p>
+              </div>
+              <div class="glossary-card">
+                <p class="glossary-term">Profiling</p>
+                <p class="glossary-def">Any form of automated processing of personal data to evaluate, analyze, or predict aspects of an individual's behavior, financial status, health, location, or reliability.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- EXECUTIVE SUMMARY -->
+          <section id="executive-summary" class="report-section" aria-labelledby="heading-exec">
+            <p class="eyebrow section-eyebrow">Executive Summary</p>
+            <h2 id="heading-exec" class="section-title">Executive Summary &amp; Core Research Questions</h2>
+            
+            <div class="chapter-lede-box">
+              <p class="chapter-lede-text">
+                "In November 2018, the Government of Nepal introduced the National ID to provide digital identity to its citizens. The government ambitiously claimed to enroll all residents biometrically by 2023. Each enrolled person would receive a unique 10-digit identification number... This study examines the social consequences and on-the-ground effects of the National ID."
+              </p>
+            </div>
+
+            <div class="research-questions-grid">
+              <div class="question-card">
+                <p class="question-key">Question 01</p>
+                <p class="question-text">Why is the Nepali state pursuing digital identification projects with such urgency?</p>
+              </div>
+              <div class="question-card">
+                <p class="question-key">Question 02</p>
+                <p class="question-text">How is the government executing its digital identification scheme on the ground across districts?</p>
+              </div>
+              <div class="question-card">
+                <p class="question-key">Question 03</p>
+                <p class="question-text">How are citizens, local governments, and civil society engaging with this ambitious biometric initiative?</p>
+              </div>
+            </div>
+
+            <!-- Deep Academic Text -->
+            <div class="academic-prose prose-measure" style="margin-top: 28px;">
+              <p>
+                As NID cards are not yet widely used in digital form—mainly because public offices lack card-reading infrastructure—this study presents an overview of the project’s design, planning, and implementation, with a focus on the enrollment process. It builds on Body &amp; Data’s earlier research conducted during the pilot phase of the National ID in 2023.
+              </p>
+              <p>
+                Our investigation reveals that while the government presents the National ID as a technical solution for administrative modernization and welfare distribution, in practice it operates within a centralized security framework under the Ministry of Home Affairs. The distribution of cards has lagged severely, creating widespread dependency on paper printouts of National Identity Numbers (NIN), while technical errors in data capture disproportionately penalize manual laborers, elderly women, and marginalized castes.
+              </p>
+            </div>
+          </section>
+
+          <!-- CHAPTER I: INTRODUCTION -->
+          <section id="introduction" class="report-section" aria-labelledby="heading-ch1">
+            <p class="eyebrow section-eyebrow">Chapter I</p>
+            <h2 id="heading-ch1" class="section-title">I. Introduction &amp; The Concept of National ID</h2>
+            
+            <div class="chapter-lede-box">
+              <p class="chapter-lede-text">
+                "The National ID program is promoted by state officials as a transformative 'game changer' for Nepal. However, by conditioning digital identity strictly on possession of citizenship certificates, it embeds historical exclusionary structures into digital public infrastructure."
+              </p>
+            </div>
+
+            <!-- Deep Academic Text -->
+            <div class="academic-prose prose-measure">
+              <p>
+                The concept of a national digital identity gained constitutional footing in Nepal following the promulgation of the Constitution in 2015. Article 15 provides that every citizen must have a clear identity, while Article 51(f)(7) mandates an "integrated national identity management information system" to coordinate citizen data across state services and development plans<a href="#note-19" id="ref-19" data-note="DoNIDCR, 2023a. National ID Strategic Plan.">19</a>.
+              </p>
+              <p>
+                However, digital ID systems do not operate in a vacuum. In Nepal, historical controversies surrounding citizenship laws have left an estimated 5 million residents without citizenship certificates<a href="#note-32" id="ref-32" data-note="Shrestha and Mulmi, 2016: 13. Baseline survey on citizenship deprivation.">32</a>. By making citizenship cards mandatory for NID enrollment, the state risks permanently locking millions of residents out of public services, social security allowances, banking, and mobile SIM registration.
+              </p>
+              <p>
+                Furthermore, gender discriminatory clauses in citizenship transmission continue to prevent single mothers from passing citizenship to their children without intrusive administrative hurdles. LGBTQI+ individuals face arbitrary refusals when attempting to register their gender identity accurately, as NID enrollment software enforces rigid binary categories (Male/Female).
+              </p>
+            </div>
+
+            <!-- Interactive OpenStreetMap & District Explorer -->
+            <div class="osm-map-container" style="margin-top: 32px;">
+              <div class="osm-map-header">
+                <div>
+                  <h3 class="osm-map-header-title">🗺️ Interactive Field Districts Map (OpenStreetMap)</h3>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">Click pins or chip buttons to inspect field findings across Nepal.</p>
+                </div>
+                <div class="osm-map-chips">
+                  <button type="button" class="map-chip-btn active" data-map-district="all" aria-pressed="true">Nepal Overview</button>
+                  <button type="button" class="map-chip-btn" data-map-district="ktm" aria-pressed="false">Kathmandu</button>
+                  <button type="button" class="map-chip-btn" data-map-district="sarlahi" aria-pressed="false">Sarlahi</button>
+                  <button type="button" class="map-chip-btn" data-map-district="khotang" aria-pressed="false">Khotang</button>
+                  <button type="button" class="map-chip-btn" data-map-district="panchthar" aria-pressed="false">Panchthar</button>
+                </div>
+              </div>
+              <div id="district-osm-map" class="osm-map-frame" role="region" aria-label="Interactive map of Nepal study districts"></div>
+            </div>
+
+            <!-- District Profile Cards -->
+            <div class="deck-features-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 14px; margin-top: 16px;">
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">District 01</p>
+                <h4 class="deck-feature-title">Kathmandu (Capital)</h4>
+                <p class="deck-feature-desc">Federal policy center, DONIDCR headquarters, Ministry of Home Affairs, Department of Passports. Characterized by high administrative centralization and rapid pilot rollouts.</p>
+              </div>
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">District 02</p>
+                <h4 class="deck-feature-title">Sarlahi (Madhesh Plains)</h4>
+                <p class="deck-feature-desc">Southern border district categorized as "difficult". High rates of citizenship deprivation, heavy reliance on cyber café brokers (Rs 200–500 fees), high illiteracy, and language barriers in enrollment.</p>
+              </div>
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">District 03</p>
+                <h4 class="deck-feature-title">Khotang (Eastern Hills)</h4>
+                <p class="deck-feature-desc">Remote hill district categorized as "successful". Enrolled 126,856 citizens via 17 mobile camps. Widespread device failure due to cold temperatures and worn fingerprints among agricultural workers.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- CHAPTER II: BIRTH OF NID -->
+          <section id="birth-nid" class="report-section" aria-labelledby="heading-ch2">
+            <p class="eyebrow section-eyebrow">Chapter II</p>
+            <h2 id="heading-ch2" class="section-title">II. The Birth of National Identity Card</h2>
+            
+            <div class="chapter-lede-box">
+              <p class="chapter-lede-text">
+                "The NID project originated in 2009 with Asian Development Bank financing. It has been repeatedly contested in Parliament over single-source procurement awards to French defense contractor Morpho Safran (Idemia) and its shift into a new security space."
+              </p>
+            </div>
+
+            <!-- Deep Academic Text -->
+            <div class="academic-prose prose-measure">
+              <p>
+                The concept of a national digital identity was first introduced in government policy in July 2009 as part of a vision for e-Governance. In 2011, the government established the National ID Management Centre (NIDMC). With support from the Asian Development Bank (ADB), a USD 14 million pilot was launched in 2012 covering 110,000 citizens in Panchthar District and 7,000 civil servants in Singha Durbar<a href="#note-17" id="ref-17" data-note="DoNIDCR, 2023b. National Identity Card history.">17</a>.
+              </p>
+              <p>
+                In 2016, the government awarded the pilot contract to French multinational Morpho Safran (renamed Idemia in 2017). The contract was awarded solely on technical qualification, bypassing competitive public bidding thresholds. Opposition MPs raised serious objections in Parliament, citing violations of the Public Procurement Act<a href="#note-22" id="ref-22" data-note="Himalayan News Service, 2019. Parliamentary debates on NID procurement.">22</a>.
+              </p>
+              <p>
+                In 2021, Idemia received a follow-on contract to supply an additional 12 million NID cards—again without competitive bidding. Senior government officials noted that partnering with a foreign private vendor for the entire biometric value chain creates severe institutional dependencies and unvetted privacy vulnerabilities<a href="#note-37" id="ref-37" data-note="Interview, Ministry of Home Affairs official, February 2023.">37</a>.
+              </p>
+            </div>
+
+            <!-- Promise vs Reality Compare Cards -->
+            <div style="margin-top: 32px;">
+              <h3 style="font-size: 1.25rem; margin-bottom: 16px;">Stated Goals vs. Documented Realities</h3>
+              <div class="compare-list">
+                
+                <details class="compare-card" open>
+                  <summary class="compare-summary">
+                    <span>Promise 01: Administrative Modernization &amp; Efficiency</span>
+                    <span style="font-family: var(--font-mono); color: var(--accent-crimson);">Expand ▾</span>
+                  </summary>
+                  <div class="compare-grid-inner">
+                    <div class="compare-pane-promise">
+                      <p class="compare-pane-label">State Promise</p>
+                      <p style="font-size: 0.9rem; line-height: 1.5;">Centralized identity management reduces bureaucratic redundancy, streamlines inter-departmental workflows, and ends duplicate records across ministries.</p>
+                    </div>
+                    <div class="compare-pane-reality">
+                      <p class="compare-pane-label">Field Reality</p>
+                      <p style="font-size: 0.9rem; line-height: 1.5;">Local wards lack card readers and stable power. Citizens must carry paper NIN slips alongside physical citizenship cards, effectively creating an additional layer of red tape.</p>
+                    </div>
+                  </div>
+                </details>
+
+                <details class="compare-card" open>
+                  <summary class="compare-summary">
+                    <span>Promise 02: Universal Digital Financial Inclusion</span>
+                    <span style="font-family: var(--font-mono); color: var(--accent-crimson);">Expand ▾</span>
+                  </summary>
+                  <div class="compare-grid-inner">
+                    <div class="compare-pane-promise">
+                      <p class="compare-pane-label">State Promise</p>
+                      <p style="font-size: 0.9rem; line-height: 1.5;">Mandatory NID linking for bank accounts and SIM cards accelerates financial inclusion and prevents financial fraud across the banking sector.</p>
+                    </div>
+                    <div class="compare-pane-reality">
+                      <p class="compare-pane-label">Field Reality</p>
+                      <p style="font-size: 0.9rem; line-height: 1.5;">Rural citizens lacking NID slips are denied basic savings accounts and SIM cards, cutting off informal workers and women from remittances.</p>
+                    </div>
+                  </div>
+                </details>
+
+                <details class="compare-card" open>
+                  <summary class="compare-summary">
+                    <span>Promise 03: Seamless Welfare &amp; Social Security Delivery</span>
+                    <span style="font-family: var(--font-mono); color: var(--accent-crimson);">Expand ▾</span>
+                  </summary>
+                  <div class="compare-grid-inner">
+                    <div class="compare-pane-promise">
+                      <p class="compare-pane-label">State Promise</p>
+                      <p style="font-size: 0.9rem; line-height: 1.5;">Biometric de-duplication ensures elderly allowances and disability pensions reach rightful recipients without leakages.</p>
+                    </div>
+                    <div class="compare-pane-reality">
+                      <p class="compare-pane-label">Field Reality</p>
+                      <p style="font-size: 0.9rem; line-height: 1.5;">Supreme Court had to intervene in July 2024 to suspend mandatory NID for welfare allowances after elderly and disabled citizens were denied quarterly stipends.</p>
+                    </div>
+                  </div>
+                </details>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- 16-YEAR TIMELINE -->
+          <section id="timeline" class="report-section" aria-labelledby="heading-timeline">
+            <p class="eyebrow section-eyebrow">Interactive Timeline</p>
+            <h2 id="heading-timeline" class="section-title">16-Year Timeline of Nepal’s Biometric Rollout (2009–2025)</h2>
+            <p class="section-lead">Filter chronological policy milestones, legislative enactments, procurement awards, and Supreme Court challenges.</p>
+
+            <div class="filter-pill-group" role="group" aria-label="Timeline Category Filters">
+              <button type="button" class="filter-pill active" data-tl-filter="all" aria-pressed="true">
+                All Milestones <span class="pill-count">(14)</span>
+              </button>
+              <button type="button" class="filter-pill" data-tl-filter="policy" aria-pressed="false">
+                Policy &amp; Budget <span class="pill-count">(3)</span>
+              </button>
+              <button type="button" class="filter-pill" data-tl-filter="law" aria-pressed="false">
+                Legislation <span class="pill-count">(2)</span>
+              </button>
+              <button type="button" class="filter-pill" data-tl-filter="rollout" aria-pressed="false">
+                Rollout &amp; Tech <span class="pill-count">(4)</span>
+              </button>
+              <button type="button" class="filter-pill" data-tl-filter="mandate" aria-pressed="false">
+                Mandates <span class="pill-count">(3)</span>
+              </button>
+              <button type="button" class="filter-pill" data-tl-filter="courts" aria-pressed="false">
+                Courts &amp; Resistance <span class="pill-count">(2)</span>
+              </button>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item" data-category="policy">
+                <div class="timeline-date-col"><span class="timeline-date">July 2009</span></div>
+                <div class="timeline-spine-col"><span class="timeline-dot"></span></div>
+                <div class="timeline-content-col">
+                  <span class="timeline-tag" style="background: var(--accent-gold-tint); color: var(--accent-gold-hover);">Policy</span>
+                  <p class="timeline-text">NID concept officially introduced in government budget speech, aiming for integration with voter lists and social security delivery.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-category="rollout">
+                <div class="timeline-date-col"><span class="timeline-date">Nov 2018</span></div>
+                <div class="timeline-spine-col"><span class="timeline-dot"></span></div>
+                <div class="timeline-content-col">
+                  <span class="timeline-tag" style="background: var(--accent-teal-tint); color: var(--accent-teal-hover);">Rollout</span>
+                  <p class="timeline-text">First phase enrollment begins in Panchthar District and Singha Durbar. First card ceremonially handed to a 101-year-old woman.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-category="law">
+                <div class="timeline-date-col"><span class="timeline-date">Aug 2019</span></div>
+                <div class="timeline-spine-col"><span class="timeline-dot"></span></div>
+                <div class="timeline-content-col">
+                  <span class="timeline-tag" style="background: var(--accent-crimson-tint); color: var(--accent-crimson-hover);">Legislation</span>
+                  <p class="timeline-text">Parliament passes the National Identity Card and Civil Registration Act, establishing the statutory framework for centralized biometric collection.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-category="mandate">
+                <div class="timeline-date-col"><span class="timeline-date">Nov 2021</span></div>
+                <div class="timeline-spine-col"><span class="timeline-dot"></span></div>
+                <div class="timeline-content-col">
+                  <span class="timeline-tag" style="background: var(--accent-gold-tint); color: var(--accent-gold-hover);">Mandate</span>
+                  <p class="timeline-text">E-passports linked to NID numbers become mandatory. NTA initiates terms of reference to link mobile SIM registration with NID.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-category="mandate">
+                <div class="timeline-date-col"><span class="timeline-date">June 2024</span></div>
+                <div class="timeline-spine-col"><span class="timeline-dot"></span></div>
+                <div class="timeline-content-col">
+                  <span class="timeline-tag" style="background: var(--accent-gold-tint); color: var(--accent-gold-hover);">Mandate</span>
+                  <p class="timeline-text">Government announces NID to be mandatory across banking, SIM registration, social security allowances, land transfers, and civil service exams.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-category="courts">
+                <div class="timeline-date-col"><span class="timeline-date">July 2024</span></div>
+                <div class="timeline-spine-col"><span class="timeline-dot"></span></div>
+                <div class="timeline-content-col">
+                  <span class="timeline-tag" style="background: var(--accent-crimson-tint); color: var(--accent-crimson-hover);">Courts</span>
+                  <p class="timeline-text">Supreme Court issues an interim order suspending mandatory NID enforcement for public services following severe distribution failures.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-category="mandate">
+                <div class="timeline-date-col"><span class="timeline-date">Jan 2025</span></div>
+                <div class="timeline-spine-col"><span class="timeline-dot"></span></div>
+                <div class="timeline-content-col">
+                  <span class="timeline-tag" style="background: var(--accent-gold-tint); color: var(--accent-gold-hover);">Mandate</span>
+                  <p class="timeline-text">Nepal Rastra Bank enforces directive requiring NID number for opening all new bank accounts nationwide.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-category="courts">
+                <div class="timeline-date-col"><span class="timeline-date">Jan 19, 2025</span></div>
+                <div class="timeline-spine-col"><span class="timeline-dot"></span></div>
+                <div class="timeline-content-col">
+                  <span class="timeline-tag" style="background: var(--accent-crimson-tint); color: var(--accent-crimson-hover);">Courts</span>
+                  <p class="timeline-text">Supreme Court nullifies earlier interim order, allowing the government to resume enforcing NID across public and private services.</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <!-- CHAPTER III: GOVERNMENT WORKING & FRICTION -->
+          <section id="government-working" class="report-section" aria-labelledby="heading-ch3">
+            <p class="eyebrow section-eyebrow">Chapter III</p>
+            <h2 id="heading-ch3" class="section-title">III. How the Government is Working</h2>
+            
+            <div class="chapter-lede-box">
+              <p class="chapter-lede-text">
+                "The NID rollout is executed through a top-down administrative structure. Local municipalities and ward offices bear the brunt of operational friction without being consulted on digital capacity, infrastructure deficits, or literacy barriers."
+              </p>
+            </div>
+
+            <!-- Deep Academic Text -->
+            <div class="academic-prose prose-measure">
+              <p>
+                Across the country, local governments have been exposed to digital workflows primarily through financial software like SuTRA (Sub-National Treasury Regulatory Application). When tasked with biometric enrollment, ward officials faced severe hardware shortages, daily server crashes, and frequent power outages.
+              </p>
+              <p>
+                Because official pre-registration portals are inaccessible to non-English speakers and require continuous broadband connectivity, citizens have been forced to rely on private cyber cafés and local brokers charging unregulated fees between Rs 200 and Rs 500 per form.
+              </p>
+            </div>
+
+            <!-- 6-Step Friction Walkthrough -->
+            <section id="friction" class="report-section" style="margin-top: 32px; border-top: none; padding-top: 0;">
+              <h3 style="font-size: 1.25rem; margin-bottom: 16px;">The 6-Step Enrolment Friction Journey</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">Detailed documented failure points encountered by citizens at each stage of the registration pipeline.</p>
+
+              <div class="friction-list">
+                
+                <details class="friction-card" open>
+                  <summary class="friction-summary">
+                    <span class="step-badge-circle">1</span>
+                    <div class="friction-title-group">
+                      <span class="friction-title">Step 1: Document Gathering &amp; Verification</span>
+                      <span class="friction-subtitle">Citizenship card, migration papers, marriage registration</span>
+                    </div>
+                  </summary>
+                  <div class="friction-body">
+                    <p style="font-size: 0.925rem; line-height: 1.55;">Applicants must present physical original citizenship certificates. Married women whose husbands' names are not inscribed on their citizenship card must obtain marriage registration certificates, requiring multiple trips to ward offices and fee payments.</p>
+                    <p class="friction-evidence">⚠️ Field failure point: High exclusion of single mothers and rural women whose marriages are unregistered.</p>
+                  </div>
+                </details>
+
+                <details class="friction-card">
+                  <summary class="friction-summary">
+                    <span class="step-badge-circle">2</span>
+                    <div class="friction-title-group">
+                      <span class="friction-title">Step 2: Online Pre-Registration Form</span>
+                      <span class="friction-subtitle">Digital data entry via DONIDCR web portal</span>
+                    </div>
+                  </summary>
+                  <div class="friction-body">
+                    <p style="font-size: 0.925rem; line-height: 1.55;">Due to English-language interfaces and server timeouts, citizens are pushed to commercial cyber cafés. Operators frequently misspell names, switch birthdates between Bikram Sambat and Gregorian calendars, and input incorrect permanent addresses.</p>
+                    <p class="friction-evidence">⚠️ Field failure point: Generated 161,113 rejected cards due to operator typos.</p>
+                  </div>
+                </details>
+
+                <details class="friction-card">
+                  <summary class="friction-summary">
+                    <span class="step-badge-circle">3</span>
+                    <div class="friction-title-group">
+                      <span class="friction-title">Step 3: Biometric Capture Station</span>
+                      <span class="friction-subtitle">10 Fingerprints, 2 Iris Scans, Live Facial Photo</span>
+                    </div>
+                  </summary>
+                  <div class="friction-body">
+                    <p style="font-size: 0.925rem; line-height: 1.55;">Optical fingerprint scanners fail to capture worn papillary ridges of agricultural laborers, construction workers, and the elderly. Iris scanners fail on citizens with cataracts or narrow eye apertures common in Janajati communities.</p>
+                    <p class="friction-evidence">⚠️ Field failure point: Operators repeatedly force citizens to rub hands with oil or apply pressure, causing distress.</p>
+                  </div>
+                </details>
+
+                <details class="friction-card">
+                  <summary class="friction-summary">
+                    <span class="step-badge-circle">4</span>
+                    <div class="friction-title-group">
+                      <span class="friction-title">Step 4: Central Verification &amp; NIN Issuance</span>
+                      <span class="friction-subtitle">Server de-duplication and 10-digit number generation</span>
+                    </div>
+                  </summary>
+                  <div class="friction-body">
+                    <p style="font-size: 0.925rem; line-height: 1.55;">Citizens receive a paper receipt with their 10-digit NIN via SMS. In areas with poor mobile reception, SMS delivery fails, leaving applicants without confirmation.</p>
+                    <p class="friction-evidence">⚠️ Field failure point: "Pending Verification" status leaves thousands in administrative limbo for months.</p>
+                  </div>
+                </details>
+
+                <details class="friction-card">
+                  <summary class="friction-summary">
+                    <span class="step-badge-circle">5</span>
+                    <div class="friction-title-group">
+                      <span class="friction-title">Step 5: Smart Card Printing &amp; Logistics</span>
+                      <span class="friction-subtitle">Centralized card embossing at Singha Durbar</span>
+                    </div>
+                  </summary>
+                  <div class="friction-body">
+                    <p style="font-size: 0.925rem; line-height: 1.55;">Only 1.65 million cards printed out of 16.35 million enrolled due to chip procurement bottlenecks and limited printing machine throughput.</p>
+                    <p class="friction-evidence">⚠️ Field failure point: Over 90% of enrolled citizens operate indefinitely on paper slips.</p>
+                  </div>
+                </details>
+
+                <details class="friction-card">
+                  <summary class="friction-summary">
+                    <span class="step-badge-circle">6</span>
+                    <div class="friction-title-group">
+                      <span class="friction-title">Step 6: Ward Verification &amp; Service Delivery</span>
+                      <span class="friction-subtitle">Card reading and live biometric authentication</span>
+                    </div>
+                  </summary>
+                  <div class="friction-body">
+                    <p style="font-size: 0.925rem; line-height: 1.55;">Public service counters lack card readers and API connectivity. Offline authentication is impossible, forcing staff back to manual paper ledger lookups.</p>
+                    <p class="friction-evidence">⚠️ Field failure point: Complete breakdown of promised "interoperable digital governance".</p>
+                  </div>
+                </details>
+
+              </div>
+            </section>
+          </section>
+
+          <!-- CHAPTER IV: DISPUTES & EXCLUSIONS -->
+          <section id="disputes" class="report-section" aria-labelledby="heading-ch4">
+            <p class="eyebrow section-eyebrow">Chapter IV</p>
+            <h2 id="heading-ch4" class="section-title">IV. Disputes, Differences &amp; Exclusions</h2>
+            
+            <div class="chapter-lede-box">
+              <p class="chapter-lede-text">
+                "Biometric systems operate on assumptions of standardized human bodies. In practice, age, manual labor, physical impairment, and gender diversity create systemic exclusion mechanisms that deny citizens their constitutional rights."
+              </p>
+            </div>
+
+            <!-- Deep Academic Text -->
+            <div class="academic-prose prose-measure">
+              <p>
+                In both Sarlahi and Khotang, data collectors reported extensive difficulties capturing biometrics from elderly residents and manual laborers. When fingerprints fail to register, enrollment software rejects the record as 'incomplete'.
+              </p>
+              <p>
+                Citizens with physical disabilities face inaccessible enrolment centers located on upper floors without ramps or elevators. Furthermore, trans and non-binary individuals are forced into binary gender boxes that contradict their legal identities.
+              </p>
+            </div>
+
+            <!-- 6 Systemic Exclusions Grid -->
+            <div class="deck-features-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; margin-top: 24px;">
+              
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">Exclusion 01</p>
+                <h4 class="deck-feature-title">Citizenship Deprivation Trap</h4>
+                <p class="deck-feature-desc">5M+ residents lacking citizenship are barred from NID, cutting off access to bank accounts, welfare pensions, and SIM cards.</p>
+              </div>
+
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">Exclusion 02</p>
+                <h4 class="deck-feature-title">Laborers' Worn Fingerprints</h4>
+                <p class="deck-feature-desc">Agricultural and construction workers whose papillary ridges are worn down face repeated hardware rejection during enrollment.</p>
+              </div>
+
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">Exclusion 03</p>
+                <h4 class="deck-feature-title">Optical Iris Scanner Bias</h4>
+                <p class="deck-feature-desc">Cataracts and narrow eye apertures cause frequent capture timeouts on elderly citizens and Janajati community members.</p>
+              </div>
+
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">Exclusion 04</p>
+                <h4 class="deck-feature-title">Physical Inaccessibility</h4>
+                <p class="deck-feature-desc">Enrollment centers located in non-accessible government buildings without ramps, elevators, or sign language interpreters.</p>
+              </div>
+
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">Exclusion 05</p>
+                <h4 class="deck-feature-title">Rigid Binary Gender Markers</h4>
+                <p class="deck-feature-desc">System forces trans and non-binary citizens into Male/Female markers, erasing third-gender constitutional protections.</p>
+              </div>
+
+              <div class="deck-feature-card">
+                <p class="deck-feature-num">Exclusion 06</p>
+                <h4 class="deck-feature-title">The "Pending Verification" Trap</h4>
+                <p class="deck-feature-desc">Applicants whose records show minor spelling discrepancies remain stuck in unverified status without recourse.</p>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- QUALITATIVE VOICES WALL -->
+          <section id="voices" class="report-section" aria-labelledby="heading-voices">
+            <p class="eyebrow section-eyebrow">Qualitative Archive</p>
+            <h2 id="heading-voices" class="section-title">Voices from the Field: Lived Experiences</h2>
+            <p class="section-lead">Verbatim testimonies from end-users, local officials, data collectors, and civil society actors.</p>
+
+            <div class="filter-pill-group" role="group" aria-label="Voice Filters">
+              <button type="button" class="filter-pill active" data-voice-filter="all" aria-pressed="true">All Voices (6)</button>
+              <button type="button" class="filter-pill" data-voice-filter="user" aria-pressed="false">End Users</button>
+              <button type="button" class="filter-pill" data-voice-filter="official" aria-pressed="false">Officials</button>
+              <button type="button" class="filter-pill" data-voice-filter="cso" aria-pressed="false">Civil Society</button>
+            </div>
+
+            <div class="quote-masonry">
+              
+              <figure class="quote-card" data-group="user">
+                <blockquote>
+                  "The National Identity Card seems to simplify various processes, making it more convenient for citizens and even more so for the state. The government benefits significantly, particularly through increased control over its citizens."
+                </blockquote>
+                <figcaption>
+                  <span class="quote-speaker">Local Male Resident</span>
+                  <span class="quote-place-badge">Khotang District</span>
+                </figcaption>
+              </figure>
+
+              <figure class="quote-card" data-group="official">
+                <blockquote>
+                  "The NID program will be a game changer once linked to land revenue, driving licenses, telecom, and bank accounts. People will no longer have to carry different cards for different purposes."
+                </blockquote>
+                <figcaption>
+                  <span class="quote-speaker">Government Administrative Officer</span>
+                  <span class="quote-place-badge">Sarlahi District</span>
+                </figcaption>
+              </figure>
+
+              <figure class="quote-card" data-group="cso">
+                <blockquote>
+                  "There are no disadvantages to the NID card except to frauds and criminals, as they can be tracked using their number. It is beneficial for the community."
+                </blockquote>
+                <figcaption>
+                  <span class="quote-speaker">CSO Representative</span>
+                  <span class="quote-place-badge">Sarlahi District</span>
+                </figcaption>
+              </figure>
+
+              <figure class="quote-card" data-group="user">
+                <blockquote>
+                  "I had to visit the cyber café three times because the operator spelled my father's name incorrectly on the online form. They charged me Rs 300 each time, and at the CDO office they told me my card is rejected."
+                </blockquote>
+                <figcaption>
+                  <span class="quote-speaker">Female Agricultural Laborer</span>
+                  <span class="quote-place-badge">Malangwa, Sarlahi</span>
+                </figcaption>
+              </figure>
+
+              <figure class="quote-card" data-group="official">
+                <blockquote>
+                  "The biometric scanner would not recognize the thumbprints of elderly farmers in the winter cold. We had to make them wash their hands with warm water and rub mustard oil just to get a 40% match."
+                </blockquote>
+                <figcaption>
+                  <span class="quote-speaker">Data Enrollment Operator</span>
+                  <span class="quote-place-badge">Diktel, Khotang</span>
+                </figcaption>
+              </figure>
+
+              <figure class="quote-card" data-group="cso">
+                <blockquote>
+                  "When the state links essential survival benefits like elderly allowances to an unproven digital card, it is gambling with the lives of the most vulnerable people in the country."
+                </blockquote>
+                <figcaption>
+                  <span class="quote-speaker">Digital Rights Advocate</span>
+                  <span class="quote-place-badge">Kathmandu</span>
+                </figcaption>
+              </figure>
+
+            </div>
+          </section>
+
+          <!-- CHAPTER V: PRIVACY & DATAFLOW -->
+          <section id="privacy" class="report-section" aria-labelledby="heading-ch5">
+            <p class="eyebrow section-eyebrow">Chapter V</p>
+            <h2 id="heading-ch5" class="section-title">V. Right to Privacy &amp; Biometric Dataflow</h2>
+            
+            <div class="chapter-lede-box">
+              <p class="chapter-lede-text">
+                "Nepal currently lacks a comprehensive data protection law and an independent data privacy commission. Centralizing sensitive biometrics and personal records into a single honeypot creates systemic national security and personal privacy risks."
+              </p>
+            </div>
+
+            <!-- Deep Academic Text -->
+            <div class="academic-prose prose-measure">
+              <p>
+                While the Individual Privacy Act 2018 guarantees the right to privacy under Article 28 of the Constitution, Section 5 of the National ID Act contains broad exceptions allowing state agencies and third-party private entities to access biometric data for vague 'public interest' purposes without judicial warrants.
+              </p>
+              <p>
+                Furthermore, recurring cyber attacks—including the severe DoS attack on government servers on 31 January 2023—demonstrate that Nepal's digital infrastructure remains acutely vulnerable to data breaches.
+              </p>
+            </div>
+
+            <!-- 6-Hop Dataflow Tracer -->
+            <div class="glance-card" style="margin-top: 32px;">
+              <h3 class="glance-card-title">6-Hop Biometric Dataflow Tracer</h3>
+              <p class="glance-card-sub">Tracking the path of personal biometrics from citizen enrollment to central servers and private integrations.</p>
+
+              <div class="deck-features-grid" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 14px; margin-top: 16px;">
+                <div class="deck-feature-card">
+                  <p class="deck-feature-num">Hop 01</p>
+                  <h4 class="deck-feature-title">Ward Enrolment Kit</h4>
+                  <p class="deck-feature-desc">Offline local capture of 10 prints, 2 irises, portrait photo, and demographic records onto contractor laptop.</p>
+                </div>
+                <div class="deck-feature-card">
+                  <p class="deck-feature-num">Hop 02</p>
+                  <h4 class="deck-feature-title">Encrypted Upload</h4>
+                  <p class="deck-feature-desc">Batch transmission over public internet lines to the central NIDMIS server at the Ministry of Home Affairs.</p>
+                </div>
+                <div class="deck-feature-card">
+                  <p class="deck-feature-num">Hop 03</p>
+                  <h4 class="deck-feature-title">Central Singha Durbar Data Centre</h4>
+                  <p class="deck-feature-desc">Permanent biometric storage and de-duplication matching via Idemia AFIS/ABIS algorithm engines.</p>
+                </div>
+                <div class="deck-feature-card">
+                  <p class="deck-feature-num">Hop 04</p>
+                  <h4 class="deck-feature-title">Hetauda Disaster Recovery</h4>
+                  <p class="deck-feature-desc">Secondary mirrored copy maintained at the Government Integrated Data Centre in Hetauda.</p>
+                </div>
+                <div class="deck-feature-card">
+                  <p class="deck-feature-num">Hop 05</p>
+                  <h4 class="deck-feature-title">Foreign Vendor Infrastructure</h4>
+                  <p class="deck-feature-desc">Software maintenance and cryptographic key access by French multinational Idemia technicians.</p>
+                </div>
+                <div class="deck-feature-card">
+                  <p class="deck-feature-num">Hop 06</p>
+                  <h4 class="deck-feature-title">Onward Integrations</h4>
+                  <p class="deck-feature-desc">API connections to Passports, Social Security, Land Registry, Commercial Banks (KYC), and Telecom SIM databases.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CHAPTER VI: RECOMMENDATIONS -->
+          <section id="recommendations" class="report-section" aria-labelledby="heading-recs">
+            <p class="eyebrow section-eyebrow">Chapter VI</p>
+            <h2 id="heading-recs" class="section-title">VI. Way Forward: 18 Actionable Recommendations</h2>
+            <p class="section-lead">Policy recommendations segmented by key stakeholder groups for building a rights-respecting digital identity framework.</p>
+
+            <div class="tabs-nav-bar" role="tablist" aria-label="Recommendation Audiences">
+              <button type="button" class="tab-btn active" data-rec-tab="gov" role="tab" aria-selected="true">
+                For Government <span class="pill-count">(10)</span>
+              </button>
+              <button type="button" class="tab-btn" data-rec-tab="private" role="tab" aria-selected="false">
+                For Private Sector <span class="pill-count">(3)</span>
+              </button>
+              <button type="button" class="tab-btn" data-rec-tab="cso" role="tab" aria-selected="false">
+                For Civil Society <span class="pill-count">(5)</span>
+              </button>
+            </div>
+
+            <!-- Government Recs Grid -->
+            <div class="recs-grid" data-rec-content="gov">
+              
+              <details class="rec-card" open>
+                <summary class="rec-summary">
+                  <span class="rec-num">01</span>
+                  <span>Halt Mandatory Linkages for Essential Public Services</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Ensure that essential public services—including social security allowances, public healthcare, basic schooling, and emergency relief—are never conditioned upon possession of an NID card or biometric verification.</p>
+                </div>
+              </details>
+
+              <details class="rec-card" open>
+                <summary class="rec-summary">
+                  <span class="rec-num">02</span>
+                  <span>Enact Comprehensive Data Protection Legislation</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Pass an omnibus Data Protection Act adhering to international human rights standards, enshrining purpose limitation, data minimization, and explicit consent.</p>
+                </div>
+              </details>
+
+              <details class="rec-card">
+                <summary class="rec-summary">
+                  <span class="rec-num">03</span>
+                  <span>Establish an Independent Data Protection Commission</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Create an autonomous regulatory body with investigatory and enforcement powers to oversee biometric security and audit government and private data practices.</p>
+                </div>
+              </details>
+
+              <details class="rec-card">
+                <summary class="rec-summary">
+                  <span class="rec-num">04</span>
+                  <span>Implement Robust Manual Exception Handling</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Mandate alternative verification mechanisms for elderly citizens, manual laborers with unreadable fingerprints, and persons with disabilities.</p>
+                </div>
+              </details>
+
+              <details class="rec-card">
+                <summary class="rec-summary">
+                  <span class="rec-num">05</span>
+                  <span>Reform Discriminatory Citizenship Laws</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Overhaul citizenship transmission laws to ensure equal rights for Nepali mothers and dismantle structural exclusions that leave 5M+ residents undocumented.</p>
+                </div>
+              </details>
+
+              <details class="rec-card">
+                <summary class="rec-summary">
+                  <span class="rec-num">06</span>
+                  <span>Invest in Foundational Digital Infrastructure</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Equip local ward offices with stable power backups, high-speed connectivity, and trained technical staff before rolling out mandatory digital platforms.</p>
+                </div>
+              </details>
+
+            </div>
+
+            <!-- Private Sector Recs Grid -->
+            <div class="recs-grid" data-rec-content="private" style="display: none;">
+              
+              <details class="rec-card" open>
+                <summary class="rec-summary">
+                  <span class="rec-num">11</span>
+                  <span>Adhere to Privacy by Design &amp; Purpose Limitation</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Private financial institutions and telecom providers must not store raw biometric packets or use NID data for commercial profiling and targeted advertising.</p>
+                </div>
+              </details>
+
+              <details class="rec-card" open>
+                <summary class="rec-summary">
+                  <span class="rec-num">12</span>
+                  <span>Maintain Non-Biometric Customer Verification</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Commercial banks must offer accessible non-biometric KYC alternatives for customers with physical impairments or missing documentation.</p>
+                </div>
+              </details>
+
+              <details class="rec-card">
+                <summary class="rec-summary">
+                  <span class="rec-num">13</span>
+                  <span>Promote Transparent Algorithmic Audits</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Technology vendors must publish independent security audits, algorithmic bias assessments, and vulnerability assessments of all supplied software.</p>
+                </div>
+              </details>
+
+            </div>
+
+            <!-- Civil Society Recs Grid -->
+            <div class="recs-grid" data-rec-content="cso" style="display: none;">
+              
+              <details class="rec-card" open>
+                <summary class="rec-summary">
+                  <span class="rec-num">14</span>
+                  <span>Conduct Independent Biometric Harms Monitoring</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Document and publicize instances of welfare denial, biometric failure, and discrimination experienced by marginalized groups across rural districts.</p>
+                </div>
+              </details>
+
+              <details class="rec-card">
+                <summary class="rec-summary">
+                  <span class="rec-num">15</span>
+                  <span>Strengthen Grassroots Digital Literacy</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Organize community workshops demystifying digital public infrastructure, informed consent, and personal data protection in local indigenous languages.</p>
+                </div>
+              </details>
+
+              <details class="rec-card">
+                <summary class="rec-summary">
+                  <span class="rec-num">16</span>
+                  <span>Build Cross-Movement Coalitions</span>
+                </summary>
+                <div class="rec-body">
+                  <p style="font-size: 0.925rem; line-height: 1.55;">Unite feminist organizations, disability rights groups, indigenous federations, and privacy litigators to challenge surveillance creep.</p>
+                </div>
+              </details>
+
+            </div>
+          </section>
+
+          <!-- ENDNOTES & CITATIONS -->
+          <section id="references" class="report-section" aria-labelledby="heading-refs">
+            <p class="eyebrow section-eyebrow">Scholarly References</p>
+            <h2 id="heading-refs" class="section-title">Endnotes &amp; Citations</h2>
+            
+            <ol class="notes-grid">
+              <li id="note-17" class="note-item">
+                <span class="note-num">17</span>
+                <span class="note-text">DoNIDCR, 2023b. Historical background of the National Identity Card pilot project in Panchthar.</span>
+                <a href="#ref-17" class="note-back-link" aria-label="Jump back to footnote 17 reference in text">↩ back</a>
+              </li>
+              <li id="note-19" class="note-item">
+                <span class="note-num">19</span>
+                <span class="note-text">DoNIDCR, 2023a. National ID Strategic Plan and constitutional grounding under Article 51(f)(7).</span>
+                <a href="#ref-19" class="note-back-link" aria-label="Jump back to footnote 19 reference in text">↩ back</a>
+              </li>
+              <li id="note-22" class="note-item">
+                <span class="note-num">22</span>
+                <span class="note-text">Himalayan News Service, 2019. Parliamentary debates on public procurement cap violations in Idemia contracts.</span>
+                <a href="#ref-22" class="note-back-link" aria-label="Jump back to footnote 22 reference in text">↩ back</a>
+              </li>
+              <li id="note-32" class="note-item">
+                <span class="note-num">32</span>
+                <span class="note-text">Shrestha, S. and Mulmi, S., 2016: 13. Acquisition of Citizenship Certificate in Nepal: Estimation and Projections. FWLD.</span>
+                <a href="#ref-32" class="note-back-link" aria-label="Jump back to footnote 32 reference in text">↩ back</a>
+              </li>
+              <li id="note-37" class="note-item">
+                <span class="note-num">37</span>
+                <span class="note-text">Key Informant Interview, Senior Administrative Officer, Ministry of Home Affairs, February 2023, Kathmandu.</span>
+                <a href="#ref-37" class="note-back-link" aria-label="Jump back to footnote 37 reference in text">↩ back</a>
+              </li>
+            </ol>
+          </section>
+
+        </div>
+
+        <!-- Sticky Sidebar Marginalia -->
+        <aside class="reading-sidebar" aria-label="Contextual Chapter Navigation">
+          <p class="eyebrow" style="margin-bottom: 12px;">Quick Navigation</p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+            <li><a href="#glance" style="color: var(--text-secondary); text-decoration: none;">At a Glance</a></li>
+            <li><a href="#acronyms" style="color: var(--text-secondary); text-decoration: none;">Acronyms &amp; Terms</a></li>
+            <li><a href="#executive-summary" style="color: var(--text-secondary); text-decoration: none;">Executive Summary</a></li>
+            <li><a href="#introduction" style="color: var(--text-secondary); text-decoration: none;">I. Introduction</a></li>
+            <li><a href="#birth-nid" style="color: var(--text-secondary); text-decoration: none;">II. Birth of NID</a></li>
+            <li><a href="#timeline" style="color: var(--text-secondary); text-decoration: none;">16-Year Timeline</a></li>
+            <li><a href="#government-working" style="color: var(--text-secondary); text-decoration: none;">III. Government Work</a></li>
+            <li><a href="#friction" style="color: var(--text-secondary); text-decoration: none;">Friction Journey</a></li>
+            <li><a href="#disputes" style="color: var(--text-secondary); text-decoration: none;">IV. Disputes &amp; Exclusions</a></li>
+            <li><a href="#voices" style="color: var(--text-secondary); text-decoration: none;">Field Voices</a></li>
+            <li><a href="#privacy" style="color: var(--text-secondary); text-decoration: none;">V. Privacy &amp; Dataflow</a></li>
+            <li><a href="#recommendations" style="color: var(--text-secondary); text-decoration: none;">VI. 18 Recommendations</a></li>
+          </ul>
+
+          <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-subtle);">
+            <p class="eyebrow" style="margin-bottom: 8px;">Key Glossary Terms</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <button type="button" data-def="Personal biometric data capturing fingerprints, irises, and facial geometry.">Biometrics</button>
+              <button type="button" data-def="Foundational digital identity, payment, and data exchange systems.">DPI</button>
+              <button type="button" data-def="Indian 12-digit unique identity system managed by UIDAI.">Aadhaar</button>
+              <button type="button" data-def="Converting human activities and bodies into quantifiable data.">Datafication</button>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-inner">
+        <div>
+          <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Body &amp; Data</p>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Nepal’s Biometric Present: Governance, Accessibility &amp; Accountability (2025)</p>
+        </div>
+        <div>
+          <a href="index.html" class="btn btn-sm">← Return to Library</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/leaflet/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/annotations.js"></script>
+  <script src="js/report-core.js"></script>
+  <script src="js/biometric-report.js"></script>
+</body>
+</html>

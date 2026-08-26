@@ -1,0 +1,95 @@
+{
+  "$schema": "./schemas/report.schema.json",
+  "id": "nepal-biometric-present",
+  "title": "Nepal’s Biometric Present",
+  "subtitle": "Governance, Accessibility and Accountability",
+  "year": 2025,
+  "pages": 56,
+  "authors": [
+    "Bhaskar Gautam", "Dovan Rai", "Rita Baramu",
+    "Sapana Sanjeevani", "Monika", "Nuva Rai"
+  ],
+  "localCoordinators": {
+    "sarlahi": "Irshat Khatoon",
+    "khotang": "Barsha Rai"
+  },
+  "support": "Open Society Foundations (OSF)",
+  "metrics": [
+    { "value": "16.35M", "label": "Citizens Enrolled", "note": "Over 50% of national population captured" },
+    { "value": "1.65M", "label": "Cards Distributed", "note": "Only 10.1% received physical smart cards" },
+    { "value": "161,113", "label": "Cards Rejected", "note": "Refused due to errors in name, DOB, or address" },
+    { "value": "5M+", "label": "Lacking Citizenship", "note": "Ineligible for NID and dependent services" }
+  ],
+  "headlineFinding": "The National ID in Nepal has developed primarily as an instrument of state surveillance and bureaucratic gatekeeping, rather than an enabler of welfare delivery. It reinforces historical inequalities around citizenship transmission while introducing biological and infrastructural hurdles for rural manual laborers, elderly citizens, and persons with disabilities.",
+  "chapters": [
+    {
+      "number": "I",
+      "title": "Introduction & The Concept of National ID",
+      "lede": "The National ID program is promoted by state officials as a transformative 'game changer' for Nepal. However, by conditioning digital identity strictly on possession of citizenship certificates, it embeds historical exclusionary structures into digital public infrastructure."
+    },
+    {
+      "number": "II",
+      "title": "The Birth of National Identity Card",
+      "lede": "The NID project originated in 2009 with Asian Development Bank financing. It has been repeatedly contested in Parliament over single-source procurement awards to French defense contractor Morpho Safran (Idemia) and its shift into a new security space."
+    },
+    {
+      "number": "III",
+      "title": "How the Government is Working",
+      "lede": "The NID rollout is executed through a top-down administrative structure. Local municipalities and ward offices bear the brunt of operational friction without being consulted on digital capacity, infrastructure deficits, or literacy barriers."
+    },
+    {
+      "number": "IV",
+      "title": "Disputes, Differences & Exclusions",
+      "lede": "Biometric systems operate on assumptions of standardized human bodies. In practice, age, manual labor, physical impairment, and gender diversity create systemic exclusion mechanisms that deny citizens their constitutional rights."
+    },
+    {
+      "number": "V",
+      "title": "Right to Privacy & Biometric Dataflow",
+      "lede": "Nepal currently lacks a comprehensive data protection law and an independent data privacy commission. Centralizing sensitive biometrics and personal records into a single honeypot creates systemic national security and personal privacy risks."
+    },
+    {
+      "number": "VI",
+      "title": "Way Forward: 18 Actionable Recommendations",
+      "lede": "Policy recommendations segmented by key stakeholder groups for building a rights-respecting digital identity framework."
+    }
+  ],
+  "recommendations": [
+    {
+      "number": "01",
+      "targetAudience": "Government",
+      "title": "Halt Mandatory Linkages for Essential Public Services",
+      "details": "Ensure that essential public services—including social security allowances, public healthcare, basic schooling, and emergency relief—are never conditioned upon possession of an NID card or biometric verification."
+    },
+    {
+      "number": "02",
+      "targetAudience": "Government",
+      "title": "Enact Comprehensive Data Protection Legislation",
+      "details": "Pass an omnibus Data Protection Act adhering to international human rights standards, enshrining purpose limitation, data minimization, and explicit consent."
+    },
+    {
+      "number": "03",
+      "targetAudience": "Government",
+      "title": "Establish an Independent Data Protection Commission",
+      "details": "Create an autonomous regulatory body with investigatory and enforcement powers to oversee biometric security and audit government and private data practices."
+    },
+    {
+      "number": "11",
+      "targetAudience": "Private Sector",
+      "title": "Adhere to Privacy by Design & Purpose Limitation",
+      "details": "Private financial institutions and telecom providers must not store raw biometric packets or use NID data for commercial profiling and targeted advertising."
+    },
+    {
+      "number": "14",
+      "targetAudience": "Civil Society",
+      "title": "Conduct Independent Biometric Harms Monitoring",
+      "details": "Document and publicize instances of welfare denial, biometric failure, and discrimination experienced by marginalized groups across rural districts."
+    }
+  ],
+  "references": [
+    { "id": 17, "citation": "DoNIDCR, 2023b. Historical background of the National Identity Card pilot project in Panchthar." },
+    { "id": 19, "citation": "DoNIDCR, 2023a. National ID Strategic Plan and constitutional grounding under Article 51(f)(7)." },
+    { "id": 22, "citation": "Himalayan News Service, 2019. Parliamentary debates on public procurement cap violations in Idemia contracts." },
+    { "id": 32, "citation": "Shrestha, S. and Mulmi, S., 2016: 13. Acquisition of Citizenship Certificate in Nepal: Estimation and Projections. FWLD." },
+    { "id": 37, "citation": "Key Informant Interview, Senior Administrative Officer, Ministry of Home Affairs, February 2023, Kathmandu." }
+  ]
+}

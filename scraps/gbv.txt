@@ -1,0 +1,2864 @@
+Relevant to
+Online Violence
+in Nepal
+Mapping
+Laws
+A report by Body & Data
+2021
+
+-- 1 of 48 --
+
+Mapping Laws | Page 2
+Mapping Laws relevant to online violence in Nepal: A study
+Body & Data, 2021
+Authors: Shubha Kayastha, Rita Baramu
+Editing and design: Supriya Manandhar
+Published by: Body & Data
+Supported by: Vision for Change
+All rights reserved Body & Data
+
+-- 2 of 48 --
+
+Mapping Laws | Page 3
+Contents
+Acronyms 	4
+Acknowledgments 	5
+Summary 	6
+Introduction 	9
+Background of the study 	9
+Objectives of the research 	11
+Scope and methodology 	11
+Freedom of Expression 	14
+Legal measures and analysis 	16
+Conclusion 	18
+Case Study 	20
+Privacy 	22
+Legal measures and analysis 	23
+Conclusion 	26
+Case Study 	27
+Freedom from Violence 	29
+Legal Measures and analysis 	30
+Conclusion 	32
+Case studies 	34
+Conclusion 	36
+Problems within the existing justice system 	37
+Analysis of reviewed cases 	39
+Recommendations 	41
+Annex 	42
+Data analysis of cases collected 	42
+Law Analysis 	44
+Domestic Violence (Crime and Punishment) Act, 2066 (2009) 	44
+The Sexual Harassment at Workplace Prevention Act, 2015 (2071) 	45
+Electronic Transaction Act, 2063 (2007) 	46
+Policy Mapping Chart 	47
+
+-- 3 of 48 --
+
+Mapping Laws | Page 4
+Acronyms
+CEDAW 	Committee on the Elimination of Discrimination against Women
+ETA 	Electronic Transaction Act
+FOE 	Freedom Of Expression
+HRC 	Human Rights Council
+ICCPR 	International Covenant on Civil and Political Rights
+ICT 	Information and Communication Technology
+LGBTIQ 	Lesbian Gay Bisexual Transgender Intersex Queer
+NDHS 	Nepal Demographic and Health Survey
+UDHR 	Universal Declaration of Human Rights
+UNGA 	United Nations General Assembly
+
+-- 4 of 48 --
+
+Mapping Laws | Page 5
+Acknowledgments
+This research has been put together with work and support of many individuals and
+we would like to acknowledge everyone involved. Firstly, the key informants, including
+lawyers and government attorneys and activists who were interviewed and responded
+to our queries regarding laws that govern digital platforms and online gender based
+violence. Our thanks go to Jevina Pradhan and Sukirti Manandhar who first initiated the
+desk study and data collection process in 2019 and Rita Baramu who took over the data
+analysis and compilation for the report after Jevina and Sukriti. Our acknowledgement
+also goes to Supriya Manandhar for her input in framing, editing and layout of the reports
+and the chart “Mapping laws related to online gender based violence in Nepal”. We would
+also like to thank Dikshya Khadgi for the in citation works including each and every one
+who was directly or indirectly involved in the research process.
+Shubha Kayastha
+
+-- 5 of 48 --
+
+Mapping Laws | Page 6
+Summary
+The Internet and technology have provided people with various opportunities in their
+personal and public spaces. However there are also many instances of their design having
+enabled structural violence against women and marginalized communities online.
+Such online violence against women and marginalized communities stems from pre-
+existing socio-cultural factors offline. This online violence affects people across caste,
+class, profession, geography, disability status, gender identity and sexuality. Due to the
+nature of ICT infrastructure and how it functions in terms of physicality, anonymity or
+intractability, etc, it has particular effects and consequences on the lives of the victims
+and survivors1. For example, online violence can affect women’s psychological, mental
+and even economic well-being, bringing with it a sense of isolation, distress, depression
+and difficulties in their relationships and personal lives.2 Denying women the right to
+express, the right to privacy and the right to a dignified life is a violation of their human
+rights. It is also denial of their autonomy, agency and human existence. To fully address
+such violence, we have to look at entrenched heteronormative patriarchy in our society,
+its functions and harms and seek structural changes for the system.
+Laws and policies related to the internet, technology and online gender based violence
+would also be instrumental in regulating and addressing such issues. Body & Data has
+analyzed Nepal’s existing laws surrounding online gender based violence to assess their
+sufficiency/effectiveness in addressing the issue. We have analyzed these laws from the
+1 	Maskey, J. & Karmacharya, S. (2018).
+Online Violence Against Women. Loom https://taannepal.org.np/wp-
+content/uploads/2020/09/Online-Violence-Against-Women-2018.pdf
+2 	Kee, J. S. (2017, August 20). End Violence: Women’s rights and safety online.
+Association for Progressive
+Communication. https://www.apc.org/en/project/end-violence-womens-rights-and-safety-online
+
+-- 6 of 48 --
+
+Mapping Laws | Page 7
+perspective of digital rights3 with a focus on gender and sexuality. We have also explored
+how the laws could impact or benefit women and other marginalized communities
+when they face online violence. We have used freedom of expression, right to privacy
+and the right to be free from violence as three human rights lenses to put these laws
+into a framework of study. We conclude with some recommendations for concerned
+stakeholders in order to make the implementation of these laws more effective.
+3 	For the purpose of this research: “Digital rights’’ describe human rights—established by the UDHR, UN
+resolutions, international conventions, regional charters, domestic law, and human rights case law—as they
+are invoked in digitally networked spaces. Those spaces may be physically constructed, as in the creation of
+infrastructure, protocols, and devices. Or, they may be virtually constructed, as in the creation of online identities
+and communities and other forms of expression, as well as the agency exercised over that expression, for example,
+management of personally identifiable data, pseudonymity, anonymity, and encryption. Such spaces include but
+aren’t necessarily limited to the Internet and mobile networks and related devices and practices.’’ (Source: APC,
+Unshackling Expression……)
+
+-- 7 of 48 --
+
+Mapping Laws | Page 8
+
+-- 8 of 48 --
+
+Mapping Laws | Page 9
+Introduction
+4 	WOREC. (2001, November 30). Violence Against Women Campaign. https://www.worecnepal.org/camp/1
+5 	Crime Investigation Department.
+Women, Children and Senior Citizen Directorate. Retrieved from https://
+cid.nepalpolice.gov.np/index.php/cid-wings/women-children-service-directorate
+Background of the study
+The patriarchal construct of our families, society
+and state subjugates women and minorities
+and limits their rights and freedom. 4 The rigid
+hierarchies and systemic discrimination of such
+systems compromise the fundamental rights of
+women and minorities. This structural inequality
+is generally further perpetuated as the norm,
+which in turn harms the quest for a fairer society.
+According to the Nepal Demographic and Health
+Survey (NDHS) 2011, 21 percent of women
+between the ages of 15-48 had experienced
+physical violence at least once since age 15, and
+20 percent of the same sample had experienced
+sexual violence at least once in their lifetime. Data
+from Nepal Police Crime Investigation Bureau5
+shows that a total 2144 cases of rape, 687 rape
+attempts, 34 cases of witch-craft accusations,
+and 11738 cases of domestic violence were
+registered during the fiscal year 2076/77. These
+registered cases (which include cases related to
+abuse of children) are limited cases of physical
+harm and do not cover other forms of violence
+such as psychological, emotional abuse that
+women and minorities often have to face within
+their households. The bureaucracy, lawmakers,
+and even the public themselves tend to have a
+very narrow understanding of violence that only
+concerns extreme physical violence.
+“If we see court practice, they have only provided
+the minimum punishment in online harassment
+cases no matter how grievous the crime is. The
+maximum punishment so far must be around one
+year only.” (Government Attorney)
+Despite the statistics, we still need to consider
+that even the numbers only represent a small
+sample; most physical violence goes unreported
+or they are suppressed or condoned within the
+family or society. Non-physical forms of violence
+have an even greater chance of being ignored,
+because people have a tendency of perceiving
+violence as serious only when there is evidence
+of physical harm. Physical violence is but the
+tip of the iceberg within a framework of socio-
+cultural and psychological violence.
+We can take online violence as an extension
+
+-- 9 of 48 --
+
+Mapping Laws | Page 10
+of offline violence into digital platforms.6 The
+mainstream understanding of the violence that
+takes place in online spaces echoes the general
+trivializing of non-physical forms of harm. There
+is a social normalization of the assumption
+that 	women 	and 	marginalized 	communities
+expressing themselves in virtual spaces entails
+receiving online abuse and harassment, that this
+is something of an “occupational hazard”. Often,
+those in positions of authority prescribe reductive
+solutions 	along 	the 	lines 	of 	victims 	simply
+restraining themselves from the internet. Within
+such a subjugated status, women are expected
+to not have opinions and express themselves
+openly. And if, by any chance, they go against
+this customary expectation, they are silenced
+or threatened, offline or online. Our culture of
+silence further curtails women’s freedom to
+express, whether it be a political opinion or their
+sexual expression. Women and marginalized
+groups, especially queer individuals, are targeted
+online simply because of their expression.
+In 	general, 	women 	and 	marginalized
+communities are denied the right to access,
+privacy, and to participate in digital governance 7
+.
+Women and marginalized groups are under-
+represented 	throughout 	governance 	system
+from civil administration, to media, industries,
+academia and so on. The sharp divide between
+those in power and those left behind is reflected
+within digital governance as well.
+6 	Maskey, J., & Karmacharya, S. (2018). Online violence against women: a continuum of offline discrimination.
+LOOM.
+7 	Nepal, I., Maskey, J., & Karmacharya, S. (2017). Exploring the use of the internet among gender equality and
+sexual right advocates in Nepal : Erotics South Asia exploratory research.
+APC
+8 	Grewal, I., (1999). ‘Women’s rights as human rights’: Feminist practices,global feminism, and human rights
+regimes in transnationality ,
+Citizenship Studies, 3:3, 337-354, https://doi.org/10.1080/13621029908420719
+9 	Grewal, I., (1999). ‘Women’s rights as human rights’: Feminist practices,global feminism, and human rights
+regimes in transnationality ,
+Citizenship Studies, 3:3, 337-354, https://doi.org/10.1080/13621029908420719
+The international community has universalized
+treaties such as the UDHR and CEDAW in order to
+secure the rights of all, including the marginalized.
+Nepal is also a signatory to these treaties. These
+treaties are globally accepted and recognized,
+and used as a reference point to advocate for
+human 	rights, 	especially 	where 	the 	national
+laws themselves may be regressive. However,
+these frameworks themselves are also not above
+question when it comes to protecting the human
+rights of women or marginalized communities.
+The law-making process is influenced by the
+framework 	of 	nation-states 	(itself 	a 	loaded
+concept, often built on exclusionary principles)
+and ensuing geo-politics. And where they are to
+be implemented, the country’s own nationalism,
+gender politics and geo-political context can
+create 	further 	hurdles.8 	The 	universalization
+of rights also means that the laws see people
+as a homogeneous group. And when such laws
+are 	made 	for 	women, 	they 	might 	not 	take
+intersectionalities 	of 	class, 	gender, 	religion,
+nationality, 	race 	and 	sexuality 	into 	account.
+Whereas in reality, violence against women is
+contextual to social, economic, state, political
+and cultural formation.9
+Violation of privacy is another part of gender
+based violence. The UN Special 	Rapporteur
+on violence against women, its causes and
+consequences emphasizes this aspect:
+“In 2016, the General Assembly, in its resolution
+
+-- 10 of 48 --
+
+Mapping Laws | Page 11
+71/199, recognized that women were particularly
+affected by violations of the right to privacy in the
+digital age, and called upon all States to further
+develop preventive measures and remedies. In
+2017, the Human Rights Council, in its resolution
+34/7, reaffirmed this call, noting that abuses of
+the right to privacy in the digital age may affect
+all individuals, including with particular effects
+on women, as well as children and persons in
+vulnerable situations, or marginalized groups.” 10
+The human rights frameworks need reexamining
+in terms of the lived experiences of women and
+the marginalized communities who have been
+affected by violations to their privacy. If we look
+into the generally used “public” and “private”
+dichotomy 	of 	society, 	domestic 	violence 	is
+viewed as a “private matter”, and therefore less
+receiving of police or institutional intervention.
+10 	UN Human Rights Council. (2018). Report of the Special Rapporteur on violence against women, its causes
+and consequences on online violence against women and girls from human rights perspectives.
+11 	Privacy International. (November, 2018). From Oppression to Liberation: Reclaiming the Right to Privacy.
+Privacy International. https://privacyinternational.org/sites/default/files/2018-11/From%20oppression%20to%20
+liberation-reclaiming%20the%20right%20to%20privacy.pdf
+12 	UN Human Rights Council. (2018). Report of the Special Rapporteur on violence against women, its causes
+and consequences on online violence against women and girls from human rights perspectives.
+Which 	implies 	that 	women’s 	reasonable
+expectations of privacy are often infringed upon
+differently than those of men. Their privacy
+is often controlled and taken as a right of men
+instead.11
+There are also many forms of online gender based
+violence such as publication of intimate pictures
+without consent, or photoshopping of images,
+in order to shame or humiliate women and girls.
+These would constitute a violation of their right
+to dignity and freedom from violence 12
+. All these
+gender based privacy breaches are products
+of systemic violence and inequality that denies
+women and minorities their fundamental rights.
+The right to privacy, the right to expression and
+freedom from violence are all interconnected to
+each other, as violation of one right affects the
+others.
+Objectives of the research
+• 	To identify the legal frameworks in Nepal that can be used to respond to online
+violence against women and queers.
+• 	To analyze cases of online violence and harassment that women and minorities have
+experienced.
+• 	To map relevant laws within the scope of digital rights , arranged into the framework
+of privacy, freedom of expression and living free of violence.
+• 	To prepare an assistive documentation for women’s rights groups in the country to
+understand the intersection of VAW and online violence.
+
+-- 11 of 48 --
+
+Mapping Laws | Page 12
+Scope and methodology
+For the purpose of this exploratory research, selected national laws and policies were
+reviewed and analyzed through a gender lens (as women and queer persons’ experiences of
+fighting for justice against gender based violence is different from men’s). The laws that we
+reviewed are:
+Electronic Transaction Act (2007),
+Information Technology Bill (2018),
+[WU1] Civil Code of Nepal (2018),
+The Sexual Harassment at Workplace Prevention Act (2071),
+Individual Privacy Bill (2018) and
+Domestic Violence (Crime and Punishment) Act (2009).
+As part of the data collection, we conducted
+four key informant interviews among attorneys
+within and outside of the government bodies
+and with Cyber Crime Unit of Nepal Police in
+May- June 2018. Similarly, we also collected
+and reviewed 15 legal cases related to online or
+technology related violence courts and offices of
+government attorneys along with testimonies,
+such as reports, evidences, statements, hearings
+from the court. Out of the reviewed 15 cases, 8
+had hearings while the rest were pending. Our
+review included identifying of the type(s) of
+online violence within cyber crime, the list of
+evidence mentioned in the case file or attached,
+the relationship between the perpetrator and
+the victim, and the decision from the court (if
+available).
+We analyzed the language concerning women’s
+bodies in the policy documents and the hearings/
+decisions from a feminist lens to understand
+how 	state 	authority 	perceives 	violence
+against women. Generally the court punished
+perpetrators not for violating women’s right
+to privacy or self-autonomy, but for violating a
+patriarchal notion of ‘honor’ as prescribed by
+society, which even the court associates with
+women’s 	bodies 	and 	sexuality. Our 	analysis
+also sheds light on how women’s worth is often
+limited to their sexuality, and women are seen as
+‘victims’ whose value and dignity need protection
+from the law.
+We also referenced documents from international
+treaties and conventions in writing this report. We
+critically examined the treaties and conventions
+from a feminist lens and also compared with
+national laws in order to gauge how the national
+laws have included the international framework
+of 	human 	rights 	(specifically 	the 	right 	to
+expression, privacy and free from violence). The
+notes from the key informant interviews were
+helpful in analyzing how concerned individuals
+took on a protectionist lens in matters of online
+gender based violence as well.
+We’ve 	ordered 	the 	discussion 	on 	laws 	and
+policies based on their time of emergence and
+significance within relevant issues of digital
+rights. Also interspersed through the report
+are case analyses key informant remarks. Each
+chapter on the three human rights frameworks
+are concluded along thematic areas drawn from
+the analysis itself. We conclude the report with
+recommendations for stakeholders.
+
+-- 12 of 48 --
+
+Mapping Laws | Page 13
+
+-- 13 of 48 --
+
+Mapping Laws | Page 14
+Freedom of Expression
+13 	United Nations Human Rights Council (2016) Report of the Special Rappouter on the promotion and
+protection of freedom of opinion and expression. United Nations General Assembly. https://www.undocs.
+org/A/71/373
+14 	Sigdel.S, Aryal.T.R. & Maharajan. R. (2001). Freedom of Expression on the Internet in Nepal. Internet Society
+Nepal. https://internetsociety.org.np/wp-content/uploads/2018/05/FoE-on-Internet_Publication.pdf
+15 	United Nations Human Rights Council (2016) Report of the Special Rappouter on the promotion and
+protection of freedom of opinion and expression. United Nations General Assembly https://www.undocs.
+org/A/71/373
+Individuals being able to express their opinions
+without fear of retribution is vital in establishing
+democracy, human rights, liberty and good
+governance. The United Nations Human Rights
+Council (HRC) and the General Assembly (GA)
+have recognized freedom of expression as one
+of the essential foundations of a democratic
+society. They also emphasize the importance of
+free media to build inclusive knowledge societies
+and 	democracies 	and 	foster 	intercultural
+dialogue, peace and good governance.13
+In today’s digital era, the internet has become
+an important space to exercise one’s right to
+freedom of expression and is tied to the right
+to 	information 	and 	right 	to 	assembly 	and
+association, as guaranteed by the Universal
+Declaration of Human Rights (UDHR) and the
+International Covenant on Civil and Political
+Rights (ICCPR). People are using social media
+and online platforms to share their opinions, all
+the more valuable in contexts where they are
+underrepresented in 	mainstream 	media and
+publication.
+Alongside this profusion of internet-usage, we
+see states introducing policies to regulate the
+internet and its content. These laws are brought
+in place with the expressed intent to safeguard
+the rights of individuals online and to protect
+the national integrity and security of the state.
+However, many of these regulations have also
+been 	restricting, 	controlling, 	manipulating
+and censoring content disseminated through
+the internet without prior public debate, often
+using broad and ambiguous laws. 14 There have
+been many incidents where governments have
+disrupted the internet and telecommunications
+services and detained online journalists and
+bloggers in the name of national security or
+public order. 15 In 2019, there were a total record
+of 95 internet shutdowns in India for several
+
+-- 14 of 48 --
+
+Mapping Laws | Page 15
+political reasons, including attempts by the
+government 	to 	silence 	the 	citizen’s 	voices
+against the Citizen’s Amendment Bill.16 Asides
+from India, governments of Bangladesh, Congo,
+Egypt, Indonesia, Iran, Iraq, Sudan, Myanmar,
+and Zimbabwe also shut down the internet
+under the pretext of public safety or preventing
+the spreading of misinformation.17
+The United Nations report on the promotion and
+protection of the right to freedom of opinion and
+expression has also expressed concern regarding
+the increasing number of incidents curtailing
+freedom of expression across countries. The
+report highlighted that policies and laws against
+terrorism and other criminal activity are being
+used to undermine the media, critical voices,
+and activists. Such measures pose a threat to an
+open and secure internet.
+Freedom Forum Nepal (an organization working
+for press freedom) has listed a total 104 cases of
+press freedom violations that took place during
+April 2018 - 2019. 18 Similarly, 106 cases were
+recorded in the cyber crime unit in Kathmandu
+for their “improper social media posts” under the
+Electronic Transaction Act (ETA) 2008.19 Going
+16 	Nazmi,S. (2019, December 19).
+Why India shuts down the Internet more than any other Democracy? BBC.
+https://www.bbc.com/news/world-asia-india-50819905
+17 	Human Rights Watch. (2020). Shutting down the internet to shut down critics.
+World Report 2020. https://
+www.hrw.org/world-report/2020/country-chapters/global-5
+18 	Freedom Forum. (2019)
+Regressive laws, Mounting Violations. http://freedomforum.org.np/wp-content/
+uploads/2019/05/May-3-Report-2019.pdf
+19	
+Nepal Government’s new Information Technology bill draws battle lines against free speech. The Kathmandu
+post, 	Feb.15,2019. 	https://kathmandupost.com/national/2019/02/15/nepal-governments-new-information-
+technology-bill-draws-battle-lines-against-free-speech
+20 	Sigdel, S et al. (2018). Freedom Of Expression on the Internet in Nepal. Internet Society Nepal, 2018, pp. 23.
+21 	Incident Reports. (2016). Newspaper editor arrested.
+Nepal Monitor. https://nepalmonitor.org/reports/
+view/12356
+22 	Freedom Forum. (2020, May 14).
+Police arrested citizen for sharing image on facebook. http://
+nepalpressfreedom.org/main/issue-single/1174
+23 	Freedom Forum (2020, April 29).
+Rita Rijal: A student leader arrested for writing in social media under cyber
+crime. http://nepalpressfreedom.org/main/issue-single/1165
+further back, Nepal has had a history of the state
+sporadically blocking or filtering the Internet
+without 	a 	transparent 	mechanism, 	whether
+during the 2005 royal coup, during the 1996-
+2006 civil war, or the 2010 government order
+against explicit content. 20
+In 	contemporary 	times, 	the 	ETA 	has 	been
+frequently 	used 	to 	curb 	dissenting 	voices
+online. Arjun Thapaliya, editor of the Anukalpa
+newspaper, was arrested without a warrant for a
+comment on facebook . He was arrested under
+the ETA’s provisions.21 more recently, Toranraj
+Poudel was arrested on May 14th, 2020, for
+posting morphed photographs of politicians on
+his Facebook page, including that of the Prime
+Minister. 22 He was accused of disturbing public
+morality and spreading a hoax on social media,
+and charged under the same act. Earlier, on
+28th April, 2020, Rita Rijal, a student leader, was
+arrested under the charge of cybercrime. 23 She
+had written a Facebook post against a former
+police officer referring to his alleged kidnapping
+of a parliament member, a matter which had
+widely been in public discussion at the time.
+Asides from conflicts regarding national and
+
+-- 15 of 48 --
+
+Mapping Laws | Page 16
+partisan 	politics 	(e.g. 	citizens 	versus 	state
+authorities), 	other 	forms 	of 	expression 	are
+also targeted. In this analysis, it’s important to
+consider that freedom of expression must be
+observed through an intersectional lens; the
+expressions of minorities tend to come under the
+most scrutiny and attack. And within this, sexual
+expression 	remains 	an 	important 	dimension
+that state and non-state actors have sought
+to control. Feminist and queer expressions,
+or sexual expressions of marginalized groups
+such as sex workers and LGBTIQ communities
+24 	Constitution of Nepal. 2015. http://extwprlegs1.fao.org/docs/pdf/nep155698b.pdf
+are surveilled, regulated and restricted. Nepal
+banned pornography in 2018 and this can be
+taken as an example where the state, under the
+pretext of mitigating sexual violence among
+girls and women, curbed access to free and open
+internet. Such restrictions are linked to larger
+questions of moral policing, censorship, and
+unequal citizenship and rights.
+The following sections will discuss how Nepal’s
+legal provisions address freedom of expression,
+sexual 	expression 	of 	individuals, 	and 	online
+gender based violence.
+Legal measures and analysis
+Constitution
+The constitution of Nepal provides the right
+to freedom of expression and opinion as a
+fundamental right under article 17 (2) (a). Article
+19 of the Constitution also guarantees freedom
+of expression for the press, publication and
+broadcasting. The constitution goes on to state
+that no publication and broadcasting or printing
+of any news items, articles, editorials or other
+reading materials or audio visual materials shall
+be subjected to censorship. 24
+However, the constitution also places restrictions
+on FoE, generally in the name of protecting
+national interests.
+Electronic Transaction Act
+(ETA)
+The Electronic Transaction Act 2008, Article 47
+(1) prohibits the publication or display of any
+materials through a computer or the internet that
+“is contrary to public morality or decency” and
+“social harmony” or “spreads hate and jealousy”.
+It also tends to criminalize online expressions
+under stated pretext of deterring harm to “social
+harmony”. This act follows a blanket approach to
+address online violence and does not consider
+the question of individual’s own consent in
+producing sexual/ erotic content, and therefore
+the clauses around “obscenity” may be used to
+curtail sexual expression regardless of consent.
+Criminal Code
+The Criminal Code chapter on crime against public
+benefit, health, security, facility and morality
+of country section 121 restricts the production,
+sale, publication, promotion (through electronic
+medium), purchase, rent, display, advertising or
+keeping of “obscene” books and brochures that
+promote immorality and eroticism. This provision
+does not take into account the possibility of
+consent among individuals undertaking such an
+exchange and thus can potentially criminalize
+
+-- 16 of 48 --
+
+Mapping Laws | Page 17
+self expression and sexual expressions.
+Section 293 of the criminal code prohibits the
+listening to or recording other’s conversations
+without 	the 	permission 	of 	a 	“competent
+authority” or consent of involved persons, unless
+for any publicly made statement. Section 294 of
+the code prohibits disclosing private information
+without 	permission, 	including 	private
+information on public figures, unless compelled
+by law. While these two provisions acknowledge
+consent, they still have the potential to restrict
+FoE, and especially press freedom.
+Section 306 criminalizes defamation through
+any medium that harms the reputation of a living
+or deceased person or hurts the feelings of their
+family/relatives. However, exceptions are made
+for: any expression supported with evidence,
+or done for public good, done to “caution the
+concerned person”, or to criticize those with
+authority, or as part of an investigation. While
+this 	provision 	provides 	leeway 	for 	certain
+expressions, the clauses are vague and have the
+potential to criminalize legitimate expression,
+including sexual expression on the internet.
+Section 122 restricts showing of private parts,
+or acting ‘obscenely’ or talking ‘vulgar’ things
+in public. The ambiguity of the words such as
+‘obscene’ and ‘vulgar’ is generally extended
+to erotic content or material that has sexual
+connotations. This provision may still curtail
+freedom of sexual expression. Authorities can
+use these for moral policing both online and
+offline. Furthermore, surveillance of individuals in
+order to identify such behavior compromises the
+privacy of people, and this can adversely affect
+communities such as sex workers, transgender
+individuals, young girls and women.
+Individual Privacy Act
+Article 	15.2 	of 	Individual 	Privacy 	Act 	2018
+prohibits making any comments on the character
+of any person except when it is legally required
+to make inquiries on their character, conduct or
+behavior. This provision may be used to address
+forms of violence online such as slut-shaming
+and harassment of women and marginalized
+communities. 	However, 	“character” 	is 	a
+vague term and has gendered and political
+connotations. There is potential for this provision
+to be misused, especially in circumstances where
+the person criticized has state authority.
+Information Technology (IT)
+Bill
+There are several provisions proposed under the
+Information Technology (IT) Bill 2019 that are
+concerned with online violence and freedom of
+expression. Article 83 of the IT bill prohibits cyber
+bullying and defines it as “continually harassing,
+teasing, demeaning, discouraging, insulting, or
+scolding” someone. However it is unclear what
+frame of time constitutes “continually”.
+Article 	86 	of 	the 	bill 	prohibits 	production,
+collection, distribution, publication, exhibition,
+transmission 	or 	purchase 	of 	pornographic
+materials using any electronic system. Article 87
+of the bill prohibits anyone from using electronic
+medium to establish online relation with an
+intention 	of 	sexually 	exploiting 	or 	carrying
+out illegal activities. Within these provisions,
+the consent of the concerned persons is not
+acknowledged, 	leading 	to 	the 	possibility 	of
+consensual activity also being prosecuted. Sex
+workers also stand to be heavily affected by this
+bill.
+
+-- 17 of 48 --
+
+Mapping Laws | Page 18
+Article 88 (1) & (2) prohibits the use of electronic
+media in attacking Nepal’s sovereignty and
+national unity, bringing communal disharmony,
+inciting discrimination, or acting against public
+conduct and morality.
+Article 91 of the same bill mentions banning
+social network sites if they are not registered
+at the Department of Information Technology.
+Article 92 then goes on to make provisions
+for the arbitrary removal of content on social
+sites by the Department of Information and
+Technology on the basis of expansive terms such
+as “offensive content”.
+These 	provisions 	give 	sweeping 	powers 	to
+authorities.
+Conclusion
+The state’s policies to regulate online platforms
+have the potential to curb individual’s rights in
+digital spaces, although the policies are often
+made with the expressed intent to safeguard
+those rights in the first place. Online rights may
+be infringed in the following major areas:
+Ambiguity in the law
+The various legal restrictions on FoE in the name
+of public morality, indecency, obscenity, public
+conduct, etc are vague in meaning. These terms
+are very subjective and open to interpretation.
+The articles where these terms are used do
+not clearly define them. This ambiguity leaves
+room for those in power to define them as fits
+their interests, posing a risk to individual’s free
+expressions.
+It is important to note here that some types
+of information may be legitimately restricted
+such as: child pornography, defamation, direct
+and public incitement to commit genocide and
+advocacy of national, racial or religious hatred
+that constitutes incitement to discrimination,
+hostility or violence. However, the terms used
+in the articles are not explicitly defined as such,
+because of which there is risk of this law being
+abused to criminalize legitimate expressions.
+Giving legitimacy to restrictions
+on expression
+The articles described in the previous section
+open up the possibility of limiting and controlling
+the 	right 	to 	express. These 	restrictions 	are
+applied to acts which are often vaguely described
+as undermining sovereignty, territorial integrity,
+nationality, spreading hate and jeopardizing
+socio-cultural 	and 	geopolitical 	harmony 	of
+Nepal. These restrictions are so expansive that
+it may be possible to prosecute many kinds of
+political 	dissent. 	Given 	Nepal 	socio-political
+inequalities, it may be possible for those in power
+to misconstrue criticism of the state or of social
+discrimination as an attack on “public harmony”
+or national sovereignty.
+This blanket approach to address online violence
+makes dissenting and marginalized voices more
+vulnerable. Even talking about issues that are
+of grave concern to their own communities,
+such as state violence, disenfranchisement or
+social discrimination can carry the risk of legal
+repercussions.
+Clauses around “contempt of court” are also
+debatable, 	given 	that 	individuals 	in 	Nepal’s
+judiciary 	have 	been 	involved 	in 	various
+
+-- 18 of 48 --
+
+Mapping Laws | Page 19
+controversial cases inviting public scrutiny.
+Another 	premise 	for 	restriction 	is 	content
+that contradicts “public decency or morality”.
+Considering 	the 	sexually 	conservative 	and
+heteronormative landscape of Nepali society,
+sexual 	expressions 	by 	gender 	and 	sexual
+minorities and other groups may come under
+further scrutiny for disturbing “public decency”.
+Many of the acts also do not consider individual
+consent, meaning that acts between consenting
+adults may also end up being prosecuted upon
+the intervention of a third party.
+Activism 	surrounding 	LGBTQIA 	advocacy
+which seeks to normalize non-heteronormative
+expressions of intimacy online may also come
+under threat under such clauses.
+Arbitrary powers to authority
+The 	vague 	terminologies 	used 	in 	the 	legal
+articles provide space to misconstrue legitimate
+expressions as attacks on national and social
+unity and harmony. Interpreting what falls under
+public decency and morality, or what is an attack
+on national integrity ultimately falls on the state.
+This runs the risk of authorities interpreting them
+arbitrarily to fit their own interests.
+Moreover, any legislation restricting the right
+to freedom of expression must be applied by
+a body which is independent of any political,
+commercial, or other unwarranted influences.
+It should be done in a manner that is neither
+arbitrary nor discriminatory and with adequate
+safeguards 	against 	abuse, 	including 	the
+possibility of challenge and remedy against
+25 	Sigdel, S et al. (2018). Freedom Of Expression on the Internet in Nepal. Internet Society Nepal, 2018, pp. 5.
+26 	Kayastha, S. (2018, October 1) The problem with Nepal’s Porn Ban. The Record. https://www.recordnepal.
+com/perspective/policing-sexuality-porn-ban-in-nepal/
+potentially abusive applications. 25
+States and private actors use different methods
+to limit free expressions online. One route is
+through using criminal laws to stifle online
+expressions. 	Another 	is 	using 	tech-based
+measures to prevent access to content, such
+as by blocking and filtering. Nepal’s porn ban
+is an example. Such curtailments are often
+justified on the basis of protecting an individual’s
+reputation, 	national 	security 	or 	countering
+terrorism, safeguarding women and minorities
+from violence, but in reality are used to censor
+content that the government and other powerful
+entities do not like or agree with. These measures
+belie a reactive, quick-fix approach to social
+issues, and often stem from a protectionist lens
+and a savior complex towards the population. A
+better approach to addressing sexual violence
+would be to empower people and respect their
+sexual agency, and punish the perpetrators of
+sex crimes, rather than censoring materials on
+the internet. 26
+However, in many cases, states restrict, control,
+censor and manipulate content disseminated via
+internet without any legal basis, or on the basis
+of broad and ambiguous laws, without justifying
+the purpose of such actions; and/or in the manner
+that is unnecessary and/or disproportionate to
+achieving the intended aim. Such actions are
+incompatible 	with 	states’ 	obligations 	under
+international human rights law, and often create
+a broader “chilling effect” on the right to freedom
+of opinion and expression.
+
+-- 19 of 48 --
+
+Mapping Laws | Page 20
+Case study
+27 	Sha, S., and Quet, M. From Expression to Expulsion: Digital Public Spaces as Theatres of Operations in Nepal.
+Science, Technology and Society, 2020, pp. 386–403.
+Robert Penner, a Canadian citizen working for a technology company in Nepal,
+wrote frequent commentary on political issues on social media, including
+issues related to rights of marginalized groups in Nepal and the discriminatory
+provisions in the Nepali constitution regarding Nepali women’s right to confer
+citizenship. He was detained in custody for 26 hours in 2016 after accusations
+of “posting a provocative message on Twitter aimed at spreading social
+discord” and was deported by department of Immigration (DOI).27 State
+authorities claimed Robert Penner had been “spreading unnecessary messages
+about Nepal” on social media, but did not clarify who had made the complaint.
+Robert Penner’s deportation was the first such case of a foreign national
+being removed from the country for posts on social media. While the stances
+taken by Robert Penner were not original in themselves and merely echoed
+the existing advocacy of many minority rights and women’s rights activists in
+Nepal, his arrest and deportation led to a chilling effect in the wider activism
+community and further emboldened conservative leaning politics in Nepal.
+
+-- 20 of 48 --
+
+Mapping Laws | Page 21
+
+-- 21 of 48 --
+
+Mapping Laws | Page 22
+Privacy
+28 	Privacy International. (2017, October 23).
+What is Privacy? https://www.privacyinternational.org/explainer/56/
+what-privacy
+29 	A/HRC/40/63, pp. 4, adopted by consensus on 27 February 2019, 40th Session of the Human Rights
+Council.
+30 	Privacy International (November, 2018).
+	From Oppression to Liberation: Reclaiming the Right to
+Privacy. 	https://privacyinternational.org/sites/default/files/2018-11/From%20oppression%20to%20liberation-
+reclaiming%20the%20right%20to%20privacy.pdf
+Privacy is a phenomenon which helps us manage
+our 	boundaries 	while 	interacting 	with 	the
+outer world and protecting us from unwanted
+interference28. It is directly related to personal
+autonomy of individuals and has been established
+as an absolute right as per international human
+rights treaties. The right to privacy is guaranteed
+by Article 12 of UDHR and Article 17 of ICCPR,
+which state that there shall be “no arbitrary
+and unlawful interference” to anyone’s privacy
+and attack upon their honor. As a signatory to
+both 	these 	international 	frameworks, 	Nepal
+is obligated to protect its citizens against such
+interference to privacy. Infringement on privacy
+directly affects personal autonomy and is linked
+to other civil liberties in ICCPR including right to
+self-determination (Article 1.1), right to freedom
+of movement (Article 12), right to freedom of
+association (Article 22), the right to freedom
+of religion (Article 17), the right to freedom of
+expression (Article 19) and the right to privacy
+(Article 17).29 Nepal’s constitution also ensures
+the right to privacy of its citizens via Article 28.
+Policies around privacy tend to emphasize on the
+protection of information related to private life
+without considering gray area between what is
+considered ‘private’ and ‘public’. This ambiguity
+between what is private and what is public
+depends on who the information belongs to,
+their socio-political context and what impact the
+violation of privacy has on them.
+“When we treat the right to privacy as an absolute
+or inalienable right, we sometimes end up not able
+to grapple with the complexities and the ways
+that concept gets appropriated or abused.” 30
+We have to take this discussion beyond the public/
+private dichotomy . The law has historically seen
+“domestic matters” or “matters inside the home”
+of individuals as private affairs, and by implication
+not addressing violations within those spaces as
+under the jurisdiction of the law or worthy of
+taking action. In addition, women are usually
+asked to stay within the “private sphere”, even
+when they are homeless. Thus the laws around
+privacy might not protect women from being
+exploited and it becomes difficult to politicize the
+
+-- 22 of 48 --
+
+Mapping Laws | Page 23
+right to privacy to access justice.31
+While new digital technologies have made it
+more 	convenient 	to 	access 	information 	and
+exercise 	self 	expression, 	these 	technologies
+are also vulnerable to electronic surveillance
+and interception. States around the world are
+creating surveillance policies and practices that
+compromise citizens’ right to privacy.32 State and
+non-state actors, including business enterprises,
+have been collecting an abundance of data, and
+this collection is taking place without meaningful
+and 	informed 	consent. 	Besides 	surveillance
+systems 	actively 	compromising 	privacy 	of
+individuals in real-time, even retrospective data
+collection on individuals has the potential to be
+harmful, especially when they lose control and
+agency over information that should remain
+private. 	States 	have 	also 	been 	weakening
+encryption technologies and are limiting access
+to anonymity tools, thus threatening the security
+and confidentiality of activities online.33
+The report by Special rapporteur on Right to
+31 	Lever, A.(2005). Feminism, Democracy and Right to Privacy.
+An Internet Journal of Philosophy Vol. 9. http://
+www.minerva.mic.ul.ie/vol9/Feminism.html
+32 	United Nations Human Rights Office of the high commissioner (UNHCR). (2018). Expert workshop with
+the purpose of identifying and clarifying principles, standards and best practices regarding the promotion and
+protection of the right to privacy in the digital age, including the responsibility of business enterprises in this
+regard. {Concept Note} https://www.ohchr.org/Documents/Issues/DigitalAge/ConceptNote.pdf
+33 	OHCHR. (2018).
+The right to privacy in the digital age. https://www.ohchr.org/EN/Issues/DigitalAge/Pages/
+ReportDigitalAge.aspx
+privacy to the HRC mentions:
+“Individuals’ experience of digital technologies
+and privacy is affected by their gender, along
+with factors such as ethnicity, culture, race, age,
+social origin, wealth, economic self-sufficiency,
+education, legal and political frameworks.”
+There might be distinct concerns around privacy
+in digital spaces in comparison to that of physical
+spaces. 	However 	the 	conversations 	around
+protecting individuals’ privacy in both of these
+spaces is necessary to emphasize the value of
+protecting of human dignity. A compromised
+right to privacy has greater adverse effects on
+women, children, LGBTIQ individuals, and other
+vulnerable and marginalized communities and
+this limits the benefits they can receive out of
+digital technology. In addition, women, girls and
+marginalized communities are constantly being
+surveilled by their families, society and the state
+using social norms and practices sanctioned on
+them, and these extend into both the digital and
+the physical world.
+Legal measures and analysis
+Constitution
+The Constitution of Nepal 2015 guarantees the
+right to privacy as a fundamental right through
+article 28, which protects “the privacy of a person,
+house, property, document, correspondence, or
+information, of anyone”, however with exception
+to where provided by law.
+Along with the constitution of Nepal, there are
+several legal policies in place that cover the wider
+discourse on privacy and digital privacy.
+
+-- 23 of 48 --
+
+Mapping Laws | Page 24
+Electronic Transaction Act
+(ETA) 2008
+According to the Article 28 (1) and 38 (1) of the
+ETA, authorities can access devices, materials
+and data on citizens if they are found suspect.
+Here, what is deemed suspect and what is not
+depends 	on 	the 	authorities’ 	discretion. This
+provision places the privacy of marginalized
+communities and their rights to autonomy in a
+more vulnerable position. Article 47 of the ETA
+then touches on digital privacy and punishes
+anyone for publishing or displaying any materials
+through electronic media that may be deemed to
+cross certain restrictions, such a being “contrary
+to public morality and decency” or spreading
+hateful content that could jeopardize “social
+harmony”. Expressions of a sexual nature carried
+out through electronic media, but privately and
+in consent with another person, or even just
+storing and recording of any content that might
+be deemed ‘obscene’ still run the risk of being
+criminalized through the ETA.
+Criminal Code 2017
+The Criminal Code 2017 has many provisions that
+are related to privacy of individuals and groups.
+Section 	293 	prohibits 	listening 	or 	recording
+of others’ conversations unless authorized or
+consented to. However any statement that is
+publicly made can be recorded. Section 294
+prohibits the disclosure of private information
+of anyone without their permission (including
+private information on public figures) unless
+compelled by law. Section 298 of the Code also
+restricts one from obtaining and transferring
+any 	notice, 	information 	or 	correspondence
+through electronic means, or breaching anyone’s
+privacy, unless authorized. Given the prevalent
+discriminations in the bureaucratic and legal
+systems in Nepal, this law can be further used to
+compromise the privacy of activists, journalists
+and 	marginalized 	communities, 	and 	could
+increase state surveillance on these groups.
+Section 295 prohibits photographing a person
+outside of a public space or disfiguring their
+photographs without their consent. While this
+provision can be useful in prosecuting attempts
+to 	libel 	or 	harass 	using 	photos 	and 	photo
+manipulation, it may also be used to restrict
+artistic freedom, and especially in examples of
+satire towards public figures like political leaders.
+Privacy Act 2018
+The Privacy Act 2018 is enacted to ensure the
+right to privacy relating to body, residence,
+property, 	document, 	data, 	correspondence
+and character of every person, to manage the
+protection and safe use of personal information
+remained in any public body or institution, and
+to prevent encroachment on the privacy of every
+person.
+However, there are a few caveats. Section 3.2
+of the Act states that anyone’s privacy shall be
+inviolable without the consent of the person
+concerned, except for health treatment or relief
+work.
+After the 2020 pandemic, there were incidents
+where information about COVID-19 patients and
+international travelers had been shared online
+under the rationale that it was an emergency
+scenario. 	Individuals, 	especially 	people 	from
+marginalized communities, had to face an added
+layer of discrimination and stigma. For example,
+Muslim communities in Janakpur were targeted
+with hate speech, death threats and online abuse
+because of misinformation shared online wrongly
+
+-- 24 of 48 --
+
+Mapping Laws | Page 25
+accusing them of being a spreader group. It is
+important to maintain the privacy of individuals
+and groups even during the emergency cases or
+health examinations.
+Similarly, section 4.2 takes the stance that private
+matters between a heterosexual married couple
+should be inviolable except where necessary in
+the context of any legal case running between
+the husband and wife. This section considers
+matters between husband and wife as a “private
+affair” by default, and this privileged secluding of
+married heterosexual relations risk making issues
+of intimate partner violence or abuse being all
+the more difficult to expose and prosecute.
+Section 6 of the Act is related to privacy and
+explicitly 	mentions 	that 	matters 	relating 	to
+reproductive health and pregnancy of every
+woman shall be inviolable and shall not be given
+to anyone or made public without her consent.
+However, 	such 	matters 	can 	be 	discussed
+between the concerned specialists during the
+health treatment, and if the person is under the
+age of eighteen years or of ‘unsound mind’ it can
+be provided to the family or his/her guardian.
+These loopholes can however, risk the agency
+of 	the 	person 	concerned 	and 	create 	more
+vulnerabilities.
+Section 12.6 allows authorized officials to make
+inquiries into issues such as age, qualification,
+character, sexuality, disability of any person,
+and the concerned person must oblige as per
+this law. The compulsion of providing such
+details whenever an authority demands (rather
+than specifying what cases these details must
+be furnished for) infringes on the dignity of
+the person, and is also against principle of the
+right to privacy. Similarly, Section 15(2) of the
+Act mentions that no person shall make any
+comments on the character of any other person
+except as required during a legal inquiry. It
+should be mentioned that the word “character”
+here is vague; in a Nepali context it is often used
+synonymous with “virtue” to sanction unspoken
+social-cultural norms.
+Section 	16.1 	prohibits 	taking 	photographs
+without consent, with the intention to damage
+a 	person’s 	character 	or 	prestige, 	or 	the
+manipulation of photos with intent to defame,
+or the publicizing of any such materials. Similarly
+Section 16.3 prohibits publishing, sharing and
+trading pictures taken without consent, with
+the intention to annoy, distress or take any
+improper 	advantage, 	or 	gain 	profit. 	These
+provisions can be helpful to protect women,
+children and marginalized communities against
+online violence such as photo-morphing and
+non-consensual sharing of intimate images and
+videos. However they could also be used to
+curtail press freedom and artistic expression,
+protecting those in power.
+Information Technology Bill
+2019
+The 	Information 	technology 	bill 	has 	been
+drafted and is in the process of being sanctioned
+to regulate and address the concerns related
+to many technology related matters including
+e-commerce, 	tech-innovation, 	cyber 	security
+and cyber bullying. The Bill is meant to replace
+the Electronic Transaction Act (ETA) of 2008.
+Section 76.1 of the bill prohibits acquiring any
+individual’s personal information, notice and
+communication through electronic means unless
+provided by law. Here the section isn’t clear if
+the restriction applies to institutions and private
+companies or just to the citizens. Section 76.2
+
+-- 25 of 48 --
+
+Mapping Laws | Page 26
+protects privacy of conversation between two
+or more parties held through electronic medium
+unless given the consent to record, listen or
+decrypt.
+The bill is silent in terms of protection of data that
+already exist in public institutions or those that
+would be collected. It is also silent on matters
+related to data privacy when private companies
+have access to the data from public institutions.
+Conclusion
+A recurring theme across most of the laws cited
+here is that many of them have a dual framing:
+the benefits of many of these laws appear to
+come with strings attached. The laws uphold
+privacy while potentially infringing on freedom to
+express. While they have aspects that victims of
+online violence can use to seek justice, additional
+clauses have the potential to be misused for
+restricting civil liberties. Similarly, certain laws
+only provide the semblance of securing privacy,
+when in reality they come with loopholes that
+allow for arbitrary infringement of privacy. The
+broad areas of discussion are identified below:
+Sweeping powers to the government
+The 	laws 	in 	this 	section 	shows 	how 	the
+government 	and 	authorities 	have 	power 	to
+surveil and monitor behavior of citizens and
+search their devices if they are found to be
+‘suspicious’. Those in power can use this law to
+violate the privacy of critics and stifle dissent.
+Groups such as activists and journalists could be
+at further risk of surveillance.
+Problems gathering evidence
+The law prohibits recording of communication
+which could potentially make it difficult for victims
+of violence to gather evidence. Perpetrators are
+unlikely to give consent to victims’ to record
+communications between them. Where victims
+are harassed through online communication,
+this law may make it possible to criminalize the
+victims themselves for recording evidence.
+Consent loopholes
+For minors, or for women where they may
+be deemed of “unsound mind” or unable to
+give consent, this law allows information on
+their 	reproductive 	health 	and 	pregnancy 	to
+be retrieved by their husband or family, which
+may put them at risk of violence. These laws
+by implication trivialize the decision making
+capacity of minors or those with intellectual
+disabilities with regards to their own bodies, and
+can curb their right to privacy as well.
+Certain laws around privacy also assume there
+cannot be anything private between persons in a
+heterosexual marital relationship, assuming that
+family and guardians are always protective to the
+girls and women in the family. Such a narrative is
+flawed, as statistics routinely show that partners
+and families themselves also commit many
+cases of domestic violence. In Nepal’s patriarchal
+context, the social institutions of marriage and
+family may actually protect the abusers instead
+of the victims.
+It is also women’s reproductive health that is
+put under scrutiny. There are no such provisions
+that apply to men. Further, the law has an
+ageist and ableist subtext; by not considering
+the possibility of consent for certain groups, it
+
+-- 26 of 48 --
+
+Mapping Laws | Page 27
+fails to respect the autonomy of individuals to
+understand their own bodies. Decisions for them
+are made by others who are arbitrarily deemed
+to have guardianship. These suggest the state
+is functioning under a protectionist approach
+rather than a rights-based model.
+Through the use of moralized terms such as
+“obscenity” or “immorality”, these laws run
+the 	risk 	of 	criminalizing 	sexual 	expression,
+even when the material is made through an
+individual’s own consent. By not acknowledging
+consent, the laws create a blanket rule that can
+be misused to punish victims if their privacy
+happens to be violated online and their private
+expressions exposed. The laws may harm the
+victim instead of punishing the perpetrator.
+These circumstances could also make victims
+less willing to come forward to expose their
+abuser or undertake litigation.
+Ambiguity
+The 	laws 	routinely 	contain 	terms 	such 	as
+“obscenity”, 	“vulgar”, 	“public 	morality”,
+“decency”, 	“social 	harmony”, 	“integrity”,
+“national 	sovereignty”, 	“public 	conduct”,
+“suspicious”, 	“intention”, 	which 	are 	left
+undefined within the law. This ambiguity gives
+those in power ample space for interpretation
+when using these laws against marginalized
+people, further putting them at risk and curbing
+dissent. Many of these terms are also morally
+loaded and promote moral policing rather than
+impartial prosecution of crime.
+The term “character” mentioned in the policies
+is also vague and in Nepali is generally used to
+question and control the sexuality of women and
+queer persons.
+Case study
+Case Study (002)
+A sex video of victim “Di” (pseudonym) and defendant Pravin Prajapati
+was leaked by the defendant without the consent of Di. The video
+showed sexual activities between them that had happened at different
+times. The victim claimed they had been in a relationship for a certain
+period of time and that they had a sexual relationship with consent then,
+but she did not know the defendant was video recording the activities.
+The defendant threatened to leak the video after she decided to end the
+relationship; further, the defendant even blackmailed her for money.
+When the victim ignored the threat, , the defendant sent a copy of CD
+with the video to the victim’s brother. The video was also leaked through
+other communication mediums and shared widely.
+The court sentenced the defendant to 6 months imprisonment and Rs
+10,000 fine.
+
+-- 27 of 48 --
+
+Mapping Laws | Page 28
+
+-- 28 of 48 --
+
+Mapping Laws | Page 29
+Freedom from Violence
+34 	Crime Investigation Department.Women, Children and Senior Citizen Directorate. Retrieved from https://
+cid.nepalpolice.gov.np/index.php/cid-wings/women-children-service-directorate
+Gender based violence, including sexual and
+domestic violence, is a widespread problem
+in Nepal. A total of 11738 cases of domestic
+violence were recorded for the fiscal year 2076/77
+at 	the 	Crime 	Investigation 	Department 	of
+Nepal Police. 34 These numbers only account for
+recorded cases; in many instances the cases are
+not registered at all. Nepal’s deep-set patriarchy
+is 	evident 	in 	the 	lack 	of 	accountability 	for
+perpetrators of such violence and lack of support
+for victims to come forward.
+An array of factors— cultural, economic and
+religious, 	perpetuate 	patriarchy 	in 	Nepal.
+Women’s dependence is also reinforced by the
+Nepali 	state 	through 	embedded 	customary
+practices within laws, in which (cis-het) men hold
+the power to inherit and control most property,
+take decisions for families with the concomitant
+responsibility to support parents, wives and
+children.
+The Convention on the Elimination of All Forms
+of 	Discrimination 	against 	Women 	(CEDAW)
+defines violence against women as: “violence
+directed against a woman because she is a woman
+or which affects a woman disproportionately.
+It includes physical, mental or sexual harm or
+suffering, threats of such acts, coercion and other
+deprivations of liberty.”
+Gender based violence exists within the digital
+paradigm 	as 	well, 	and 	is 	spreading 	online
+alongside the expansion of the internet and
+technology. The 	report 	by 	the 	UN 	Special
+Rapporteur on Online Violence Against Women
+and Girls to the HRC acknowledges the role of
+Information 	and 	Communication Technology
+(ICT) 	in 	the 	promotion 	and 	protection 	of
+women’s right to live a life free of violence,
+have access to information, have freedom of
+expression, have the right to privacy, and so on.
+However, the report also warns against potential
+harms and violence against women and girls on
+online platforms. This violence is gendered, and
+its perpetuation of negative gender stereotypes
+results in victims facing social isolation, self
+limitation with regards to online presence, as
+well as their families placing restrictions on their
+mobility.
+Online violence with its mental and psychological
+harms could also bring physical and economic
+harm. Online threats could become reality and
+bring unwanted attention into the private and
+personal lives of the victims, for example if their
+intimate pictures are published on websites
+without consent. There is also the prospect of job
+loss due to mental trauma from online violence,
+or even victims refraining from applying to
+
+-- 29 of 48 --
+
+Mapping Laws | Page 30
+jobs in the first place due to feelings of shame
+associated with such incidents.
+The Cyber Crime Unit of the Crime Division at
+the Metropolitan Police of Nepal records that in
+more than 90% of the registered cases of online
+violence, the victims are women between the
+age of 16-25. 35 The authority also stated that
+only around half of the cases actually come into
+contact with the unit. Furthermore, the Cyber-
+crime Unit’s own stance on the matter appeared
+to trivialize the harm done by online violence;
+they stated that they attempted to mitigate
+such cases when they received them, rather than
+push for prosecution, as their aim “[was] not to
+create more criminals but to minimize the crime
+35 	Interview with cyber crime unit, crime division at Metropolitan Police of Nepal
+36 	Body & Data. (2020).
+EROTICS South Asia Regional Monitoring Survey: Nepal Country Report. (https://files.
+bodyanddata.org/nextcloud/index.php/s/jsnQBzfGyDso4Kj
+rates”.
+In a recent quantitative study conducted by
+Body & Data among 196 individuals, 86% of
+the respondents have had experienced online
+violence of some sort. The type of violence that
+was most commonly mentioned was receiving
+unwanted sexually explicit messages (52%), the
+second highest experience (46%) was of abusive
+comments, 45% was for name calling, 39% had
+experienced hate speech on the Internet, and 36%
+had experienced abuse and/or shaming a woman
+for expressing views that are not normative, for
+disagreeing with people and also for refusing
+sexual advances, while 13% had received direct
+threats of physical or sexual violence. 36
+Legal Measures and analysis
+Constitution
+According to Article 21 of the constitution of
+Nepal, victims of any crime have the right to
+information on their case and the right to justice,
+rehabilitation and compensation. Article 38 and
+39 of the constitution criminalize any physical,
+mental, sexual, psychological or any other kind
+of violence against women and minors, or any
+kind of oppression based on religious, social
+and cultural traditions. Such an act is punishable
+by law and the victims have the right to be
+compensated.
+As online violence can cause direct mental,
+psycho-social and sexual harm and in some cases
+physical harm, these laws in the constitution can
+be used to establish the fact that online violence
+is a type of violence.
+Electronic Transaction Act
+Electronic Transaction Act 	2008, 	section 	46
+mentions 	that 	destroying 	or 	damaging 	any
+information on any computer, causing it to
+diminish in value or utility, or causing any
+person to carry out such an act, with ill intent, is
+punishable by law. Article 47 of the Act mentions
+that 	publishing 	or 	displaying 	any 	materials
+through electronic media that is contrary to
+public morality, decency, or spreads hate or
+jealousy, 	or 	jeopardizes 	social 	harmony 	is
+punishable.
+The article prohibits bullying, teasing, insults
+or immoral activities against women through
+
+-- 30 of 48 --
+
+Mapping Laws | Page 31
+electronic media, along with publishing and
+displaying material that “spreads hatred”. This
+additional clause addressing violence against
+women was added after the amendment to the
+original text of the act in 2018, using the Act to
+Amend Some Nepal Acts for Maintaining Gender
+Equality.
+This is the only act which explicitly describes
+online violence and criminalizes it in Nepal.
+However this Act does not address all forms of
+online violence; it covers the issues of trolling,
+bullying, 	harassment, 	and 	sharing 	private
+images, but it does not address violence such as
+impersonation, doxing, sextortion etc. Moreover,
+it has the potential to restrict sexual expression
+online.
+Domestic Violence (Offense &
+Punishment) Act
+Domestic 	Violence 	(Offense 	& 	Punishment)
+Act 2009 is the only act that has been made to
+address domestic violence against individuals.
+The 	preamble 	mentions 	its 	purpose 	as 	an
+attempt to assure dignified and secured life of
+any individual by preventing, controlling and
+criminalizing domestic violence and protecting
+and providing justice to the victims.
+Domestic Violence 	(Crime 	and 	Punishment)
+Act defines domestic violence as “any form of
+physical, mental, sexual and economic harm
+perpetrated by a person to a person with whom
+he/she has a family relationship and this includes
+any acts of reprimand or emotional harm.” This
+act defines domestic violence as mental and
+emotional harm as well i.e. going beyond purely
+physical definitions of violence. This suggests
+it can be used to prosecute online violence.
+However, it should be noted that to date, no
+court cases have been successfully prosecuted
+under such a non-physical clause alone.
+Sexual Harassment at Workplace
+Act
+Sexual Harassment at workplace Act 2014, 4(a)
+has defined sexual violence against individuals at
+a “work place” defined to include any place used
+by:
+(a) government entities,
+(b) entities owned (fully or partly) by
+government,
+(c) corporate bodies or institutions established in
+accordance with the prevailing laws; and
+(d) any firm, institution or corporate body
+registered or licensed to carry out any business,
+trade, or provide services (together the
+“Entities”),
+in the course of conducting their business.
+The Act criminalizes physical contact, showing or
+displaying of pornographic material, expressing
+sexual motives by way of written, verbal, or non-
+verbal means, demand or proposal for sexual
+favors; and flirting or harassing with sexual
+motive by someone in power. It states that
+using or displaying obscene or sexual contents
+or expressing obscene thoughts by speaking,
+writing, or through body language is a form
+of violence. Hence we can understand this to
+indirectly include online space and platforms.
+Criminal Code
+Section 122 of Criminal Code of Nepal restricts
+showing 	private 	parts 	(unless 	for 	medical
+treatment) or acting obscenely or talking vulgarly
+in public. Showing one’s genitals to another
+party without their consent is punishable and the
+law is no different in addressing online or offline
+
+-- 31 of 48 --
+
+Mapping Laws | Page 32
+violence. However, acting “obscene” or “vulgar”
+is subjective and open to interpretation; those
+in power can misconstrue sexual expression
+into forms of violence and make it punishable,
+especially for marginalized demographics.
+Section 224, Chapter on Rape defines sexual
+harassment as the act of touching or trying to
+touch others’ private parts without consent or
+due intention of rape; undressing or trying to
+undress, or directing others towards private
+space, making them touch their sexual organs, or
+communicating obscene issues in verbal, written
+or any other form. As before, the concept of
+obscene communication is subjective and could
+be misused to curb one’s sexual expression.
+Similarly, Section 300 of the same prohibits
+threats, 	harassment, 	or 	improper 	behavior
+to harm or defame others through electronic
+media. Similarly, Section 305 criminalizes slander
+through verbal or written form that intends to
+undermine another person or their reputation.
+Section 306 criminalizes defamation through
+any medium, that harms the reputation of any
+living or deceased person or hurts the feelings of
+their family or relatives. However, exceptions are
+made for any expression done with evidence, for
+public good, to caution the concerned person,
+to criticize those with authority, or as part of an
+investigation.
+Section 295 has criminalized taking or morphing
+pictures without consent. However, capturing
+a person’s picture while taking pictures at any
+public space is allowed. However, the law here
+has not defined what counts as a public place.
+Individual Privacy Act
+Individual 	Privacy 	Act 	2018, 	16.1 	prohibits
+photography without consent done to damage
+a 	person’s 	character 	or 	prestige, 	or 	photo
+manipulation with intent to defame, or the
+publicizing of such materials. Section 16.3 of
+the act also prohibits publishing, sharing and
+trading pictures taken without consent, with the
+intention to annoy, distress or take any improper
+advantage, or gain profit. These provisions, while
+intended to safeguard from possible violence,
+also has the potential to be misused to prosecute
+satire or criticism (such as meme, sketches etc)
+made at people in power; such expressions are
+also a form of free speech from the public.
+Information Technology Bill
+In Section 83 of the Information Technology (IT)
+Bill 2019, cyberbullying is defined as continually
+harassing, teasing, demeaning, discouraging,
+insulting, or scolding someone. However it is
+unclear how many attempts of cyberbullying
+would be regarded as “continuous” .
+Section 86 of the IT bill states that production,
+collection, distribution, publication, exhibition,
+transmission or purchase/sale of pornographic
+materials is punishable. While the law was made
+under the premise of safeguarding women and
+minorities from online violence, the lack of
+acknowledgment regarding the consent backfire
+on victims even if their materials are created and
+published with consent.
+Conclusion
+Individuals 	and 	communities 	are 	trolled, 	harassed, threatened, ridiculed or made subject
+
+-- 32 of 48 --
+
+Mapping Laws | Page 33
+of hate speech based on their gender and
+sexuality. 37 However, violence against women on
+online platforms is not explicitly recognized in our
+laws in the same way as violence against women
+in offline spaces and interactions. Acts such as
+the Domestic Violence Offense and Punishment
+Act 	and 	Sexual 	Harassment 	Prevention 	at
+Workplace Act were made to address offline
+violence first and foremost. However, due to the
+way these laws define violence, they it’s possible
+to apply them to address online violence too. If
+these laws are implemented effectively, we do
+not require separate sets of laws for online and
+offline violence. The ETA on the other hand,
+is the only act that explicitly mentions online
+violence. However, the provisions across ETA are
+insufficient and do not address all forms of online
+violence, and hence need to be amended.
+Moreover, various loopholes and ambiguities in
+the laws could punish the victims instead. The
+problems present in laws can be summarized as:
+Ambiguity:
+Words used frequently in the laws, such as
+‘obscenity’, ‘vulgarity’, ‘indecency’ or ‘improper
+behavior’, are subjective and ambiguous. Given
+our 	heteronormative 	patriarchal 	structures,
+sexuality 	and 	sexual 	expressions 	of 	women
+or queer people are regarded as deviant and
+therefore more likely to have such labels applied
+on them. These laws have the potential to
+curb sexual expression online. Even the courts’
+decisions regarding online violence are based
+on patriarchal narratives that women’s sexuality
+has to do something with their dignity or honor.
+37 	Kee. J.S & Jaafar. J.
+Narrating and challenging gender norms on social media in Asia. Oxfam. https://www.
+scrible.com/view/source/AMQA041KH2440J3G3043GBR08A682K23?viewer=download
+In the case studies collected (Case no. 002 and
+007), where sexual content was shared online
+without consent, infringing on the dignity and
+right to privacy of the victim, the perpetrators
+were punished by the court for attacking the
+‘honor,’ ‘dignity’ and ‘reputation’ of the women,
+rather than violating their privacy and right to
+a dignified life as an individual granted by the
+constitution 	and 	human 	rights 	frameworks.
+Looking at the violation of rights of women or
+marginalized communities through the lens of
+morality is reductive when one is to seek justice.
+There is also the question of what kind of victims
+are seen as ‘dignified’ and having a ‘reputation’—
+a concept that is exclusionary to begin with.
+Problems in gathering evidence
+and proving intent:
+Certain provisions of ETA, Criminal code and IT
+bill mention that the intentional action of the
+perpetrator that harms the victim is a crime and
+hence punishable by law. The law is unclear on
+how to prove intent. The burden of proving intent
+is generally placed on victims. On the other
+hand, the intention of a person is hard to prove
+as they can claim that the harm was unintended.
+Perpetrators can go unpunished due to such
+loopholes.
+Missing consent
+One 	of 	the 	major 	flaws 	within 	these 	laws
+is the absence of consent. The law is made
+with 	a 	blanket 	approach 	which 	overlooks
+consent between individuals engaged in online
+communication. 	Any 	sexual 	content 	shared
+
+-- 33 of 48 --
+
+Mapping Laws | Page 34
+between individuals, even with consent, can still
+fall under this broad umbrella of obscene and
+immoral activity. The law doesn’t acknowledge
+the agency and autonomy of individuals over
+their own bodies and instead can criminalize
+their sexual expression online.
+Potential backfire on victims
+The prevalence of victim blaming after the
+occurrence of online violence is another obstacle
+to victims receiving justice.
+“In most of the cybercrime cases, if the people
+were in a relationship, the judge questions the girl
+(victim) why she ‘betrayed’ him (perpetrator) by
+leaving him and framing this as being the reason
+why the perpetrator committed those crimes.” (as
+stated by Government Attorney)
+Victims could be further punished where laws
+impose 	blanket 	rules 	regardless 	of 	consent
+between individuals.
+Case studies
+Case 003: The victim and defendant had been casual friends. The defendant
+created a fake ID online in the victim’s name and posted libelous messages
+about her. The defendant also threatened to rape victim’s mother and sister
+if she went to the police. The court sentenced him to a year’s imprisonment
+and Rs 5000 fine. The victim was awarded compensation of Rs 75,000.
+When the case wen to the Appellate court, the decision of the District Court
+was upheld, with the addition that the mobile phone of the accused was
+confiscated.
+Case 007: The defendant and victim were husband and wife. The defendant
+made a fake profile of the victim and posted libelous material. The court
+found the defendant guilty as per Section 47 of the ETA and defendant was
+fined Rs. 2000. The Appellate court upheld this decision of the District Court.
+Case 008: The victim was sent unsolicited pictures by the perpetrator. During
+the hearing of the case, neither the victim nor her lawyers could determine
+or present the evidence to prove the intention of harm or the gravity of harm
+caused on the victim. The perpetrator was imprisoned for 21 days. The victim
+was also denied compensation on the grounds that the victim’s side did not
+gather proof of harm caused to the victim.
+
+-- 34 of 48 --
+
+Mapping Laws | Page 35
+
+-- 35 of 48 --
+
+Mapping Laws | Page 36
+Conclusion
+38 	Neupane, Maniram (Government Attorney). As stated during a personal interview with Body & Data.
+While Nepal has only a few provisions that
+explicitly address some forms of online violence,
+there are sections 	within 	various laws that
+encompass 	more 	abstract 	and 	non-physical
+dimensions of violence, which victims of online
+violence can use to seek justice. There is scope to
+address online violence within Nepal’s existing
+legal framework without the need to formulate
+another set of laws specifically for it. However,
+there are caveats to the laws that exist: many laws
+are ambiguous, or criminalize sexual expression,
+or have the potential to curb free speech, all of
+which warrant an amendment in the laws. The
+cases we reviewed also show that these laws are
+not properly implemented.
+Legal interventions alone are never sufficient to
+secure women’s right to live free of violence, as
+evidenced by the number of daily attacks online
+that women and marginalized communities face.
+Legal protection that doesn’t take into account
+caste, class, sexuality, gender, religion and other
+factors will always fall short of delivering justice
+to communities facing these intersections.
+“Justice is not mathematics and one cannot write
+down how much punishment and compensation
+might be appropriate for a certain crime. The main
+basis for the compensation is the loss suffered by
+the victim but unfortunately there is no device
+to measure the mental and psychological harm
+suffered by the victim.”38 (Government Attorney)
+Our general understanding of violence is also
+centered around the physical and mental harm on
+the victims; violence is less often conceptualized
+as the deprivation of someone’s human rights.
+In most discussions of gender based violence,
+people 	tend 	to 	have 	a 	solution 	oriented
+conversation and try to direct it through a legal
+perspective instead of looking beyond to the
+entire socio-cultural and economic inequalities
+happening against women and marginalized
+communities.
+Laws around gender based violence are often
+ambiguous and made from a protectionist lens.
+Nepali society also places emphasis on ‘morality’
+and ‘decency’ as the basis to criminalize any act.
+The legal sanctions are focused on the act alone
+and do not take into consideration consent and
+boundaries within which the act taking place.
+The existing laws excludes the agency and
+autonomy of individuals and tries to reinforce
+a monolithic idea of what it is to be a Nepali
+citizen. The ambiguity in the laws also provides
+asymmetrical power to decision makers in the
+justice system, making rights holders further
+vulnerable.
+Therefore, 	the 	laws 	around 	gender 	based
+violence 	need 	reform. 	Existing 	loopholes 	in
+
+-- 36 of 48 --
+
+Mapping Laws | Page 37
+the laws that do not serve the benefit of rights
+holders and which instead could criminalize their
+partaking of those rights should be amended.
+The protectionist nature of laws around women
+and girls also does further harm because they
+assume women and girls to have no agency and
+autonomy. The laws need to be inclusive of the
+idea of individual’s agency and take into account
+consent and boundaries.
+The instruments of universal human rights may
+39 	Interview note. May 2018
+appear attractive in a scenario where national
+laws are not ideal, but they too are themselves
+not without flaws. The question remains as
+to 	how 	useful 	international 	human 	rights
+treaties are for women in poor countries, or
+women from marginalized communities; while
+the instruments apply a universalization and
+simplification of gender justice narratives, they
+disregard 	national 	level 	geo-politics, 	gender
+politics and socio-economic and cultural realities.
+Problems within the existing justice system
+Legal measures remain generally interpreted
+along the lines of privilege in Nepali society,
+making it challenging for those without access
+to have justice. Further, mediation between the
+victim and perpetrator is seen as the first step
+towards ‘resolving’ the problem, rather than
+addressing the needs of the victim. The police
+also pressurize people to negotiate and arrive at
+a settlement, and generally this entails victims
+being either silenced or receiving an unfair
+resolution.
+“We emphasized that they (the victim) should not
+file the case, as the main reason of the law is not to
+produce criminals but to minimize such crimes. So
+we do counseling and make them (the perpetrator)
+say they wouldn’t repeat the mistake again. We
+focus on reconciliation.” (Representative, Cyber
+Crime Unit, Teku, Kathmandu) 39
+Victims are further exposed to trauma when
+they go through registering their case because
+there is no privacy (eg. no separate room) and
+they have to share details about the incident in
+front of many people. To report a cyber crime
+case, the victim needs to present evidence to
+the Cyber Crime Unit while filing the case, e.g.,
+nude photos that are leaked, and the unit keeps
+records of the evidence on computers and in
+paper folders. During our interview with the
+Cyber Crime Unit representative, our researcher
+noticed that the folders with evidence were
+kept in a drawer without a locker. On top of this,
+the unit’s office room was inside a temporary
+tent at the time of the interview as they didn’t
+have a proper office. The tent was also a shared
+working space for both the Cyber Crime Unit and
+the Organized Crime Unit. Hence, there was no
+guarantee of privacy for the evidence collected
+from victims, and neither was the physical setup
+of the department one that would reassure
+victims coming in to file a case.
+The statue of limitations is another barrier
+preventing some victims from accessing justice.
+We observed that the statue of limitations varied
+from 3 months to 1 year depending on the nature
+of the crime. The limitation is the same for various
+offenses regardless of the victim’s background
+or context. For eg. the complaint should be
+
+-- 37 of 48 --
+
+Mapping Laws | Page 38
+filed within 90 days for domestic violence, or
+sexual harassment at the workplace, or breach
+of privacy, or defamation, or slander. Advocate
+Subin Mulmi, in a personal interview with Body
+& Data, stated that such statute of limitations
+are based on the provision and principles of
+evidence law in which time limitations are fixed
+so that the complaints are filed before evidences
+are destroyed or damaged. However, he believes
+such limitations could restrain the victims from
+filing the complaint if the victims have gone
+through psychological harms and are not able to
+take action within the time limit.
+The trauma caused by such violence is not
+recognized by the law when it comes to setting
+the statute of limitations. The civil code has
+certain conditions where the victim is given
+a chance to file the complaint after the time
+limit but only in the event of natural calamities,
+accident, pregnancy, etc and this doesn’t cover
+many 	possible 	psychological 	conditions 	of
+the victim. By implication, lawmakers are not
+acknowledging such psychological trauma is
+real and could hinder victim’s from acquiring
+justice. Asides from logistical challenges, we
+encountered justice system authorities’ own
+socio-cultural biases. During interviews, various
+representatives had a common refrain of how
+national laws benefit women and are victimizing
+men, as per their perception.
+“Women have many laws protecting them, thus
+male could be victim of violence.” (‘ketako peeda
+dekhera afai lai maya lagcha’) (representative,
+Cyber Crime Unit, Teku, Kathmandu) 40
+“I always respect females and most of my
+40 	Interview note. May 2018
+41 	Interview note. June 2018
+42 	Interview note. June 2018
+colleagues are also feminists and I have also taken
+CEDAW training but I think there are too many
+acts protecting women. In this kind of situation
+how can a man defend?” (A senior lawyer) 41
+Such 	stances 	perpetuate 	gender 	binaries
+and thereby limit our understanding of the
+spectrum of people and their access to justice.
+Furthermore, by taking the concept of legal
+provisions as a zero sum game (i.e. by assuming
+more legal securities for women means less for
+men), these notions make it more difficult for
+victims to access justice. Rampant victim blaming
+and moral policing by those holding power in the
+justice system prevents victims from making full
+use of the legal provisions available to them.
+“Most people in the justice system are sensitive, but
+due to lack of proper acts and with discretionary
+power to the judge, the justice system is weak.”
+(Government Attorney) 42
+“Most of the cases (of online violence) are of the
+former partners who share their (intimate) videos,
+photos and later when they are separated then
+those photos or videos are misused. …. Why do
+people need to make such videos? These factors
+may affect the decision of the court, and the
+judge will assume that when a girl herself sends
+her naked pictures then she must have consent.”
+(Government Attorney)
+The idea of the ‘genuine victim’ also presents
+a hurdle; if the victim does not fit into the
+stereotypical notions of who is an innocent
+victim, then it becomes difficult for them to
+receive protection from the law.
+“Mostly people sympathize with the innocent
+
+-- 38 of 48 --
+
+Mapping Laws | Page 39
+women from rural areas. But still people will judge
+the character of the girl (victim) insensitively.
+Cases are not always decided according to the
+43 	Interview note. June 2018
+gravity of the case but according to the position
+of the victim.” (Government Attorney) 43
+Analysis of reviewed cases
+Upon analyzing the cases gathered from the
+cyber bureau and relevant courts, we can see
+that a high number of victims are women,
+and victimized mostly by men who are either
+current 	or 	were 	previous 	intimate 	partners,
+friends, 	colleagues, 	an 	acquaintance, 	or
+strangers who were encountered through social
+networkings. The online violence took the form
+of non-consensual sharing of images or videos,
+cyber 	stalking, 	identity 	theft, 	doxing, 	and
+blackmailing, among others. The perpetrators
+generally attacked the bodily autonomy and
+dignity of the victims/survivors and violated their
+privacy. General Nepali society ties the concept
+of women’s shame and dignity to their sexuality
+and hence perpetrators, usually men, attacked
+women’s sexuality as an easy target.
+The authorities within the legal system are
+guided by patriarchal values, and the system
+is not friendly to victims who are often women
+or 	gender 	non-conforming. 	Perpetrators 	are
+motivated to keep attacking the sexuality of
+vulnerable groups as they know the system is
+unlikely to hold them accountable. The decisions
+of courts on these cases also tells us a lot about
+the nature of our justice system. One of the
+loopholes we analyzed is the burden of proving
+intent or gathering evidence being placed on
+the victim; this is not a victim-friendly approach
+and rather supports the status quo of powerful
+perpetrators. Meanwhile, even when decisions
+are made in favor of women victims, emphasis
+is placed on the ‘honor’ of the women, instead
+of the fact that such actions are a violation of
+their right to privacy, bodily autonomy and right
+to dignified life. Technical incompetence was
+also apparent on the part of the authorities, for
+example in cases where they were confiscating
+computers 	instead 	of 	other 	devices 	of 	the
+perpetrators, whereas the harassment had been
+done through mobile phones.
+Litigation 	for 	online 	violence 	resulting 	in
+compensation for the victims is rare, and the
+punishment for perpetrators is also very low
+compared to other forms of violence. The ETA
+which directly addresses online violence, was
+brought up almost two decades ago and this
+could be why the amount of compensation it sets
+doesn’t seem comparable to today’s standards.
+Of course, greater punishment doesn’t entail less
+crime and more compensation will not lessen
+the harm caused, however, the law’s mismatch
+in keeping with current times needs to be taken
+into account.
+It is also important to consider that the provisions
+and punishments for the same crime on different
+platforms i.e. online vs offline are different.
+The online related offenses actually have more
+punishment and compensation upto 1 lakh and
+5 years of imprisonment. While for offline ones,
+it is only upto 10 thousands and one year of
+imprisonment. There is no clarity as to why this
+
+-- 39 of 48 --
+
+Mapping Laws | Page 40
+asymmetry exists. Given the greater outreach of
+online expression, one implication is that such
+stringency for online cases reflects intent to curb
+freedom of expression, as opposed to it being a
+concerted effort to address online violence.44 The
+proposed IT bill has similar kinds of provisions
+for online crimes, which are already addressed in
+other laws governed for offline spaces, such as
+Criminal Code.
+Rather than seeking new laws for the new
+paradigm of tech, the reality is that existing
+laws that address non-physical violence can be
+reformed and better implemented to address the
+issue of online violence. But it is evident that socio-
+cultural values steeped in patriarchy influence
+44 	Body & Data. (2020).
+Unshackling Expression: A study on criminalization of Expression Online in
+Nepal. 	Association 	of 	Progressive 	Communication. 	https://news.cyrilla.org/wp-content/uploads/2020/12/
+UnshacklingExpressioNepal.pdf
+both the making and the implementation of the
+legal system surrounding online violence. And
+the brunt of it is borne by women and minority
+groups. This violence is further facilitated by
+loopholes and incompetence within our justice
+system. There are provisions which victims can
+use to seek justice, but the framing of legal
+policies are such that they place civil society in
+a catch-22 situation: the same laws that may
+aid 	victims 	also 	contain 	enough 	ambiguity
+to be misused to suppress dissent. Overall,
+online violence continues to harms women and
+minorities in Nepal across multiple dimensions
+of physical, social, economic and mental well
+being.
+
+-- 40 of 48 --
+
+Mapping Laws | Page 41
+Recommendations
+1. 	Our policy mapping and analysis shows that there are already existing legal
+frameworks in Nepal that can be used to seek legal remedies when faced with non-
+physical violence, including online violence. However the laws need to be amended to
+more explicitly recognize online violence as violence.
+2. 	Online violence should be recognized by not just our legal system but also our
+socio-cultural system. Laws around online violence should secure people’s rights to
+expression, rights to privacy and right to be safe from violence online.
+3. 	The laws addressing freedom of expression and privacy such as ETA and IT bill must
+be amended in order to remove the broad and vague restrictions on freedom of
+expression online.
+4. 	The authorities within the legal system, including the police and court, needs to
+be sensitized to address issues of mental harm on victims, such as through police
+arbitrarily facilitating “negotiations” between the victim and the perpetrator, or
+through moral policing and victim blaming.
+5. 	Provisions outlawing consent on basis of being contrary to public morality, obscenity,
+spreading hate or jealousy or damaging the harmonious relations between groups
+must be amended to encompass a human rights approach and with consideration
+of historically oppressed groups: women, queer, marginalized and underprivileged
+communities.
+6. 	To tackle gender based violence and online violence, resources and funds must be
+allocated towards women’s economic empowerment and education, and not just
+in legal interventions and strengthening state law enforcement agencies like police
+and courts. Legal activism and legal literacy is important, but these are incomplete
+without interventions in the socio-economic and cultural areas.
+7. 	Development and provision of immediate support mechanisms by state and non-
+state actors to support victims of online violence, including provision of shelter for
+physical safety, legal counseling, and digital safety and security.
+
+-- 41 of 48 --
+
+Mapping Laws | Page 42
+Annex
+Data analysis of cases collected
+Case no
+ 	Location and
+relationship
+between victim
+and perpetrator
+Brief description of crime/accusation; evidence
+collected (where available)
+Court’s decision and punishment (in the event of guilty
+verdict)
+(DC= District Court; AC= Appelate Court)
+001
+ 	Kathmandu;
+colleagues
+Obscene messages and photos sent through
+email.
+002
+ 	Bhaktapur;
+former couple
+Recording sex tape without consent and leaking
+of the sex tape, attempt at blackmailing.
+Computer CPU, mobile phone and CDs were
+confiscated.
+Defendant proven to have committed the crime. Court
+deems that “serious harm caused to the girl’s honor, dignity,
+reputation due publication of illegal materials in electronic
+form”. Punishment of 6 month imprisonment and fine of Rs.
+10,000.
+003
+ 	Kathmandu;
+casual friends
+Creating fake ID online and posting material
+slandering the victim, online threats of rape
+against victim’s sister and mother as well.
+The mobile and sim card which he had used to
+send the threats were confiscated by police.
+DC: It was proven that the defendant had committed the
+crime, hence he is liable for Rs 5000 fine and imprisonment
+of one year.
+As the defendant had caused grievous harm on victim’s life
+and reputation, victim is rewarded with the compensation of
+Rs. 75,000 from the accused.
+AC: The lower court had not confiscated the mobile phone of
+accused, the AC decides to confiscate the mobile phone of
+accused, while other decisions remain the same.
+004
+ 	Kathmandu;
+college friends
+Doxing, cyber stalking; victim’s personal contact
+number and name attached with some obscene
+messages were posted on adult websites.
+Defendant’s mobile, tablet and computer CPU
+were taken as evidence.
+DC: on the basis of the confessional statement stating that
+he had sent those obscene messages and pictures to the
+victim, the court imposed fine of Rs. 5000 on the accused.
+The court did not order compensation for the victim.
+AC: The appellate court held that it was not necessary to
+confiscate computers or tablet of the defendant as the
+criminal activity had been done using the defendant’s
+mobile phone (which was already confiscated). Citing that
+the compensation amount had not been mentioned by the
+victim on any of the documents, the court did not provide
+any compensation to the victim.
+005
+ 	Kathmandu;
+mentioned as
+husband and
+wife (but sans
+proof, and not
+mentioned by
+victim in FIR)
+Victim’s Facebook ID had been hacked by the
+defendant, and through it the defendant sent
+obscene messages to other men. Defendant also
+sent obscene messages and calls to the victim.
+Defendant’s mobile and sim card were
+confiscated.
+DC: The district court held defendant liable for committing
+the crime and punished him with 15 days imprisonment, and
+fine of Rs. 5000.
+AC: Citing that the plaintiff had not mentioned a
+compensation amount, the court held that it could not order
+compensation for the victim.
+006
+ 	Kathmandu;
+acquaintances
+Defendant created a fake ID in the victim’s name
+and posted images of her and other women
+through it without her consent.
+Mobile phone and sim card of the defendant were
+taken.
+DC: As the involvement of defendant is clearly seen in this
+case from the presented evidences, the defendant is liable to
+fine of RS. 3000 as per section 47(1) of Electronic Transaction
+Act, 2063.
+AC: Appellate court also upheld the decision of the district
+court. It didn’t provide victim any compensation on the
+ground that the fixed claim amount equivalent to the harm
+suffered by the victim has not been disclosed in any papers
+or documents or the testimonial presented by the victim.
+
+-- 42 of 48 --
+
+Mapping Laws | Page 43
+007
+ 	Nawalparasi;
+married couple
+The defendant made a fake ID in the victim’s
+name and posted libelous material through it.
+Mobile phone, laptop and sim card of the
+defendant were confiscated.
+DC: Defendant was held liable to a fine of Rs. 2000 as per the
+section 47 of ETA.
+AC: The court upheld the guilty verdict of the lower court and
+held the defendant liable for a fine of Rs. 2000.
+008
+ 	Kathmandu;
+acquaintances
+Online harassment through SMS.
+Mobile, sim card, call details and sms history were
+taken as evidence.
+DC: Defendant given 21 days imprisonment. No
+compensation given to victim on account of neither victim
+nor lawyers determining compensation amount for harm
+caused to the victim.
+AC: Both decisions of the lower court upheld by the
+Appellate court.
+009
+ 	Kathmandu;
+live-in
+relationship of 8
+years
+Harassment through obscene messages and
+death threats, through SMS
+Mobile, sim card, call details and sms history were
+taken as evidence
+DC: The court upheld that the claims of harassment did not
+match with call records and message record details provided
+by the Nepal Telecom office, hence authenticity of the
+messages was not proven. According to the court, plaintiff
+has the burden of proof to prove that the message was sent
+from the accused’s mobile number. The plaintiff also filed the
+case a year after the incident occured, so it had crossed the
+statute of limitations. As a result, defendant was not held
+liable for any crime mentioned in charge sheet, and hence
+acquitted.
+AC: Upheld the decision of district court.
+010
+ 	Kathmandu;
+married couple
+Doxing, identity theft, fake Facebook ID, posted
+obscene photos and messages, non-consensual
+taping of sex videos, extortion.
+As per plaintiff, the defendant (her husband)
+was abusive, and therefore she returned to her
+parents’ house and filed a divorce case against
+him. During this period, the defendant made a
+fake Facebook ID in her name, and posted her
+photos as well as libelous material. The defendant
+also approached others for sex under her assumed
+profile, and told people that the plaintiff was a
+sex worker. Plaintiff has also claimed that the
+defendant extorted women by making sex videos
+with them and later blackmailing them.
+011
+ 	Kathmandu;
+defendant was
+construction
+worker at
+plaintiff’s house
+Creating fake ID and posting victim’s picture
+without consent, sextortion, blackmail
+As per the plaintiff, defendant made a Facebook
+account in the victim’s name and posted pictures
+of the two of them kissing. He also sent obscene
+videos, which he had made without her consent
+when they were in relationship. Her relatives
+informed her about this matter. The defendant
+also started extorting her by threatening to post
+her photos and videos on YouTube if she did not
+have a physical relationship with him, and due to
+this, the victim obliged under duress.
+012
+ 	Chitwan and
+Pokhara;
+plaintiff is
+mother-in-law
+of defendant
+Online harassment through photo manipulation,
+impersonation, doxxing.
+The defendant made a fake Facebook profile and
+posted photoshopped images where the plaintiff
+and plaintiff’s family members’ faces were put on
+nude imagery. The defendant also posted libelous
+content pretending to the be plaintiff, posting her
+phone number and inviting others to have sex.
+
+-- 43 of 48 --
+
+Mapping Laws | Page 44
+013
+ 	Kathmandu;
+unknown
+(stranger)
+Blackmail, obscene photos and messages, photo
+shopped images, Doxing
+Plaintiff filed an application requesting to arrest
+and punish an unknown person who had tried
+to blackmail her for money by threatening to
+post compromising pictures. Plaintiff later found
+out that images of her and her friends were
+Photoshopped onto nude imagery, and through a
+fake Facebook profile, the person asked them for
+recharge card.
+014
+ 	Kathmandu;
+defendant
+was ex-wife
+of plaintiff’s
+husband
+Sexual harassment and defamation.
+The plaintiff filed a case of cyber-crime against
+the defendant, for having caused her distress
+and harmed her security by posting libelous
+accusations on the plaintuff through her
+(defendant’s) Facebook profile. The defendant
+also posted photos of the plaintiff, without
+consent.
+015
+ 	Siraha; ex-
+couples (as
+claimed by
+defendant)
+Defamation, leakage of photos without consent.
+Plaintiff and defendant were connected on
+Facebook. As per the plaintiff, defendant sent
+her a friend request from a fake profile using her
+photo. Defendant also caused her mental distress
+through messages and online defamation.
+Law Analysis
+Domestic Violence (Crime and Punishment) Act, 2066 (2009)
+Enforcing Agency: Nepal Women Commission, Police Office, Local body
+Action: Police or local body shall produce the perpetrator within 24 hours of the
+complaint, excluding the time of travel and make arrest if he/she refuses to appear for
+the statement. However, “the complaint, for an offence committed pursuant to this Act,
+shall be filed within ninety days of the commission of the crime.”
+
+-- 44 of 48 --
+
+Mapping Laws | Page 45
+Article/ Clause 	Language 	Analysis
+2 (a) Definition 	“Domestic Violence” means any form of physical,
+mental, sexual and economic harm perpetrated by
+person to a person with whom he/she has a family
+relationship and this word also includes any acts of
+reprimand or emotional harm.
+This also specifically mentions mental, sexual and emotional
+harm caused. In case of online violence if caused by
+someone within family ties, this clause can be used.
+2 (d) Definition 	“Mental harm” means any act of threatening the victim
+with physical torture, intimidation, reprimanding him/
+her , accusing him/her of false blame, forcefully evicting
+him/her from the house or otherwise causing injury
+or harm to the victim emotionally. This expression
+also includes any discrimination carried out on the
+basis of prejudice, religion or culture and customs and
+traditions.
+Relevant to cases related to extortion, blackmailing, undue
+manipulation of someone online.
+2 (c) Definition 	“Sexual harm” means sexual behavior, humiliation,
+discouragement or harm in self respect of any person;
+or any other act that hampers safe sexual health.
+Many cases of online violence involve harm to self- respect
+of the victim.
+4 (9) Filing of
+Complaint
+The assistance of a psychologist, sociologist, social
+activist and a family member trusted by the victim and
+any other witness as per necessity and availability may
+be taken while conducting reconciliation pursuant to
+sub-section (8). In the course of such reconciliation
+psychological of and social effects on the victim, as
+well as his/her right to privacy shall be taken into
+consideration.
+This is after the police or local body produces the perpetrator
+and finds reason to believe that an act of domestic violence
+has been committed. Giving power to the system to decide
+whether or not the act is violence.
+4 (11) 	If the perpetrator fails to appear pursuant to Sub-
+sections (4) and (5); or he/she cannot be made present;
+or the parties fail to settle their dispute through
+reconciliation, the police officer and local body, with the
+consent of the complainant shall, within fifteen days
+after the expiry of thirty days as per Sub-section (8)
+shall forward to the court, the complaint mentioning all
+details, along with evidence and other legal documents
+incidental thereto.
+The stress in ‘parties trying to settle their dispute through
+reconciliation’ again is a pushback on access to justice,
+giving power to local authorities to mitigate the case before
+it reaches the court. Given the social positioning and lower
+bargaining power of women and queer persons in our
+society, many are pressured to compromised for monetary
+or other benefit, and futher, there have been instances of
+intimidation and forceful mitigation.
+The Sexual Harassment at Workplace Prevention Act, 2015 (2071)
+Action: The Sexual Harassment Prevention Act envisages two internal and external
+complaint mechanisms. Under the internal complaint handling mechanism, it would be
+the employer, manager, HR department, and the external complaint handling handling
+mechanism is the Chief District Offier (CDO) of the district
+Complaint to be filed within 15 days against the perpetrator in front of the management
+Article/ Clause 	Language 	Analysis
+4. Sexual
+harassment is
+considered to be
+taken place
+Any of the following unsolicited acts committed by,
+or caused to be committed by, any person in abuse
+of his/her position, power or by imposition of any
+type of coercion, undue influence, or enticement
+would constitute sexual harassment:
+(a) Physical contact and advances;
+(b) Showing or displaying of pornographic material,
+(c) Expressing sexual motives by way of written,
+verbal, or non-verbal means,(d) Demand or proposal
+for sexual favours; and (e)Flirting or harassing with
+sexual motive.
+
+-- 45 of 48 --
+
+Mapping Laws | Page 46
+6 Complaint
+mechanism
+Under the internal complaint handling mechanism,
+the employer / manger has the power to do any
+of the following in the course of handling of any
+complaint of occurrence of sexual harassment:
+(a) Reconciliation between the victim and the
+accused with mutual consent of the parties;
+(b) Require the perpetrator to apologize to the
+victim;
+(c) Warn the perpetrator not to repeat the act
+(d) Arrange for reasonable compensation from the
+perpetrator to the victim; and
+(d) Take departmental action against the perpetrator
+pursuant to the internal employee service rules.
+In the context of internal complaint handling mechanism,
+the Act does not specifically require the employer to
+constitute a complaint handling committee within the
+entity, with the specific responsibility to handle the
+complaints. Formation of such committee would be
+important to ensure the streamlining of complaint handling
+process, quick handling of complaints, as also give clarity to
+victims as to who they should approach.
+Again ‘reconciliation between the parties’ is prioritised. In
+this case it is done by the internal mechanism. Given work
+place harassment takes place on someone with less power
+and privilege compared to the perpetrator, the victim’s
+negotiating power is less. Action according to the internal
+employee service rule comes only at the end.
+Electronic Transaction Act, 2063 (2007)
+Enforcing Agency: Nepal Women Commission, Police Office, Local body
+Action: Police shall or Local body shall produce the perpetrator within 24 hours of the
+complaint, excluding the time of travel and make arrest if he/she refuses to appear for
+the statement. However, “the complaint, for an offence committed pursuant to this Act,
+shall be filed within Ninety days of the commission of the crime.”
+Article/ Clause 	Language 	Analysis
+47 	If any person publishes or displays any materials
+in the electronic media including computer or
+internet which are prohibited from publicatoin
+or display by prevailing law or which may
+be contrary to the public morality or decent
+behaviour, or any type of material which may
+spread hate or jealousy against anyone or
+which may jeopardise the harmonious relations
+subsisting among the peoples of various castes,
+tribes and communities, or if anyone bullies,
+teases, insults or does any immoral activities
+against women the she/he shall be liable to
+the punishment with fine upto one hundred
+thousand or with imprisonment up to 5 years, or
+both.
+
+-- 46 of 48 --
+
+Body & Data is a digital rights organization in Nepal
+that aims to increase women and queer persons’
+engagement in digital spaces through suitable
+strategies for expression, autonomy and agency.
+Ambiguity
+Freedom of Expression
+Consent loopholes
+Exterior text...
+Consent missing
+Paradoxical
+framing
+Proving Intent
+Sweeping powers
+for the government
+Potential backfire on victims
+Problems gathering
+evidence
+Mapping laws relevant to online violence
+in Nepal
+Consent between and of the individual(s)
+involved are not regarded in framing of the
+law and its implementation. It implies (all)
+sexual content to be ‘obscene’ and does
+not respect the agency of an individual
+over their own bodies and criminalises
+sexual expression.
+Many of these laws have a dual framing: the benefits appear
+to come with strings attached. While they have aspects that
+victims of online violence can use to seek justice, additional
+clauses have the potential to be misused for restricting civil
+liberties. This is a recurring theme across most of the laws
+cited here.
+The laws contain terms such as these, which are
+then left undefined. This ambiguity gives those in
+power ample space for interpretation when using
+these laws against the marginalised, further
+putting them at risk and curbing dissent. Many of
+these are also morally loaded terms that promote
+moral policing rather than unbiased prosecution of
+crime.
+Right to freedom of expression is curtailed in the
+name of national security and social harmony.
+Political satire and voices that oppose power
+could be restricted. This poses a risk for activism.
+Sexual expression is also curbed under the
+premise of public morality or decency. Asides from
+direct curbing of rights, loopholes in privacy mean
+that citizens feel greater surveillance from the
+state, and thus are not able to express their
+opinion freely.
+Perpetrators are unlikely to give consent to
+victims to record communications between
+them. Where victims are harassed through
+online communication, this law may make it
+possible to criminalize the victims
+themselves for recording evidence.
+The term “character" is a vague and loaded term
+often used to control and question the sexuality of
+women and queer persons. This law also provides
+information pertaining to reproductive health and
+pregnancy to their husband and family, which can
+further put them at risk of violence. The law is
+ageist and abelist and does not respect autonomy
+of individuals to understand their bodies.
+...elaborates pitfalls in the laws.
+How to read this chart:
+The law doesn’t mention due process such as
+court order or legal aid for person being searched.
+Who is suspected (as grounds for a search) is left
+to the discretion of the Controller. Those in power
+can use this law to violate privacy of critics and
+stifle dissent.
+Many of the laws criminalize sexual expression, labelling
+it obscene or immoral even if created through the
+individual’s choice. By not acknowledging consent, the
+laws create a blanket rule that can be misused to punish
+victims if their privacy is violated online and their private
+expressions exposed. The laws may harm the victim
+instead of punishing the perpetrator.
+While the IT Bill is a proposed
+document, we have included it
+here because of its importance
+in public discussion on legal
+measures for online violence.
+The Criminal Code and the IT Bill have articles
+that hinge criminality on the intent of the
+perpetrator. This provides a loophole for
+perpetrators to get away by claiming the harm
+caused was not their intent. Burden of proof is
+also generally placed on victims. The law is
+unclear on how to prove intent. It allows
+authorities to decide the purpose of certain
+actions, leaving space for abuse of power.
+This is a policy mapping and review of laws that
+are relevant to online violence within the scope of
+digital rights in Nepal, with a focus on gender and
+sexuality. Three human rights lenses—Right to
+Privacy, Freedom of Expression and Freedom from
+Violence—are used to analyze relevant laws. This
+document is meant to be a condensed guide for
+victims, legal practitioners and activists.
+Timeline
+Constitution of Nepal 2015
+Sexual Violence at Workplace Prevention Act 2015
+Electronic Transaction Act 2008
+Act Against Domestic Violence 2009
+Criminal Code, 2017 	Privacy Act 2018
+IT Bill 2019
+2010 	2015	2005 	2020
+“obscenity”
+“vulgar” 	“public morality”
+“decency”
+“social harmony”
+“national sovereignity”	“integrity”
+“public conduct”
+Freedom of
+expression
+Privacy
+Freedom
+from
+Violence
+Find the full report on our website: https://bodyanddata.org/
+Constitution 2015 	Electronic
+Transaction Act 2008
+IT Bill 2019 	Privacy Act 2018	Criminal Code 2017
+Act Against
+Domestic
+Violence, 2009
+Sexual harassment
+at workplace
+prevention act,
+2015
+Publishing or displaying of
+any materials in electronic
+media contrary to public
+morality, decent behaviour,
+to spread hate or jealousy, to
+jeopardise social harmony is
+punishable.
+No publication and broadcasting or printing of
+any news items, articles, editorials or other
+reading materials or audio visual materials shall
+be subjected to censorship.
+But restrictions put on expressions undermining
+national integrity and social harmony.
+The privacy of a person, house, property,
+document, correspondence, information, or
+material regarding their character is inviolable
+except as provided by law.
+Noone will be forced to disclose anything that
+is legally mandated to be private
+(people can inquire regarding their own
+personal details or anything of public interest).
+Criminalization of violence against
+women and provision of compensation.
+Criminalization of violence against
+minors and provision of compensation.
+Victims of any crime to have right to
+information on their case, and the right to
+justice, rehabilitation and compensation.
+Publishing or displaying of any materials
+in electronic media contrary to public
+morality is punishable.
+Authority can access our devices,
+materials and data if found suspect.
+Authority can access our private key if
+found threatening the sovereignty or
+integrity of the country, to maintain law
+and to maintain friendly relations with
+friendly countries.
+Criminalizes destruction,
+damage, deletion, alteration or
+disruption of information on
+any computer source, or
+intentionally causing any
+person to carry out such an act.
+Publishing or displaying of any
+materials in electronic media
+contrary to public morality,
+decent behaviour, to spread hate
+or jealousy, to jeopardise social
+harmony is punishable.
+Restriction of electronic media
+usage that attacks national
+sovereignty, integrity, nationality
+and brings hatred, mistrust among
+communities.
+Restriction of electronic media usage
+that incites discrimination or is
+against public conduct or morality.
+Cyber bullying is defined as
+continually harassing,
+teasing, demeaning,
+discouraging, insulting or
+scolding someone.
+Production, collection,
+distribution, publication,
+exhibition, transmission or
+purchase/sale of pornographic
+materials is punishable.
+No one shall use electronic medium
+or establish online relation with an
+intention of sexually exploitating or
+carrying out illegal activities.
+Restriction in acquiring
+individual's data unless
+provided by law.
+Privacy of conversation
+between two or more parties
+held through electronic
+medium assured unless
+consent given to record, listen
+or (de)encrypt.
+Anyone's privacy shall be
+inviolable without the consent of
+the person concerned, except for
+health treatment or relief work.
+Where applicable, arrows connect
+specific laws and sections to the
+pitfalls identified in them.
+Each solid box
+represents a
+bill or law.
+Inside each box
+are summarized
+versions of
+relevant sections.
+Yellow highlights identify ambiguous words.
+Light blue identifies mentions of intent.
+Privacy between husband and
+wife inviolable except where
+necessary if case ongoing
+between husband and wife.
+Authorized official may make
+inquiries into issues such as age,
+qualification, character, sexuality,
+disability of any person;
+concerned person must oblige.
+Prohibits photography without
+consent done to damage
+person’s character or prestige, or
+photo manipulation with intent
+to defame, or the publicizing of
+such materials.
+Prohibits publishing, sharing
+and trading pictures taken
+without consent, with the
+intention to annoy, distress or
+take any improper advantage,
+or gain profit.
+Information related to
+reproductive health and
+pregnancy of every woman shall
+be inviolable, except for
+underage person and those of
+"unsound" mind.
+No person shall make any
+comments on the character of
+any person except when law is
+required to inquire.
+Production, sale, publication,
+promotion (through electronic
+medium), purchase, rent,
+display or keeping of obscene
+books and brochures
+promoting immorality,
+eroticism is prohibited.
+Restriction in showing private
+parts or acting 'obscenely' or
+talking 'vulgar' in public.
+Obtaining and transferring
+any notice, information or
+correspondence restricted
+unless authorized.
+Prohibits photographing or
+disfiguring photographs of a
+person outside of a public
+space without their
+consent.
+Prohibits disclosing private
+information without
+permission, including private
+information on public figures
+unless compelled by law.
+Prohibits disclosing private
+information without permission,
+including private information on
+public figures unless compelled
+by law.
+Criminalizes defamation through
+any medium, that harms reputation
+of living or deceased person or hurts
+feelings of their family/relatives.
+However, exceptions are made for
+any expression done with evidence,
+for public good, to caution
+concerned person, to criticize those
+with authority, or as part of
+investigation.
+Criminalizes defamation through
+any medium, that harms
+reputation of living or deceased
+person or hurts feelings of their
+family/relatives. However,
+exceptions are made for any
+expression done with evidence,
+for public good, to caution
+concerned person, to criticize
+those with authority, or as part of
+investigation.
+Prohibits listening or
+recording of others’
+conversation without the
+permission of the competent
+authority or consent of
+involved persons, unless for
+any statement that is publicly
+made.
+Prohibits listening or recording
+of other's conversation without
+the permission of the
+competent authority or
+consent of involved persons,
+unless for any statement that
+is publicly made.
+Restriction in showing private
+parts or acting 'obscenely' or
+talking 'vulgar' in public.
+Prohibits threats, harassment,
+improper behavior to harm or
+defame others through
+electronic media.
+Criminalizes slander through
+verbal or written form that
+intends to undermine another
+person or their reputation.
+Sexual harassment is touching or
+trying to touch others’ private
+parts without consent or due
+intention of rape, or directing
+another person towards private
+space, making them touch their
+sexual organs, communicating
+obscene matters verbally,
+written or any other form.
+Taking or morphing pictures
+without consent criminalized. 	"Domestic violence" is
+physical, mental, sexual and
+economic harm perpetrated
+by a person on another with
+whom he/she has a family
+relationship.
+Social network sites will be
+non-functional/banned in Nepal
+if they are not registered at
+Department of Information
+Technology.
+Arbitrary removal of content on
+social sites by Department of
+Information and Technology on
+the basis of vague limitations and
+expansive terms such as
+"offensive content".
+Using or displaying obscene or
+sexual content or expressing
+obscene thoughts by speaking,
+writing or through body
+language is form of violence.
+Article 28
+Section 47
+Section 121
+Section 122
+Section 294
+Section 295
+Section 294
+Section 122
+Section 300
+Section 305
+Section 306
+Section 306
+Section 224
+Section 295
+Section 298
+Section 293
+Section 293
+Section 28.1
+Section 76.1
+Section 88.1
+Section 88.2
+Section 83
+Cyber bullying is defined as
+continually harassing, teasing,
+demeaning, discouraging,
+insulting or scolding someone.
+Section 83
+Section 86
+Production, collection,
+distribution, publication,
+exhibition, transmission or
+purchase/sale of pornographic
+materials is punishable.
+Section 86
+Section 87
+Section 15.2
+No person shall make any
+comments on the character of
+any person except when law is
+required to inquire.
+Section 15.2
+Section 3.2	Section 4.2
+Section 12.6
+Section 16.1
+Prohibits photography without
+consent done to damage
+person’s character or prestige,
+or photo manipulation with
+intent to defame, or the
+publicizing of such materials.
+Section 16.1
+Section 16.3
+Prohibits publishing, sharing and
+trading pictures taken without
+consent, with the intention to
+annoy, distress or take any
+improper advantage, or gain
+profit.
+Section 16.3
+Section 6
+Section 76.2
+Section 4.b
+Section 38.1
+Section 47
+Section 47
+Article 27
+Article 19	Article 17
+Article 38
+Article 39
+Article 21
+Section 46
+Section 91
+Section 92
+
+-- 47 of 48 --
+
+Mapping Laws | Page 48
+Body & Data is a digital rights organization in Nepal that
+aims to increase women and queer persons’ engagement in
+digital spaces through suitable strategies for
+expression, autonomy and agency.
+bodyanddata.org
+Mapping Laws Relevant to Online Violence in Nepal
+
+-- 48 of 48 --
+

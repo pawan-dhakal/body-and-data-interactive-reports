@@ -1,0 +1,2818 @@
+BEYOND
+ACCESS
+Women and queer persons with disabilities
+expressing self and exploring sexuality online
+
+-- 1 of 46 --
+
+PAG E 2 | B E YO N D ACCE SS
+Beyond access:
+Women and queer persons with disabilities expressing self and exploring sexuality
+online
+Authors:
+Shubha Kayastha, Mamata Pokharel
+Peer Reviewer:
+Sarita Lamichhane
+Editor:
+Shubha Kayastha
+Contributors:
+Srinidhi Raghavan, Tigist S. Hussen, hvale vale
+Copy Editing, Graphic Design and Illustrations
+Supriya Manandhar
+Beyond access: Women and queer persons with disabilities expressing self and exploring
+sexuality online
+Published by Body & Data
+2020
+https://bodyanddata.org/
+
+-- 2 of 46 --
+
+PAG E 3 | B E YO N D ACCE SS
+CONTENTS
+Abbreviations 	4
+Acknowledgments 	5
+Executive Summary 6
+Introduction 	8
+Why this research? 	8
+Our objectives 	10
+Methodology and limitations of the study 	12
+Feminist Ethical Principles of Research 	13
+Operational definitions 	14
+A spectrum of access 	16
+Sexuality and bodies of PWD– a culture of silence 	20
+Being seen as either asexual or hypersexual 	21
+Changing times 	22
+Discussing sexuality 	23
+Safe spaces are starting points for robust discussions about disability and sexuality 24
+Use of the internet for self-expression by persons with disabilities 	27
+Self-censoring the online persona 	28
+How disabled bodies are represented online 	30
+How technology can facilitate expressions of sexuality 	31
+A space to explore one’s many identities 	31
+Lack of safe spaces online 35
+Online violence experienced by women with disabilities 35
+Life without the internet will be dull 	38
+Recommendations for a dignified life online 	40
+Recommendations for the government and its institutions 	40
+Recommendations for the disability community 	41
+Recommendations to technologists and developers 41
+Recommendations to the wider community 	41
+Recommendations to other movements 	42
+Appendix 	43
+FGD guiding questions 	43
+Interview schedule 	44
+
+-- 3 of 46 --
+
+PAG E 4 | B E YO N D ACCE SS
+ABBREVIATIONS
+APC: Association of Progressive Communication
+FGD: Focus Group Discussion
+ICT: Internet and communication technologies
+LGBTIQA+: Lesbian, Gay, Bisexual, Transgender and Queer, Intersex, Agender, Asexual
+and Ally community
+NDWA: Nepal Disabled Women Association
+NGO: Non governmental organization
+PWD: Persons with disabilities
+SRH: Sexual and Reproductive Health
+SRHR: Sexual and Reproductive Health and Rights
+UN CRPD: United Nations Convention on the Rights of Persons with Disabilities
+WWD: Women with disabilities
+
+-- 4 of 46 --
+
+PAG E 5 | B E YO N D ACCE SS
+ACKNOWLEDGMENTS
+This research has been put together with work and support of many individuals
+and we would like to acknowledge everyone involved. Firstly, the participants of the
+research who were part of the interviews and responded to the survey. Our thanks
+goes to Kabita Raturi who coordinated various aspects of this research during the data
+collection, and Mamata Pokharel for analysis and leading the writing process. We also
+would like to thank Nepal Disabled Women Association (NDWA), Nepal Netrahin
+Mahila Chhatrabas and disability activist Rama Dhakal for supporting us to access the
+research participants.
+Our acknowledgement also goes to Srinidhi Raghavan who helped in shaping the report
+in its current form and for supporting in the analysis and the writing process, Dikshya
+Khadgi for proofreading citations, and Supriya Manandhar for the editing, layout and the
+beautiful illustrations.
+From conception of the research idea to the writing process, we were also
+supported by hvale vale and Tigist Shewarege Hussen from Association of Progressive
+Communication (APC) and fellow partners from EROTICS second phase Point of View
+in India, Ghosha and Women and Media Collective in Sri Lanka, and Parsa Sajid from
+Bangladesh. We also would like to thank Amplify Change for the financial resources for
+the research through APC.
+Shubha Kayastha
+
+-- 5 of 46 --
+
+PAG E 6 | B E YO N D ACCE SS
+EXECUTIVE SUMMARY
+Women and queer people with disabilities face
+layers of discrimination amidst the Brahminical
+patriarchy, queerphobia and ableism pervasive in
+Nepali society. These hinder women and queer
+people with disabilities from freely exploring
+and expressing their opinions, and accessing
+information 	and 	services 	around 	sexuality.
+These hurdles exist despite the presence of
+various legal provisions for their rights.They are
+subject to constant judgment and ridicule for
+their choices and desires. People with disabilities
+(PWD) are expected to behave, express and
+present themselves based on the parameters
+set by abled bodies for abled bodies themselves.
+Under this framework, there are assumptions
+about what the basic needs of PWDs are, a
+view that generally excludes aspects of sex
+and sexuality. Further, the dominant discourse
+around PWDs looks at them as objects of
+pity, needing support, and incapable of agency.
+All this in turn erases their multiple realities
+and narratives of resistance, and excludes the
+intersectionality that these bodies carry.
+In such a scenario, online spaces have been an
+escape for women and queer individuals with
+disabilities to explore and express themselves,
+while evading some of the restrictions faced
+offline through surveillance within the family
+or outside. Facebook is the most common
+platform 	used 	by 	the 	participants, 	with
+Facebook messenger as the common mode
+of communication. Women and queer persons
+with disabilities use online spaces for work, to
+learn skills, exchange greetings, or entertain
+themselves. They 	also 	curate 	spaces 	where
+they feel comfortable; spaces which they use
+to express themselves through their opinions,
+poems or photos; or spaces where they can
+vent out. They share their sexual lives in small
+groups of friends and co-workers.They also use
+the internet to exchange and express sexual
+pleasure with others and explore dating, even
+though these activities could be restricted for
+them offline.
+The 	understanding 	of 	the 	word 	sexuality
+(‘younikta’ 	in 	Nepal), 	is 	loaded 	with 	the
+concept 	of 	decency 	and 	indecency, 	and
+directly connotes sex. Thus sexual expression
+is 	often 	misunderstood 	as 	sharing 	details
+of one’s personal sexual life, when in reality
+sexual expression encompasses a much wider
+spectrum of activities. We saw this dichotomy
+in the research participants’ understanding of
+the term sexuality, in that only a few perceived
+their activities as falling under the umbrella
+of sexual or erotic expression. Yet many of
+our participants reported sharing photos and
+content from events and conferences related to
+sexual and reproductive rights. They saw this as
+solely part of their activism, boxed away from
+personal expression. The research participants
+also reported regularly using the internet for
+information on beauty, sexuality and sexual
+health. These examples showed that “sexuality”
+and expressions of sexuality were understood
+in a limited way.
+Online spaces are also not devoid of challenges
+and risks. Our study finds that hurdles to using
+the internet for self expression include: lack of
+access to devices and skills to navigate digital
+technologies, expensive 	data 	costs, language
+barriers, 	and 	insufficient 	disability-friendly
+content, tools 	and 	applications. In 	addition,
+participants 	stated 	that 	their 	internet 	use
+was also restricted by socio-cultural factors,
+including 	overprotection 	and 	monitoring 	of
+online behavior by families and partners. Similarly,
+participants also flagged lack of representation
+in pornography and lack of accessible-format
+pornography 	as 	shortcomings 	to 	exploring
+sexuality.
+The research participants consisted of activists
+with disabilities who shared their understanding
+of ‘good’ and ‘bad’ expressions; some their
+own conception, some imposed. There was a
+prevalence of internalized expectations such
+as the need to always project a “motivational”
+image for the disability community, and shaping
+
+-- 6 of 46 --
+
+PAG E 7 | B E YO N D ACCE SS
+their own online behavior accordingly; these
+expectations also limited free and spontaneous
+expression. 	The 	only 	sexual 	expressions
+accepted in general Nepali society are those
+that 	fit 	into 	heteronormative 	social 	norms,
+such 	as 	heterosexual 	marriage. The 	sexual
+expression of women and queer people with
+disabilities was discouraged offline, and this was
+mirrored online as well. This policing occurred
+not just from participants’ social circles but
+also from within the disability rights movement
+itself. Self-censorship of sexual expression was
+prevalent, and this was to avoid being judged,
+ridiculed, being labeled as hypersexual, or to
+avoid unwanted sexual attention (referred to as
+‘negative attention’ by the participants).
+However, 	many 	participants 	affirmed 	that
+conversations around sexuality of women and
+queer persons with disability and acceptance
+of their sexuality were important issues. There
+was an assumption that talking about sexuality,
+pleasure, and consent leads to social disapproval,
+which in turn prevented consensual, mutually
+beneficial exploration of pleasure. Even those
+who indulged in internet content on sexual
+pleasure avoided sharing it online out of fear of
+losing credibility as activists.
+Women 	and 	queer 	people 	with 	disabilities
+face 	violence 	and 	harassment 	that 	is 	often
+invasive. They are targeted for their identities
+as 	women, 	as 	queer 	individuals, 	and 	as
+persons 	with 	disabilities. 	The 	participants
+reported facing harassment that ranged from
+oversexualized comments to being solicited
+for sex. Some of the violence took the form
+of 	microaggressions, 	where 	persons 	with
+disabilities were given backhanded compliments
+expressing admiration for being beautiful or
+successful despite disability, that they did not
+“seem disabled”. Other aggressions manifested
+as emotional labor, where women and queer
+persons with disabilities were constantly asked
+by abled persons to answer their questions and
+satisfy their curiosities. Participants also found
+that having a choice whether or not to reveal
+their ability status was liberatory, allowing them
+to explore other aspects of identity. Some even
+used this choice in a strategic manner to tackle
+unwanted attention.
+Given the nuances of how women and queer
+persons with disabilities are navigating digital
+space to express themselves and explore their
+sexuality, Body & Data has put together this
+exploratory research ‘Beyond access: Women
+and Queer Persons with Disabilities Expressing
+Self 	and 	Exploring 	Sexuality 	Online’. 	The
+research study was carried out among women
+and queer people with disabilities through in-
+depth interviews and Focus Group Discussions
+(FGD) to understand their internet use for
+sexual expression and self-expression.
+
+-- 7 of 46 --
+
+PAG E 8 | B E YO N D ACCE SS
+INTRODUCTION
+1 	Nepal. I., (2017). Exploring the use of the internet among gender equality and sexual rights
+advocates in Nepal. EROTICS South Asia exploratory research: Sex, rights and the internet
+2 	Preamble of the UN Convention on the Rights of Persons with Disabilities, 2006
+3 	The term “intersectionality” considers the intersections in our identities – both that are self-defined
+and which further develop and evolve because of our interactions/experiences with others, and that which
+are internalized as our own meanings but given, passed down, taught, told, reinforced, dictated by others
+through political, social, economic and technological institutions.
+4 	(2018, February 20). Committee on the Rights of Persons with Disabilities reviews the report of
+Nepal. OHCHR. https://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=22676&LangID=E
+5 	Morrison, J., Basnet, M., Budhathoki, B., Adhikari, D., Tumbahangphe, K., Manandhar, D., Groce, N.
+(2014). Disabled women’s maternal and newborn health care in rural Nepal: A qualitative study. Midwifery,
+30(11), 1132–1139. http://doi.org/10.1016/j.midw.2014.03.012
+6 	Devkota, H. R., Murray, E., Kett, M., & Groce, N. (2017). Healthcare provider’s attitude towards
+disability and experience of women with disabilities in the use of maternal healthcare service in rural
+Nepal. Reproductive Health, 14, 79. http://doi.org/10.1186/s12978-017-0330-5
+In Nepal, phase I of the EROTICS South Asia
+report (2017) research looked at the myriad
+ways in which online violence against women
+mirrored offline gender relations.1 This research
+explored the use of internet among gender
+equality and sexual rights advocates in Nepal.
+Second Phase of EROTICS South Asia is a
+continuation of this research, focusing on the
+experiences of a sample group of people who
+have been limited to stereotypes in dominant
+narratives in Nepal and across the globe.
+When 	we 	began 	the 	quantitative 	research
+we saw the need to include the experiences
+of women with disabilities in Nepal. So with
+our 	qualitative 	research, we 	explored 	how
+women and 	queer persons with disabilities
+used the internet as a platform to express
+themselves sexually and to provide readers
+with a deeper understanding of the challenges
+and risks associated with their internet usage.
+This research looks at the complex layers of
+discrimination and marginalization that lead to
+women with disabilities being ignored, often even
+within their broader groups of marginalization
+ie. women, queer, as well as disabled people.
+Why this research?
+The United Nations Convention on the Rights
+of Persons with Disabilities (UNCRPD) defines
+disability 	as “an 	evolving 	concept 	resulting
+from the interaction between persons with
+impairments and attitudinal and environmental
+barriers that hinders their full and effective
+participation in society on an equal basis with
+others.”2 	In line with the Convention, Nepal’s
+own Disability Rights Act of 2017 has made
+significant departure from the welfare-based
+approach 	to 	the 	rights-based 	approach 	to
+disability, 	recognizing 	the 	intersectionalities3
+within 	disability, and 	eliminating 	derogatory
+narratives and even criminalizing the use of
+such narratives. 4
+Women and girls face structural and systemic
+barriers 	to 	be 	able 	to 	fully 	enjoy 	their
+reproductive 	health 	and rights and be 	safe
+from any form of violence. The information and
+services related to Sexual and Reproductive
+Health 	(SRH) 	are 	either 	not 	accessible 	to
+them, or 	their 	socio-cultural 	context 	does
+not let them make use of existing facilities. 5&6
+This gets more complicated for women with
+disabilities. Women with disabilities in Nepal
+
+-- 8 of 46 --
+
+PAG E 9 | B E YO N D ACCE SS
+face discrimination and are mistreated when
+accessing these services. 7
+Interviewee: 	Not 	much 	conversation
+happens around bodies of PWDs. PWDs’
+sexual life is in the shadows. Sexual life is
+not their priority. For their parents, it’s not
+their priority. For PWDs, the primary need
+is something else. For instance, the access to
+education, employment etc. Some of them
+don’t even have basic support.That’s why.
+Studies globally have shown that WWDs are
+denied access to sexual and reproductive health
+services at a much higher rate than their abled
+counterparts. 8 In addition to this they face
+very specific forms of violence related to their
+disability.
+The legal capacity of women with disabilities
+is diluted in multiple legislations. Section 3 of
+the Civil Code (Muluki Aparadh Ain) 2017 of
+Nepal on Family laws, article 71.2 nullifies any
+marriage if anyone is ‘fraudulently’ married to
+someone who cannot speak or hear at all, is
+blind, or is with severe intellectual disability.
+No one shall conclude, or cause to be
+concluded, 	marriage 	with 	a 	man 	or 	a
+woman on any of the following conditions,
+by way of misrepresentation: (a) One who
+has contracted human immunodeficiency
+virus (HIV) or Hepatitis ‘B’ or similar other
+incurable severe disease, (b) One who has
+already been proved to have no sexual organ,
+to be impotent or to have no reproductive
+capability, (c) One who is dumb or has
+lost hearing capacity, being fully blind or
+is suffering from leprosy, (d) One who is
+of unsound mind, (e) One who is already
+a married, (f) One who is pregnant, (g)
+One who has been convicted of a criminal
+offense involving moral turpitude by a court
+and sentenced for the same.
+(3) 	A 	person 	who 	is 	aggrieved 	from
+the conclusion of 	marriage by way of
+7 	Kayastha, S. (2016). Sexuality of women with physical disabilities: Experience and realities [Masters
+dissertation, Tribhuvan University]. Tribhuvan University Library.
+8 	Mantsebo.T. (2018 September 26). Sexual and Reproductive Health Rights for Women with
+Disabilities. Girl’s Globe. https://www.girlsglobe.org/2018/09/26/sexual-and-reproductive-health-and-rights-
+for-women-with-disabilities/
+9 	Women Enabled International. https://www.womenenabled.org/violence.html
+misrepresentation pursuant to sub-section
+(2) may get such a marriage voided and
+claim 	a 	reasonable 	compensation 	from
+the person who concludes, or causes to be
+concluded, marriage by misrepresentation.
+Given the existing power structure of our
+society where women are marginalised, such a
+law puts women with disability at risk. The law
+has the potential to be misused by individuals
+who may later claim that they were unaware of
+the disability of their partner. Given the Nepali
+judiciary’s record in prosecuting violence against
+women, the law makes women with disabilities
+vulnerable to malafide prosecution, even if they
+and their partner had originally married with
+consent. This goes against the Rights to Article
+23 of UNCRPD that specifies PWDs right ‘to
+marry and to found a family on the basis of
+free and full consent of the intending spouses
+is recognized’.
+Section 6 of the Privacy Act 2018 on privacy
+relating to reproductive health and pregnancy
+considers 	matters 	relating 	to 	reproductive
+health and pregnancy of all women private,
+however such information could be shared with
+the guardian or family if they are of ‘unsound
+mind’. Language such as this restricts the rights
+of PWDs to the ones “granted” to them by
+their guardians/caregivers.This is tantamount to
+having one’s privacy based on the diagnosis of
+one’s mental state and thus does not respect
+the 	autonomy 	of 	individuals 	to 	understand
+their bodies and make decisions about it. It
+also assumes family and guardians always make
+decisions which are in the best interests of
+PWDs, whereas studies have shown that there
+is a high rate 9 of domestic violence and intimate
+partner violence among women with disabilities
+as well.While there are developments and small
+positive steps in the legal landscape of Nepal,
+women with disabilities remain highly under-
+recognized, and many of the issues related to
+disability are largely absent from the wider
+
+-- 9 of 46 --
+
+PAG E 1 0 | B E YO N D ACCE SS
+discourse on social inclusion in Nepal.10 Besides
+a 	few 	instances 	of 	inclusion 	issues 	around
+needs and challenges of WWDs in the Sexual
+and Reproductive Health and Rights (SRHR)
+movement, other large movements in Nepal
+also based on inequality and marginalization
+like the indigenous movement, Dalit movement,
+youth movement and LGBTIQA+ movements
+have not incorporated the agendas of PWD
+from within their own communities. Lack of
+intersectionality in the discourse within each of
+these movements limits spaces for WWDs to
+bring forth and address multiple marginalizations
+they might have.
+This sentiment has been shared by a number of
+individuals in the disability movement in Nepal.
+During the SAWF Fund Convergence 2017
+(South Asian Feminist event) indigenous rights
+activist Chini Maya Majhi shared how women
+are seen as a homogeneous group, without
+accounting 	for 	the 	diversity 	within 	them.
+According to Chini Maya, indigenous women
+and 	women 	with 	disabilities 	(WWDs) 	still
+find it difficult to integrate their issues within
+the (mainstream) women’s movement as well
+as in the indigenous movement and disability
+movement respectively. 11
+Similarly, Sarita 	Lamichhane 	in 	her 	article12
+writes about how organizations that work for
+young people are not inclusive of young people
+with disabilities when it comes to providing
+employment, or designing materials, websites
+and spaces where they mobilise young people,
+such as at demonstrations. She further writes,
+people with disabilities are not seen as capable
+advocates of any issue beside the issue of
+disability itself. Even when they are included, it
+is often mere tokenistic.
+10 	Lord, A., Sijapati, B., Baniya, J., Chand, O., & Ghale, T. (2016). Disaster, Disability, & Difference: A
+Study of the Challenges Faced by Persons with Disabilities in PostEarthquake Nepal. Published by Social
+Science Baha and the United Nations Development Programme in Nepal: Kathmandu. https://ia801605.
+us.archive.org/28/items/DisasterDisabilityDifferenceMay2016/Disaster-Disability-Difference_May-2016.pdf
+11 	South Asian Women’s Fund (SAWF) Convergence 2017, Kathmandu, Nepal, Notes from the session
+“Building Inclusive Movement”
+12 	Lamichhane. S. (2020 August 15). Youth Day and Social Mentality(युवा दिवस र सामाजिक
+मानजसकता). Saral Patrika https://saralpatrika.com/content/33817/2020-08-15?fbclid=IwAR074-
+TrxwA3M4JK9jc6vfOzf2WNo1t3rKQp0-CGJ7rXkL4qmmHCFChqnxU#.XzdYhsL4qGY.facebook
+13 	(Gurung 2010: ii)
+Pratima 	Gurung, a 	feminist 	disability 	rights
+activist, writes:
+“Intersectional 	discrimination 	begins
+first 	from 	the 	family 	itself 	for 	women
+with 	disabilities 	(WWDs), 	pushing 	her
+life towards deprivation, pessimism and
+isolation. Slipping lower and lower in the
+social hierarchy, they are most of the time
+perceived as ‘unwanted and unproductive
+human resources’ and are silenced. Having
+no social security, lack of 	response from
+the government, lack of 	identifying and
+sensitizing 	on 	the 	rights 	and 	service
+delivery for WwDs both in the private and
+public sphere, WWDs are ‘excluded within
+exclusion’.” 13
+For 	women 	with 	disabilities, the 	exclusion
+faced by a disabled body in an ableist world is
+compounded by the exclusions faced by women
+in a patriarchal world.
+Our objectives
+This study is a glimpse into the lives of women
+activists with disabilities who are living with
+multiple deprivations given Nepal’s structural
+injustices. 	This 	report 	includes 	diverse
+narratives of ways in which disability rights
+advocates are using the internet, whether in
+their personal lives, to explore and express
+their sexualities, or for their activism. We aim
+to shine a light on individuals who have been
+ignored in mainstream discourses on women’s
+rights movements, sexual rights movements,
+and conversations around technology.
+This research probes disability rights activists’
+comfort with the language and concepts of
+sexuality and sexual rights, their perceived needs
+
+-- 10 of 46 --
+
+PAG E 1 1 | B E YO N D ACCE SS
+in the online space, online harassment of women
+with disabilities, and areas where support is
+needed. The primary objective is to sketch a
+rough map of the landscape, and indicate any
+major gaps and breaches that prevent women
+with disabilities from exercising their freedom of
+expression as citizens, or engaging in advocacy
+work as activists online. Where possible, we
+also focus on sexual expression of women with
+disabilities and their advocacy work on sexuality,
+including sexual and reproductive health rights.
+The disability rights movement in Nepal was
+initiated and is still led by mostly Brahmin
+cisgender 	men, 	and 	women’s 	rights 	issues
+within the disability movement is led mostly by
+Brahmin cisgender women. The movement is
+based on the principle of equality which focuses
+on providing equal access and opportunities
+and 	ensuring 	rights 	of 	PWDs. Though 	the
+movement has also recognized special needs
+and provisions required by the community, it
+mostly revolves around what they consider
+basic 	needs 	and 	requirements, keeping 	sex
+and sexuality secondary. Within the disability
+rights movement, a lot of emphasis is given to
+employment opportunities and is thus linked
+to education, revolving around the theory that
+PWDs are made ‘abled’ to work professionally
+despite 	their 	disabilities, 	and 	that 	financial
+independence will help empower them.
+Lately, women disability rights activists have
+started flagging the need for focus on sexual
+and reproductive health for the communities
+of PWD, along with addressing and curbing
+sexual violence they face. However, the way
+in 	which 	sexual 	and 	reproductive 	health
+concerns are raised in Nepal revolve around
+heteronormative Brahminical ideas of marriage
+and motherhood. A common refrain within
+Nepal’s mainstream women’s rights movement
+is a heavy focus on demand for protection from
+violence, as opposed to other dimensions of
+agency and autonomy. These ideas are carried
+over into disability rights activism as well. There
+is also a constant tendency to compare with
+able 	bodies. The 	disability 	rights 	movement
+14 	Banerjee.P. (2017 January 8). Disabled Women are not thought to be wife material by many. The
+Hindustan Timeshttps://www.hindustantimes.com/india-news/disabled-women-not-thought-to-be-wife-
+material-by-many/story-QMqdQ4CSo43GQg5diavRGL.html
+demands the same things able-bodies receive.
+This is an “equality” focused lens, where the
+rights being demanded are already limited to
+begin with (rights formulated by and for abled
+bodies), rather than seeking alternative forms of
+defining ability for bodies of PWD, and exploring
+what they are capable of on their own, beyond
+comparison.
+For 	women 	disability 	rights 	activists, these
+conversations can be very complex; WWDs
+are seen as unmarriageable or asexual, and thus
+their fight for visibilising WWDs as worthy of
+marriage is often the first step in actualising
+their sexual rights, even though fixation on
+“marriagability” restricts a broader concept of
+women’s autonomy. 14
+While 	our 	work 	was 	focused 	on 	sexual
+expression of PWDs in the online space, our
+conversations unearthed many other “basic”
+needs 	that 	our 	discussants 	emphasized 	–
+which points to a hierarchy of rights within the
+disability movement.
+PWD 	have 	multiple 	exclusions 	to 	fight,
+whether it is inaccessible public services, lack
+of education, lack of employment opportunities,
+or 	discrimination 	within 	family 	and 	society.
+Against this backdrop, sexuality and digital rights
+are seen by many as a “luxury” or a secondary
+problem. Our research also shows that there
+is little to no work done in Nepal that focuses
+on PWDs sexual expression or digital rights
+in the country, let alone the intersections of
+these two spaces – online sexual expression.
+This is an indicator of how low these issues
+are prioritized within the disability movement.
+Technology is also often discussed in relation
+to PWDs only in terms of access, considering
+them as beneficiaries.
+Body 	& 	Data 	emphasizes 	exploring 	issues
+of 	digital 	rights 	from 	the 	perspective 	of
+communities who are marginalized by the state
+and social structure. Disability has been one of
+the intersections we try to bring in wherever
+we can, in terms of skills and knowledge we
+
+-- 11 of 46 --
+
+PAG E 1 2 | B E YO N D ACCE SS
+have.While there is some understanding among
+digital rights and tech groups that PWDs need
+to have access to the internet, this also limits the
+conversation to PWDs being end-users only. At
+Body & Data, we seek to look into how ableist
+views and perceptions of disability perpetuate
+in 	any 	technologies 	or 	platforms. Learnings
+from the disability justice movement inform our
+analysis of national policies and our advocacy
+work. We seek to take into account how the
+community expresses themselves online and
+how they are perceived, and discuss accessibility
+not only in terms of gadgets and internet but
+look into other barriers which prevent PWDs
+from using them with autonomy. Body & Data
+board member Sarita Lamichhane is a disability
+rights activist who has been crucial in providing
+suggestions for making our strategy and program
+accessible and conducive to PWDs. Some of the
+Body & Data staff also have previous experience
+working with disability rights groups.
+This research project is an important step for us
+as an organization to understand the intersection
+of disability, sexuality and technology further,
+and integrate these findings into our ongoing
+and future strategies.
+Methodology and
+limitations of the study
+This report is built on individual narratives
+and lived experiences of women activists with
+disabilities.
+A combination of 16 in-depth interviews and
+two focus group discussions were held with
+disability rights activists based in Kathmandu, all
+of whom identified as women. The 16 in-depth
+interviews that included 14 women disability
+rights activists and 2 queer rights activists with
+disability were important in bringing out rich
+personal experiences of their encounters with
+sexuality issues and digital spaces.
+The interviews were complemented by two focus
+group discussions which provided the larger
+context in which the individual experiences
+were taking place.The FGDs conducted had the
+participation of 22 individuals (12 in one FGD
+and 10 in the other). FGD is a useful method
+in flattening the power dynamic between the
+researcher and participants, and for encouraging
+the group to talk about sensitive issues more
+openly. The 	two 	FGDs 	were 	important 	in
+providing clues to the issues that the WWD
+activists saw as important, and also helped
+the group get comfortable discussing issues
+of sexuality with each other. This then helped
+generate new ideas on how the work could be
+taken forward as a community.
+However, 	the 	combination 	of 	qualitative
+methods we chose is not without limitations.
+Focus group discussions, and to a lesser extent,
+in-person 	interviews 	on 	these 	issues 	are
+not anonymous, and tend to result in more
+conservative responses on taboo issues such
+as sexuality. As will be seen in the body of
+this report, speaking openly about sexuality in
+Nepal is taboo and many do not even discuss
+these issues with their closest friends, let alone
+strangers. In focus group discussions, as well as
+key informant interviews, participants initially
+hesitated to speak up and share matters of
+sexual pleasure such as viewing porn. These
+conversations 	were 	accompanied 	by 	giggles,
+silence, as well as occasional expressions of
+disgust, although people got bolder as the group
+moved deeper into the discussions.
+The disability rights activists who comprise our
+respondents for this study all have their own
+cellphones, all live in Kathmandu Valley, and all
+were contacted via individuals or organizations
+in the disability rights movement in Nepal. Hence
+their experience is not necessarily an indicator
+of 	the 	general 	population 	of 	persons 	with
+disabilities in Nepal. For example, a telephone
+survey conducted by SINTEF Technology and
+Society in 2016 in 59 districts in Nepal found
+that many persons with disabilities are still out
+of reach of modern technology. In the study,
+according to data from 2000 households with
+disabilities, only one-fourth of the respondents
+with disabilities in the telephone survey had
+basic knowledge of computers, and only three-
+
+-- 12 of 46 --
+
+PAG E 13 | B E YO N D ACCE SS
+fourths were independently operating mobile
+phones. 15
+This 	research 	provides 	a 	glimpse 	into 	the
+experiences of a more formally educated, urban
+subset of persons with disabilities. The issues
+of access, discrimination, and silencing faced by
+them can thus be assumed to be multiplied for
+other persons with disabilities in Nepal that do
+not have these privileges.
+Another 	limitation 	relates 	to 	the 	handover
+between researchers that happened in the course
+of the research. One researcher conducted the
+interviews, the qualitative data was translated
+and transcribed in English, and working from
+these transcripts, a second researcher worked
+on the narrative. We acknowledge that some
+of the nuances and contextual information of
+the actual discussion might have been lost in
+this process, though we have put utmost effort
+towards mitigating this.
+Feminist Ethical
+Principles of Research
+Feminist 	ethical 	principles 	have 	guided 	our
+research. One of the cornerstones of research
+guided by feminist values is having a process
+that goes beyond informed consent.16 Through
+focus group discussions and interviews that are
+centered around personal experiences, with the
+discussants as experts in their own lives, the
+researchers aimed for an environment where
+all views are given adequate time and value.
+Another 	element 	has 	been 	acknowledging
+positionality on the part of the researchers,
+where 	researchers 	“reflect 	on 	their 	own
+position and location in relation to their research
+participants.”17 Such reflexivity helps researchers
+explore how what we choose to study is a
+reflection of our own views and experiences,
+and an expression of our solidarities. In choosing
+to explore the online experiences of women
+15 	Eide. A.H, Neupane. S, Hem. K.G. (2016). Living conditions among people with disability in Nepal.
+SINTEF Technology and Society. https://www.sintef.no/globalassets/sintef-a27656-nepal-printversionfinal.
+pdf/
+16 	Jenkins.K, Narayanaswamy. L, & Sweetman.C. (2019). Introduction: Feminist values in research,
+Gender & Development, 27:3, 415-425, DOI: 10.1080/13552074.2019.1682311
+17 	Ibid.
+activists with disabilities, Body & Data builds on
+its prior experiences working in digital rights, as
+well as our experience of working closely with
+disability rights activists on various issues.
+In our research we consistently focus on the
+subjective and diverse lived experiences of our
+collaborators, how 	they 	navigate the 	world
+online and offline, and challenge patriarchal and
+ableist power structures in their own individual
+ways.
+
+-- 13 of 46 --
+
+Women and queer persons with disabilities
+expressing self and exploring sexuality online
+PAG E 1 4 | B E YO N D ACCE SS
+Operational definitions
+SAFE SPACES:
+For the purpose of the study ‘safe space’
+is defined as a place or forum where
+individuals who are marginalized come
+together to communicate their experiences
+without the fear of being judged, trolled and
+attacked while also recognizing structural
+oppressions and systems of power.
+SEXUALITY:
+For the purpose of the study, sexuality has
+been defined as the way people experience
+and express themselves sexually which
+includes biological, erotic, physical, emotional,
+social, or spiritual feelings and behaviors.18
+“The right to sexuality on/in the internet is a
+way of expressing the self and represents at the
+same time exploration, affirmation, resistance
+and transformation. We all need to understand
+it and stand by it. Support should not be
+denied and should be the political practice
+of any advocate. And this is when a feminist
+perspective of intersectionality, solidarity and
+transformation helps to orient us in the noise
+generated by the overwhelming horizontally
+participatory 	conversations 	enhanced 	and
+amplified on/in the internet.”19
+18 	Human sexuality. (2019, April 8). In Wikipedia. https://en.wikipedia.org/wiki/Human_sexuality
+19 	vale, h. (2017). In plain sight: On sexuality, rights and the internet in India, nepal and Sri lanka. In
+APC’s EROTICS South Asia exploratory research: Sex, rights and the internet (pp.11) https://www.apc.org/
+sites/default/files/Erotics_1_FIND.pdf
+
+-- 14 of 46 --
+
+ofacc e s s
+Aspectru m
+
+-- 15 of 46 --
+
+PAG E 1 6 | B E YO N D ACCE SS
+A SPECTRUM OF ACCESS
+20 	Lamsal.R.R, Pathak. S, Nepal. S, Bomrel. M. (April 2019) Exploring ICT in Empowering Persons with
+Disabilities in Nepal. Deerwalk Journal of Computer Science and Information Technology. 1, 64-77,
+21 	Samarajiva. R. (2018).ICT access and use by Persons with Disabilities (PWD) in Nepal. AfterAccess.
+https://g3ict.org/publication/ict-access-and-use-by-persons-with-disabilities-pwd-in-nepal
+22 	Atlas and Boots. (2020).Countries with the cheapest Internet in The World,. https://www.
+atlasandboots.com/remote-work/countries-with-the-cheapest-internet-world/
+23 	National Federation of the Disabled(2013). Disability Rights Holistic Monitoring Report.Nepal.
+https://nfdn.org.np/holistic-report-of-disability-rights-monitoring/
+While the potential exists for specially assistive
+technologies in vision, communication, mobility
+and learning to significantly increase accessibility
+for PWDs20, their potential is a long way from
+being realized.
+Access issues include unequal access to devices
+such as mobile phones. A study of information
+and communication technology use by persons
+with disabilities found that only 32% of PWDs
+have 	access 	to 	a 	mobile 	phone. Of 	those
+without phones, 65% pointed to their disability
+as the reason they did not own a phone. 21
+Though Nepal stands in 13th place 22 in the list
+of countries with cheapest internet, the cost is
+still high for citizens given the per capita.
+Even when PWDs do have access to the internet,
+online worlds are not built with their needs in
+mind. In the context of Nepal, social dynamics
+such as caste, gender, sexual orientation, race,
+age, language barrier and economic class also
+come into play as causes of exclusion.
+After advocacy from disability rights groups,
+the 	Nepali 	government 	has 	been 	providing
+discounted voice packs for the visually impaired
+if they submit their disability identity in the
+telecom office. However, barriers still exist as
+they range beyond just issues of affordability.
+For people with disabilities, accessibility is not
+just a concern regarding existing and available
+technologies, but also the support needed for
+PWDs to learn to effectively use and navigate
+these digital technologies. For them, both the
+hardware and the skills to use them are assistive
+aids in an inaccessible world.
+Our own research showed how the online
+world’s default settings exclude PWDs. When
+we reached out to PWDs with our quantitative
+survey, only six people managed to participate.
+In order to be able to include a larger number
+of 	voices 	of 	PWDs, we 	had 	to 	design 	an
+additional component, with in-person visits and
+the requisite attention to translation and other
+support needs. Our participants also noted how
+these conversations around PWDs’ access to
+the internet are not a part of policy discussions.
+One 	of 	our 	participants 	noted 	that 	having
+access to the internet doesn’t always mean that
+everyone accesses it equally; questions about
+how they are accessing it and where they are
+accessing it are also important.
+Having access to the internet often means
+having certain prerequisites: a certain socio-
+economic background, or having employment
+and connectivity at work, or being from an
+urban area that has internet infrastructure.
+In 	charting 	the 	evolution 	of 	socio-cultural
+norms around ability and disability in Nepal, a
+review undertaken by the National Federation
+of the Disabled-Nepal explores the shifting of
+perspectives from prejudice towards PWDs
+to seeing them as “beneficiaries of charity, and
+services for which they should be grateful.”23 The
+authors conclude that this results in services
+that are “designed for them and delivered to
+them, perhaps with the best of intentions, but
+with insufficient consultation.”
+Within the disability movement itself, the charity
+model is heavily criticised because it is assumed
+that people with disabilities must be “content”
+
+-- 16 of 46 --
+
+PAG E 1 7 | B E YO N D ACCE SS
+with what they “receive”. The charity model
+also created a dispute at the national level, in
+the “prevalence 	of 	disabilities,”24 	where 	the
+government has come up with a low prevalence
+rate, which is shown by NGOs and self-help
+organizations’ work to be an undercount. The
+human rights model of disability recognises
+disability as a natural part of human diversity
+that must be respected and supported in all
+its forms.25 It posits that the exclusion happens
+because 	of 	a 	disabling 	environment. Hence,
+changing 	the 	environment 	should 	not 	be
+understood as something “given” to people
+with disabilities but inherent in their rights.
+Social 	barriers, discrimination 	and 	exclusion
+keep PWDs from participating fully in their
+society. 	They 	face 	barriers 	in 	access 	to
+transportation, education, employment, health
+services, 	and 	rampant 	discrimination 	with
+72% of unemployed persons with disabilities
+and 56% of employed persons with disabilities
+reporting that “they have no dignity in social
+participation.”26
+Whether it is doctors routinely denying sexual
+and reproductive health services to PWDs, not
+having information tailored to PWDs,or constant
+judgment for making any choice regarding their
+body and self expression, PWDs face many
+hurdles when it comes to accessing information
+and services. For persons with disabilities, self
+expression and sexual expression offline are
+subject to constant judgment, discrimination
+and even ridicule.
+While the online space can provide alternative
+forums for self expression in safe spaces and
+groups of other PWDs, many of these offline
+discriminations 	inevitably 	find 	their 	echoes
+in the online world. PWDs are harassed in
+mainstream online spaces, there is lack of content
+tailored to PWD needs, they face inaccessible
+technology and myriad other challenges daily.
+Cultural perspectives towards girls and women
+in 	Nepal 	are 	steeped 	also 	in 	protectionist
+24 	Ibid
+25 	Introducing a human rights model of Disability. Disability Advocacy Resource Unit. http://www.
+daru.org.au/how-we-talk-about-disability-matters/introducing-the-human-rights-model-of-disability
+26 	National Federation of the Disabled(2013). Disability Rights Holistic Monitoring Report.Nepal.
+https://nfdn.org.np/holistic-report-of-disability-rights-monitoring/
+lens, fixating on the assumption that they are
+vulnerable to violence. There is a tendency to
+perform overprotective parenting. Against this
+backdrop, girls and women with disabilities face
+additional barriers in using the internet freely
+without constant surveillance on their online
+behavior from family and caretakers. In these
+circumstances, them accessing materials related
+to 	sexuality 	and 	expressing 	one’s 	sexuality
+online becomes challenging, despite access to
+the internet.
+Our interviewees shared several experiences
+of encountering barriers to full access while on
+the internet. One of the interviewees who used
+a screen reader shared:
+“I can read the words in English but I can’t
+read Nepali words completely. Plus, in order
+to read a pdf, another app is required.
+So, 	everything 	cannot 	be 	seen 	nicely.
+Sometimes, when people upload pictures,
+the app doesn’t dictate it. It only says that
+there’s a photo but we cannot know about
+the photo, like what the photo is about.”
+She 	also 	shared 	that 	accessing 	websites 	in
+Nepali language is harder for the screen reader,
+resulting in her and many other blind and vision
+impaired users visiting fewer websites on the
+internet.
+For deaf and hard of hearing users the problems
+are different. One of the interviewees shared
+this concern about overwhelming English usage
+on the internet and her preferred fluency in
+Nepali. She said:
+“I want to learn how to use Twitter. I have
+heard what I can post there. But since [the
+discussions there are] mostly in English, I
+don’t 	want 	to 	have 	miscommunication
+because I don’t know English that much.
+I haven’t learnt it at all. Because I don’t
+want to spend my entire day on the phone,
+I don’t use it as often. It’s mostly Facebook,
+messenger, viber 	and 	sometimes 	skype
+
+-- 17 of 46 --
+
+PAG E 1 8 | B E YO N D ACCE SS
+because of work. Internationally, skype is
+used for meetings so I use it.”
+While using the internet to talk about their
+daily lives, the women shared that they used
+Facebook, Twitter and others platforms to post
+things. However, a few of them shared that
+there was a lot of miscommunication because
+of language barriers, especially for deaf and hard
+of hearing women.
+One woman shared how her access to the
+internet was mediated by her husband. This
+isn’t an uncommon experience for WWDs. She
+shared:
+“I mostly share all my arts and paintings
+on the internet. He (husband) tells me to
+concentrate on my work and that he’ll look
+after the (social media) posts. He does
+most of these activities for me. I talk to my
+foreigner friends online and do video calls
+on Messenger. I have so many friends from
+India. They are from Bangalore, Mumbai
+and Delhi. There are many deaf people
+there. I talk to them on video call. They
+share things with me. This doesn’t happen
+in Nepal.”
+Another shared how the internet led her to
+access community but her husband restricted
+this access eventually.
+“I have the desire to search things related
+to art. I see and use the internet. And I also
+research about what’s going on in the deaf
+sector (community). Previously when I was
+in college, I said that I would use signs to
+communicate but he (husband) told me
+not to use it (with anyone). I have my own
+community. I should be able to use it in my
+community. He could not understand it so
+we had arguments.”
+While 	these 	comments 	are 	only 	about
+accessing and using the internet in general, the
+problems with accessible content on sexual and
+reproductive rights for women with disabilities
+is more complex. In an interaction with the
+interviewer, a woman with disability shared:
+Interviewer: 	Do 	you 	really 	think 	the
+information that is provided on the websites
+are effective and has enough content about
+sexuality?
+Interviewee: 	Not 	sufficient. 	Sometimes
+people interpret in a very negative way
+and the materials are not even sufficient
+to express more about it. When we talk
+about porn they can’t be associated, like
+those without visual impairment can access
+it easily but for others (visually impaired),
+audio is not enough.
+
+-- 18 of 46 --
+
+S e x u a l i t y 	a n d 	b o d i e s
+o
+f
+P
+W
+D
+—
+a c u l t u r e 	o f 	s i l
+e
+n
+c
+e
+
+-- 19 of 46 --
+
+PAG E 2 0 | B E YO N D ACCE SS
+SEXUALITY AND BODIES OF
+PWD—A CULTURE OF SILENCE
+27 	Hao.A.P. (2019 DEcember 4). Internet Freedom is Not Enough - Cyberfeminists Are Fighting For a
+new reality. GENDERIT. ORG https://genderit.org/articles/internet-freedom-not-enough-cyberfeminists-are-
+fighting-new-reality
+28 	See page 11 for further discussion on “rights based approach”
+Ani Phoebe Hao imagines the kind of digital
+world we deserve; a world “where we have
+more than our rights; we also have the pleasure
+to enjoy our identities, practice our sexualities,
+meet new people, access information and make
+informed decisions about risks and pleasure.”27
+This is an ideal that this research is also guided
+by. However, a wide gulf exists between these
+aspirations and Nepal’s ground realities. Far
+from a discussion on women’s pleasure and
+freedom of sexual expression, Nepali society
+is one where even health issues related to
+women’s sexuality and reproduction can be
+taboo topics. Amidst this, talking about sexuality
+of women with disabilities is so radical as to be
+unthinkable.
+Perhaps the environment in which the research
+took 	place 	can 	be 	best 	summed 	up 	by 	a
+participant who shared:
+“Didi, we live in a society where we cannot
+even talk openly about (something being
+simple like) menstruation, talking openly
+about sexuality is a dream that is very far
+from reach.”
+Similarly, other 	participants 	too 	shared 	the
+discomfort 	they 	felt, 	in 	response 	to 	why
+conversations on sexuality were not taking
+place in their circles.
+“Our context is such that women in Nepal
+are not able to talk about sexuality openly.
+Even as activists, we are not able to talk
+about these basic health issues such as
+white discharge, let alone issues of sexuality.”
+“[We are informed about a lot of things
+regarding sex and sexuality] but it is hard
+to talk about these things openly.”
+“Well the thing is no one really shares such
+information 	to 	others 	although 	they 	go
+through such articles.”
+Women with disabilities we spoke to focused
+on how being women in a patriarchal world
+constrained their ability to have conversations
+about sexuality. Like in many other societies
+in South Asia, paternalistic notions of honor,
+respect, and purity are attached to women, and
+are used to police women’s sexual freedom and
+reproductive health in Nepal.
+“It is very awkward to talk with friends about
+sex and sexuality in the context of Nepal. I can’t
+talk with anyone. In my case I can’t talk with
+my husband either. Most of the time I watched
+porn with my husband. Actually, he taught me to
+watch porn. But when we divorced, he blamed
+me for being a characterless girl who watches
+porn. We live in a country where talking about
+sexuality is prohibited.”
+Explicit conversations around sex and sexuality
+are not easy given Nepal’s social circumstances.
+In 	addition, the 	disability 	rights 	movement
+in Nepal is led by high-caste Brahmin men,
+campaign agendas are set by them, and sexuality
+is 	not 	regarded 	as 	a 	priority 	within 	their
+framework. The 	welfare 	approach 	from 	the
+state, along with rights groups focus on rights
+based approaches28 adopted lately still do not
+favor taking an intersectional look into the
+issues of women and girls within the movement.
+Oppressive dominant discourses that result in
+women being discouraged to speak up about,
+explore, or express their sexuality are further
+
+-- 20 of 46 --
+
+PAG E 2 1 | B E YO N D ACCE SS
+compounded for WWDs, who must contend
+with 	even 	more 	conservative 	expectations
+regarding the sexuality of PWDs.An added layer
+of paternalism is extended towards persons
+with disabilities, who are viewed regularly as
+objects of pity, needing support, and incapable
+of agency.This is seen in the widespread control
+of WWDs’ 	sexual 	and 	reproductive 	health
+with forced hysterectomies, forced abortions
+and more across the globe.29 In a report to
+the UN General Assembly in 2017, UN Special
+Rapporteur, Catalina Devandas said:
+“Discriminatory 	laws 	and 	policies 	are
+undermining 	the 	fundamental 	right 	of
+girls and young women with disabilities
+to exercise choice and have control over
+their bodies, violating their integrity and
+depriving them of dignity while promoting
+the interests of professionals and caregivers
+instead.”
+This reinforces what our interviewees told us
+about how their sexual rights are seen both
+within the home and in society at large. Those
+with disabled bodies are routinely treated as
+asexual beings, with the assumption that only
+able-bodied persons could have any interest
+or ability to participate in acts of pleasure. As
+shared by a participant:
+“This subject isn’t considered important.
+No one thinks that disabled people also
+have physical need, they do not need sex
+and they do not have interest about sex.
+Sex is only for abled people. That may be
+the reason for not talking about sexuality.
+But we are raising voice for this.”
+These social expectations and intersectional
+oppressions result in a fear of judgment and
+reluctance to speak about these issues.This was
+highlighted in this individual interview with a
+senior disability rights activist:
+Interviewee: Just 	because 	someone 	has
+disability does not mean that the person
+doesn’t 	have 	sexuality. 	Disability 	has
+29 	(2017 October24).Forced sterilization of young women with disabilities must end, UN rights
+expert says [White Paper]. OHCHR. https://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.
+aspx?NewsID=22289&LangID=E
+nothing to do with one’s sexuality.These are
+two different things.
+Interviewer: Have you ever shared these
+sentiments on the internet?
+Interviewee: No.
+Interviewer:Why not?
+Interviewee: It’s 	like 	people 	might 	start
+looking 	at 	you 	differently. People 	pass
+negative comments so I learn these things
+that I need to learn, but do not post them
+on social media.
+Interviewer:Why?
+Interviewee: I feel like people will make
+negative evaluations, that’s why.
+Interviewer: But, you are also the chairperson
+of the organization right?
+Interviewee: Umm…Umm
+Interviewer: You have this strong identity.
+And a lot of people on Facebook might also
+know that you are working on reproductive
+health all but why do you have the fear?
+Interviewee:This is a strange thing.We know
+that these things are hidden and not talked
+about much in society.We should take it as
+a simple thing. Just like food, shelter and
+clothes, it is also one of the basic needs.
+Even 	if 	we 	are 	talking 	about 	these 	in
+friends circle, it is still hard to open up on
+these topics.
+It is difficult to move beyond the dominant
+discourse on disability and sexuality of PWDs
+as asexual beings— and to acknowledging their
+sexuality being as normal as anybody else in
+society.
+Being seen as either
+asexual or hypersexual
+Across the world, disabled bodies are seen as
+not desirable, too defective to engage in sex. In
+Nepal, WWDs are often treated as if they are
+asexual, with the added assumptions that they
+
+-- 21 of 46 --
+
+PAG E 2 2 | B E YO N D ACCE SS
+are incapable of engaging in a sexual relationship,
+and unable to bear and raise children.”30
+Thus when PWDs engage in any expressions
+of their sexual selves, this goes against general
+expectations, and 	the 	pendulum 	swings 	to
+the other side with them being perceived as
+hypersexual. When forced to choose between
+society’s binary of being asexual or hypersexual,
+many of the participants in our study choose
+to err on the side of the identity that comes
+with lesser social risk i.e. being seen as asexual.
+Participants avoided talking about their identities
+as sexual beings online, to prevent the negative
+repercussions of being labeled hypersexual. This
+was, in many ways, a strategy for survival.
+Hypersexuality is a charge that is regularly levied
+against women who so much as acknowledge
+that 	they 	have 	sexual 	desire, 	even 	within
+the confines of a married relationship. This
+patriarchal narrative where a woman’s sexual
+desire can easily be rephrased as a negative
+comment on her character has routinely been
+used by men to shame women. Being a WWD
+of 	whom 	asexuality 	is 	the 	expected 	norm
+makes accusations of hypersexuality stick even
+stronger.
+The net result of all these microaggressions
+is rampant self censorship, which has been an
+overarching theme throughout this research.
+Participants, when speaking of their experience,
+routinely described strategies of not attracting
+unwanted sexual attention to themselves, and
+censoring themselves on social media in order
+to escape negative attention. When, during a
+focus group discussion, one of the participants
+said,
+“We don’t really put anything like that
+out 	there 	that 	would 	attract 	negative
+comments,”
+...the agreement in the room was palpable.
+The lack of WWD-led narratives online also
+contributes 	to 	the 	issue 	of 	sexuality 	and
+disability remaining hidden – without models of
+30 	Kayastha, S. (2016). Sexuality of women with physical disabilities: Experience and realities [Masters
+dissertation, Tribhuvan University]. Tribhuvan University Library.
+WWD discussing sexuality online, it is difficult
+to make space, even in the imagination, for
+discussion on these issues.
+When speaking about these implicit things in
+society, there is an understanding it will raise
+controversy. So even though these conversations
+are deemed important, there might be other
+agendas that activists are working on that they
+do not wish to risk. Their community or circles
+might require them to ensure that they do not
+raise issues that will invite “negative comments”
+or cause people to “start looking at [them]
+differently.”
+The fear of being deemed hypersexual, and the
+subsequent loss of one’s credibility carries a high
+risk, especially for those engaged in activism.
+If acknowledgement of sexuality of women and
+PWDs is hard to come by, conversations on
+pleasure and sharing of pleasurable content is
+even more so. The following was shared by a
+participant, almost as a confession:
+“I myself watch such things (talking about
+porn) but I can’t tell even my closest people
+to watch it. (laughs)”
+The social “conspiracy of silence” around the
+sexuality of WWDs is strong. Something as
+natural as sexual pleasure itself is made to
+seem like an indulgence, and confessions of
+being engaged in sexual pleasure run the risk
+of judgment.
+Changing times
+All 	our 	participants 	quoted 	so 	far 	have
+demonstrated how the internet has been a
+source 	of 	information 	on 	sexuality, 	sexual
+health, and a source of sexual pleasure. Most of
+our discussants had been part of conversations
+around disability and sexuality in formal or
+informal settings. They spoke of the need to
+have wider acceptance for PWD’s sexuality, and
+were conversant on sexual and reproductive
+health rights as well as issues of consent. Since
+this information is hard to come by from other
+
+-- 22 of 46 --
+
+PAG E 2 3 | B E YO N D ACCE SS
+sources owing to lack of open conversations
+on the issue in relevant circles, the internet has
+been valuable for those able to access it.
+However, 	access 	is 	not 	a 	given, 	especially
+for those with disabilities, and content is not
+always 	tailored 	to 	their 	needs. In 	addition,
+simply accessing information is not enough; for
+meaningful change to occur, public conversations
+on pleasure and consent need to happen.
+As stated by a participant:
+“Sex is a need but it should be engaged
+in with mutual consent. But girls are not
+talking about this topic, because if they talk,
+other people start to see them negatively.”
+In 	this 	manner, assumptions 	that 	associate
+willingness to talk about sexuality, pleasure and
+consent with being promiscuous lead to fears
+of social disapproval, which in turn prevents
+consensual, mutually beneficial exploration of
+pleasure.
+Some respondents shared that the internet
+is 	slowly 	helping 	these 	conversations 	take
+place among WWD. In their own words, a
+few 	interviewees 	described 	talking 	about
+these issues as a sign of openness (“frank”), as
+opposed to the social tag applied to it as being
+provocative or immoral.
+“The internet has changed this context a
+lot.”
+“I know a lot of information from online
+sources. I am very frank about these issues.”
+Our participants also emphasized that having
+these conversations is important in another
+way:
+“Nepal 	Disabled 	Women 	Association
+(NDWA) 	has 	now 	been 	talking 	about
+sexual 	and 	reproductive 	rights. 	Before
+that, with regards to even something like
+marriage [in terms of marriage advocacy
+for PWD], I could not even envision that I
+myself could be married. But now I am in a
+31 	vale, h. (2017). In plain sight: On sexuality, rights and the internet in India, nepal and Sri lanka. In
+APC’s EROTICS South Asia exploratory research: Sex, rights and the internet (pp.13)
+happily married life.”
+This 	anecdote 	is 	an 	example 	of 	how
+conversations 	about 	disability 	and 	sexuality
+can broaden the range of futures that a woman
+with a disability is able to imagine for herself,
+whether that future includes marriage, a family
+and sexual pleasure or not. There is a need for
+more spaces to have these conversations and
+open up more possibilities for expressing one’s
+sexuality and visibility online.
+While the internet has provided a platform
+for 	discussions 	about 	sexuality, participants
+emphasized 	that 	these 	discussions 	are 	not
+happening, and that they are not using the
+internet for sexual expression.
+There could be multiple reasons for this, chief
+among them a narrow understanding of the
+word 	“sexuality,” 	and 	“sexual 	expression.”
+In fact, we found in our research that quite a
+few activists did not think they were engaged
+in conversations about sexuality online, even
+as they spoke of instances of sharing content
+related to their attendance at conferences on
+disability and sexuality.
+In addition, a large number of participants shared
+the multiple ways in which they engaged in self-
+expression and exploration of pleasure online
+– including sharing beautiful photos, videos of
+singing and dancing and other explorations of
+beauty and pleasure, while not labeling them as
+expressions of sexuality.
+Discussing sexuality
+Even when people do want to talk about these
+issues, they find the language difficult.As with the
+English word sexuality, which because of “sex”
+at its root is regarded as a delicate subject,31
+the Nepali word for “sexuality” is translated as
+“younikta” (यौिनकता) with “youn” at its root –
+which is also “sex” but with an even stronger
+connotation of being just sex and nothing else.
+In addition, the word is a relatively recent import
+adapted from English and not part of everyday
+
+-- 23 of 46 --
+
+PAG E 2 4 | B E YO N D ACCE SS
+speech or writing. As such, there is no common
+cultural understanding of the word and concept
+of “younikta.” As we saw time and again, it is
+also understood by most research participants
+to have a narrower definition, as something
+directly related to the physical act of sex, rather
+than to a person’s daily physical, cultural, or
+social expression as a sexual (or asexual) being.
+These 	twin 	issues 	connected 	to 	the 	word
+“younikta” mean that in Nepali society, the
+word is already quite charged with assumptions
+of decency/indecency. Further, it is also likely
+to invite accusations of imported activism. This
+complicates our understanding of what our
+research participants are telling us, requiring
+us to go beyond the word itself to understand
+the 	phenomenon. A 	more 	expansive 	term
+that can bring together concepts of beauty,
+appreciation, self expression, self exploration,
+and reproductive health is unavailable for these
+conversations yet.
+For example, participants were unanimous in
+emphasizing that discussions about sexuality are
+not occurring and repeatedly pointing out the
+strong societal reluctance to discuss sexuality.
+While 	this 	undoubtedly 	exists, 	many 	also
+asserted that even though they were activists
+leading the work at the intersection of disability
+rights and sexual and reproductive health rights,
+they themselves were not able to engage in
+online discussions of sexuality.
+However, a few of these conversations indicate
+otherwise. A glimpse of this in this interview
+with a disability rights activist working on issues
+of sexuality:
+Interviewer: Do you post about sexuality on
+Facebook when you are working on those
+issues?
+Participant: It’s been 6 months of working
+on 	sexuality. I 	haven’t 	posted 	anything
+about sexuality.
+Interviewer: When 	you 	go 	to 	different
+programs of sexuality and speak about
+sexuality, don’t you post that on social
+media?
+Participant:Yes, I do. I post if I give a speech
+or I participate in those programs.
+Interviewer: That means you post about
+sexuality.
+Participant: Maybe yes.
+The 	exchange 	revealed 	another 	unspoken
+assumption in conversations about sexuality,
+that it probably has to do with one’s personal
+life and intimate details, and not one’s activism
+or public presence.
+Another activist participant also shared how
+she put up photos of conferences on issues of
+sexuality, deliberately ensuring that the banner
+is fully visible. The participant, however, was
+unsure whether this counted as an example of
+her using online forums to share issues around
+sexuality.
+These examples indicate an implicit assumption
+that discussions of sexuality are confessions
+of personal bedroom-related matters. Such an
+assumption makes, in people’s imagination, any
+discussions on sexuality fraught with a higher
+level of risk than is warranted.
+As can be seen in the anecdotes above, our study
+participants felt that an acceptance by society of
+sexuality of WWD holds tremendous potential
+for richer, more fulfilling lives for women with
+disabilities, yet only minimal attention is paid to
+this issue. And when these issues are brought
+up and given attention, it is of the negative kind.
+Safe spaces are starting points
+for robust discussions about
+disability and sexuality
+Safe spaces (whether among friends, among
+colleagues who are working on the same issues,
+or in international conferences) were brought
+up by many participants as the only places where
+they can have discussions on sexual expression.
+“I do not talk about these issues in front
+of men, but in this group, I can talk very
+
+-- 24 of 46 --
+
+PAG E 2 5 | B E YO N D ACCE SS
+comfortably about these issues.”
+“We mostly don’t talk about these kinds
+of topics. We sometimes talk about it in
+forums, because we can’t talk about it
+anywhere. We basically don’t talk about it
+[often], so, when it appears on the internet,
+I watch it.”
+Participants also spoke of creating safe spaces
+for themselves online. They shared anecdotes
+on how they carefully curated their Facebook
+friends list to create safe spaces, accepting
+requests only from close friends, family, and the
+disability community. Thus, keeping themselves
+away from demeaning and judgmental attitudes
+towards 	women 	with 	disabilities 	that 	are
+encountered in the mainstream.
+These responses indicate both a desire that
+these online spaces be able to host meaningful
+conversations around disability and sexuality,
+and a frustration that they have been unable to
+do so until now.
+Of note is also the conflating of the internet
+with social media, especially for countries like
+Nepal where increase in access to internet
+coincided with the Facebook era. The internet
+subscription rate in Nepal is 55.6% 32 and mobile
+users is 136%33
+. When asked about their online
+experiences, all our respondents first shared
+their 	experiences 	on 	Facebook, 	indicating
+that the bulk of people’s online lives in Nepal
+are now spent on Facebook. In one of the
+focus group discussions, 9 out of 10 people
+said they used the internet, the 10th person
+said she used only email, implying she did not
+consider email as being “the internet.” The most
+common social media platform is Facebook,
+and Facebook Messenger is commonly used for
+communication within the community; statistics
+32 	Internet World Stats. (2019).Asia Mobile and Broadband Report [Report] https://www.
+internetworldstats.com/stats3.htm
+33 	Nepal Telecom. (2020 May 24). Mobile, Broadband and Internet Penetration in Nepal. https://www.
+nepalitelecom.com/2017/07/mobile-internet-broadband-penetration-nepal.html
+34 	Pandey.S, Raj.Y. Free Float Internet Policies of Nepal. Studies in Nepali History and Society 21(1):
+1–60 June 2016 © Martin Chautari (pp. 37)
+35 	vale, h. (2017). In plain sight: On sexuality, rights and the internet in India, nepal and Sri lanka. In
+APC’s EROTICS South Asia exploratory research: Sex, rights and the internet (pp.11) https://www.apc.org/
+en/pubs/erotics-south-asia-exploratory-research-sex-rights-and-internet
+show that Facebook alone accounts for 97% of
+social media usage in Nepal.34
+As we will see later in the report, the participants
+in our study used Facebook for a wide range of
+activities, including connecting with friends and
+family, making new friends, and getting updated
+on the news in general as well as disability
+issues in particular. However, the limitations
+of Facebook may also have contributed to
+discouraging online sexual expression. Facebook
+is a space where you can find your parents,
+employers, friends, lovers, along with all their
+expectations and judgments that can result in
+high self-censorship.
+In the context of over reliance on Facebook by
+our cohort of interviewees, we are constantly
+reminded that:
+“For a meaningful dialogue the space of the
+internet needs to be integrated, enriched
+and not limited or concentrated on social
+media.[...] 	They 	need 	respectful 	and
+ethically built spaces to host dissent and
+provide privacy, avoiding the performance
+and per-formative modality privileged by
+social media.”35
+Even though these issues are not as easy to
+discuss online, early and hopeful indications that
+they are happening are visible.
+
+-- 25 of 46 --
+
+U
+s
+e
+o
+f
+	thei n t e r n e t
+	f
+o
+r
+s
+e
+l
+f
+-
+e
+x
+pr e s s i on
+	by
+	P
+W
+D
+
+-- 26 of 46 --
+
+PAG E 2 7 | B E YO N D ACCE SS
+USE OF THE INTERNET FOR
+SELF-EXPRESSION BY PERSONS
+WITH DISABILITIES
+36 	Lorde.A. (1984). Uses of the Erotic: The Erotic as Power. Tucson, AZ: Kore press. https://
+uk.sagepub.com/sites/default/files/upm-binaries/11881_Chapter_5.pdf
+37 	Lorde.A. (1984). Uses of the Erotic: The Erotic as Power. Tucson, AZ: Kore press. https://
+uk.sagepub.com/sites/default/files/upm-binaries/11881_Chapter_5.pdf
+“When I go to any programs, I post details
+about 	the 	programs 	and 	the 	fun 	with
+family members. If I go somewhere with
+my friends, I share about it as well… I use
+Tiktok too. I keep making videos. Most deaf
+people don’t use it.When I use Tiktok, I feel
+like I can hear myself and I feel like I am
+not deaf. So I use Tiktok and make videos.”
+Self-expression and sexual expression were not
+seen as related by most of our study participants.
+While questions on sexual expression mostly
+revealed the frustration of not being able to
+have meaningful conversations online regarding
+sexuality of WWD, questions on self expression
+elicited a wider range of answers regarding
+online 	activities 	that 	our 	participants 	were
+engaged in.
+When we understand sexuality and the erotic
+through Audre Lorde’s definition as a sense of
+deep fulfillment and full expression of a woman’s
+feeling and being 36 , we are able to appreciate
+the wide range of ways in which participants in
+our study engaged in erotic expressions online,
+particularly on Facebook. This section attempts
+to capture the myriad ways our participants
+engaged in self-expression as well as sexual
+expression online, with the caveat that our
+participants did so without either considering
+or labelling them as sexual expression.
+Most of our participants used Facebook for
+sharing personal messages such as birthday
+wishes. A majority of them also shared a lot of
+work related information, including upcoming
+job vacancies and training opportunities for
+the disability community. Apart from Facebook,
+participants also reported using Youtube for
+inspirational 	songs, 	movies, 	and 	videos 	of
+persons with disabilities. A few shared that they
+used Google for studying and email for work.
+Some of our respondents also shared how
+they were using Facebook as a forum for self-
+expression, sharing content around self-love
+and creative expression, as well as venting. As
+was described:
+“I act, and dance, so I put up videos.”
+“I share a lot of pictures in my status
+updates. I like to write also, so I write poems
+and such on Facebook. It feels good to post
+my pictures and writings. I write poems or
+other status updates about once a week
+and I use Facebook all the time. It’s like a
+friend to me.”
+“When I get frustrated, or have something
+I can’t tell people face to face, I write and
+share on Facebook.”
+Through Lorde’s lens that “blurs the boundaries
+between the erotic, on the one hand, and
+political, creative, and everyday activities, on the
+other,” we can look at these expressions as a
+“creative force for revolutionary change”.37
+Our research participants reported regularly
+using the internet for receiving information on
+beauty, sexuality and sexual health. Although
+only a very few understood these activities as
+falling under the umbrella of sexual or erotic
+expression, below 	are 	a 	few 	quotes 	from
+
+-- 27 of 46 --
+
+PAG E 2 8 | B E YO N D ACCE SS
+participants that show the range of information
+that they got from online sources:
+“I watch how-to videos on reducing acne,
+hair care and beauty routines. I get a lot of
+cramps, and look at how to reduce cramps.
+I learnt about hot water soaks, and eating
+chocolate, and how these help.”
+Here, 	our 	discussant 	reveals 	the 	multiple
+aspects of her erotic self that are important to
+her, and the variety of information on beauty,
+sexuality and reproductive health she seeks
+online to inform her in her goals of beauty and
+self care. Though most of such content online is
+not necessarily created with a WWD in mind,
+as long as WWD’s physical disability is not
+a barrier to accessing this information, their
+experiences online have enriched their offline
+lives. Of course, most participants still had
+barriers to access, especially those with sight
+and hearing related disabilities, who could not
+benefit from a lot of such how-to videos and
+other content aimed at able-bodied women.
+The need for content online that is tailored to
+the disability community is further demonstrated
+by this quote from another participant:
+“...And many friends are exploring about
+sex toys. Many cases of married women
+who have spinal cord injuries have problems
+in sexual life. Even unmarried women do
+use sex toys generally in city areas more
+than rural areas.”
+The participant indicates how some forms of
+disability, such as spinal cord injuries, might close
+off the “traditional” routes of sexual pleasure
+through sex. When sex as an act is rendered
+difficult or impossible by a disability, sex toys
+provide an option for the fulfilment of one’s
+sexual needs. Here too, those with a disability
+such as a spinal cord injury are able to access
+the internet with greater ease than those with
+hearing or sight related difficulties, and so are
+able to explore online options such as sex toys.
+38 	Moses.G. (2018 August 28). Why Disability Representation Matters (And not just in Media). The
+Body is not an Apology https://thebodyisnotanapology.com/magazine/why-disability-representation-
+matters-and-not-just-in-the-media/
+39 	Kusher. D. (2019 September 4). Brief History of Porn on the Internet. Wired https://www.wired.com/
+story/brief-history-porn-internet/
+However, even for those who do not have
+problems accessing content meant for able-
+bodied people, the problem of representation
+is real. Being able to see oneself in the content
+that is online is a valuable experience that can
+make the space feel more like one’s own.38
+The inclusion of PWDs in content-making also
+brings the possibility of addressing issues and
+experiences that are particular to disabilities;
+issues that are less likely to be on the radar of
+mainstream content creators.
+One 	of 	our 	respondents 	also 	shared 	her
+experience of looking for porn videos, and being
+disappointed at not finding representations of
+bodies of persons with disabilities:
+“I was looking for porn videos of PWD
+having sex, but I could not find any. We
+women with disabilities are seen as [...]
+asexual …”.
+Porn, one of the earliest things that the internet
+became known for39, still does not cater to
+those with disabled bodies. Our respondents
+also mentioned accessible porn, indicating that
+porn catered to an abled audience would not
+do.
+Self-censoring the
+online persona
+The activists in the research mentioned how
+they would use the internet for ‘good’ reasons
+given their public figures as activists and social
+workers. When probed further to elaborate,
+they stated that it involved sharing information
+and 	news 	about 	what 	is 	happening 	in 	the
+disability rights groups and communities, and
+talking about their work and events of their
+organisations. On the other hand, there is an
+understanding that sharing a lot of personal
+information, 	especially 	related 	to 	sad 	or
+distressing topics, is not encouraged; they feel
+
+-- 28 of 46 --
+
+PAG E 2 9 | B E YO N D ACCE SS
+the need to be motivating and encouraging to
+PWDs in their online spaces.
+“I don’t upload much as well. I mostly share
+inspiring things so that people can get
+inspired and learn something through them.
+I also share things that touch my heart.”
+“People post things about suicide. Like how
+they want to kill themselves. There are
+times when they personally message me
+and share these things.This not only affects
+them but us as well in a very negative
+way. People should not share these things
+on 	Facebook. People 	should 	only 	share
+motivational stuff.”
+“It was New Year’s Day when me and some
+of my friends had been to a club. I had
+shared it on Facebook too. The next day
+the head of the organization called me
+and told me that I should not be posting
+such things on Facebook. He told me that
+I am the leader of the future so I should
+not post such stuff. He told me not to post
+other personal pictures too. The ones not
+associated with the organization. I agreed
+with 	what 	he 	said 	about 	not 	to 	post
+clubbing ones but I could not agree with
+what he said about not to post my personal
+pictures. Ahh! It’s my choice.Totally!”
+The belief that leaders in the movement need
+to be motivational for others in the community
+is also imposed within the community itself.
+Emotions 	related 	to 	sadness 	are 	seen 	as
+‘negative’.
+Participant 1: I also used to post a lot of
+pictures on the internet on a daily basis.
+Some of my sisters (colleagues from the
+movement) told me that being a member
+of the organization, I should not be posting
+a lot of pictures along with the captions
+[captions that conveyed personal feelings,
+including sad ones]. ….They told me that if
+I post such, then I will be taken negatively
+so I have been trying to post as less as I can.
+I control myself from posting pictures…
+They say, “Oh! You had posted pictures on
+the internet! Why???”They scold me. I know
+they say things that would be good for me so
+I don’t take it negatively.We are the people
+working in an organization, there are lots of
+people who learn things from us.We should
+motivate them. I am still controlling myself. I
+am trying to improve myself.
+Participant 2: It’s not that she can’t write.
+It’s just that the things that she’d write on
+the internet will be seen by her followers
+and they’ll get the wrong idea and message
+which further demotivates them. If you
+want to post photos along with a caption,
+do it but make sure that the caption is
+positive and good.
+The 	pressure 	to 	share 	only 	‘motivational’
+and positive information on social media also
+restricts the participants from expressing their
+sexuality the way they desire.
+“I had also posted a picture wearing a
+dress online and some people messaged
+me saying that I should not wear such
+dresses and that I look far better in jeans.
+I had neither worn that dress while going
+to work nor had anyone at work seen me
+wearing that in person. I had merely posted
+that online.”
+“My husband and I had clicked a kissing
+picture which I uploaded on social media.
+My husband was against it and asked
+me why I posted such a picture on social
+media. I replied to him saying that it was a
+very precious moment so I posted it. I don’t
+know exactly when but later I deleted that
+post and yes, regretted [having to delete
+it]. Nowadays I am very careful about
+what I share and post online. Even if we
+post personal things, [our] organization is
+attached to it. So it’s crucial to be careful.
+“Well the question is – being an activist we
+become careful and conscious about what
+we post online and we don’t post the things
+that we want to.We are not able to express
+it, right? Like I want to post a picture kissing
+my partner and that is part of my sexuality.
+So we are controlling our sexuality for the
+sake of activism… I might fancy to post
+hundreds of selfies that I love and that’s
+entirely my choice. But because of our work,
+activism and fear we [are not able to]…”
+
+-- 29 of 46 --
+
+PAG E 3 0 | B E YO N D ACCE SS
+How disabled bodies are
+represented online
+Narratives about bodies of PWD are replete
+with the assumption that their bodies are not
+just 	aesthetically 	ugly, but 	also 	functionally
+deficient, unable to perform important functions,
+especially reproductive ones.
+The medical model of disability and “social
+construction of the impaired body as passive
+and 	dependent”40 	views 	disabled 	bodies 	as
+deficient and undesirable. These views about
+disabled 	bodies 	are 	further 	reinforced 	by
+views of women’s sexuality which has tended
+to dehumanize and infantilize women. 41 These
+intersectional 	discriminations 	build 	on 	each
+other, leading to bodies of WWD being denied
+the respect, agency, and personhood afforded
+to other bodies.
+Our research participants shared that, above all,
+their bodies are not even expected in online
+spaces. Many of our discussants shared how able
+bodied people are always surprised when they
+encounter someone with a disability online.
+PWD frequently use Facebook and the internet
+but other people don’t know that PWD can
+also use Facebook.
+Our 	research 	participants 	shared 	their
+experiences of uploading photos online, and
+getting negative comments, even from their
+Facebook 	circles 	of 	trust. These 	comments
+illustrate the kinds of bodies that women with
+disabilities in Nepal are expected to have, the
+way they are expected to carry those bodies,
+and also the lines that circumscribe acceptable
+forms of sexual expressions for WWD in Nepal.
+Our 	participants 	reported 	receiving 	many
+messages of appreciation, which upon further
+examination, were not appreciation at all. Instead
+they were disclaimers that spoke of participant
+expectations 	that 	disabled 	bodies 	are 	not
+beautiful, and bodies that are beautiful cannot
+belong to PWD. “You don’t seem disabled”
+40 	Christina S.A., Lucia S.A. (2017). Yes, we fuck! Challenging the misfit sexual body through
+disabled women’s narratives. Sage Journals. 21(3), 303-318. https://journals.sagepub.com/doi/
+full/10.1177/1363460716688680
+41 	Ibid.
+seems to be the most common message that
+WWDs who fit conventional social definitions
+of beauty receive online.
+For 	example, 	when 	asked 	what 	kinds 	of
+comments 	she 	receives 	on 	her 	photos, 	a
+participant said:
+“Mostly 	appreciation. 	People 	say 	that
+my photos don’t seem like I belong to a
+community with disability. Sometimes I post
+pictures of me giving a speech, attending
+various programs, visiting different places.
+People say that I post beautiful pictures
+while attending programs. I post pictures of
+me when I go abroad as well. And, people
+get a shock. (Laughs)”
+While at first glance this seems like a compliment
+and was taken as such by many recipients,
+there are various assumptions that the person
+who complimented internalized. One is that
+disability and beauty are mutually exclusive – so
+if the person has appraised you as beautiful, you
+cannot be disabled.
+Another telling reaction is the one of “shock”
+on photos of foreign travel by a WWD, which
+also makes assumptions on the range of life
+experiences available to persons with disabilities.
+It is the compliment-giver’s expectation that
+those with disabilities cannot attend and give
+speeches at international programs.
+In the same vein, another participant with a
+strong interest in beauty and makeup shared
+this experience:
+“I used to wear full makeup earlier…and
+people did not think I was disabled. ‘When
+we 	look 	at 	you 	in 	photos…you 	don’t
+seem disabled (using derogatory words for
+disability)’.’ Are you trying to attract and
+confuse men?’ These types of comments
+come 	on 	Facebook 	and 	also 	from 	the
+(disability) 	community 	itself. 	I 	started
+deleting those comments, now I only have
+people 	from 	the 	disability 	community,
+
+-- 30 of 46 --
+
+PAG E 3 1 | B E YO N D ACCE SS
+and a few members from my family (on
+Facebook).”
+Here too, we see how beauty and beautification
+is assumed to be irrelevant for disabled bodies.
+In 	addition, men 	seeing 	a 	beautiful 	woman
+through the hetero-normative ideas of desire
+and 	sexuality, upon 	finding 	out 	that 	she 	is
+disabled, assume 	that 	this 	must 	have 	been
+done on purpose, to get them attracted and
+confused. The participants often used language
+that marked clear binaries between beautiful
+and not, on the basis of body-ability, and they
+tended to think of themselves as unattractive.
+How technology can facilitate
+expressions of sexuality
+In addition to receiving information on sexuality,
+reproductive health, and engaging in discovery
+of sexuality through pornography, participants
+also shared that they have used the Internet as a
+medium for expressing their sexuality, whether
+in private chats or on online dating sites.
+“Offline, there are no accessible places
+where we can go for dates or meet people.
+Before we meet someone, we are able
+to see their pictures, have video chats.”
+“Basically people are not open about sex
+but they do sexual activities like video chat,
+sharing pictures. Some of my friends also
+do that but people don’t talk openly so real
+data about people exploring their sexuality
+on the internet is not available.The Internet
+plays a vital role for sexual activity among
+partners. It is easy, we don’t need to meet
+people, have physical contact and there is
+not any chance of having STDs. It is safe
+and private.”
+These quotes show how offline spaces are
+restrictive for PWDs, especially in terms of
+sexual expression, and how technology could
+work around that. Through video chats and
+sharing of images, a subset of women with
+disabilities are able to engage in explorations of
+42 	Cohen-Rottenberg, R. (2017, September 28). Where Are All the Disabled People in the Body
+Positivity Campaigns? The Body is Not an Apology. https://thebodyisnotanapology.com/magazine/where-
+are-all-the-disabled-people-in-the-body-positivity-campaigns/
+sexual pleasure online, which might even have
+some advantages over in-person explorations
+in terms of safety: safety from STDs, protection
+of privacy, and (comparative) ease of access.
+However, the downside is that there is still
+limited privacy and safety for women with
+disabilities while using the internet because
+such realities are not generally not reflected in
+the movement. It becomes important then to
+see how addressing these concerns can include
+the needs and desires of WWD.
+A space to explore one’s
+many identities
+Persons 	with 	disabilities, 	especially 	visible
+disabilities, generally cannot compartmentalize
+their disability, to opt out of being identified with
+it. Often it happens that their disability eclipses
+all other facets of their personalities in the eyes
+of society. Walking around with disabled bodies,
+one experiences how “people stare but they
+don’t see; they look at the disabled body and
+can’t see the person.”42
+However, on the internet, things are different;
+one can choose which of one’s multiple identities
+to display or keep private. Our participants,
+especially those with visible disabilities such as
+those using assistive devices and equipment,
+commented that the Internet was the first
+avenue that gave them a choice to not share
+their 	disability 	status, 	ensuring 	that 	their
+disability identity is not the only lens they are
+seen through. For many, this act allowed them
+to explore other, less-visible aspects of their
+identity. Many of these experiences emphasized
+how this simple choice helped them escape
+the pitying that comes with the label of being
+disabled. These have provided some respite
+from the constant attention being given to their
+disability in the offline world.
+Many shared examples of this experimentation:
+“I do not think Facebook needs to be a true
+reflection…we do not want to advertise
+
+-- 31 of 46 --
+
+PAG E 3 2 | B E YO N D ACCE SS
+our disability there…we can limit what we
+share.Those who know (about my disability)
+know, those who don’t know don’t need to
+know.”
+For some WWDs, this has been an example of
+agency they were exercising online.
+Participants also shared 	their choice to not
+share their disability status with everyone on
+Facebook, adding that they shared it on an
+individual basis when they felt ready. Upon
+knowing of their disability, people that WWDs
+had 	been 	talking 	to 	on 	Facebook 	either
+completely avoided them, or conversely, asked
+too many questions. Either way, the relationship
+changed.
+“I do not have my disability status on
+Facebook.There are some people who stop
+talking to me when they find out that I am
+blind, and then there are some people that
+get hyper curious, and start talking even
+more.”
+These social experiments online have not only
+allowed 	our 	participants 	to 	slowly 	explore
+aspects of their identities, but also provided
+them with a window into how the world around
+them really thinks and feels about them.
+One of our participants shared the example of
+her friend, who went from deliberately leaving
+out her identity as a PWD on Facebook, to then
+deliberately including it to stop being the target
+of unwanted attention.
+“A good looking close friend of mine uploads
+her pictures in a way that the wheelchair
+is not visible. She was getting a lot of
+unwanted messenger calls from men, and
+was in a lot of stress. She was asking me
+for advice and I asked her to upload a full
+picture of herself. Once she uploaded that
+picture, those calls stopped. So we realized
+that these things (our disabilities) might not
+be talked about, but affect people.”
+This 	quote 	expresses 	how 	disabled 	bodies
+are 	discriminated 	against, 	and 	even 	when
+people are trying to project an image of being
+“tolerant” 	or “sensitive,” 	their 	conventional
+ideas of sexuality of WWD become visible in
+these encounters. While the participant was
+conventionally desired by a lot of men, the
+desire was contingent on assumptions of her
+able-bodiedness and collapsed with knowledge
+of her disability. Encountering conventional ideas
+of desirable bodies that do not have space for
+WWDs show how far we have to go in order
+for the sexuality of PWD to be acknowledged,
+let alone for disabled bodies to be objects of
+desire.
+SRHR activists in our research also shared their
+experiences of going a step beyond receiving
+information on reproductive health to sharing it
+with others online, despite the risks it entailed.
+“There was a post on “Period” and I shared
+it on Facebook because people say bad
+things to women which are negative and
+also a kind of domination towards women.
+It had appeared on my newsfeed. I keep
+sharing such posts.”
+Here, our discussant speaks of various ways in
+which she has been using her online presence
+when she shares such content. Her dedication to
+“keep sharing” these posts and keep engaging in
+these acts of resistance online is an expression of
+her agency, as well as an important contribution
+to ensuring alternative narratives are amplified.
+However, safety on these platforms is not a
+given, and 	some 	of 	the 	paternalistic 	forces
+that 	are 	policing 	women’s 	behavior 	offline
+also make their presence felt online. A few of
+the participants who were using online dating
+platforms shared their experiences, which were
+largely negative:
+“This one time, [...] I was on my desktop
+and I got into those kinds of sites where I
+had to make my profile. [...] Then I started
+getting texts. I was totally surprised by
+why I was getting such texts. I looked at it
+but didn’t reply. I got a message from this
+one person. He seemed genuine. We had
+a good conversation at the beginning. He
+said “ Yes I know you’ve landed on this site
+without knowing about it. You are not that
+kind of person who lands into such places
+So, you just delete it and exit. I asked what
+
+-- 32 of 46 --
+
+PAG E 33 | B E YO N D ACCE SS
+it is all about? He didn’t explain much but
+yeah I remember happening such things to
+me landing into such unknown apps and
+space. Later on I deleted it hurriedly.
+I 	can’t 	say 	about 	others 	but 	in 	my
+experience it went very bad. After 6 month
+of my separation with my husband I tried
+to date online but my brother scolded me
+because of my previous experience. I also
+got scared. I don’t feel safe dating online.”
+These two experiences show how the patriarchal
+policing of women’s sexuality and sexuality of
+WWDs works in tandem online and offline, and
+often through one’s own family. Our participant
+was judged because she was perceived as “not
+that kind of person” and asked to delete her
+profile whereas another was scolded by her
+brother until she was scared. Having a profile on
+online dating sites is another act that makes one
+seem “hypersexual”, and women’s admissions of
+their own sexuality through having a profile on
+dating sites, seemed to be too much for their
+own close ones to handle.
+In 	the 	focus 	group 	discussions, participants
+agreed that online dating sites are not worth
+the risk – that it invites too much negative
+attention 	and 	judgment. They 	were 	of 	the
+opinion 	that 	sharing 	feelings 	with 	people
+through chatting options on other social sites
+(especially Facebook) was sufficient.
+However, for a queer PWD who participated in
+the study, the experience is different -
+“I identify myself as queer person[...], to
+find a partner I use dating apps but mostly
+dating apps in Nepal are used only used for
+sexual fun, if I want to have sex then I can
+open the app and find a partner…”
+They also added,
+“From dating apps, I can search partners
+according to my preference. We would talk
+like, talk secretly. Everything starts from
+online, and 	then 	goes 	offline. In 	queer
+community, everything starts from online.”
+
+-- 33 of 46 --
+
+L
+a
+c
+k
+o
+f
+s
+afe
+	spacesonline
+
+-- 34 of 46 --
+
+PAG E 35 | B E YO N D ACCE SS
+LACK OF SAFE SPACES ONLINE
+Participant conversations pointed to a need for
+more safe spaces for WWD to have discussions
+on 	sexual 	expression. However, apart 	from
+their own Facebook pages, we did not hear any
+specific instances of safe spaces during these
+conversations with women with disabilities. In
+comparison, during the first phase of EROTICS
+survey among gay men and activist women,
+participants in those groups had shared the
+existence of secret groups that functioned as
+safe spaces.
+As mentioned earlier, disability rights activists
+are creating safer experiences within their own
+Facebook circles by avoiding adding unknown
+people from outside the disability community.
+While the individuals are using agency to build
+a space that they desire within the community,
+this seclusion is also out of a necessity to
+prevent bullies and harassers. If not combined
+with other ways to communicate with the
+wider 	community, 	this 	strategy 	limits 	the
+conversations on sexual expression of women
+with disabilities to only their own circles.
+Group discussants also spoke of an experience
+regarding YouTube, a platform that cannot be as
+carefully tailored:
+“We had gone to watch a movie and the
+actors had met us, and put a video of that
+on Youtube. On that, they had interviewed
+us. I saw a lot of negative comments. We
+had said we liked the movie. There were
+comments like: now, blind people who are
+not able to see the movie are going to say
+it is good, perhaps deaf people will also say
+they like the movie without hearing it!!!
+“There were a lot of disgusting comments.
+“I think they [the moderators] deleted the
+comments later.”
+This experience of getting harassed online as
+soon as one is exposed to a more mainstream
+audience helps us understand why women with
+disabilities may choose to socialize online only
+in limited circles. Doing so can ensure that one’s
+experience on the internet is largely positive and
+pleasurable. The stigma of being disabled and
+enjoying everyday activities leads to mocking
+on the internet –forcing many PWD to restrict
+sharing their experiences to an abled audience.
+Online violence experienced
+by women with disabilities
+Online harassment is generally understood as
+unwanted sexual conduct on digital platforms;
+Online violence includes harassment, threats or
+violence on somebody using technology or the
+internet. With this working definition, the label
+of harassment is applied to anything that is not
+welcomed by the recipient, regardless of the
+intention behind it. Our discussions of WWD’s
+experiences 	on 	their 	own 	Facebook 	pages,
+as well as online dating sites and on Youtube
+have indicated the prevalence of intersectional
+violence they face, targeted for their identities
+as women and as PWD. Some of the violence
+is 	in 	the 	form 	of 	microaggressions, where
+persons with disabilities are given backhanded
+compliments, expressing admiration for being
+so beautiful or successful that they do not
+“seem disabled.” Other aggressions take the
+form of emotional labor, where WWDs are
+constantly asked by abled persons to answer
+their 	questions 	and 	satisfy 	their 	curiosities.
+In this section, we explore the intersectional
+violence faced online by WWDs, across the
+scale from micro to the macro.
+Social ideas about what is acceptable and one’s
+own socialization can affect how/when we feel
+harassed. Some of our respondents shared that
+sometimes the line between appreciation and
+harassment online is difficult for them to draw,
+
+-- 35 of 46 --
+
+PAG E 3 6 | B E YO N D ACCE SS
+as seen in this participant’s quote regarding
+comments on her Facebook posts:
+“Mostly I get positive comments but some
+men comment “sexy body” --- I don’t know
+if that is good or bad.”
+The viewer’s overt sexualization of one’s body
+takes 	the 	appreciative 	remarks 	into 	risky
+“sexual” 	territory, 	creating 	discomfort 	and
+resulting in questioning whether one’s reaction
+is disproportionate.
+The sharing of pictures beyond the intended
+receiver 	was 	another 	problem 	mentioned
+during the discussions. As stated by the queer
+participant quoted in the previous chapter:
+“In dating sites the pictures are posted
+to express sexuality so indirectly people
+comment with negative intention, and some
+people take a screenshot of my pictures
+and send it to other people.[…… ] and
+the nudes that they share may be of the
+person might be of a different person.”
+Another participant shared a similar experience
+of feeling harassed and taking steps to protect
+herself, even when she was not sure whether
+the behavior she received was harassment or
+not.
+“Once, I went to a marriage ceremony in
+a sari. My younger brother took a picture
+of me showing my back, which I liked too,
+so I posted it on Facebook. The photo was
+not revealing too much skin, just a little bit
+of the back was not covered by the blouse.
+A boy commented on that photo “You are
+very sexy, I want to meet you.” I felt so bad
+because of that comment and I blocked
+him. I don’t even know him that well.”
+Both 	these 	experiences 	show 	how 	caution
+and precaution are a big part of the online
+lives of WWDs, in order to both nip unwanted
+attention 	in 	the 	bud 	and 	also 	prevent 	the
+possibility of the conversation progressing into
+unwanted territory in the future.
+Our discussion revealed a certain understanding
+among participants that harassment online is
+also inevitable. There were some anecdotes
+shared of public persons who are harassed,
+who then accepted that harassment would be
+the price they would have to pay for their fame.
+For example, one participant shared:
+“We have this person.... She is a dancer.
+Lots of her pictures are misused too. There
+are fake pages using her pictures as well.
+I informed her about it and told her to
+report but she didn’t pay much attention
+thinking it comes along with the popularity.
+But personally, I don’t think it’s right. Maybe
+she thought it was right and didn’t take any
+action. So the photos are misused the most.”
+Our 	participants 	were 	also 	of 	the 	opinion
+that the experience of harassment is felt by
+women more strongly because of their painful
+awareness of their own vulnerability and that
+having disabilities compounds this.
+“Yeah there are a lot of cases that happen
+in the community like being asked to meet
+and falling victim to a rape attempt, based
+on the fact that disable people cannot
+stand for their own help.”
+“What happens to us mostly is, among
+amputees, 	is 	that 	people 	first 	try 	to
+emotionally blackmail us. They know about
+our bodies and the level of injuries, and
+comment accordingly. For example I have
+injuries 	all 	throughout. It’s 	clearly 	seen
+when I am wearing stockings. They used
+to ask for pictures of my stump. I did not
+realize at first. People ask for pictures of
+stumps the most. When we take pictures
+of stumps there are chances of our private
+parts being captured in the photos. Nepali
+boys aren’t that much forward so they don’t
+bother to ask for sure. But people from
+foreign countries ask for [photos of the
+stump] the most.”
+These experiences point to the multiple levels
+in which WWDs face harassment online. One is
+the limitations imposed by a disabled body, and
+the vulnerabilities it creates – where mounting
+an effective self-defense in case of attack might
+be very difficult.
+
+-- 36 of 46 --
+
+PAG E 3 7 | B E YO N D ACCE SS
+Online harassment of WWDs deserves separate
+examination because the type of harassment
+used to target them and their own experiences
+of being harassed may be different from other
+demographics. In addition, subtle tactics such as
+harassers online asking someone for a picture
+of their disability just to ogle at their private
+parts shows how alert WWDs have to be, even
+when engaged in routine behaviours online that
+would seem to be low-risk. Encouragingly, the
+example also shows a high level of awareness of
+these threats, and active self-protection taken
+to avoid these risks online.
+Then there are instances of randomly being
+added to sex groups on Facebook, being solicited
+for sex online, and receiving sexual messages,
+which 	has 	created 	additional 	problems 	for
+those with visual disabilities who were on the
+receiving end of sexual photos but did not
+know what they were receiving.
+In addition, two participants in this research have
+also experienced being a victim of cybercrime,
+with their IDs being hacked, receiving unwanted
+photos and videos, and having their photos or
+videos publicized without consent.
+To close this section we go to a story shared by
+one of our interviewees:
+“Another experience was, once a person
+sent me a friend request on Facebook. He
+sent me a message which I didn’t respond
+to. My brother also uses my phone and my
+brother replied to him saying “Hi, how are
+you?” The message was from a foreigner...I
+don’t remember his name now, I think his
+name was Richard or something. I knew
+that was a fake id. He found my number,
+I don’t know from where but he called me
+by using another girl. She said that you
+have a parcel from Richard, UK so come
+to the airport with $400. I had just started
+to work and at that time I didn’t have that
+much money. Even if I had that money I
+wasn’t going to give it to them. And then I
+said nobody is there in the UK to send me
+a parcel so do not call me otherwise I will
+go to the police.
+“Then that person started to blackmail
+me by saying he will send my pictures to
+my friends and family. The photo was not
+mine, it was photoshopped with my face
+and someone else’s naked body. I was so
+stressed, I was in my office and I talked to
+my brother, and he suggested that I go to
+the police and report the case. I did that;
+I went to the police station in Teku, filed
+a cyber crime report showing the pictures
+and that fake Facebook ID.The facebook ID
+was subsequently blocked but the number
+that called me could not be traced - they
+said the call was from India, but the girl was
+speaking Nepali.This case happened about
+2 years ago.
+“I didn’t tell anyone except my older brother.
+I didn’t even tell my mother because she
+will judge me and my character. If I tell
+my friends, they may think that I sent him
+those kinds of pictures. It is very awkward
+to talk with friend about sex and sexuality
+in the context of Nepal. I can’t talk with
+anyone. Only with your husband or your
+sexual partner can you talk [about it] or
+with the people who know a little bit about
+the topic. In my case, I can’t talk with my
+husband either. I used to frequently watch
+porn with my husband. Actually, he taught
+me to watch porn. But when we divorced, he
+blamed me, saying that I am a characterless
+girl who watches porn.”
+In this story we can see a perfect storm where
+online harassment, the technological aspect of
+the crime (modifying and superimposing images),
+fraud, 	impersonation, 	moralistic 	attitudes
+towards women’s sexuality and the sexuality of
+women with disabilities all come together.
+While this snapshot provides us with a bleak
+look into all the challenges that women with
+disabilities have to face today in the online
+world, we end our analysis on a hopeful note in
+the next section.
+
+-- 37 of 46 --
+
+PAG E 3 8 | B E YO N D ACCE SS
+Life without the
+internet will be dull
+For a final word on the Internet, we present this
+snippet from an activist who is based at home:
+“I am disabled and my family and friends
+don’t allow me to go out of my house as
+they want to keep me ‘safe’ from outside or
+they don’t want me to work. I can’t imagine
+my life without the internet. My life will be
+dull.”
+Connections and mobility via the internet has
+been beneficial for PWDs.The barriers to access,
+and the exclusion and the violence prevalent
+in offline spaces need further exploration to
+make the internet a space where women with
+disabilities can thrive.
+
+-- 38 of 46 --
+
+Recommendations
+for a dignified life
+online
+
+-- 39 of 46 --
+
+PAG E 4 0 | B E YO N D ACCE SS
+RECOMMENDATIONS FOR A
+DIGNIFIED LIFE ONLINE
+43 	Dahal.T. et. al.(2016) Freedom of Expression on Internet in Nepal. Freedom Forum. https://ifex.org/
+images/nepal/2016/08/05/nepal_freedom_expression_internet_freedomforum.pdf
+44 	(2019). Policy Paper: Information Technology Bill 2019, from a feminist lens. Body and Data.
+https://files.bodyanddata.org/nextcloud/index.php/s/WCRo3DL6XcBGLiJ
+45 	The Privacy Act2018. s. 6 (Nep).
+Section 6 of the Privacy Act mentions that if someone is of ‘unsound mind’, the matter relating to
+reproductive health and pregnancy of can be provided to the member of his or her undivided family
+and for his or her guardian. This is direct violation of right to privacy of individual and does not respect
+autonomy of individual to understand their bodies and make decision about it, so should be amended.
+The term ‘unsound mind’ itself is ableist and could be interpreted to further marginalize women with
+intellectual and psycho-social disabilities.
+One of our participants shared how the Internet
+could be a positive asset in helping improve the
+lives of women with disabilities:
+“For a person with a disability to live a dignified
+and normal life, everything, such as – education,
+employment, 	relationship, 	children 	etc. 	is
+needed. And, social media and the internet
+should make it seem like a normal thing. The
+Internet should make the abled people feel
+that it’s normal for PWD to live a life like abled
+people. If a wheelchair woman marries and has
+children, people think like – “Does she need a
+marriage? Does she need children?” And, if a
+blind girl marries and gives birth to the children,
+people say the things like – why do they have
+to give birth to children even when they are
+blind etc. People react strangely and awkwardly.
+So, I hope after ten years, we would see some
+changes. I hope abled people would feel totally
+normal about PWD getting married, having
+children etc. And, I think that the internet and
+social media should help us in this regard.”
+Based on our research, these recommendations
+are in the interest of promoting freedom of
+sexual expression for women and queer people
+with disabilities online:
+Recommendations for the
+government and its institutions
+The 	national 	policies 	infringe 	on 	freedom
+of 	expression 	and 	often 	criminalise 	sexual
+expression, limiting and controlling how people
+express their opinions and desires.The Electronic
+Transaction Act43 and Information Technology
+Bill44 restricts one’s sexual expression online.
+Besides the national regulations and laws, there
+is moral policing from the local governments on
+citizens, especially on women and girls. Similarly,
+national policies that are unfriendly to PWDs
+by being abelist and heteronormative in their
+design, including the Chapter on Family Law
+in Civil Code (Muluki Aparadh Ain) 2017 and
+Privacy Act 2019 puts women with disabilities
+at 	further 	risk 	of 	marginalisation45. These
+laws and regulations that restrict freedom of
+expression and sexual expression of citizens,
+and curb PWDs from enjoying their human
+rights require amendment.
+Many PWDs rely on online spaces and digital
+technology to access information, services and
+community 	that 	are 	otherwise 	inaccessible
+to them. However the cost of devices and
+internet connectivity is still high and there are
+only limited concessions from the state. The
+current provisions from the government, with
+subsidies on using the internet for those with
+hearing impairments is commendable. However
+this framework could be expanded. The PWD
+community will benefit from affordable devices
+
+-- 40 of 46 --
+
+PAG E 4 1 | B E YO N D ACCE SS
+and discounted internet plans. PWDs should not
+be only seen as beneficiaries to these services
+but 	also 	key 	stakeholders 	in 	consultations
+to develop national policies around ICT and
+strategies.
+Recommendations for the
+disability community
+The way that needs of PWD are identified is
+not inclusive of people from different walks
+of life, and is mostly led by Brahmin cisgender
+heterosexual 	individuals. This 	results 	in 	a
+hierarchy of needs where aspects of sexuality are
+not considered as ‘basic needs’, thus excluding
+the voice of many in the community.The agenda
+setting of disability rights movement needs to
+be inclusive of women and queer people with
+disability across caste, ethnicity, class, education,
+geographical location, and age. Persons with
+severe disability tend to be excluded from
+disability rights discourse; greater effort must
+be applied to include them as well. Narratives
+around what are seen as ‘good’ or ‘bad’ use
+of the internet and online spaces need to be
+restructured to hold the nuances and messiness
+of one’s expression in online spaces. The risk to
+just one person speaking up on issues of sexuality
+can be overcome by a concerted campaign
+where 	everyone 	participates, 	thus 	bringing
+attention to the problem, while distributing the
+risk and ensuring that the negative attention
+can be dealt with as a community, rather than
+individually.
+The 	self-censorship 	among 	activists 	with
+disabilities due to the pressure to perform
+as 	a 	role 	model 	to 	the 	community 	needs
+reassessment; their individual right to freedom
+of expression needs to be addressed. Sexuality
+of women and queer people with disabilities
+should be acknowledged as a priority of the
+movement, so they feel accepted fully, besides
+just their ‘activist side’.
+While the community does support each other
+when harassed, they do not have any forum for
+ongoing discussions on issues of disability and
+sexuality, and in the lack of such a safe space,
+they are limited to having these discussions only
+when they are invited to international forums.
+Recommendations for
+technologists and developers
+Access to technology and the internet is key and
+a first step for someone to be able to express
+themselves freely and openly. However, digital
+technologies are often not friendly to PWDs
+in their functions and/or interface and access
+to these technologies to PWDs comes as an
+afterthought. Not all social media platforms and
+their content are accessible to PWD. Even the
+technology projects developed to assist PWDs
+usually collect suggestions and feedback once
+they are ready (rather than seeking during earlier
+design stages). PWDs are also often expected to
+provide this constructive review and feedback
+without 	any 	compensation. To 	make 	digital
+technology accessible to PWDs whether it is
+directly catered to them or not, there must be
+meaningful participation and consultation with
+the community from inception of the project
+until its execution. Such a practice of seeking
+suggestions from the community regularly will
+only improve the quality and inclusivity of the
+product.
+Recommendations for
+the wider community
+Society at large needs to bear accountability for
+how conversations about disability and sexuality
+take place. Looking at women and queer people
+with disabilities beyond the objects of pity and
+needing support, society needs to make their
+stories of resistance more visible, and respect
+their agency. Conversations around disability
+and sexuality can broaden the range of futures
+that a woman with disability is able to imagine for
+herself, whether that future includes marriage,
+a family, and sexual pleasure, or not. Safe and
+open spaces must be created where these
+conversations can take place free of judgment.
+There is also an urgent need for more academic
+research into the disability community in Nepal,
+with a focus on women and queer persons
+within the community. Existing research as well
+as new knowledge production on this should be
+widely distributed in accessible formats.
+
+-- 41 of 46 --
+
+PAG E 4 2 | B E YO N D ACCE SS
+Recommendations for
+other movements
+For 	intersectional 	movement 	building, 	the
+queer 	rights 	movement, the 	women 	rights
+movement and sexual rights initiatives need to
+intersect disability in their work and activities.
+As our research shows, even among activists,
+open conversations on sexuality do not happen.
+Mainstream judgments continue to view sexual
+expressions of women as unacceptable. Ideas of
+sexuality are still narrow, and limit discussion.
+Initiatives 	that 	expand 	the 	definition 	and
+understanding of sexuality in Nepal are necessary.
+Addressing issues of online privacy, consent and
+security within the discourse of sexuality is
+equally important. Participants’ understanding
+of privacy, consent and data protection is low,
+with self reported instances of activists violating
+the right to privacy of others by posting things
+without 	their 	consent. It 	is 	important 	that
+activist women with disabilities be supported
+with training to understand these concepts and
+apply them within their communities.
+
+-- 42 of 46 --
+
+PAG E 43 | B E YO N D ACCE SS
+APPENDIX
+FGD guiding questions
+1. 	Can you introduce yourselves?
+2. 	Do you use multimedia phones? And do you have internet on it? Do you have
+internet facility where you live?
+3. 	Have you been using any government facility in terms of using internet and other
+services?
+4. 	Do you use any specific apps in relation to your disability? (apps for visually
+impaired people) Do you find it easy to use?
+5. 	Do you use social media channel (Facebok / Twitter/ Insta or others? Any difference
+in using certain social media for certain purpose? What do you use most/? What do
+you prefer using?
+6. 	How much of information you share about yourselves in those platforms (photos,
+feelings and emotions/information, etc.)?
+7. 	What kind of comments or reaction do you get in social media on your posts and
+how do you react about it?
+8. 	What kind of content in social media do you consider are related to sexuality? Do
+you post such content?
+9. 	Have you ever faced any kind of abusive comments expression related to your
+sexuality? Do you get comments related to your disability)?
+10. Have you heard of dating apps? Do you or your peers use them? What has been
+your experience?
+11. How do you see role of internet to explore and express sexuality?
+12. Do you use any platforms to express your sexuality and for pleasure (watching
+porn/ making tactic/watching tiktok)?
+13. Do you engages in conversation about bodies and sexuality online? How?
+14. What kind of bodies do you see being represented online? What kinds of
+conversations do you see happening online about bodies? What do you think about
+them?
+15. Do you think in people are bias or are abusive towards the PWD in the internet?
+What kind of biasness you have faced/seen?
+16. Do you censor yourself because of possible threats, negative comments and
+violence online?
+17. Have you used any measures to counter the abusive comments and violence online?
+(argue with the people online, report the post or comments, delete, report to
+police, etc.)
+18. Has internet help you to find support through friends, networks, and website?
+
+-- 43 of 46 --
+
+PAG E 4 4 | B E YO N D ACCE SS
+Interview schedule
+Beyond Access:Women and queer persons with disabilities expressing self and exploring
+sexuality online
+General Information
+Name
+Age
+Caste
+Ethnicity
+Occupation
+Gender/ sexual orientation
+Marital status
+Accessibility
+1. 	Do you use internet or not? If yes, where do you use internet and in what device?
+2. 	How supportive these devices and the internet platforms are to navigate your day-
+to-day lives?
+3. 	What are online platforms and applications you mostly use? Are there any access
+issues?
+4. 	What are the challenges using these platforms? Do you use any specific apps or
+program based on your disability needs?
+5. 	Are you benefiting from any government policy and plans in relation to telephone
+or internet access and use?
+6. 	Has anybody (policy makers or technology companies) come to you to discuss/
+consult about your need and experiences in terms of internet/technology and
+accessibility?
+Expression/platforms and experience
+• 	How often do you share your personal information (photos, opinions) online?
+• 	What kind of platforms do you use to share your thoughts? What kind of platforms
+do you use to express your sexuality?
+• 	What kind of platforms/ websites do you use for information collection related to
+sexual health and sexuality?
+• 	What kind of bodies do you mostly see in the internet? How are disabled bodies
+shown and perceived?
+Experience online
+1. 	Have you faced any online abuses and appreciation? What was your experience?
+2. 	Have you seen any kind of online abuse being faced by peers from disability
+
+-- 44 of 46 --
+
+PAG E 4 5 | B E YO N D ACCE SS
+community?
+3. 	Have you faced any online abuse or appreciation because of your expression related
+to your sexuality? Share any experience.
+4. 	What kind of comments do you get when you post certain kind of (feeling, thought,
+photos, etc) content?
+5. 	Do you censor yourself because of possible threats and violence online?
+6. 	What kind of measures do you apply to counter violence you face online? (Argue
+with the people online, report the post or comments, delete, report to police, etc.)
+Sexual expression in online platforms
+1. 	Nepal government has banned pornography saying that it is source of violence on
+women and children, what do you think about it?
+2. 	Do you use any platforms to express your sexuality and for pleasure (watching
+porn/ making tiktok/watching tiktok, using dating apps)?
+3. 	If you have an intimate partner, how do they react to your expression online, like
+when you share photo online? Would it be different if you were a single person?
+Movement building/Community building
+1. 	How has the internet been useful for movement building, has it contributed to
+Nepal’s disability movement?
+
+-- 45 of 46 --
+
+Beyond Access:
+Women and queer persons with disabilities
+expressing self and exploring sexuality online
+Body & Data is a digital rights organization in Nepal that
+aims to increase women and queer persons’ engagement in
+digital spaces through suitable strategies for
+expression, autonomy and agency.
+bodyanddata.org
+
+-- 46 of 46 --
+

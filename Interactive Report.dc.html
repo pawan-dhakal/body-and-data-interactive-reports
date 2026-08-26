@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F7F4ED;color:#17150F;font-family:Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#A4234B;text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:#7C1739}
+summary::-webkit-details-marker{display:none}
+summary{cursor:pointer;list-style:none}
+:focus-visible{outline:3px solid #1F5C55;outline-offset:2px;border-radius:2px}
+::selection{background:#F3D3DD}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms !important;transition-duration:.001ms !important}}
+</style>
+</helmet>
+
+<a href="#report-start" style="position:absolute;left:-9999px;top:0;z-index:100;background:#17150F;color:#fff;padding:12px 18px;font:600 14px/1 Archivo,sans-serif;border-radius:0 0 8px 0" style-focus="left:0">Skip to report content</a>
+
+<div style="min-height:100vh;background:#F7F4ED">
+
+<header style="position:sticky;top:0;z-index:40;background:#F7F4ED;border-bottom:1px solid rgba(23,21,15,.14)">
+<div style="max-width:1320px;margin:0 auto;padding:9px clamp(14px,3.5vw,30px);display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;min-height:62px">
+<div style="display:flex;align-items:baseline;gap:10px;flex:none">
+<span style="font:700 15px/1 Archivo,sans-serif;letter-spacing:-.2px">Body &amp; Data</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659;padding:5px 7px;border:1px solid rgba(23,21,15,.18);border-radius:4px;white-space:nowrap">Research Library</span>
+</div>
+<div style="flex:1;min-width:0;display:flex;align-items:baseline;gap:8px;overflow:hidden">
+<span style="font:400 13px/1.2 Newsreader,Georgia,serif;color:#4A463C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Nepal’s Biometric Present: Governance, Accessibility and Accountability</span>
+</div>
+<div style="display:flex;align-items:center;gap:8px;flex:none">
+<button type="button" onClick="{{ toggleFull }}" aria-pressed="{{ fullPressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:9px 13px;border-radius:999px;border:1px solid rgba(23,21,15,.22);background:#fff;color:#17150F;cursor:pointer;display:flex;align-items:center;gap:7px" style-hover="border-color:#17150F">
+<span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:{{ modeDot }};flex:none"></span>{{ modeLabel }}</button>
+<div role="group" aria-label="Text size" style="display:flex;align-items:center;border:1px solid rgba(23,21,15,.22);border-radius:999px;background:#fff;overflow:hidden">
+<button type="button" onClick="{{ zoomOut }}" aria-label="Decrease text size" style="border:0;background:transparent;cursor:pointer;font:600 13px/1 Archivo,sans-serif;padding:10px 11px;color:#17150F" style-hover="background:#F0ECE1">A−</button>
+<span aria-hidden="true" style="width:1px;align-self:stretch;background:rgba(23,21,15,.16)"></span>
+<button type="button" onClick="{{ zoomIn }}" aria-label="Increase text size" style="border:0;background:transparent;cursor:pointer;font:600 15px/1 Archivo,sans-serif;padding:9px 11px;color:#17150F" style-hover="background:#F0ECE1">A+</button>
+</div>
+<button type="button" onClick="{{ toggleToc }}" aria-expanded="{{ tocExpanded }}" style="font:600 12px/1 Archivo,sans-serif;padding:9px 14px;border-radius:999px;border:1px solid #17150F;background:#17150F;color:#F7F4ED;cursor:pointer">Contents</button>
+</div>
+</div>
+<div aria-hidden="true" style="height:3px;background:rgba(23,21,15,.08)"><div id="om-progress" style="height:3px;background:#A4234B;width:0%"></div></div>
+</header>
+
+<sc-if value="{{ tocOpen }}" hint-placeholder-val="{{ false }}">
+<nav aria-label="Report contents" style="position:sticky;top:65px;z-index:39;background:#fff;border-bottom:1px solid rgba(23,21,15,.14);box-shadow:0 14px 30px -18px rgba(23,21,15,.4)">
+<div style="max-width:1320px;margin:0 auto;padding:22px clamp(14px,3.5vw,30px) 26px">
+<p style="margin:0 0 14px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Jump to a chapter</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:8px">
+<sc-for list="{{ toc }}" as="c" hint-placeholder-count="9">
+<a href="{{ c.href }}" onClick="{{ closeToc }}" style="display:flex;gap:12px;align-items:baseline;padding:11px 13px;border-radius:8px;border:1px solid rgba(23,21,15,.12);background:#FBF9F4;text-decoration:none;color:#17150F" style-hover="border-color:#17150F;background:#F3EFE4">
+<span style="font:600 10px/1.4 ui-monospace,Menlo,monospace;color:#A4234B;flex:none;padding-top:2px">{{ c.num }}</span>
+<span style="font:500 13px/1.35 Archivo,sans-serif">{{ c.title }}</span>
+</a>
+</sc-for>
+</div>
+</div>
+</nav>
+</sc-if>
+
+<div id="report-start" style="max-width:1320px;margin:0 auto;padding:0 clamp(14px,3.5vw,30px) 120px;display:flex;gap:48px;align-items:flex-start">
+
+<main style="flex:1;min-width:0;zoom:{{ zoom }}">
+
+<section aria-labelledby="cover-h" style="padding:64px 0 40px;border-bottom:1px solid rgba(23,21,15,.14)">
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px">
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:#A4234B;padding:6px 9px;border-radius:4px">Interactive report</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.2);padding:6px 9px;border-radius:4px">Digital rights · Nepal</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.2);padding:6px 9px;border-radius:4px">2025</span>
+</div>
+<h1 id="cover-h" style="margin:0;max-width:20ch;font:400 clamp(40px,6vw,76px)/1.02 Newsreader,Georgia,serif;letter-spacing:-.02em;text-wrap:balance">Nepal’s Biometric Present</h1>
+<p style="margin:14px 0 0;max-width:26ch;font:300 clamp(21px,2.6vw,30px)/1.24 Newsreader,Georgia,serif;color:#4A463C;font-style:italic">Governance, Accessibility and Accountability</p>
+<p style="margin:30px 0 0;max-width:60ch;font:400 clamp(17px,1.25vw,19.5px)/1.62 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">A field study of what happened when Nepal set out to enrol every resident biometrically — told through the people who queued, the officials who ran the stations, and the promises made along the way. Everyone enrolled gave up <button type="button" data-term="Biometric data" data-def="Personal data capturing a person’s physical, physiological or behavioural characteristics through technological processing, used to confirm their unique identity — fingerprints, iris patterns, facial images, voice. Without strong legal protection, collecting it opens the door to extrajudicial surveillance." style="font:inherit;color:inherit;background:#FBEEF2;border:0;padding:0 3px;margin:0;cursor:help;border-bottom:1.5px dotted #A4234B;border-radius:3px" style-hover="background:#F3D3DD">biometric data</button> to do it.</p>
+<div style="display:flex;flex-wrap:wrap;gap:22px;margin:34px 0 0;padding:22px 0 0;border-top:1px solid rgba(23,21,15,.14)">
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Published by</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">Body &amp; Data</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Fieldwork</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">Sept 2022 – Nov 2024</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Districts</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">Kathmandu · Sarlahi · Khotang</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Reading time</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">{{ readTime }}</p></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 0">
+<a href="#ch-1" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;background:#17150F;color:#F7F4ED;text-decoration:none" style-hover="background:#A4234B">Start reading</a>
+<a href="#glance" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;border:1px solid rgba(23,21,15,.28);color:#17150F;text-decoration:none;background:#fff" style-hover="border-color:#17150F">Five-minute overview</a>
+<a href="#voices" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;border:1px solid rgba(23,21,15,.28);color:#17150F;text-decoration:none;background:#fff" style-hover="border-color:#17150F">Hear the voices</a>
+</div>
+</section>
+
+<section id="glance" aria-labelledby="glance-h" style="padding:52px 0 12px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">At a glance</p>
+<h2 id="glance-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The gap, in numbers</h2>
+<p style="margin:0 0 28px;max-width:62ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Enrolment moved fast. Cards did not. Everything else in this report sits inside that gap.</p>
+
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:14px;padding:26px 26px 22px;margin:0 0 18px">
+<h3 style="margin:0 0 4px;font:600 15px/1.3 Archivo,sans-serif">Enrolled vs. cards actually received</h3>
+<p style="margin:0 0 22px;font:400 13px/1.5 Archivo,sans-serif;color:#6B6659">Government figures, November 2024. Each bar is drawn to scale.</p>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 7px"><span style="font:600 13px/1.3 Archivo,sans-serif">Biometrically enrolled</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">16,350,000</span></div>
+<div style="height:26px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:26px;width:100%;background:#17150F"></div></div>
+</div>
+<div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 7px"><span style="font:600 13px/1.3 Archivo,sans-serif">NID cards handed over</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">1,650,000</span></div>
+<div style="height:26px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:26px;width:10.1%;background:#A4234B"></div></div>
+<p style="margin:7px 0 0;font:400 12.5px/1.4 Archivo,sans-serif;color:#6B6659">10.1% of people enrolled were holding a card six years into the programme.<sup style="line-height:0"><a href="#note-2" id="ref-2" data-note="DoNIDCR progress figures to November 2024: 16.35 million enrolled, 1.65 million cards distributed, 161,113 cards rejected by users over errors in their information. By April 2025, 6.23 million cards printed and 2.31 million received." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">2</a></sup></p>
+</div>
+<div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 7px"><span style="font:600 13px/1.3 Archivo,sans-serif">Cards refused by users over errors</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">161,113</span></div>
+<div style="height:26px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:26px;width:0.99%;min-width:4px;background:#8A5A0B"></div></div>
+<p style="margin:7px 0 0;font:400 12.5px/1.4 Archivo,sans-serif;color:#6B6659">Nearly one in ten distributed cards was rejected because the name, date or spelling was wrong.</p>
+</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,178px),1fr));gap:12px">
+<sc-for list="{{ stats }}" as="s" hint-placeholder-count="6">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:18px 18px 16px">
+<p style="margin:0;font:600 27px/1 Newsreader,Georgia,serif;letter-spacing:-.01em;color:#A4234B">{{ s.value }}</p>
+<p style="margin:9px 0 0;font:600 12.5px/1.35 Archivo,sans-serif">{{ s.label }}</p>
+<p style="margin:5px 0 0;font:400 11.5px/1.45 Archivo,sans-serif;color:#6B6659">{{ s.note }}</p>
+</div>
+</sc-for>
+</div>
+
+<div style="margin:26px 0 0;padding:20px 22px;border-radius:12px;background:#fff;border:1px solid rgba(23,21,15,.14)">
+<p style="margin:0 0 6px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Key terms — hover, tap or tab to a term for its definition</p>
+<p style="margin:0 0 14px;font:400 13px/1.5 Archivo,sans-serif;color:#6B6659">Every one of these is also written out in full in the <a href="#glossary">glossary</a>.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<button type="button" data-term="Digital identity (Digital ID)" data-def="An online representation of a person, built both from data they provide — sign-ups, posts, photographs — and from data collected about their actions, such as browsing history and purchase patterns." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Digital identity</button>
+<button type="button" data-term="Unique Identification Number (UIN)" data-def="A number assigned to a person that identifies them and links their identity across public and private databases. Nepal’s NID assigns a ten-digit number intended to last a lifetime." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Unique ID number</button>
+<button type="button" data-term="Datafication" data-def="Turning aspects of life — activities, behaviours, interactions — into quantifiable data that can be stored and analysed. It covers not only names and addresses but location history, social media activity and biometric details." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Datafication</button>
+<button type="button" data-term="Sensitive data" data-def="Personal data needing enhanced protection: racial or ethnic background, political opinions, religious belief, trade union membership, genetic and biometric details — especially when used for identification." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Sensitive data</button>
+<button type="button" data-term="Profiling" data-def="Automated processing of personal data to evaluate or predict aspects of a person’s life — job performance, economic status, health, preferences, reliability, behaviour, location." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Profiling</button>
+<button type="button" data-term="Digital literacy" data-def="Building on basic literacy: understanding how digital technology works and using it effectively — evaluating online information, operating devices, navigating the internet, and being aware of privacy, cybersecurity, consent and data breaches." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Digital literacy</button>
+<button type="button" data-term="Social exclusion" data-def="A multi-dimensional process marked by denial of access to essential resources, rights, services and opportunities, and exclusion from full participation in social, economic, cultural and political life." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Social exclusion</button>
+<button type="button" data-term="Aadhaar" data-def="India’s twelve-digit identity number, issued by the UIDAI on completion of a verification process. Enrolment is voluntary and it is proof of identity, not of citizenship. Rumours that Nepal’s NID would work like Aadhaar circulated widely in Sarlahi." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Aadhaar</button>
+</div>
+</div>
+
+<div style="margin:14px 0 0;padding:20px 22px;border-radius:12px;background:#EFEDE4;border:1px solid rgba(23,21,15,.12)">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">The one-sentence finding</p>
+<p style="margin:10px 0 0;max-width:56ch;font:400 clamp(19px,1.75vw,23px)/1.4 Newsreader,Georgia,serif;text-wrap:pretty">Nepal built a biometric identity system faster than it built the trust, the law, the infrastructure and the public understanding that such a system needs.</p>
+</div>
+</section>
+
+<section id="summary" aria-labelledby="summary-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Executive summary</p>
+<h2 id="summary-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">What the study found</h2>
+<div style="max-width:66ch">
+<div style="border-left:3px solid #A4234B;padding:2px 0 2px 20px;margin:0 0 26px">
+<p style="margin:0;font:400 clamp(18px,1.4vw,21px)/1.5 Newsreader,Georgia,serif;text-wrap:pretty">In November 2018 the Government of Nepal launched the National ID (NID): a unique ten-digit number tied to a person’s fingerprints, iris scan and photograph, promised to every resident by 2023.<sup style="line-height:0"><a href="#note-1" id="ref-1" data-note="Department of National ID and Civil Registration, ‘About the National ID Card’, donidcr.gov.np — stated features, enrolment requirements and the 2018 launch in Panchthar and Singha Durbar." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">1</a></sup> Six years later most people had been enrolled, few had a card, and almost nobody could say what the card was for.</p>
+</div>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ true }}">
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">This study examines the social consequences and on-the-ground effects of the National ID. It explores three things: public understanding of the National ID, the political ambitions of the Nepali state attached to biometric projects, and users’ experiences of enrolling for a digital ID.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">By late 2024, over 16 million citizens had been mandatorily enrolled. Distribution, which began in 2022, has recently gained momentum, with more than 1.5 million cards issued. While the NID serves as a tool of digital identification, it is not proof of citizenship and confers no citizenship rights — yet access to it is limited to residents who already hold a citizenship certificate. Millions of residents, particularly the landless, marginalised groups, and children of single mothers, are excluded from the digital system as a result.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">The government is advancing a vision of “smart” governance without adequate investment in <button type="button" data-term="Digital public infrastructure (DPI)" data-def="The foundational digital systems — identification, payments and data sharing — that other digital services are built on. They act as the intermediate layer of a digital ecosystem; where they are weak, everything above them is unreliable." style="font:inherit;color:inherit;background:#FBEEF2;border:0;padding:0 3px;margin:0;cursor:help;border-bottom:1.5px dotted #A4234B;border-radius:3px" style-hover="background:#F3D3DD">digital public infrastructure</button>. Limited investment in digital foundations, technology adoption, data protection frameworks and efforts to bridge the digital divide have produced a weak DPI and poor public understanding. The administrative workforce was never systematically reoriented for digital transformation, so traditional practices continued.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">For citizens, mandatory enrolment reads as one more form of ID and one more bureaucratic burden. For the government, identifying citizens without delivering meaningful services suggests a greater focus on surveillance and public security than on social security and inclusion.</p>
+</sc-if>
+</div>
+<div style="margin:22px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,258px),1fr));gap:12px">
+<sc-for list="{{ questions }}" as="q" hint-placeholder-count="3">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:18px">
+<p style="margin:0;font:600 11px/1 ui-monospace,Menlo,monospace;color:#A4234B">{{ q.key }}</p>
+<p style="margin:10px 0 0;font:400 17px/1.42 Newsreader,Georgia,serif">{{ q.text }}</p>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section id="research" aria-labelledby="research-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Research areas</p>
+<h2 id="research-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Where the research happened</h2>
+<p style="margin:0 0 26px;max-width:62ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Two districts were picked by how the government itself rated their enrolment performance — one “successful”, one “difficult” — plus the capital, where policy is made.<sup style="line-height:0"><a href="#note-11" id="ref-11" data-note="This study builds on Body &amp; Data’s earlier research into the pilot phase of the identification project, published in 2023. Nepal’s Digital ID framework is modelled on the World Bank’s Digital Identification for Development (D4D) approach." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">11</a></sup></p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:22px;align-items:start">
+<figure style="margin:0;background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:14px;padding:16px">
+<img src="assets/nepal-study-districts.png" alt="Map of Nepal with its districts outlined. Highlighted markers sit on Kathmandu in the centre, Sarlahi in the southern plains, Khotang in the eastern hills, and Panchthar and Jhapa in the far east." style="display:block;width:100%;height:auto;border-radius:8px">
+<figcaption style="margin:12px 2px 0;font:400 12px/1.5 Archivo,sans-serif;color:#6B6659">Study districts: Kathmandu, Sarlahi, Khotang. Also marked: Panchthar and Jhapa, where the biometric pilot began. Base map data: Nepal Gazette / Department of Survey.</figcaption>
+</figure>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ districts }}" as="d" hint-placeholder-count="3">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;overflow:hidden">
+<summary style="padding:16px 18px;display:flex;align-items:baseline;gap:12px">
+<span aria-hidden="true" style="width:9px;height:9px;border-radius:50%;background:#A4234B;flex:none;transform:translateY(4px)"></span>
+<span style="flex:1"><span style="display:block;font:600 15px/1.3 Archivo,sans-serif">{{ d.name }}</span><span style="display:block;margin-top:3px;font:400 12.5px/1.4 Archivo,sans-serif;color:#6B6659">{{ d.role }}</span></span>
+<span aria-hidden="true" style="font:600 11px/1 ui-monospace,Menlo,monospace;color:#A4234B;flex:none">OPEN +</span>
+</summary>
+<div style="padding:0 18px 18px clamp(18px,4vw,39px);border-top:1px solid rgba(23,21,15,.08);margin-top:2px;padding-top:14px">
+<p style="margin:0 0 12px;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ d.body }}</p>
+<ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px">
+<sc-for list="{{ d.facts }}" as="f" hint-placeholder-count="2">
+<li style="font:400 13px/1.5 Archivo,sans-serif;color:#4A463C">{{ f }}</li>
+</sc-for>
+</ul>
+</div>
+</details>
+</sc-for>
+<div style="background:#EFEDE4;border:1px solid rgba(23,21,15,.12);border-radius:12px;padding:16px 18px">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">How the study was done</p>
+<p style="margin:9px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">365 people consulted — 45 individual interviews and 318 participants across nine focus group discussions — plus seven consultative meetings with CSOs, media, private-sector professionals and rights advocates.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="timeline" aria-labelledby="timeline-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">NID timeline</p>
+<h2 id="timeline-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Sixteen years of promises</h2>
+<p style="margin:0 0 20px;max-width:62ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">From a line in a budget speech to a bank-account requirement. Filter the timeline to follow one thread at a time.</p>
+<div role="group" aria-label="Filter timeline by type" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px">
+<sc-for list="{{ tlFilters }}" as="f" hint-placeholder-count="5">
+<button type="button" onClick="{{ f.onClick }}" aria-pressed="{{ f.pressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:10px 14px;border-radius:999px;cursor:pointer;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};display:flex;align-items:center;gap:7px">{{ f.label }}<span style="font:600 10px/1 ui-monospace,Menlo,monospace;opacity:.7">{{ f.count }}</span></button>
+</sc-for>
+</div>
+<ol style="margin:0;padding:0;list-style:none;position:relative">
+<sc-for list="{{ timeline }}" as="t" hint-placeholder-count="8">
+<li style="display:grid;grid-template-columns:minmax(66px,112px) 20px minmax(0,1fr);gap:0;align-items:start">
+<div style="padding:0 16px 26px 0;text-align:right"><span style="font:600 11.5px/1.3 ui-monospace,Menlo,monospace;color:#17150F">{{ t.date }}</span></div>
+<div aria-hidden="true" style="position:relative;justify-self:center;width:2px;background:rgba(23,21,15,.16);align-self:stretch"><span style="position:absolute;top:2px;left:50%;transform:translateX(-50%);width:11px;height:11px;border-radius:50%;background:{{ t.dot }};box-shadow:0 0 0 4px #F7F4ED"></span></div>
+<div style="padding:0 0 26px 18px">
+<p style="margin:0 0 8px"><span style="font:600 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;padding:5px 7px;border-radius:4px;background:{{ t.tagBg }};color:{{ t.tagFg }}">{{ t.catLabel }}</span></p>
+<p style="margin:0;max-width:62ch;font:400 16px/1.6 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">{{ t.text }}</p>
+</div>
+</li>
+</sc-for>
+</ol>
+</section>
+
+<section id="ch-1" aria-labelledby="ch1-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter I</p>
+<h2 id="ch1-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The birth of the National Identity Card</h2>
+<div style="max-width:66ch">
+<div style="border-left:3px solid #A4234B;padding:2px 0 2px 20px;margin:0 0 26px">
+<p style="margin:0;font:400 clamp(18px,1.4vw,21px)/1.5 Newsreader,Georgia,serif;text-wrap:pretty">The card was approved before there was a law for it, contracted before there was a bidding process, and printed before Parliament had defined what it was. Each shortcut is still visible in how the system works today.</p>
+</div>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ true }}">
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">The concept of a national digital identity first appeared in government policy in July 2009, as part of a vision to move from paper to e-governance. The Cabinet approved a biometric “smart” card in 2010; the National ID Management Centre followed in July 2011. With Asian Development Bank support, a USD 14 million pilot was announced in 2012 for 110,000 citizens in Panchthar and 7,000 civil servants in Singha Durbar.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Between 2012 and 2015 the project made no progress. It was eventually realised that a new law was needed to anchor the programme. The 2015 Constitution gave the effort a footing: Article 51(f)(7) envisages an “integrated national identity management information system” to manage citizens’ information and link it to state services and development plans.<sup style="line-height:0"><a href="#note-3" id="ref-3" data-note="Constitution of Nepal, 2015, Article 51(f)(7); Article 15 provides for a record in which every citizen has a ‘clear’ identity." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">3</a></sup></p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">In 2016 the contract went to the French company Morpho Safran — now Idemia — on the basis of a technical assessment alone, on the grounds that it was the only “technically eligible” bidder. Printing began in 2018. Only in 2019, after the opposition called the distribution “illegal”, did Parliament pass the National Identity Card and Civil Registration Act.<sup style="line-height:0"><a href="#note-4" id="ref-4" data-note="National Identity Card and Civil Registration Act, passed August 2019; the legal foundation was formally issued on 28 Fagun 2076 (11 February 2020). Nepali Congress MPs Dilendra Prasad Badu and Amresh Kumar Singh challenged the procurement and the sequencing in Parliament." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">4</a></sup> In 2021 the same company received a further contract for 12 million cards, again without competitive procurement.</p>
+</sc-if>
+</div>
+
+<h3 style="margin:34px 0 6px;font:600 17px/1.3 Archivo,sans-serif">Promise vs. practice</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">On the left, what the Department of National ID and Civil Registration says the card will do. On the right, what this study found on the ground.<sup style="line-height:0"><a href="#note-10" id="ref-10" data-note="Stated goals compiled from the DoNIDCR website and public statements by government representatives, including the department’s slogan, mission and listed features, and its published list of proposed multipurpose uses." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">10</a></sup></p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ promises }}" as="p" hint-placeholder-count="5">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:16px 18px;display:flex;align-items:baseline;gap:14px">
+<span style="flex:1;font:600 15px/1.35 Archivo,sans-serif">{{ p.title }}</span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#A4234B;flex:none">COMPARE +</span>
+</summary>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0;border-top:1px solid rgba(23,21,15,.1)">
+<div style="padding:18px;border-right:1px solid rgba(23,21,15,.1)">
+<p style="margin:0 0 8px;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#1F5C55">Stated promise</p>
+<p style="margin:0;font:400 15px/1.6 Newsreader,Georgia,serif;color:#2C2921">{{ p.promise }}</p>
+</div>
+<div style="padding:18px;background:#FDF7F8">
+<p style="margin:0 0 8px;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">What we found</p>
+<p style="margin:0;font:400 15px/1.6 Newsreader,Georgia,serif;color:#2C2921">{{ p.reality }}</p>
+</div>
+</div>
+</details>
+</sc-for>
+</div>
+</section>
+
+<section id="ch-2" aria-labelledby="ch2-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter II</p>
+<h2 id="ch2-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">How the government is working</h2>
+<div style="max-width:66ch">
+<div style="border-left:3px solid #A4234B;padding:2px 0 2px 20px;margin:0 0 26px">
+<p style="margin:0;font:400 clamp(18px,1.4vw,21px)/1.5 Newsreader,Georgia,serif;text-wrap:pretty">The NID is run as a highly centralised programme. Districts implement; municipalities facilitate; nobody local was consulted on the design. When something breaks, the people at the counter have no answer to give.</p>
+</div>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ true }}">
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Local government units were not involved in planning, policy formation, or the assessment of digital-governance difficulties. Their knowledge of gaps in digital literacy and institutional capacity was largely overlooked. Officials received brief orientations on how to operate an enrolment station and collect data — not on what the NID would eventually be used for. As a result, local officials themselves could not explain the card’s digital purpose to the people in front of them.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">The Chief District Officer in Sarlahi put the arrangement plainly: digital programmes are “decided and designed by the federal government”, and the role of provincial and local governments is “limited to implementing those programmes”. Feedback travelling the other way, officers said, is not taken seriously at the centre.</p>
+</sc-if>
+</div>
+
+<h3 style="margin:34px 0 6px;font:600 17px/1.3 Archivo,sans-serif">Who runs the system</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Five bodies, one direction of travel: instructions go down, data comes up.</p>
+<div style="display:flex;flex-direction:column;gap:8px;margin:0 0 34px">
+<sc-for list="{{ structure }}" as="s" hint-placeholder-count="5">
+<div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:flex-start;background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:16px 18px;margin-left:{{ s.indent }}">
+<span style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#A4234B;flex:none;padding-top:4px">{{ s.tier }}</span>
+<span><span style="display:block;font:600 14.5px/1.3 Archivo,sans-serif">{{ s.name }}</span><span style="display:block;margin-top:5px;font:400 13.5px/1.55 Archivo,sans-serif;color:#4A463C">{{ s.role }}</span></span>
+</div>
+</sc-for>
+</div>
+
+<h3 style="margin:0 0 6px;font:600 17px/1.3 Archivo,sans-serif">Walk through an enrolment</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Six steps, as described by users and officers in Sarlahi and Khotang. Open each step to see where it breaks.</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ journey }}" as="j" hint-placeholder-count="6">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:16px 18px;display:flex;align-items:baseline;gap:14px">
+<span aria-hidden="true" style="font:600 12px/1 ui-monospace,Menlo,monospace;width:26px;height:26px;border-radius:50%;background:#17150F;color:#F7F4ED;display:flex;align-items:center;justify-content:center;flex:none">{{ j.n }}</span>
+<span style="flex:1"><span style="display:block;font:600 15px/1.3 Archivo,sans-serif">{{ j.title }}</span><span style="display:block;margin-top:4px;font:400 13px/1.45 Archivo,sans-serif;color:#6B6659">{{ j.sub }}</span></span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#A4234B;flex:none">FRICTION +</span>
+</summary>
+<div style="padding:16px 18px 18px clamp(18px,5vw,58px);border-top:1px solid rgba(23,21,15,.1)">
+<p style="margin:0 0 12px;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ j.friction }}</p>
+<p style="margin:0;font:500 11.5px/1.4 ui-monospace,Menlo,monospace;color:#8A5A0B">{{ j.evidence }}</p>
+</div>
+</details>
+</sc-for>
+</div>
+</section>
+
+<section id="ch-3" aria-labelledby="ch3-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter III</p>
+<h2 id="ch3-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Disputes and differences</h2>
+<div style="max-width:66ch">
+<div style="border-left:3px solid #A4234B;padding:2px 0 2px 20px;margin:0 0 26px">
+<p style="margin:0;font:400 clamp(18px,1.4vw,21px)/1.5 Newsreader,Georgia,serif;text-wrap:pretty">A system built to include everyone is issued only to people who already hold a citizenship certificate — and its machines read some bodies better than others.</p>
+</div>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ true }}">
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Under the National ID and Civil Registration Act, no official at any level may issue a National ID to a person without a citizenship certificate.<sup style="line-height:0"><a href="#note-5" id="ref-5" data-note="National ID and Civil Registration Act, Article 4. Related exclusions: Nepal Citizenship Act 2006, Section 8(1)(a), read against Constitution Article 11(2); the Nepal Citizenship First Amendment Act was cleared by the Supreme Court in June 2023, restoring access for roughly 1.2 million people with birthright citizenship." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">5</a></sup> Other documents — a driving licence, academic certificates, land papers — can support a record, but cannot replace the certificate. Because historic disputes have left millions without one, the digital system inherits every existing exclusion and adds new ones.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Enrolment was also driven by pressure rather than benefit. In November 2021 the NID number became compulsory for a passport — in a country with very high labour migration, an effective mandate.<sup style="line-height:0"><a href="#note-6" id="ref-6" data-note="Ministry of Home Affairs notice, Nepal Gazette, June 2024, extended the requirement to bank accounts, SIM registration, social security allowances, Public Service Commission examinations and land and vehicle transactions. The Supreme Court suspended enforcement in July 2024 and nullified its own interim order in January 2025." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">6</a></sup> Enrolment surged; card distribution did not keep pace.</p>
+</sc-if>
+</div>
+
+<h3 style="margin:34px 0 6px;font:600 17px/1.3 Archivo,sans-serif">Who gets left out, and how</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Six exclusion patterns documented in the field. These are mechanisms, not edge cases.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px">
+<sc-for list="{{ exclusions }}" as="e" hint-placeholder-count="6">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:18px">
+<span style="display:block;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">{{ e.tag }}</span>
+<span style="display:block;margin-top:10px;font:400 20px/1.28 Newsreader,Georgia,serif">{{ e.title }}</span>
+<span aria-hidden="true" style="display:block;margin-top:12px;font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#6B6659">READ +</span>
+</summary>
+<div style="padding:0 18px 18px;border-top:1px solid rgba(23,21,15,.1);padding-top:14px">
+<p style="margin:0;font:400 14.5px/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ e.body }}</p>
+</div>
+</details>
+</sc-for>
+</div>
+</section>
+
+<section id="voices" aria-labelledby="voices-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Voices &amp; experiences</p>
+<h2 id="voices-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">In their own words</h2>
+<p style="margin:0 0 20px;max-width:62ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Interviews and focus groups, quoted as recorded. Filter by who is speaking.</p>
+<div role="group" aria-label="Filter voices by speaker" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px">
+<sc-for list="{{ voiceFilters }}" as="f" hint-placeholder-count="5">
+<button type="button" onClick="{{ f.onClick }}" aria-pressed="{{ f.pressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:10px 14px;border-radius:999px;cursor:pointer;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};display:flex;align-items:center;gap:7px">{{ f.label }}<span style="font:600 10px/1 ui-monospace,Menlo,monospace;opacity:.7">{{ f.count }}</span></button>
+</sc-for>
+</div>
+<div style="columns:330px;column-gap:14px">
+<sc-for list="{{ voices }}" as="v" hint-placeholder-count="6">
+<figure style="break-inside:avoid;margin:0 0 14px;background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:22px">
+<blockquote style="margin:0;font:400 18px/1.5 Newsreader,Georgia,serif;color:#17150F;text-wrap:pretty">{{ v.quote }}</blockquote>
+<figcaption style="margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(23,21,15,.1);display:flex;flex-wrap:wrap;gap:8px;align-items:baseline">
+<span style="font:600 12.5px/1.3 Archivo,sans-serif">{{ v.who }}</span>
+<span style="font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.18);padding:5px 7px;border-radius:4px">{{ v.place }}</span>
+</figcaption>
+</figure>
+</sc-for>
+</div>
+</section>
+
+<section id="ch-4" aria-labelledby="ch4-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter IV</p>
+<h2 id="ch4-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The right to privacy</h2>
+<div style="max-width:66ch">
+<div style="border-left:3px solid #A4234B;padding:2px 0 2px 20px;margin:0 0 26px">
+<p style="margin:0;font:400 clamp(18px,1.4vw,21px)/1.5 Newsreader,Georgia,serif;text-wrap:pretty">Privacy is an inviolable right under Article 28 of the Constitution. Nepal still has no dedicated data protection law — and the biometric database of 16 million people was built without one.<sup style="line-height:0"><a href="#note-7" id="ref-7" data-note="Constitution of Nepal, Article 28; Privacy Act 2075 (approved September 2018); Individual Privacy Regulation 2077 (2020). The National Cyber Security Policy 2023 and the pending Social Network Bill 2025 widen the national-security exceptions rather than closing them." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">7</a></sup></p>
+</div>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ true }}">
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">The government says the NID uses “global standard” security: AES-256 encryption, with personal data held on a secure chip in the card. But no comprehensive data governance framework has been published — no public protocols for ownership, access control, sharing or <button type="button" data-term="Interoperability" data-def="The ability of separate systems to exchange and use each other’s data. In the NID’s case it means one identity record reaching across immigration, social security, banking, revenue and telecoms — which is also what makes a single breach or a single wrong record so consequential." style="font:inherit;color:inherit;background:#FBEEF2;border:0;padding:0 3px;margin:0;cursor:help;border-bottom:1.5px dotted #A4234B;border-radius:3px" style-hover="background:#F3D3DD">interoperability</button>.<sup style="line-height:0"><a href="#note-8" id="ref-8" data-note="Field interviews at DoNIDCR, including a section officer responsible for data verification and the department’s IT director. Data is held on the Integrated Data Management System (IDMS) at the Government Data Centre, Singha Durbar, with backups at a disaster recovery centre in Hetauda." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">8</a></sup> Field research found gaps in technical capacity, training, transparency and institutional clarity.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Users, meanwhile, submitted biometric details simply because they were asked to. Most had never considered the risks of a breach; some were sceptical and “had a feeling” about data risks but “did not know how to put it into words”.</p>
+</sc-if>
+</div>
+
+<h3 style="margin:34px 0 6px;font:600 17px/1.3 Archivo,sans-serif">Where your data goes</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Traced from the moment a fingerprint is captured. Each hop is a place where accountability is unclear.<sup style="line-height:0"><a href="#note-9" id="ref-9" data-note="On the contractor: Twila Brase and Matt Flanders, ‘Exposing Idemia: The Push for National Biometric IDs in America’. Idemia — formerly Morpho Safran — holds Nepal’s NID contracts, awarded in 2016 and again in 2021 without competitive bidding." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">9</a></sup></p>
+<ol style="margin:0 0 34px;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{ dataflow }}" as="d" hint-placeholder-count="5">
+<li style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start">
+<span aria-hidden="true" style="font:600 11px/1 ui-monospace,Menlo,monospace;color:#A4234B;flex:none;padding-top:4px">{{ d.step }}</span>
+<span><span style="display:block;font:600 14.5px/1.3 Archivo,sans-serif">{{ d.name }}</span><span style="display:block;margin-top:5px;font:400 13.5px/1.55 Archivo,sans-serif;color:#4A463C">{{ d.note }}</span></span>
+</li>
+</sc-for>
+</ol>
+
+<div style="background:#17150F;color:#F7F4ED;border-radius:14px;padding:28px">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#E9A8BE">Security vs. privacy</p>
+<p style="margin:12px 0 0;max-width:56ch;font:400 20px/1.48 Newsreader,Georgia,serif;text-wrap:pretty">Nepal’s legal framework recognises privacy but permits exceptions “in accordance with the law”. The Privacy Act 2018, the National Cyber Security Policy 2023 and the pending Social Network Bill 2025 all widen those exceptions — pushing citizens to trade privacy for security they cannot verify.</p>
+</div>
+</section>
+
+<section id="forward" aria-labelledby="forward-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Way forward</p>
+<h2 id="forward-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Eighteen recommendations</h2>
+<p style="margin:0 0 20px;max-width:62ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Addressed to three audiences. Pick yours.</p>
+<div role="tablist" aria-label="Recommendation audiences" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px">
+<sc-for list="{{ recTabs }}" as="t" hint-placeholder-count="3">
+<button type="button" role="tab" aria-selected="{{ t.selected }}" onClick="{{ t.onClick }}" style="font:600 13px/1 Archivo,sans-serif;padding:12px 16px;border-radius:999px;cursor:pointer;border:1px solid {{ t.bd }};background:{{ t.bg }};color:{{ t.fg }};display:flex;align-items:center;gap:8px">{{ t.label }}<span style="font:600 10px/1 ui-monospace,Menlo,monospace;opacity:.7">{{ t.count }}</span></button>
+</sc-for>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:10px;align-items:start">
+<sc-for list="{{ recs }}" as="r" hint-placeholder-count="10">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:16px 18px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px">
+<span aria-hidden="true" style="font:600 11px/1 ui-monospace,Menlo,monospace;color:#A4234B;flex:none;padding-top:3px">{{ r.n }}</span>
+<span style="flex:1;font:600 15px/1.35 Archivo,sans-serif">{{ r.title }}</span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#6B6659;flex:none">DETAIL +</span>
+</summary>
+<div style="padding:0 18px 18px clamp(18px,4vw,47px);border-top:1px solid rgba(23,21,15,.1);padding-top:14px">
+<p style="margin:0;max-width:66ch;font:400 15px/1.65 Newsreader,Georgia,serif;color:#2C2921">{{ r.body }}</p>
+</div>
+</details>
+</sc-for>
+</div>
+</section>
+
+<section id="notes" aria-labelledby="notes-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Notes &amp; glossary</p>
+<h2 id="notes-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Sources and terms</h2>
+<p style="margin:0 0 26px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Every numbered marker in the text links here, and every note links back to where you were reading. The tooltip is a shortcut, not the only route — the notes and definitions are part of the page.</p>
+
+<h3 style="margin:0 0 14px;font:600 15px/1.3 Archivo,sans-serif">Notes</h3>
+<ol style="margin:0 0 40px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:8px;align-items:start">
+<li id="note-1" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">1</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Department of National ID and Civil Registration, “About the National ID Card”, donidcr.gov.np — stated features, enrolment requirements and the 2018 launch in Panchthar and Singha Durbar.</span><a href="#ref-1" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 1 in the text">↩ back</a></li>
+<li id="note-2" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">2</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">DoNIDCR progress figures to November 2024: 16.35 million enrolled, 1.65 million cards distributed, 161,113 cards rejected by users over errors in their information. By April 2025, 6.23 million cards printed and 2.31 million received.</span><a href="#ref-2" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 2 in the text">↩ back</a></li>
+<li id="note-3" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">3</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Constitution of Nepal, 2015, Article 51(f)(7); Article 15 provides for a record in which every citizen has a “clear” identity.</span><a href="#ref-3" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 3 in the text">↩ back</a></li>
+<li id="note-4" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">4</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">National Identity Card and Civil Registration Act, passed August 2019; the legal foundation was formally issued on 28 Fagun 2076 (11 February 2020). Nepali Congress MPs Dilendra Prasad Badu and Amresh Kumar Singh challenged the procurement and the sequencing in Parliament.</span><a href="#ref-4" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 4 in the text">↩ back</a></li>
+<li id="note-5" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">5</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">National ID and Civil Registration Act, Article 4. Related exclusions: Nepal Citizenship Act 2006, Section 8(1)(a), read against Constitution Article 11(2); the Nepal Citizenship First Amendment Act was cleared by the Supreme Court in June 2023, restoring access for roughly 1.2 million people with birthright citizenship.</span><a href="#ref-5" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 5 in the text">↩ back</a></li>
+<li id="note-6" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">6</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Ministry of Home Affairs notice, Nepal Gazette, June 2024, extended the requirement to bank accounts, SIM registration, social security allowances, Public Service Commission examinations and land and vehicle transactions. The Supreme Court suspended enforcement in July 2024 and nullified its own interim order in January 2025.</span><a href="#ref-6" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 6 in the text">↩ back</a></li>
+<li id="note-7" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">7</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Constitution of Nepal, Article 28; Privacy Act 2075 (approved September 2018); Individual Privacy Regulation 2077 (2020). The National Cyber Security Policy 2023 and the pending Social Network Bill 2025 widen the national-security exceptions rather than closing them.</span><a href="#ref-7" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 7 in the text">↩ back</a></li>
+<li id="note-8" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">8</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Field interviews at DoNIDCR, including a section officer responsible for data verification and the department’s IT director. Data is held on the Integrated Data Management System (IDMS) at the Government Data Centre, Singha Durbar, with backups at a disaster recovery centre in Hetauda.</span><a href="#ref-8" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 8 in the text">↩ back</a></li>
+<li id="note-9" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">9</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">On the contractor: Twila Brase and Matt Flanders, “Exposing Idemia: The Push for National Biometric IDs in America”. Idemia — formerly Morpho Safran — holds Nepal’s NID contracts, awarded in 2016 and again in 2021 without competitive bidding.</span><a href="#ref-9" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 9 in the text">↩ back</a></li>
+<li id="note-10" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">10</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Stated goals compiled from the DoNIDCR website and public statements by government representatives, including the department’s slogan, mission and listed features, and its published list of proposed multipurpose uses.</span><a href="#ref-10" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 10 in the text">↩ back</a></li>
+<li id="note-11" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">11</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">This study builds on Body &amp; Data’s earlier research into the pilot phase of the identification project, published in 2023. Nepal’s Digital ID framework is modelled on the World Bank’s Digital Identification for Development (D4D) approach.</span><a href="#ref-11" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 11 in the text">↩ back</a></li>
+</ol>
+
+<h3 id="glossary" style="margin:0 0 6px;font:600 15px/1.3 Archivo,sans-serif">Glossary</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Definitions as the report sets them, drawn from the GDPR, academia, cybersecurity practitioners and civil society organisations.</p>
+<dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Biometric data</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Personal data capturing a person’s physical, physiological or behavioural characteristics through technological processing, used to confirm their unique identity — fingerprints, iris patterns, facial images, voice.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Digital identity (Digital ID)</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">An online representation of a person, built from data they provide and data collected through their actions.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Digital public infrastructure (DPI)</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Foundational digital systems — identification, payments, data sharing — that other digital services are built on.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Interoperability</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">The ability of separate systems to exchange and use each other’s data — here, one identity record reaching across immigration, banking, revenue and telecoms.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Unique Identification Number (UIN)</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">A number assigned to a person that identifies them and links their identity across public and private databases, for use throughout their lifetime.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Datafication</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Turning aspects of life into quantifiable data that can be stored and analysed — including location history, social media activity and biometric details.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Sensitive data</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Personal data demanding enhanced protection: ethnicity, political opinion, religious belief, union membership, genetic and biometric details.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Profiling</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Automated processing of personal data to evaluate or predict aspects of a person’s life — health, reliability, behaviour, location.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Digital literacy</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Understanding how digital technology works and using it effectively, including awareness of privacy, cybersecurity, consent and data breaches.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Social exclusion</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Denial of access to essential resources, rights, services and opportunities, and exclusion from full participation in public life.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Aadhaar</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">India’s twelve-digit identity number issued by the UIDAI. Voluntary, and proof of identity rather than of citizenship.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Data breach</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">An incident in which information is accessed or stolen from a system without the owner’s knowledge or authorisation, exposing confidential or protected data.</dd></div>
+</dl>
+</section>
+
+<section id="about" aria-labelledby="about-h" style="padding:52px 0 0;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">About</p>
+<h2 id="about-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The study and the people behind it</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,258px),1fr));gap:12px">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Body &amp; Data</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Established in 2017, Body &amp; Data works to enhance understanding of and access to information on digital rights among women, queer people and marginalised groups in Nepal.</p>
+</div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Research contribution</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Bhaskar Gautam, Dovan Rai, Rita Baramu, Sapana Sanjeevani, Nuva Rai, Monika. Research assistants: Irshat Khatoon (Malangwa, Sarlahi) and Barsha Rai (Diktel, Khotang).</p>
+</div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Credits</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Copy-editing: Shafali Uprety. Cover illustration: Supriya Manandhar. Layout and design: Shrijit Rajbhandari. Financial support: Open Society Foundation.</p>
+</div>
+</div>
+<div style="margin:26px 0 0;padding:22px;border-radius:12px;border:1px dashed rgba(23,21,15,.28);background:#EFEDE4">
+<p style="margin:0 0 6px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Cite this report</p>
+<p style="margin:0;font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Body &amp; Data (2025). <em>Nepal’s Biometric Present: Governance, Accessibility and Accountability.</em> Kathmandu: Body &amp; Data.</p>
+</div>
+<p style="margin:34px 0 0;font:400 13px/1.6 Archivo,sans-serif;color:#6B6659;max-width:70ch">All figures and quotations on this page are drawn from the report. Interview quotations are reproduced as recorded and attributed by role and district to protect participants’ identities.</p>
+<p style="margin:22px 0 0"><a href="#report-start" style="font:600 13px/1 Archivo,sans-serif">Back to the top of the report ↑</a></p>
+</section>
+
+</main>
+</div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startFull&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Reading&quot;,&quot;label&quot;:&quot;Open in full-text mode&quot;}}">
+const TL = [
+  {date:'JULY 2009', cat:'policy', text:'The concept of the NID is introduced in the government’s policy and budget speech, aiming to use it for elections and social security delivery.'},
+  {date:'APRIL 2010', cat:'rollout', text:'A pilot project is launched to issue voter ID cards with photographs and fingerprints, laying the groundwork for biometric identification.'},
+  {date:'NOV 2018', cat:'rollout', text:'Enrolment begins in Panchthar district and Singha Durbar as part of the first-phase rollout. The first card is handed to a 101-year-old woman in Panchthar.'},
+  {date:'JAN 2019', cat:'legal', text:'The National Identity Card and Civil Registration Bill is tabled in Parliament.'},
+  {date:'AUG 2019', cat:'legal', text:'Parliament passes the Bill, formally establishing the legal basis for the NID — a year after cards had begun to be printed.'},
+  {date:'NOV 2021', cat:'mandate', text:'E-passports linked to NID numbers are issued; the Nepal Telecommunications Authority begins drafting terms to link SIM registration with the NID.'},
+  {date:'APRIL 2022', cat:'mandate', text:'The government announces the NID will become mandatory for various licences and official documents in the future.'},
+  {date:'JUNE 2024', cat:'mandate', text:'A Gazette notice makes the NID compulsory for banking, SIM registration, social security, civil service exams, and land and vehicle transactions.'},
+  {date:'JULY 2024', cat:'court', text:'The Supreme Court issues an interim order suspending enforcement of the mandatory NID for public services, after criticism over poor card distribution.'},
+  {date:'JAN 9, 2025', cat:'mandate', text:'Nepal Rastra Bank enforces a directive requiring the NID number to open new bank accounts.'},
+  {date:'JAN 19, 2025', cat:'court', text:'The Supreme Court nullifies its interim order, clearing the way for the government to resume enforcing NID requirements.'},
+  {date:'MARCH 2025', cat:'mandate', text:'Home Minister Ramesh Lekhak tells Parliament that exemptions will apply to children, people unable to care for themselves, persons with disabilities, the helpless, and citizens over 90.'},
+  {date:'APRIL 2025', cat:'rollout', text:'6.23 million NID cards printed; 2.31 million cards received by applicants.'},
+  {date:'JULY 2025', cat:'rollout', text:'The Nagarik app is integrated with the National ID system, letting citizens see their ID details in the app.'},
+  {date:'JULY 2025', cat:'court', text:'The government reverses its requirement of an NID for social security allowances, acknowledging significant distribution failures.'}
+];
+
+const CATS = {
+  policy:{label:'Policy', dot:'#1F5C55', tagBg:'#E4EEEC', tagFg:'#14453F'},
+  legal:{label:'Law', dot:'#17150F', tagBg:'#E8E5DA', tagFg:'#2C2921'},
+  rollout:{label:'Rollout', dot:'#8A5A0B', tagBg:'#F5EBD8', tagFg:'#6B4508'},
+  mandate:{label:'Mandate', dot:'#A4234B', tagBg:'#F7E2E8', tagFg:'#7C1739'},
+  court:{label:'Courts', dot:'#4A463C', tagBg:'#E8E5DA', tagFg:'#2C2921'}
+};
+
+const VOICES = [
+  {quote:'“Why do we need a National ID when we already have a citizenship certificate? It seems unnecessary, especially since the government hardly offers subsidies or allowances based on it.”', who:'Resident', place:'Khotang', group:'users'},
+  {quote:'“This may be intended to make the national system more organised. The National Identity Card seems to simplify various processes, making it more convenient for citizens and even more so for the state. The government benefits significantly, particularly through increased control over its citizens.”', who:'Man in a focus group', place:'Khotang', group:'users'},
+  {quote:'“People are running illegal businesses in this district under the guise of electronics and digitisation. Citizens are being forced to spend a considerable amount of money on these services and are suffering greatly as a result… A citizen from a rural area may not be informed about these deadlines. How are we supposed to know?”', who:'Service user', place:'Sarlahi', group:'users'},
+  {quote:'“We are daughters-in-law of this village so we don’t know about that.”', who:'Two women in a focus group, on not knowing the NID mobile team had come', place:'Godaita, Sarlahi', group:'women'},
+  {quote:'“This kind of talk was spread just to make people fill out the forms faster.”', who:'Focus group participant, on rumours that the NID would work like India’s Aadhaar', place:'Sarlahi', group:'women'},
+  {quote:'“The system has difficulty recording the fingerprints of individuals who work outdoors in the village, especially those in the construction field, who are exposed to cement and sand.”', who:'Enrolment report', place:'Khotang', group:'officials'},
+  {quote:'“Due to the specific eye features of ethnic individuals, they sometimes need to provide assistance during iris scans.”', who:'Officer responsible for biometric records', place:'Khotang', group:'officials'},
+  {quote:'“Why are you unmarried even at the age of 35?”', who:'Question put in public to a queer NID holder, recounted in a focus group', place:'Kathmandu', group:'queer'},
+  {quote:'“They do not effectively educate users on biometric technology and its applications.”', who:'Lawyer, on government orientation sessions', place:'Khotang', group:'csos'},
+  {quote:'“…it is disadvantageous to frauds and criminals, as they can be tracked using their NID number. It is beneficial for the community.”', who:'Civil society representative', place:'Kathmandu', group:'csos'},
+  {quote:'Digital programmes are “decided and designed by the federal government”, and the role of provincial and local governments is “limited to implementing those programmes”.', who:'Chief District Officer', place:'Sarlahi', group:'officials'},
+  {quote:'Users were sceptical and “had a feeling” about data risks but “did not know how to put it into words”.', who:'Field note from focus group discussions', place:'Sarlahi & Khotang', group:'users'}
+];
+
+const VGROUPS = [
+  {id:'all', label:'All voices'},
+  {id:'users', label:'End users'},
+  {id:'women', label:'Women'},
+  {id:'queer', label:'Queer community'},
+  {id:'officials', label:'Officials'},
+  {id:'csos', label:'Civil society'}
+];
+
+const RECS = {
+  gov:[
+    {n:'01', title:'Make the Digital ID universally accessible', body:'The NID is issued only to people holding a citizenship certificate, automatically excluding millions of residents from digital services. It is meant to be a foundation for service delivery, not proof of citizenship — tying it to citizenship eligibility creates unequal and discriminatory access. Enrolment centres should be physically accessible to persons with disabilities and offer support in local languages, sign language and visual aids.'},
+    {n:'02', title:'Build a robust digital public infrastructure', body:'Delivering services through a digital ID requires reliable connectivity, secure interoperable systems and skilled staff. A top-down push for digital transformation without foundational investment will not improve efficiency, accessibility or security.'},
+    {n:'03', title:'Enact strong legal and policy frameworks', body:'Nepal needs comprehensive privacy and data protection legislation defining the purpose, limits and safeguards for NID data — enacted before the system scales further. Legislation should mandate informed consent, prohibit surveillance-oriented practices and set strong penalties for misuse.'},
+    {n:'04', title:'Implement ethical and secure data governance', body:'Strong protection policies, purpose limitation, meaningful consent before data is shared or repurposed, independent oversight, strict access controls and robust authentication. Sharing with other agencies must follow limited, regulated pathways under clear accountability.'},
+    {n:'05', title:'Ensure secure interoperability and institutional clarity', body:'Current integration efforts are fragmented and lack a cohesive governance framework. Interoperability needs clear inter-agency mandates, clarity on who holds data authority, and safeguards against unchecked surveillance — enhancing service delivery, not institutional convenience.'},
+    {n:'06', title:'Build a skilled, sensitive and inclusive public workforce', body:'Many public servants lack both technical training and social sensitivity. Sustained capacity-building should cover digital tools, privacy protocols and data protection, alongside orientation on working with diverse populations. Participants reported being ill-treated by staff — training in respectful communication is urgent.'},
+    {n:'07', title:'Strengthen digital literacy and digital rights education', body:'Go beyond one-time orientations: basic skills plus critical abilities like evaluating online information and recognising misinformation, embedded in school curricula, paired with infrastructure improvements, materials in local languages and reliable technical support. Women and marginalised communities must be meaningfully included.'},
+    {n:'08', title:'Foster transparency and public consultation', body:'Publish system designs, procurement processes and vendor contracts — especially those involving foreign technology firms — and include CSOs, domain experts and communities affected by digital exclusion in genuine consultation. Report regularly on data handling, breaches and oversight findings.'},
+    {n:'09', title:'Establish independent oversight and grievance mechanisms', body:'Regular, publicly reported audits of the NID’s infrastructure, operational practices and data handling; enforceable legal provisions for misuse, unauthorised access or breaches; and accessible, effective grievance redress.'},
+    {n:'10', title:'Make the NID a voluntary choice, not a requirement', body:'If the NID improves access and convenience, it should be presented that way. People should be informed of its benefits and participate through informed consent, not compelled through pressure or fear.'}
+  ],
+  private:[
+    {n:'11', title:'Uphold ethical data practices', body:'Enforce strong data protection standards, purpose limitation and robust security at every stage. Publish clear privacy policies in local languages, disclose how NID-linked data is used and shared, and offer opt-outs for NID-based authentication without restricting essential services. Refrain from profiling, scoring or targeted advertising without meaningful consent, and resist state demands for mass surveillance or backdoor access.'},
+    {n:'12', title:'Design for inclusion and responsible innovation', body:'NID-linked services must be usable by persons with disabilities, rural communities and people with limited digital literacy. Avoid making the NID the sole access point — keep alternative verification methods available — and avoid deploying high-risk biometric technologies without clear accountability.'},
+    {n:'13', title:'Contribute to public awareness and collaborate on safeguards', body:'Integrate user education into service onboarding so people understand their rights, consent and data use, and work with government, civil society and academia to co-develop data protection frameworks, open standards and ethical guidelines.'}
+  ],
+  csos:[
+    {n:'14', title:'Advocate for rights-based legal and policy frameworks', body:'Push for tech policy that prioritises privacy, data protection, human dignity and equity: data protection legislation grounded in international standards, safeguards against surveillance, profiling and algorithmic discrimination, and a guarantee that digital identity is not mandatory for essential public services.'},
+    {n:'15', title:'Strengthen digital literacy and digital rights education', body:'Programmes should explicitly integrate digital rights so citizens gain both the skills to participate and the agency to hold providers accountable — including clear information on recourse for those who experience exclusion.'},
+    {n:'16', title:'Facilitate evidence-based public discussion', body:'Lead informed dialogue through public forums, media engagement and academic collaboration, prioritising and amplifying the lived experiences of people who face barriers to NID access or harm from digital exclusion.'},
+    {n:'17', title:'Monitor implementation and report harms', body:'Act as independent watchdogs. Through social audits and community-based monitoring, identify and document patterns of exclusion, discrimination and surveillance.'},
+    {n:'18', title:'Build coalitions and cross-sector partnerships', body:'Collaborate with media, technologists, lawyers, researchers and digital rights networks, and build regional and international partnerships as digital rights advocacy grows more complex.'}
+  ]
+};
+
+class Component extends DCLogic {
+  state = {
+    full: true,
+    zoom: 1,
+    tocOpen: false,
+    tlCat: 'all',
+    voice: 'all',
+    recTab: 'gov',
+    progress: 0
+  };
+
+  componentDidMount() {
+    if (this.props.startFull === false) this.setState({full:false});
+    import('./annotations.js').then(m => m.initAnnotations(document)).catch(() => {});
+    // Written straight to the DOM on an animation frame. Routing this through
+    // setState re-rendered the entire document on every scroll event, which is
+    // what made scrolling feel heavy on a long report.
+    let raf = 0;
+    const paint = () => {
+      raf = 0;
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      const bar = document.getElementById('om-progress');
+      if (bar) bar.style.width = (max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0) + '%';
+    };
+    this._onScroll = () => { if (!raf) raf = requestAnimationFrame(paint); };
+    window.addEventListener('scroll', this._onScroll, {passive:true});
+    paint();
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+
+  chip(active) {
+    return active
+      ? {bg:'#17150F', fg:'#F7F4ED', bd:'#17150F'}
+      : {bg:'#FFFFFF', fg:'#17150F', bd:'rgba(23,21,15,.22)'};
+  }
+
+  renderVals() {
+    const s = this.state;
+    const tlCounts = {all: TL.length};
+    Object.keys(CATS).forEach(k => tlCounts[k] = TL.filter(t => t.cat === k).length);
+    const tlFilters = [{id:'all', label:'Everything'}]
+      .concat(Object.keys(CATS).map(k => ({id:k, label:CATS[k].label})))
+      .map(f => Object.assign({
+        label: f.label,
+        count: tlCounts[f.id],
+        pressed: String(s.tlCat === f.id),
+        onClick: () => this.setState({tlCat: f.id})
+      }, this.chip(s.tlCat === f.id)));
+
+    const timeline = TL.filter(t => s.tlCat === 'all' || t.cat === s.tlCat)
+      .map(t => Object.assign({}, t, {
+        catLabel: CATS[t.cat].label,
+        dot: CATS[t.cat].dot,
+        tagBg: CATS[t.cat].tagBg,
+        tagFg: CATS[t.cat].tagFg
+      }));
+
+    const vCounts = {all: VOICES.length};
+    VGROUPS.forEach(g => { if (g.id !== 'all') vCounts[g.id] = VOICES.filter(v => v.group === g.id).length; });
+    const voiceFilters = VGROUPS.map(g => Object.assign({
+      label: g.label,
+      count: vCounts[g.id],
+      pressed: String(s.voice === g.id),
+      onClick: () => this.setState({voice: g.id})
+    }, this.chip(s.voice === g.id)));
+
+    const recTabDefs = [
+      {id:'gov', label:'Government'},
+      {id:'private', label:'Private sector'},
+      {id:'csos', label:'Civil society'}
+    ];
+    const recTabs = recTabDefs.map(t => Object.assign({
+      label: t.label,
+      count: RECS[t.id].length,
+      selected: String(s.recTab === t.id),
+      onClick: () => this.setState({recTab: t.id})
+    }, this.chip(s.recTab === t.id)));
+
+    return {
+      full: s.full,
+      zoom: s.zoom,
+      tocOpen: s.tocOpen,
+      tocExpanded: String(s.tocOpen),
+      readTime: s.full ? '24 min · full text' : '7 min · summaries',
+      modeLabel: s.full ? 'Full text' : 'Plain summary',
+      modeDot: s.full ? '#A4234B' : '#1F5C55',
+      fullPressed: String(s.full),
+      toggleFull: () => this.setState({full: !s.full}),
+      zoomIn: () => this.setState({zoom: Math.min(1.5, +(s.zoom + 0.1).toFixed(2))}),
+      zoomOut: () => this.setState({zoom: Math.max(0.9, +(s.zoom - 0.1).toFixed(2))}),
+      toggleToc: () => this.setState({tocOpen: !s.tocOpen}),
+      closeToc: () => this.setState({tocOpen: false}),
+
+      toc: [
+        {num:'—', title:'At a glance', href:'#glance'},
+        {num:'—', title:'Executive summary', href:'#summary'},
+        {num:'—', title:'Research areas', href:'#research'},
+        {num:'—', title:'NID timeline', href:'#timeline'},
+        {num:'I', title:'The birth of the National ID', href:'#ch-1'},
+        {num:'II', title:'How the government is working', href:'#ch-2'},
+        {num:'III', title:'Disputes and differences', href:'#ch-3'},
+        {num:'—', title:'Voices & experiences', href:'#voices'},
+        {num:'IV', title:'The right to privacy', href:'#ch-4'},
+        {num:'V', title:'Way forward', href:'#forward'},
+        {num:'—', title:'Notes & glossary', href:'#notes'},
+        {num:'—', title:'About the study', href:'#about'}
+      ],
+
+      stats: [
+        {value:'5M+', label:'Residents without a citizenship certificate', note:'Automatically ineligible for the NID'},
+        {value:'365', label:'People consulted for this study', note:'45 interviews, 318 focus group participants'},
+        {value:'85', label:'Applications a day, maximum', note:'District office capacity in Sarlahi'},
+        {value:'Rs 200–500', label:'Charged for a free online form', note:'By cyber operators in Sarlahi'},
+        {value:'2×', label:'Daily system outages reported', note:'The online system “gets hung” twice a day'},
+        {value:'18+', label:'Months waiting for a card', note:'Against a promise of six'}
+      ],
+
+      questions: [
+        {key:'Q1', text:'Why is the Nepali state pursuing digital identification?'},
+        {key:'Q2', text:'How is the government executing its digital identification scheme?'},
+        {key:'Q3', text:'How are citizens engaging with the government’s biometric initiative?'}
+      ],
+
+      districts: [
+        {name:'Sarlahi', role:'Rated a “difficult” district by the government', body:'A southern plains district with high labour migration. Enrolment was delayed by disruptions — including the theft of two computers from a mobile camp in Bishnupur, later found in a paddy field — and by staff who worked inconsistently while citing political leverage.', facts:['19,272 enrolled through mobile camps in 2021; 16,299 more at the district station by Nov 2023','~300,000 enrolled by the end of 2024','Users paid cyber operators Rs 200–500 to fill a free form','Services once shut for three days over a technical fault; locals suspected corruption']},
+        {name:'Khotang', role:'Rated a “successful” district by the government', body:'An eastern hill district where seventeen mobile camps ran for a month in 2020. Queue management was better — a coupon system was introduced early — but system failures were so routine that people had come to see them as normal.', facts:['126,856 citizens enrolled, 102,587 of them through mobile camps','Daily applicant flow of 100–120 against capacity of 80–85','Iris scans repeatedly failed for people from ethnic communities and senior citizens','Journalists and civil society members were largely uninformed about the programme']},
+        {name:'Kathmandu', role:'Where the policy is made',  body:'Interviews and consultations with government officers, political representatives, policy practitioners, civil society actors and rights-based advocates — plus focus groups with persons with disabilities and queer communities.', facts:['Officials at the centre acknowledged that even higher-level deliberation was limited','Staff at DoNIDCR were unclear how privacy controls are built into the system','CSOs had widely varying levels of understanding of the NID','No cross-sectoral dialogue on biometric data had taken place']}
+      ],
+
+      tlFilters, timeline,
+
+      promises: [
+        {title:'One card replaces many documents', promise:'The NID standardises fragmented documents — citizenship certificates, driving licences, election IDs, BPL cards — into a single nationwide identity.', reality:'Citizens describe it as one more ID to obtain, not one fewer. The card does not replace the citizenship certificate; you need that certificate to get the card at all.'},
+        {title:'Interoperability across services', promise:'Immigration, social security, civil registration, company registration and pensions are integrated; revenue, health insurance, transport and the Nagarik app follow.', reality:'Integration had only just begun during fieldwork, and public offices lacked card-reading machines — so the card was barely usable in digital form at all.'},
+        {title:'Efficiency and cost savings', promise:'Centralised identity management will reduce redundancy, improve coordination and produce a more efficient bureaucracy.', reality:'District offices process a maximum of about 85 applications a day against higher demand, with the online system going down roughly twice daily.'},
+        {title:'Inclusion of all residents', promise:'Integrating all citizens into the digital ecosystem is framed as a step toward inclusive economic participation.', reality:'Only holders of citizenship certificates can enrol. More than five million residents are excluded before the process begins.'},
+        {title:'Privacy will be assured', promise:'The Act states that personal privacy will be assured, and the department cites AES-256 encryption and a secure chip on the card.', reality:'No comprehensive data governance framework has been published, and Nepal still has no dedicated data protection law. Department staff could not explain how privacy controls work.'},
+        {title:'A tool for welfare delivery', promise:'The NID is to become the primary basis for accessing government services, including social security allowances.', reality:'The NID is not used to deliver welfare benefits. In July 2025 the government reversed the social security requirement, acknowledging distribution failures.'}
+      ],
+
+      structure: [
+        {tier:'TIER 1', indent:'0px', name:'Ministry of Home Affairs (MoHA)', role:'Oversees the NID system and coordinates inter-agency collaboration for the nationwide rollout.'},
+        {tier:'TIER 2', indent:'clamp(8px,2.5vw,22px)', name:'Department of National ID and Civil Registration (DoNIDCR)', role:'Lead implementing agency: data collection, processing, issuance, and maintenance of the biometric database.'},
+        {tier:'TIER 2', indent:'clamp(8px,2.5vw,22px)', name:'National Information Technology Center (NITC)', role:'Manages technical infrastructure, data security, and integration with other e-government platforms.'},
+        {tier:'TIER 3', indent:'clamp(16px,5vw,44px)', name:'District Administration Offices (DAOs)', role:'Facilitate registration, biometric data collection and card issuance at district level — following top-down instructions.'},
+        {tier:'TIER 4', indent:'clamp(24px,7.5vw,66px)', name:'Local governments (wards and municipalities)', role:'Support outreach and data collection during registration drives, especially for marginalised and remote populations.'}
+      ],
+
+      journey: [
+        {n:'1', title:'Fill the online form', sub:'Meant to be free, at your own convenience', friction:'The form was not available at the district office, so users went to private cyber cafés nearby. Operators in Sarlahi charged between Rs 200 and Rs 500 for a service that was supposed to cost nothing, and personal details passed through third-party hands in the process.', evidence:'Field evidence: Sarlahi. The CDO later capped the fee at Rs 200 and invited complaints; none were filed.'},
+        {n:'2', title:'Bring your citizenship certificate', sub:'Plus migration or marriage certificate if applicable', friction:'No certificate, no NID — no official at any level may issue one without it. Spelling and date-of-birth inconsistencies on older certificates, common among poorer and less literate applicants and among ethnic names, sent applications into “pending” status.', evidence:'Legal basis: National ID and Civil Registration Act; applicants must be 16 or older.'},
+        {n:'3', title:'Queue at the district office', sub:'Or wait for a mobile camp to reach your ward', friction:'Sarlahi could process about 85 applications a day while more people arrived than that every day. Khotang saw 100–120 applicants against a capacity of 80–85. Many waited hours, or returned home unenrolled. People with limited stamina or muscular dystrophy could not wait in queues without accommodations.', evidence:'Field evidence: Sarlahi and Khotang, 2022–2023.'},
+        {n:'4', title:'Verification at the counter', sub:'An operator checks your details against the record', friction:'A system failure halted everything until restoration; the online system “gets hung” at least twice a day. Minor technical faults or missing supplies could take days to fix, and more serious ones interrupted services for weeks.', evidence:'Field evidence: both districts. In Sarlahi a three-day shutdown was widely assumed by locals to be corruption.'},
+        {n:'5', title:'Biometric capture', sub:'Photograph, ten fingerprints, iris scan — under ten minutes', friction:'Machines struggled with the fingerprints of people who work with cement, sand, iron or chemicals; those prints were logged as “damaged” to complete the process, which later broke passport verification. People from ethnic communities and senior citizens in Khotang needed repeated iris scans, sometimes with verbal abuse. Blind and low-vision users got no audio feedback; deaf users found no sign language support.', evidence:'Field evidence: Khotang and Sarlahi; focus groups with persons with disabilities, Kathmandu.'},
+        {n:'6', title:'Wait for the card', sub:'Promised in six months', friction:'In Sarlahi and Khotang more than eighteen months had passed at the time of fieldwork, and most users had no idea why. Local officers and elected representatives had “no clue” either — the project is conceived, designed and owned federally. Of the cards eventually distributed, 161,113 were refused by users because the information on them was wrong.', evidence:'Field evidence: both districts, plus DoNIDCR figures to November 2024.'}
+      ],
+
+      exclusions: [
+        {tag:'Documentation', title:'No citizenship certificate, no digital identity', body:'The NID is not proof of citizenship and grants no citizenship rights — yet only holders of a citizenship certificate can obtain one. Historically, people affected by caste or ethnic discrimination, children of single mothers, those living in poverty and internally displaced persons have been denied certificates. Estimates put the number of residents affected at more than five million.'},
+        {tag:'Administrative', title:'“Pending verification”, indefinitely', body:'Two patterns recur. Long-standing inconsistencies in dates of birth and surname spellings — most common among poor, less educated and ethnically distinct applicants — leave entries rejected as “pending”. And offline data collection at mobile camps meant typos surfaced only later, once details were entered online. In both cases the applicant restarts the entire process.'},
+        {tag:'Biometrics', title:'Hands that machines cannot read', body:'Workers who handle sand, iron or chemicals, or who work in paddy fields and factories, found fingerprint scanners failing repeatedly. Under pressure to complete enrolment, officers categorised such prints as “damaged” — which later caused mismatches in passport verification, and outright rejections. Officers admit there is no lasting fix; they console users instead.'},
+        {tag:'Biometrics', title:'Iris scans and ethnic difference', body:'In Khotang, people from ethnic communities were required to undergo multiple rounds of iris scans, because the generic technology reads the features of dominant groups more easily. Several reported verbal discrimination during the repeated attempts. Officers noted particular difficulty with senior citizens.'},
+        {tag:'Disability', title:'Centres that cannot be entered', body:'Many enrolment centres lack ramps, wider doorways, seating or accessible toilets, and poor public transport limits the ability to reach them. Staff are not trained to assist physically impaired applicants with dignity. Fingerprint readers and iris scanners give no audio feedback for blind users; there is no sign language support or writing aid for deaf users. Applicants reported feeling mistreated by officials.'},
+        {tag:'Gender', title:'A gender marker you cannot change', body:'Gender-diverse individuals are labelled “other” — a category participants described as an imposed label that does not reflect the diversity of identities, and that raises the risk of discrimination and harassment. Transgender individuals unable to update their legal gender must carry an ID with the wrong marker. Participants feared exposure to local officials who know them personally, and misuse of the data in a country with weak digital security.'}
+      ],
+
+      voiceFilters,
+      voices: VOICES.filter(v => s.voice === 'all' || v.group === s.voice),
+
+      dataflow: [
+        {step:'01', name:'Capture at the counter', note:'Photograph, fingerprints and iris scan taken by an operator at a district office or mobile camp, then verified by a verifying officer.'},
+        {step:'02', name:'Integrated Data Management System (IDMS)', note:'The system through which NID data is managed. Users are not told what the system does with it.'},
+        {step:'03', name:'Government Data Centre, Singha Durbar', note:'Primary storage, with the department operating its own server infrastructure and failover.'},
+        {step:'04', name:'Disaster recovery centre, Hetauda', note:'Backups. Officials say data can be fully recovered even if the primary system collapses.'},
+        {step:'05', name:'Idemia, a private French contractor', note:'Provides the technical support behind the biometric system and holds contracts awarded without competitive bidding. Its design and potential privacy implications remain unclear even at senior levels of government.'},
+        {step:'06', name:'Onward integrations', note:'Immigration, social security, civil registration, company registration, pensions — with revenue, health insurance, transport, the Nagarik app, telecom operators and the Credit Information Bureau in progress.'}
+      ],
+
+      recTabs,
+      recs: RECS[s.recTab]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

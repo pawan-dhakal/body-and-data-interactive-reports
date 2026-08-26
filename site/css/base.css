@@ -1,0 +1,320 @@
+/* ==========================================================================
+   Body & Data Interactive Reports — Base Stylesheet & Design Tokens
+   WCAG 2.1/2.2 AAA Compliant · Fluid Responsive Typography · Pure CSS Tokens
+   ========================================================================== */
+
+:root {
+  /* Warm Paper Theme (Default) */
+  --bg-paper: #F7F4ED;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FAF8F2;
+  --bg-muted: #EFEDE4;
+  --bg-hover: #F3EFE4;
+  --bg-dark: #17150F;
+  --bg-dark-card: #231F17;
+  --bg-dark-elevated: #2D2920;
+
+  /* Editorial Ink & Text Tokens */
+  --text-primary: #17150F;
+  --text-secondary: #4A463C;
+  --text-muted: #6B6659;
+  --text-faint: #9C9585;
+  --text-light: #F7F4ED;
+  --text-light-muted: #B4AFA1;
+
+  /* Border & Divider Tokens */
+  --border-subtle: rgba(23, 21, 15, 0.12);
+  --border-default: rgba(23, 21, 15, 0.18);
+  --border-strong: rgba(23, 21, 15, 0.35);
+  --border-dark: rgba(247, 244, 237, 0.16);
+
+  /* Publication Brand Accent Tokens */
+  --accent-crimson: #A4234B;
+  --accent-crimson-hover: #7C1739;
+  --accent-crimson-bg: #FBEEF2;
+  --accent-crimson-tint: #F7E2E8;
+  --accent-crimson-border: rgba(164, 35, 75, 0.35);
+
+  --accent-teal: #1F5C55;
+  --accent-teal-hover: #14453F;
+  --accent-teal-bg: #EAF4F2;
+  --accent-teal-tint: #E4EEEC;
+  --accent-teal-border: rgba(31, 92, 85, 0.35);
+
+  --accent-gold: #8A5A0B;
+  --accent-gold-hover: #6B4508;
+  --accent-gold-bg: #FDF6E2;
+  --accent-gold-tint: #F5EBD8;
+  --accent-gold-border: rgba(138, 90, 11, 0.35);
+
+  /* Stance Color Badges */
+  --stance-protects: #1F5C55;
+  --stance-double: #8A5A0B;
+  --stance-creates-risk: #A4234B;
+  --stance-highlight-bg: #FBEFC6;
+  --stance-highlight-border: #8A5A0B;
+
+  /* Typography Scale */
+  --font-serif: "Newsreader", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Archivo", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Monaco, Consolas, monospace;
+
+  /* Dynamic User Zoom Factor */
+  --font-scale: 1;
+
+  /* Fluid Proportions */
+  --font-size-hero: clamp(2.25rem, 5vw, 4rem);
+  --font-size-h1: clamp(1.85rem, 3.8vw, 3rem);
+  --font-size-h2: clamp(1.5rem, 2.8vw, 2.25rem);
+  --font-size-h3: clamp(1.2rem, 1.8vw, 1.5rem);
+  --font-size-body: calc(clamp(1.025rem, 1.1vw, 1.15rem) * var(--font-scale));
+  --font-size-lead: calc(clamp(1.15rem, 1.35vw, 1.3rem) * var(--font-scale));
+  --font-size-small: calc(clamp(0.85rem, 0.9vw, 0.95rem) * var(--font-scale));
+  --font-size-meta: 0.75rem;
+
+  /* Measure & Spacing */
+  --measure-content: 68ch;
+  --measure-lead: 60ch;
+  --measure-wide: 88ch;
+  --container-max: 1180px;
+  --sidebar-width: 260px;
+  --header-height: 62px;
+
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-pill: 9999px;
+
+  /* Shadows & Focus */
+  --focus-ring: 3px solid var(--accent-teal);
+  --focus-offset: 2px;
+  --shadow-sm: 0 1px 3px rgba(23, 21, 15, 0.08);
+  --shadow-md: 0 8px 24px -8px rgba(23, 21, 15, 0.16);
+  --shadow-lg: 0 18px 44px -14px rgba(23, 21, 15, 0.4);
+  --shadow-drawer: -10px 0 40px rgba(23, 21, 15, 0.35);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-paper: #14130F;
+  --bg-surface: #1E1C16;
+  --bg-surface-elevated: #26241E;
+  --bg-muted: #2A2720;
+  --bg-hover: #332F27;
+  --bg-dark: #0D0C0A;
+  --bg-dark-card: #1B1914;
+
+  --text-primary: #F7F4ED;
+  --text-secondary: #D4CFBF;
+  --text-muted: #9E9889;
+  --text-faint: #6E6859;
+  --text-light: #17150F;
+  --text-light-muted: #3D392E;
+
+  --border-subtle: rgba(247, 244, 237, 0.12);
+  --border-default: rgba(247, 244, 237, 0.2);
+  --border-strong: rgba(247, 244, 237, 0.38);
+
+  --accent-crimson: #E9A8BE;
+  --accent-crimson-hover: #F2C2D1;
+  --accent-crimson-bg: #3D1322;
+  --accent-crimson-tint: #2D141C;
+
+  --accent-teal: #7AC2BA;
+  --accent-teal-hover: #98D4CE;
+  --accent-teal-bg: #132D29;
+  --accent-teal-tint: #102421;
+
+  --accent-gold: #E0B96B;
+  --accent-gold-hover: #E8CA8A;
+  --accent-gold-bg: #3D2D0C;
+  --accent-gold-tint: #291F0A;
+}
+
+/* High Contrast Theme */
+[data-theme="contrast"] {
+  --bg-paper: #000000;
+  --bg-surface: #000000;
+  --bg-surface-elevated: #111111;
+  --bg-muted: #222222;
+  --bg-hover: #333333;
+  --bg-dark: #FFFFFF;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #EEEEEE;
+  --text-muted: #CCCCCC;
+  --text-faint: #AAAAAA;
+
+  --border-subtle: #666666;
+  --border-default: #FFFFFF;
+  --border-strong: #FFFFFF;
+
+  --accent-crimson: #FF85A2;
+  --accent-teal: #85FFFF;
+  --accent-gold: #FFE085;
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-paper);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-body);
+  line-height: 1.68;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Central Content Container */
+.site-container {
+  width: 100%;
+  max-width: var(--container-max, 1180px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
+}
+
+/* Accessibility Focus Indicators */
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+  border-radius: var(--radius-xs);
+}
+
+/* Skip to Main Content Link */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 16px;
+  z-index: 9999;
+  padding: 12px 20px;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Screen Reader Only Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+
+p {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-body);
+  line-height: 1.68;
+  color: var(--text-secondary);
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.section-lead {
+  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 70ch;
+  margin-bottom: 28px;
+}
+
+.report-section {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.report-section:last-child {
+  border-bottom: none;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-meta);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-crimson);
+  margin-bottom: 8px;
+}
+
+.academic-prose {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.academic-prose p,
+.prose-measure p {
+  max-width: 70ch;
+  line-height: 1.7;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

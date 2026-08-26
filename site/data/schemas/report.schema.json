@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Body & Data Interactive Report Schema",
+  "description": "Standardized schema for structured data, metadata, interactive components, and citations across Body & Data publications.",
+  "type": "object",
+  "required": ["id", "title", "subtitle", "year", "authors", "metrics", "chapters", "recommendations"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "year": { "type": "integer" },
+    "pages": { "type": "integer" },
+    "authors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "support": { "type": "string" },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["value", "label", "note"],
+        "properties": {
+          "value": { "type": "string" },
+          "label": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "headlineFinding": { "type": "string" },
+    "chapters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["number", "title", "lede"],
+        "properties": {
+          "number": { "type": "string" },
+          "title": { "type": "string" },
+          "lede": { "type": "string" },
+          "subsections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "content": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "timeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string" },
+          "category": { "type": "string", "enum": ["policy", "law", "rollout", "mandate", "courts"] },
+          "title": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "courtCases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "caseNumber": { "type": "string" },
+          "title": { "type": "string" },
+          "location": { "type": "string" },
+          "law": { "type": "string" },
+          "outcome": { "type": "string", "enum": ["convicted", "acquitted", "pending"] },
+          "summary": { "type": "string" },
+          "verdict": { "type": "string" }
+        }
+      }
+    },
+    "voices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "quote": { "type": "string" },
+          "speaker": { "type": "string" },
+          "location": { "type": "string" },
+          "group": { "type": "string" },
+          "theme": { "type": "string" }
+        }
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "number": { "type": "string" },
+          "targetAudience": { "type": "string" },
+          "title": { "type": "string" },
+          "details": { "type": "string" }
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "citation": { "type": "string" }
+        }
+      }
+    }
+  }
+}

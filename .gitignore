@@ -1,0 +1,13 @@
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Temp & Artifacts
+.thumbnail
+scratch/
+/tmp/
+*.log

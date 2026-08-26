@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Body & Data Design System — Print Stylesheet (Archival Quality)
+   ========================================================================== */
+
+@media print {
+  /* Reset Backgrounds and Colors for Pure B&W Print */
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 11pt;
+    line-height: 1.5;
+    background: #FFFFFF !important;
+  }
+
+  /* Hide Interactive Navigation, Controls, Drawers and Tooltips */
+  .skip-link,
+  .report-header,
+  .btn-depth-toggle,
+  .zoom-ctrl-group,
+  .btn-toc,
+  .toc-drawer,
+  .toc-drawer-backdrop,
+  .reading-sidebar,
+  .hero-action-buttons,
+  .filter-pill-group,
+  .tabs-nav-bar,
+  .matrix-controls-bar,
+  .osm-map-header,
+  #rp-floating-tooltip {
+    display: none !important;
+  }
+
+  /* Expand all collapsed details accordions */
+  details {
+    display: block !important;
+    break-inside: avoid;
+    margin-bottom: 12pt !important;
+  }
+
+  details > summary {
+    font-weight: bold;
+    list-style: none !important;
+  }
+
+  details > summary::-webkit-details-marker {
+    display: none !important;
+  }
+
+  /* Always show full academic text and all tabbed panels */
+  .academic-prose {
+    display: block !important;
+  }
+
+  [data-rec-content], [data-beyond-rec-content] {
+    display: block !important;
+    margin-top: 12pt !important;
+    page-break-inside: avoid;
+  }
+
+  /* Layout Width Reset */
+  .reading-layout {
+    display: block !important;
+  }
+
+  .site-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Prevent Headings from Breaking from their Content */
+  h1, h2, h3, h4, .chapter-lede-box, .glance-card {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Quotes and Tables Page Breaks */
+  blockquote, figure, tr, .compare-card, .friction-card, .spectrum-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Format Hyperlinks for Print */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #444444 !important;
+  }
+}

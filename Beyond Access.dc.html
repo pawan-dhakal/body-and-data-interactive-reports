@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F7F4ED;color:#17150F;font-family:Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#A4234B;text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:#7C1739}
+summary::-webkit-details-marker{display:none}
+summary{cursor:pointer;list-style:none}
+:focus-visible{outline:3px solid #1F5C55;outline-offset:2px;border-radius:2px}
+::selection{background:#F3D3DD}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms !important;transition-duration:.001ms !important}}
+</style>
+</helmet>
+
+<a href="#report-start" style="position:absolute;left:-9999px;top:0;z-index:100;background:#17150F;color:#fff;padding:12px 18px;font:600 14px/1 Archivo,sans-serif;border-radius:0 0 8px 0" style-focus="left:0">Skip to report content</a>
+
+<div style="min-height:100vh;background:#F7F4ED">
+
+<header style="position:sticky;top:0;z-index:40;background:#F7F4ED;border-bottom:1px solid rgba(23,21,15,.14)">
+<div style="max-width:1320px;margin:0 auto;padding:9px clamp(14px,3.5vw,30px);display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;min-height:62px">
+<div style="display:flex;align-items:baseline;gap:10px;flex:none">
+<span style="font:700 15px/1 Archivo,sans-serif;letter-spacing:-.2px">Body &amp; Data</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659;padding:5px 7px;border:1px solid rgba(23,21,15,.18);border-radius:4px;white-space:nowrap">Research Library</span>
+</div>
+<div style="flex:1;min-width:0;display:flex;align-items:baseline;gap:8px;overflow:hidden">
+<span style="font:400 13px/1.2 Newsreader,Georgia,serif;color:#4A463C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Beyond Access: women and queer persons with disabilities expressing self and exploring sexuality online</span>
+</div>
+<div style="display:flex;align-items:center;gap:8px;flex:none">
+<button type="button" onClick="{{ toggleFull }}" aria-pressed="{{ fullPressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:9px 13px;border-radius:999px;border:1px solid rgba(23,21,15,.22);background:#fff;color:#17150F;cursor:pointer;display:flex;align-items:center;gap:7px" style-hover="border-color:#17150F">
+<span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:{{ modeDot }};flex:none"></span>{{ modeLabel }}</button>
+<div role="group" aria-label="Text size" style="display:flex;align-items:center;border:1px solid rgba(23,21,15,.22);border-radius:999px;background:#fff;overflow:hidden">
+<button type="button" onClick="{{ zoomOut }}" aria-label="Decrease text size" style="border:0;background:transparent;cursor:pointer;font:600 13px/1 Archivo,sans-serif;padding:10px 11px;color:#17150F" style-hover="background:#F0ECE1">A−</button>
+<span aria-hidden="true" style="width:1px;align-self:stretch;background:rgba(23,21,15,.16)"></span>
+<button type="button" onClick="{{ zoomIn }}" aria-label="Increase text size" style="border:0;background:transparent;cursor:pointer;font:600 15px/1 Archivo,sans-serif;padding:9px 11px;color:#17150F" style-hover="background:#F0ECE1">A+</button>
+</div>
+<button type="button" onClick="{{ toggleToc }}" aria-expanded="{{ tocExpanded }}" style="font:600 12px/1 Archivo,sans-serif;padding:9px 14px;border-radius:999px;border:1px solid #17150F;background:#17150F;color:#F7F4ED;cursor:pointer">Contents</button>
+</div>
+</div>
+<div aria-hidden="true" style="height:3px;background:rgba(23,21,15,.08)"><div id="om-progress" style="height:3px;background:#A4234B;width:0%"></div></div>
+</header>
+
+<sc-if value="{{ tocOpen }}" hint-placeholder-val="{{ false }}">
+<nav aria-label="Report contents" style="position:sticky;top:65px;z-index:39;background:#fff;border-bottom:1px solid rgba(23,21,15,.14);box-shadow:0 14px 30px -18px rgba(23,21,15,.4)">
+<div style="max-width:1320px;margin:0 auto;padding:22px clamp(14px,3.5vw,30px) 26px">
+<p style="margin:0 0 14px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Jump to a section</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:8px">
+<sc-for list="{{ toc }}" as="c" hint-placeholder-count="10">
+<a href="{{ c.href }}" onClick="{{ closeToc }}" style="display:flex;gap:12px;align-items:baseline;padding:11px 13px;border-radius:8px;border:1px solid rgba(23,21,15,.12);background:#FBF9F4;text-decoration:none;color:#17150F" style-hover="border-color:#17150F;background:#F3EFE4">
+<span style="font:600 10px/1.4 ui-monospace,Menlo,monospace;color:#A4234B;flex:none;padding-top:2px">{{ c.num }}</span>
+<span style="font:500 13px/1.35 Archivo,sans-serif">{{ c.title }}</span>
+</a>
+</sc-for>
+</div>
+</div>
+</nav>
+</sc-if>
+
+<div id="report-start" style="max-width:1320px;margin:0 auto;padding:0 clamp(14px,3.5vw,30px) 120px">
+<main style="zoom:{{ zoom }}">
+
+<section aria-labelledby="cover-h" style="padding:64px 0 40px;border-bottom:1px solid rgba(23,21,15,.14)">
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px">
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:#A4234B;padding:6px 9px;border-radius:4px">Interactive report</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.2);padding:6px 9px;border-radius:4px">Disability · Sexuality · Internet</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.2);padding:6px 9px;border-radius:4px">2020</span>
+</div>
+<h1 id="cover-h" style="margin:0;max-width:20ch;font:400 clamp(40px,6vw,76px)/1.02 Newsreader,Georgia,serif;letter-spacing:-.02em;text-wrap:balance">Beyond Access</h1>
+<p style="margin:14px 0 0;max-width:32ch;font:300 clamp(21px,2.6vw,30px)/1.24 Newsreader,Georgia,serif;color:#4A463C;font-style:italic">Women and queer persons with disabilities expressing self and exploring sexuality online</p>
+<p style="margin:30px 0 0;max-width:62ch;font:400 clamp(17px,1.25vw,19.5px)/1.62 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Having a phone is not access. Access is a device, a data plan, an interface that speaks your language, content that imagines your body, the skills to use it, and a household that lets you use it unwatched. This report follows sixteen women and queer activists with disabilities through all of it.</p>
+<div style="margin:28px 0 0;padding:18px 20px;border-radius:12px;background:#F5EBD8;border:1px solid rgba(138,90,11,.35);max-width:70ch">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B4508">Content note</p>
+<p style="margin:9px 0 0;font:400 15px/1.6 Newsreader,Georgia,serif;color:#2C2921">This report discusses sexuality, sexual expression, online harassment and sexual violence. Participants are quoted anonymously, by role. Accounts of harassment are kept behind a click.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:22px;margin:30px 0 0;padding:22px 0 0;border-top:1px solid rgba(23,21,15,.14)">
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Authors</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">Shubha Kayastha, Mamata Pokharel</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Published</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">Body &amp; Data, 2020</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Part of</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">EROTICS South Asia, phase II</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Reading time</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">{{ readTime }}</p></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 0">
+<a href="#spectrum" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;background:#17150F;color:#F7F4ED;text-decoration:none" style-hover="background:#A4234B">Walk the spectrum of access</a>
+<a href="#glance" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;border:1px solid rgba(23,21,15,.28);color:#17150F;text-decoration:none;background:#fff" style-hover="border-color:#17150F">Five-minute overview</a>
+<a href="#expression" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;border:1px solid rgba(23,21,15,.28);color:#17150F;text-decoration:none;background:#fff" style-hover="border-color:#17150F">What expression looks like</a>
+</div>
+</section>
+
+<section id="glance" aria-labelledby="glance-h" style="padding:52px 0 12px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">At a glance</p>
+<h2 id="glance-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Where the conversation starts</h2>
+<p style="margin:0 0 28px;max-width:62ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">One number in this study is a finding rather than a statistic: only six people were able to complete the online survey. Everything after that had to be done in person.</p>
+
+<div style="background:#17150F;color:#F7F4ED;border-radius:14px;padding:28px;margin:0 0 18px">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#E9A8BE">The method was the first finding</p>
+<p style="margin:12px 0 0;max-width:62ch;font:400 clamp(19px,1.75vw,23px)/1.42 Newsreader,Georgia,serif;text-wrap:pretty">When the quantitative survey went out, six people managed to participate. To hear more than six voices, the researchers had to build a whole additional component — in-person visits, translation, and support needs met one by one. The online world’s default settings had excluded the people the research was about.</p>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,178px),1fr));gap:12px">
+<sc-for list="{{ stats }}" as="s" hint-placeholder-count="6">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:18px 18px 16px">
+<p style="margin:0;font:600 27px/1 Newsreader,Georgia,serif;letter-spacing:-.01em;color:#A4234B">{{ s.value }}</p>
+<p style="margin:9px 0 0;font:600 12.5px/1.35 Archivo,sans-serif">{{ s.label }}</p>
+<p style="margin:5px 0 0;font:400 11.5px/1.45 Archivo,sans-serif;color:#6B6659">{{ s.note }}</p>
+</div>
+</sc-for>
+</div>
+
+<p style="margin:14px 0 0;max-width:74ch;font:400 13px/1.6 Archivo,sans-serif;color:#6B6659">Sources for these figures: mobile phone access<sup style="line-height:0"><a href="#note-1" id="ref-1" data-note="Samarajiva, R. (2018). ICT access and use by Persons with Disabilities (PWD) in Nepal. AfterAccess — 32% have access to a mobile phone; of those without, 65% cite their disability." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">1</a></sup>, computer knowledge<sup style="line-height:0"><a href="#note-2" id="ref-2" data-note="Eide, Neupane &amp; Hem (2016). Living conditions among people with disability in Nepal. SINTEF — telephone survey across 59 districts, 2,000 households with disabilities." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">2</a></sup>, dignity in social participation<sup style="line-height:0"><a href="#note-3" id="ref-3" data-note="National Federation of the Disabled Nepal (2013). Disability Rights Holistic Monitoring Report — 72% of unemployed and 56% of employed persons with disabilities report having no dignity in social participation." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">3</a></sup>, and Facebook’s share of social media use<sup style="line-height:0"><a href="#note-4" id="ref-4" data-note="Pandey, S. &amp; Raj, Y. (2016). Free Float Internet Policies of Nepal. Studies in Nepali History and Society 21(1) — Facebook accounts for 97% of social media use in Nepal." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">4</a></sup>.</p>
+
+<div style="margin:18px 0 0;padding:20px 22px;border-radius:12px;background:#fff;border:1px solid rgba(23,21,15,.14)">
+<p style="margin:0 0 6px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Key terms — hover, tap or tab to a term for its definition</p>
+<p style="margin:0 0 14px;font:400 13px/1.5 Archivo,sans-serif;color:#6B6659">All of these are also written out in the <a href="#glossary">glossary</a>.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<button type="button" data-term="Sexuality (as this study defines it)" data-def="The way people experience and express themselves sexually — biological, erotic, physical, emotional, social and spiritual feelings and behaviours. Far wider than the act of sex, which is where most participants assumed the word stopped." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Sexuality</button>
+<button type="button" data-term="Younikta (यौनिकता)" data-def="The Nepali translation of ‘sexuality’, built on the root ‘youn’ — sex. A recent import from English, not part of everyday speech, and read by almost everyone as meaning the physical act alone. There is no wider Nepali term yet for beauty, self-expression, exploration and reproductive health together." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Younikta</button>
+<button type="button" data-term="Safe space" data-def="A place or forum where people who are marginalised can communicate their experiences without fear of being judged, trolled or attacked, while recognising structural oppressions and systems of power." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Safe space</button>
+<button type="button" data-term="Microaggression" data-def="A small, often well-meant act that carries a demeaning assumption. Here it takes a specific form: the backhanded compliment. ‘You don’t seem disabled’ is admiration that depends on believing disabled bodies cannot be beautiful." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Microaggression</button>
+<button type="button" data-term="Emotional labour" data-def="Unpaid work of managing other people’s feelings and curiosity. Participants described being constantly asked by abled people to explain themselves and satisfy questions about their bodies." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Emotional labour</button>
+<button type="button" data-term="Human rights model of disability" data-def="Recognises disability as a natural part of human diversity to be respected and supported, and locates exclusion in a disabling environment — so changing that environment is a right, not a gift. It replaces the charity model, in which services are designed for people and delivered to them." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Human rights model</button>
+<button type="button" data-term="Intersectionality" data-def="The intersections in our identities — self-defined, developed through our interactions with others, and internalised from what political, social, economic and technological institutions tell us. Here: being a woman, being queer, and being disabled, at once." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Intersectionality</button>
+<button type="button" data-term="UN CRPD" data-def="The UN Convention on the Rights of Persons with Disabilities (2006), which defines disability as an evolving concept arising from the interaction between impairments and attitudinal and environmental barriers. Article 23 recognises the right to marry and found a family on the basis of free and full consent." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">UN CRPD</button>
+</div>
+</div>
+
+<div style="margin:14px 0 0;padding:20px 22px;border-radius:12px;background:#EFEDE4;border:1px solid rgba(23,21,15,.12)">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">The one-sentence finding</p>
+<p style="margin:10px 0 0;max-width:58ch;font:400 clamp(19px,1.75vw,23px)/1.4 Newsreader,Georgia,serif;text-wrap:pretty">The internet is the freest space these women have — and they are still censoring themselves in it, because being seen as a sexual person costs a disability rights activist her credibility.</p>
+</div>
+</section>
+
+<section id="spectrum" aria-labelledby="spectrum-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">A spectrum of access</p>
+<h2 id="spectrum-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Seven things you need before you can speak</h2>
+<p style="margin:0 0 22px;max-width:66ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">“Access” is usually counted as a yes or a no. In practice it is a sequence, and a person can be stopped at any point in it. Open each layer to see what stops people there.</p>
+<ol style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ spectrum }}" as="l" hint-placeholder-count="7">
+<li>
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-left:5px solid #A4234B;border-radius:12px">
+<summary style="padding:18px 20px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap">
+<span aria-hidden="true" style="font:600 12px/1 ui-monospace,Menlo,monospace;width:28px;height:28px;border-radius:50%;background:#17150F;color:#F7F4ED;display:flex;align-items:center;justify-content:center;flex:none">{{ l.n }}</span>
+<span style="flex:1;min-width:220px"><span style="display:block;font:400 22px/1.22 Newsreader,Georgia,serif">{{ l.title }}</span><span style="display:block;margin-top:5px;font:400 13px/1.45 Archivo,sans-serif;color:#6B6659">{{ l.sub }}</span></span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#A4234B;flex:none">WHAT STOPS PEOPLE +</span>
+</summary>
+<div style="border-top:1px solid rgba(23,21,15,.1);padding:18px 20px 20px clamp(20px,5vw,64px)">
+<p style="margin:0 0 16px;max-width:72ch;font:400 15.5px/1.65 Newsreader,Georgia,serif;color:#2C2921">{{ l.barrier }}</p>
+<blockquote style="margin:0;padding:16px 18px;background:#FBF9F4;border-radius:10px;border-left:3px solid #1F5C55">
+<p style="margin:0;font:400 16px/1.55 Newsreader,Georgia,serif;color:#17150F">{{ l.quote }}</p>
+<footer style="margin:12px 0 0;font:500 11.5px/1.4 ui-monospace,Menlo,monospace;color:#6B6659">{{ l.who }}</footer>
+</blockquote>
+</div>
+</details>
+</li>
+</sc-for>
+</ol>
+<p style="margin:20px 0 0;max-width:72ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Every participant in this study cleared layers one to five: they all own a phone, all live in Kathmandu Valley, and all were reached through disability rights organisations. Their account of what remains difficult is therefore the floor, not the ceiling — for people without those advantages, each barrier is multiplied.</p>
+<div style="margin:18px 0 0;padding:22px 24px;border-radius:12px;background:#fff;border:1px solid rgba(23,21,15,.14);border-left:4px solid #1F5C55">
+<p style="margin:0 0 6px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#14453F">And one more thing about the last layer</p>
+<p style="margin:0;max-width:70ch;font:400 17px/1.55 Newsreader,Georgia,serif;color:#2C2921">Almost all of this happens on one platform. In Nepal, Facebook accounts for 97% of social media use — a space where parents, employers, friends and lovers arrive with their expectations at once, which is a recipe for self-censorship. As hvale vale puts it, meaningful dialogue needs the internet to be “integrated, enriched and not limited or concentrated on social media”.<sup style="line-height:0"><a href="#note-9" id="ref-9" data-note="vale, h. (2017). In plain sight: on sexuality, rights and the internet in India, Nepal and Sri Lanka. In APC’s EROTICS South Asia exploratory research — on the need for respectful, ethically built spaces to host dissent and provide privacy, avoiding the performative modality privileged by social media." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">9</a></sup></p>
+</div>
+</section>
+
+<section id="silence" aria-labelledby="silence-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter I</p>
+<h2 id="silence-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">A culture of silence</h2>
+<div style="max-width:66ch">
+<div style="border-left:3px solid #A4234B;padding:2px 0 2px 20px;margin:0 0 26px">
+<p style="margin:0;font:400 clamp(18px,1.4vw,21px)/1.5 Newsreader,Georgia,serif;text-wrap:pretty">In a society where menstruation is hard to mention, the sexuality of a woman with a disability is not a difficult subject — it is an unthinkable one. Disabled bodies are read as asexual; the moment they express desire, they are read as hypersexual. There is no third option, so people choose the safer label.</p>
+</div>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ true }}">
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Paternalistic notions of honour, respect and purity are attached to women across South Asia and used to police their sexual freedom and reproductive health. For women with disabilities a further layer of paternalism applies: they are regularly viewed as objects of pity, needing support, and incapable of agency. Globally that view has produced forced hysterectomies and forced abortions; the UN Special Rapporteur has warned that discriminatory laws and policies undermine the fundamental right of girls and young women with disabilities to exercise choice over their own bodies.<sup style="line-height:0"><a href="#note-6" id="ref-6" data-note="OHCHR (2017). Statement of the UN Special Rapporteur on the rights of persons with disabilities, Catalina Devandas, on forced sterilisation of young women with disabilities: discriminatory laws and policies violate their integrity and deprive them of dignity while promoting the interests of professionals and caregivers instead." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">6</a></sup></p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Hypersexuality is a charge levied at any woman who admits to sexual desire, even inside marriage. For a woman of whom asexuality is the expected norm, the accusation sticks harder. Faced with that binary, participants chose the identity carrying less social risk — asexual — and avoided discussing themselves as sexual beings online at all. Several described it plainly as a survival strategy.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">The policing does not only come from outside. Nepal’s disability rights movement was initiated and is still led mostly by Brahmin cisgender men; women’s issues within it are led mostly by Brahmin cisgender women. The movement’s agenda is built around what it counts as basic needs — education, employment, financial independence — with sex and sexuality kept secondary. Where sexual and reproductive health is raised, it is framed around heteronormative ideas of marriage and motherhood, so the fight to be seen as marriageable becomes the first step towards sexual rights, even though fixating on marriageability narrows the idea of autonomy.<sup style="line-height:0"><a href="#note-8" id="ref-8" data-note="Pratima Gurung (2010) describes women with disabilities as ‘excluded within exclusion’, with intersectional discrimination beginning in the family itself. Sarita Lamichhane (2020) writes on tokenistic inclusion and on people with disabilities not being seen as capable advocates of any issue besides disability." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">8</a></sup></p>
+</sc-if>
+</div>
+
+<div style="margin:34px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:24px">
+<h3 style="margin:0 0 12px;font:600 15px/1.3 Archivo,sans-serif">The law joins in<sup style="line-height:0"><a href="#note-5" id="ref-5" data-note="Civil Code (Muluki Ain) 2017, family law chapter, article 71.2; Privacy Act 2018, section 6. Article 23 of the UN CRPD recognises the right of persons with disabilities to marry and found a family on the basis of free and full consent." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">5</a></sup></h3>
+<p style="margin:0 0 14px;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">Article 71.2 of the Civil Code 2017 allows a marriage to be voided where someone was ‘fraudulently’ married to a person who cannot speak or hear, is blind, or has a severe intellectual disability. A partner can later claim he did not know — which makes a consensual marriage prosecutable, against Article 23 of the UN CRPD.</p>
+<p style="margin:0 0 22px;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">Section 6 of the Privacy Act 2018 holds reproductive health information private, unless the person is of ‘unsound mind’ — in which case it may be given to family or a guardian. Privacy becomes conditional on a diagnosis, and the decision passes to whoever is deemed to hold guardianship.</p>
+<h3 style="margin:0 0 12px;font:600 15px/1.3 Archivo,sans-serif">The word itself is a barrier</h3>
+<p style="margin:0 0 14px;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">The Nepali term for sexuality, <span lang="ne">younikta</span>, is built on the root <em>youn</em> — sex — and carries an even narrower connotation than the English word. It is a recent import, absent from everyday speech, and already loaded with assumptions of decency and indecency. It also invites the accusation of imported activism.</p>
+<p style="margin:0;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">There is not yet a Nepali word that holds beauty, appreciation, self-expression, self-exploration and reproductive health together. Participants were therefore answering a narrower question than the one being asked.</p>
+</div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:24px">
+<h3 style="margin:0 0 12px;font:600 15px/1.3 Archivo,sans-serif">A conversation that shows the gap</h3>
+<dl style="margin:0;display:flex;flex-direction:column;gap:10px">
+<div><dt style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Interviewer</dt><dd style="margin:5px 0 0;font:400 15px/1.55 Newsreader,Georgia,serif;color:#2C2921">Do you post about sexuality on Facebook when you are working on those issues?</dd></div>
+<div><dt style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#A4234B">Participant</dt><dd style="margin:5px 0 0;font:400 15px/1.55 Newsreader,Georgia,serif;color:#2C2921">It’s been 6 months of working on sexuality. I haven’t posted anything about sexuality.</dd></div>
+<div><dt style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Interviewer</dt><dd style="margin:5px 0 0;font:400 15px/1.55 Newsreader,Georgia,serif;color:#2C2921">When you go to programmes about sexuality and speak there, don’t you post that on social media?</dd></div>
+<div><dt style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#A4234B">Participant</dt><dd style="margin:5px 0 0;font:400 15px/1.55 Newsreader,Georgia,serif;color:#2C2921">Yes, I do. I post if I give a speech or I participate in those programmes.</dd></div>
+<div><dt style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Interviewer</dt><dd style="margin:5px 0 0;font:400 15px/1.55 Newsreader,Georgia,serif;color:#2C2921">That means you post about sexuality.</dd></div>
+<div><dt style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#A4234B">Participant</dt><dd style="margin:5px 0 0;font:400 15px/1.55 Newsreader,Georgia,serif;color:#2C2921">Maybe yes.</dd></div>
+</dl>
+</div>
+</div>
+</section>
+
+<section id="expression" aria-labelledby="expression-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter II</p>
+<h2 id="expression-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">What expression actually looks like</h2>
+<p style="margin:0 0 20px;max-width:66ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Asked about sexual expression, participants said it wasn’t happening. Asked about self-expression, they described a great deal of it. Here is what they said they do online — and what changes when you widen the definition.</p>
+
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px 22px;margin:0 0 18px">
+<div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+<div style="max-width:62ch">
+<p style="margin:0;font:600 14px/1.35 Archivo,sans-serif">Read through Audre Lorde’s definition of the erotic</p>
+<p style="margin:6px 0 0;font:400 13.5px/1.55 Archivo,sans-serif;color:#4A463C">Lorde describes the erotic as a sense of deep fulfilment and the full expression of a woman’s feeling and being — blurring the line between the erotic and the political, creative and everyday. Turn this on to see which of these activities that definition includes.<sup style="line-height:0"><a href="#note-7" id="ref-7" data-note="Lorde, A. (1984). Uses of the Erotic: The Erotic as Power. Kore Press. Lorde’s lens blurs the boundaries between the erotic on one hand and political, creative and everyday activities on the other — a creative force for revolutionary change." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">7</a></sup></p>
+</div>
+<button type="button" onClick="{{ toggleLorde }}" aria-pressed="{{ lordePressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:12px 16px;border-radius:999px;cursor:pointer;border:1px solid {{ lordeBd }};background:{{ lordeBg }};color:{{ lordeFg }};flex:none">{{ lordeLabel }}</button>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px">
+<sc-for list="{{ activities }}" as="a" hint-placeholder-count="9">
+<div style="background:{{ a.bg }};border:1px solid {{ a.bd }};border-radius:12px;padding:20px">
+<p style="margin:0;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">{{ a.tag }}</p>
+<p style="margin:11px 0 0;font:400 19px/1.3 Newsreader,Georgia,serif;color:#17150F">{{ a.title }}</p>
+<p style="margin:9px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">{{ a.body }}</p>
+<p style="margin:13px 0 0;font:500 10.5px/1.4 ui-monospace,Menlo,monospace;color:{{ a.noteFg }}">{{ a.note }}</p>
+</div>
+</sc-for>
+</div>
+
+<div style="margin:18px 0 0;padding:22px 24px;border-radius:12px;background:#EFEDE4;border:1px solid rgba(23,21,15,.12)">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Why the reframing matters</p>
+<p style="margin:10px 0 0;max-width:70ch;font:400 18px/1.5 Newsreader,Georgia,serif;text-wrap:pretty">If sexual expression is only ever understood as confessing bedroom details, then any discussion of sexuality feels far riskier than it is — and a great deal of expression that is already happening goes unrecognised, including by the people doing it.</p>
+</div>
+</section>
+
+<section id="censorship" aria-labelledby="censorship-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter III</p>
+<h2 id="censorship-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The cost of being a role model</h2>
+<div style="max-width:66ch">
+<div style="border-left:3px solid #A4234B;padding:2px 0 2px 20px;margin:0 0 26px">
+<p style="margin:0;font:400 clamp(18px,1.4vw,21px)/1.5 Newsreader,Georgia,serif;text-wrap:pretty">Activists are expected to be motivational. Sadness reads as negative, a photograph in a dress invites correction, and a kiss posted online has to be deleted — because the organisation is attached to everything you are. Self-censorship here is not caution. It is a job requirement.</p>
+</div>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ true }}">
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Participants described a clear internal division between ‘good’ and ‘bad’ uses of the internet. Good meant sharing news from the disability rights community, their organisations’ events, their work. Bad meant personal information — especially anything sad or distressing — because leaders are supposed to inspire. One participant was told by the head of her organisation not to post pictures from a New Year’s club night, and then not to post personal pictures at all. She accepted the first instruction and refused the second.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">The pressure also comes laterally, from colleagues in the movement, framed as being for the person’s own good. One participant recounted being told by fellow members that posting photographs with personal captions would be taken badly — and that she has been trying to post as little as possible since. Another explained why: followers would get the wrong message and be demotivated.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Where this lands is on sexual expression specifically. As one participant put it: being an activist makes you careful and conscious about what you post, so you do not post what you want to. She wanted to post a picture kissing her partner — “that is part of my sexuality” — and could not. Several described avoiding sharing content on sexual pleasure not out of disinterest but out of fear of losing credibility as activists.</p>
+</sc-if>
+</div>
+
+<h3 style="margin:34px 0 6px;font:600 17px/1.3 Archivo,sans-serif">Who does the policing</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Four sources, all described by participants. The last one is the one the movement rarely names.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,258px),1fr));gap:12px">
+<sc-for list="{{ policing }}" as="p" hint-placeholder-count="4">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-top:4px solid #A4234B;border-radius:12px;padding:20px">
+<p style="margin:0;font:600 14.5px/1.3 Archivo,sans-serif">{{ p.who }}</p>
+<p style="margin:9px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">{{ p.how }}</p>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section id="violence" aria-labelledby="violence-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter IV</p>
+<h2 id="violence-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">From compliment to cybercrime</h2>
+<p style="margin:0 0 22px;max-width:66ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">The violence participants described runs along a scale. At one end it is indistinguishable from praise; at the other it is a police case. Open any step for what it looks like in practice.</p>
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ violence }}" as="v" hint-placeholder-count="6">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:16px 18px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
+<span style="font:600 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border-radius:4px;background:{{ v.tagBg }};color:{{ v.tagFg }};flex:none">{{ v.scale }}</span>
+<span style="flex:1;min-width:220px;font:600 15px/1.35 Archivo,sans-serif">{{ v.title }}</span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#A4234B;flex:none">READ +</span>
+</summary>
+<div style="border-top:1px solid rgba(23,21,15,.1);padding:16px 18px 18px">
+<p style="margin:0 0 14px;max-width:74ch;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ v.body }}</p>
+<blockquote style="margin:0;padding:14px 16px;background:#FBF9F4;border-radius:10px;border-left:3px solid #A4234B">
+<p style="margin:0;font:400 15.5px/1.55 Newsreader,Georgia,serif;color:#17150F">{{ v.quote }}</p>
+<footer style="margin:10px 0 0;font:500 11px/1.4 ui-monospace,Menlo,monospace;color:#6B6659">{{ v.who }}</footer>
+</blockquote>
+</div>
+</details>
+</sc-for>
+</div>
+<div style="margin:18px 0 0;padding:22px 24px;border-radius:12px;background:#17150F;color:#F7F4ED">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#E9A8BE">What the scale hides</p>
+<p style="margin:12px 0 0;max-width:66ch;font:400 19px/1.5 Newsreader,Georgia,serif;text-wrap:pretty">Harassers asking a woman for a photograph of her stump — knowing private parts may be caught in the frame — is not an extreme case. It is a routine request, made of a body that has been catalogued in advance. Participants had to be alert during activities that look, from outside, entirely low-risk.</p>
+</div>
+</section>
+
+<section id="voices" aria-labelledby="voices-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Voices</p>
+<h2 id="voices-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">In their own words</h2>
+<p style="margin:0 0 20px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Sixteen interviews and two focus group discussions, Kathmandu. Filter by what the quotation is about.</p>
+<div role="group" aria-label="Filter voices by theme" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px">
+<sc-for list="{{ voiceFilters }}" as="f" hint-placeholder-count="5">
+<button type="button" onClick="{{ f.onClick }}" aria-pressed="{{ f.pressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:10px 14px;border-radius:999px;cursor:pointer;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};display:flex;align-items:center;gap:7px">{{ f.label }}<span style="font:600 10px/1 ui-monospace,Menlo,monospace;opacity:.7">{{ f.count }}</span></button>
+</sc-for>
+</div>
+<div style="columns:330px;column-gap:14px">
+<sc-for list="{{ voices }}" as="v" hint-placeholder-count="6">
+<figure style="break-inside:avoid;margin:0 0 14px;background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:22px">
+<blockquote style="margin:0;font:400 18px/1.5 Newsreader,Georgia,serif;color:#17150F;text-wrap:pretty">{{ v.quote }}</blockquote>
+<figcaption style="margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(23,21,15,.1);display:flex;flex-wrap:wrap;gap:8px;align-items:baseline">
+<span style="font:600 12.5px/1.3 Archivo,sans-serif">{{ v.who }}</span>
+<span style="font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.18);padding:5px 7px;border-radius:4px">{{ v.themeLabel }}</span>
+</figcaption>
+</figure>
+</sc-for>
+</div>
+</section>
+
+<section id="forward" aria-labelledby="forward-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Recommendations</p>
+<h2 id="forward-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">For a dignified life online</h2>
+<p style="margin:0 0 22px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Five audiences. Note that the disability community and the wider women’s and queer movements are both among them.<sup style="line-height:0"><a href="#note-10" id="ref-10" data-note="Body &amp; Data (2019). Policy Paper: Information Technology Bill 2019, from a feminist lens. With Dahal, T. et al. (2016), Freedom of Expression on Internet in Nepal, Freedom Forum — the basis for the recommendations on the ETA and the IT Bill." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">10</a></sup></p>
+<div role="tablist" aria-label="Recommendation audiences" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px">
+<sc-for list="{{ recTabs }}" as="t" hint-placeholder-count="5">
+<button type="button" role="tab" aria-selected="{{ t.selected }}" onClick="{{ t.onClick }}" style="font:600 13px/1 Archivo,sans-serif;padding:12px 16px;border-radius:999px;cursor:pointer;border:1px solid {{ t.bd }};background:{{ t.bg }};color:{{ t.fg }}">{{ t.label }}</button>
+</sc-for>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:10px;align-items:start">
+<sc-for list="{{ recs }}" as="r" hint-placeholder-count="3">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:16px 18px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px">
+<span aria-hidden="true" style="font:600 11px/1 ui-monospace,Menlo,monospace;color:#A4234B;flex:none;padding-top:3px">{{ r.n }}</span>
+<span style="flex:1;font:600 15px/1.35 Archivo,sans-serif">{{ r.title }}</span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#6B6659;flex:none">DETAIL +</span>
+</summary>
+<div style="padding:0 18px 18px clamp(18px,4vw,47px);border-top:1px solid rgba(23,21,15,.1);padding-top:14px">
+<p style="margin:0;max-width:70ch;font:400 15px/1.65 Newsreader,Georgia,serif;color:#2C2921">{{ r.body }}</p>
+</div>
+</details>
+</sc-for>
+</div>
+</section>
+
+<section id="notes" aria-labelledby="notes-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Notes &amp; glossary</p>
+<h2 id="notes-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Sources and terms</h2>
+<p style="margin:0 0 26px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Every numbered marker links here, and every note links back to where you were reading.</p>
+
+<h3 style="margin:0 0 14px;font:600 15px/1.3 Archivo,sans-serif">Notes</h3>
+<ol style="margin:0 0 40px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:8px;align-items:start">
+<li id="note-1" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">1</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Samarajiva, R. (2018). <em>ICT access and use by Persons with Disabilities (PWD) in Nepal.</em> AfterAccess — 32% of persons with disabilities have access to a mobile phone; of those without, 65% cite their disability as the reason.</span><a href="#ref-1" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 1 in the text">↩ back</a></li>
+<li id="note-2" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">2</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Eide, A. H., Neupane, S. &amp; Hem, K. G. (2016). <em>Living conditions among people with disability in Nepal.</em> SINTEF Technology and Society — telephone survey across 59 districts; of 2,000 households with disabilities, only a quarter of respondents had basic computer knowledge.</span><a href="#ref-2" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 2 in the text">↩ back</a></li>
+<li id="note-3" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">3</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">National Federation of the Disabled Nepal (2013). <em>Disability Rights Holistic Monitoring Report</em> — 72% of unemployed and 56% of employed persons with disabilities report having no dignity in social participation; also on the shift from prejudice to treating people as beneficiaries of charity.</span><a href="#ref-3" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 3 in the text">↩ back</a></li>
+<li id="note-4" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">4</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Pandey, S. &amp; Raj, Y. (2016). <em>Free Float Internet Policies of Nepal.</em> Studies in Nepali History and Society 21(1) — Facebook accounts for 97% of social media use in Nepal.</span><a href="#ref-4" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 4 in the text">↩ back</a></li>
+<li id="note-5" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">5</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Civil Code (Muluki Ain) 2017, chapter on family law, article 71.2, which permits a marriage to be voided where a person is said to have been ‘fraudulently’ married to someone who cannot speak or hear, is blind, or has a severe intellectual disability — against Article 23 of the UN CRPD. Privacy Act 2018, section 6, permits reproductive health information about a person of ‘unsound mind’ to be given to family or a guardian.</span><a href="#ref-5" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 5 in the text">↩ back</a></li>
+<li id="note-6" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">6</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">OHCHR (2017). Statement of the UN Special Rapporteur on the rights of persons with disabilities, Catalina Devandas, on forced sterilisation of young women with disabilities.</span><a href="#ref-6" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 6 in the text">↩ back</a></li>
+<li id="note-7" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">7</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Lorde, A. (1984). <em>Uses of the Erotic: The Erotic as Power.</em> Kore Press.</span><a href="#ref-7" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 7 in the text">↩ back</a></li>
+<li id="note-8" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">8</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Gurung, P. (2010), on intersectional discrimination beginning within the family and women with disabilities being ‘excluded within exclusion’. See also Lamichhane, S. (2020), <em>Youth Day and Social Mentality</em>, Saral Patrika.</span><a href="#ref-8" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 8 in the text">↩ back</a></li>
+<li id="note-9" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">9</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">vale, h. (2017). <em>In plain sight: on sexuality, rights and the internet in India, Nepal and Sri Lanka.</em> In APC’s EROTICS South Asia exploratory research — on the need for respectful, ethically built spaces rather than the performative modality privileged by social media.</span><a href="#ref-9" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 9 in the text">↩ back</a></li>
+<li id="note-10" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">10</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Body &amp; Data (2019). <em>Policy Paper: Information Technology Bill 2019, from a feminist lens.</em> With Dahal, T. et al. (2016), <em>Freedom of Expression on Internet in Nepal</em>, Freedom Forum.</span><a href="#ref-10" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 10 in the text">↩ back</a></li>
+</ol>
+
+<h3 id="glossary" style="margin:0 0 6px;font:600 15px/1.3 Archivo,sans-serif">Glossary</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Terms as this report uses them.</p>
+<dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Sexuality</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">The way people experience and express themselves sexually — biological, erotic, physical, emotional, social and spiritual feelings and behaviours.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Younikta (यौनिकता)</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">The Nepali term for sexuality, rooted in the word for sex, recently imported and commonly read as referring to the physical act alone.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Safe space</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">A place or forum where marginalised people can communicate their experiences without fear of being judged, trolled or attacked.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Microaggression</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">A small, often well-meant act carrying a demeaning assumption — here, most often the backhanded compliment.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Emotional labour</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">The unpaid work of managing other people’s feelings and curiosity about your body and your life.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Human rights model of disability</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Recognises disability as part of human diversity, and locates exclusion in a disabling environment — replacing the charity model.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Charity model</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Treats persons with disabilities as recipients of services designed for them and delivered to them, who should be grateful and content.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Intersectionality</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">The intersections in our identities, self-defined and imposed, and how they compound one another.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">SRHR</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Sexual and Reproductive Health and Rights.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">UN CRPD</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">The UN Convention on the Rights of Persons with Disabilities (2006).</dd></div>
+</dl>
+</section>
+
+<section id="about" aria-labelledby="about-h" style="padding:52px 0 0;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">About</p>
+<h2 id="about-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The study and the people behind it</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,258px),1fr));gap:12px">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Method</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Sixteen in-depth interviews — fourteen women disability rights activists and two queer rights activists with disabilities — and two focus group discussions with 22 participants, all Kathmandu-based, all identifying as women. Guided by feminist ethical principles: consent beyond the form, discussants as experts in their own lives, and researchers reflecting on their own position.</p>
+</div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Limits the authors name</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Focus groups and in-person interviews are not anonymous and tend to produce more conservative answers on taboo subjects. Participants all own phones and live in the Valley, so this is a more formally educated, urban subset. Interviews were conducted by one researcher and written up by another from translated transcripts; some nuance will have been lost.</p>
+</div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Credits</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Authors: Shubha Kayastha, Mamata Pokharel. Peer reviewer: Sarita Lamichhane. Contributors: Srinidhi Raghavan, Tigist S. Hussen, hvale vale. Copy editing, graphic design and illustrations: Supriya Manandhar. Coordination: Kabita Raturi. Supported by Amplify Change through APC, with NDWA, Nepal Netrahin Mahila Chhatrabas and Rama Dhakal.</p>
+</div>
+</div>
+<div style="margin:26px 0 0;padding:22px;border-radius:12px;border:1px dashed rgba(23,21,15,.28);background:#EFEDE4">
+<p style="margin:0 0 6px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Cite this report</p>
+<p style="margin:0;font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Kayastha, S. &amp; Pokharel, M. (2020). <em>Beyond Access: Women and queer persons with disabilities expressing self and exploring sexuality online.</em> Kathmandu: Body &amp; Data.</p>
+</div>
+<div style="margin:14px 0 0;padding:22px;border-radius:12px;border:1px solid rgba(31,92,85,.35);background:#E9F1EF">
+<p style="margin:0 0 6px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#14453F">Accessibility of this page</p>
+<p style="margin:0;max-width:74ch;font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">A report about digital exclusion has an obligation here. This page uses real headings, lists and expandable regions so screen readers can navigate it; every interactive element is reachable and operable by keyboard with a visible focus ring; text can be enlarged to 150% from the header without breaking the layout; colour is never the only carrier of meaning; and motion respects your system’s reduced-motion setting. If something here fails for you, that is a defect — please tell us.</p>
+</div>
+<p style="margin:34px 0 0;font:400 13px/1.6 Archivo,sans-serif;color:#6B6659;max-width:70ch">Participants are quoted anonymously and identified only by role. Where a quotation was given in Nepali it is reproduced in the report’s own English translation.</p>
+<p style="margin:22px 0 0"><a href="#report-start" style="font:600 13px/1 Archivo,sans-serif">Back to the top of the report ↑</a></p>
+</section>
+
+</main>
+</div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startFull&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Reading&quot;,&quot;label&quot;:&quot;Open in full-text mode&quot;},&quot;startLorde&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Reading&quot;,&quot;label&quot;:&quot;Start with Lorde's lens applied&quot;}}">
+const VOICES = [
+  {quote:'“Didi, we live in a society where we cannot even talk openly about menstruation. Talking openly about sexuality is a dream that is very far from reach.”', who:'Focus group participant', theme:'silence'},
+  {quote:'“Our context is such that women in Nepal are not able to talk about sexuality openly. Even as activists, we are not able to talk about these basic health issues such as white discharge, let alone issues of sexuality.”', who:'Disability rights activist', theme:'silence'},
+  {quote:'“This subject isn’t considered important. No one thinks that disabled people also have physical need, they do not need sex and they do not have interest about sex. Sex is only for abled people. That may be the reason for not talking about sexuality. But we are raising voice for this.”', who:'Focus group participant', theme:'silence'},
+  {quote:'“Just because someone has disability does not mean that the person doesn’t have sexuality. Disability has nothing to do with one’s sexuality. These are two different things.” — asked whether she had ever said this online: “No… It’s like people might start looking at you differently.”', who:'Senior disability rights activist, chairperson of her organisation', theme:'censorship'},
+  {quote:'“We don’t really put anything like that out there that would attract negative comments.”', who:'Focus group participant — the agreement in the room was palpable', theme:'censorship'},
+  {quote:'“I had also posted a picture wearing a dress online and some people messaged me saying that I should not wear such dresses and that I look far better in jeans. I had neither worn that dress while going to work nor had anyone at work seen me wearing that in person. I had merely posted that online.”', who:'Disability rights activist', theme:'censorship'},
+  {quote:'“Being an activist we become careful and conscious about what we post online and we don’t post the things that we want to. We are not able to express it, right? Like I want to post a picture kissing my partner and that is part of my sexuality. So we are controlling our sexuality for the sake of activism.”', who:'Disability rights activist', theme:'censorship'},
+  {quote:'“It was New Year’s Day when me and some of my friends had been to a club. I had shared it on Facebook too. The next day the head of the organisation called me and told me that I should not be posting such things… He told me not to post other personal pictures too. I agreed with what he said about not to post clubbing ones but I could not agree with what he said about not to post my personal pictures. Ahh! It’s my choice. Totally!”', who:'Disability rights activist', theme:'censorship'},
+  {quote:'“I can read the words in English but I can’t read Nepali words completely. Plus, in order to read a pdf, another app is required. So, everything cannot be seen nicely. Sometimes, when people upload pictures, the app doesn’t dictate it. It only says that there’s a photo but we cannot know about the photo, like what the photo is about.”', who:'Interviewee who uses a screen reader', theme:'access'},
+  {quote:'“I want to learn how to use Twitter. I have heard what I can post there. But since the discussions there are mostly in English, I don’t want to have miscommunication because I don’t know English that much. I haven’t learnt it at all.”', who:'Deaf interviewee', theme:'access'},
+  {quote:'“I mostly share all my arts and paintings on the internet. He tells me to concentrate on my work and that he’ll look after the posts. He does most of these activities for me.”', who:'Interviewee describing her husband’s mediation of her accounts', theme:'access'},
+  {quote:'“Previously when I was in college, I said that I would use signs to communicate but he told me not to use it with anyone. I have my own community. I should be able to use it in my community. He could not understand it so we had arguments.”', who:'Deaf interviewee', theme:'access'},
+  {quote:'“When I use TikTok, I feel like I can hear myself and I feel like I am not deaf. So I use TikTok and make videos.”', who:'Deaf interviewee', theme:'expression'},
+  {quote:'“I share a lot of pictures in my status updates. I like to write also, so I write poems and such on Facebook. It feels good to post my pictures and writings… I use Facebook all the time. It’s like a friend to me.”', who:'Disability rights activist', theme:'expression'},
+  {quote:'“When I get frustrated, or have something I can’t tell people face to face, I write and share on Facebook.”', who:'Focus group participant', theme:'expression'},
+  {quote:'“I watch how-to videos on reducing acne, hair care and beauty routines. I get a lot of cramps, and look at how to reduce cramps. I learnt about hot water soaks, and eating chocolate, and how these help.”', who:'Interviewee', theme:'expression'},
+  {quote:'“I was looking for porn videos of PWD having sex, but I could not find any. We women with disabilities are seen as asexual.”', who:'Interviewee', theme:'expression'},
+  {quote:'“Offline, there are no accessible places where we can go for dates or meet people. Before we meet someone, we are able to see their pictures, have video chats.”', who:'Interviewee', theme:'expression'},
+  {quote:'“From dating apps, I can search partners according to my preference. Everything starts from online, and then goes offline. In queer community, everything starts from online.”', who:'Queer participant with a disability', theme:'expression'},
+  {quote:'“I do not have my disability status on Facebook. There are some people who stop talking to me when they find out that I am blind, and then there are some people that get hyper curious, and start talking even more.”', who:'Interviewee', theme:'identity'},
+  {quote:'“I do not think Facebook needs to be a true reflection… we do not want to advertise our disability there… we can limit what we share. Those who know know, those who don’t know don’t need to know.”', who:'Focus group participant', theme:'identity'},
+  {quote:'“A good looking close friend of mine uploads her pictures in a way that the wheelchair is not visible. She was getting a lot of unwanted messenger calls from men, and was in a lot of stress… I asked her to upload a full picture of herself. Once she uploaded that picture, those calls stopped.”', who:'Interviewee', theme:'identity'},
+  {quote:'“Mostly appreciation. People say that my photos don’t seem like I belong to a community with disability… I post pictures of me when I go abroad as well. And, people get a shock. (Laughs)”', who:'Interviewee, on comments she receives', theme:'violence'},
+  {quote:'“Mostly I get positive comments but some men comment ‘sexy body’ — I don’t know if that is good or bad.”', who:'Interviewee', theme:'violence'},
+  {quote:'“I am disabled and my family and friends don’t allow me to go out of my house as they want to keep me ‘safe’ from outside or they don’t want me to work. I can’t imagine my life without the internet. My life will be dull.”', who:'Activist based at home', theme:'expression'}
+];
+
+const THEMES = [
+  {id:'all', label:'All voices'},
+  {id:'access', label:'Access'},
+  {id:'silence', label:'Silence'},
+  {id:'expression', label:'Expression'},
+  {id:'censorship', label:'Self-censorship'},
+  {id:'identity', label:'Choosing what to reveal'},
+  {id:'violence', label:'Harassment'}
+];
+
+const RECS = {
+  gov:[
+    {n:'01', title:'Amend the laws that criminalise sexual expression', body:'The Electronic Transaction Act and the Information Technology Bill restrict sexual expression online, and moral policing by local governments falls hardest on women and girls. Alongside them, policies that are ableist and heteronormative by design — the family law chapter of the Civil Code 2017 and the Privacy Act 2018 — put women with disabilities at further risk. All of these require amendment.'},
+    {n:'02', title:'Widen the concessions, and change who is consulted', body:'Many persons with disabilities rely on online spaces for information, services and community that are otherwise inaccessible, yet devices and connectivity remain expensive and concessions are limited. The existing subsidies are commendable and should be expanded to affordable devices and discounted plans — and persons with disabilities should be treated as stakeholders in ICT policy consultations, not only as beneficiaries of it.'}
+  ],
+  community:[
+    {n:'03', title:'Make agenda-setting inclusive', body:'Needs are currently identified by a leadership that is mostly Brahmin, cisgender and heterosexual, which produces a hierarchy in which sexuality is not a ‘basic need’. Agenda-setting must include women and queer people with disabilities across caste, ethnicity, class, education, geography and age — and persons with severe disabilities, who are routinely left out of the discourse entirely.'},
+    {n:'04', title:'Restructure ‘good’ and ‘bad’ use of the internet', body:'The narratives the community holds about acceptable online expression need to make room for the nuance and messiness of a person expressing themselves. The self-censorship activists practise under pressure to perform as role models needs reassessment: their individual right to freedom of expression has to be addressed.'},
+    {n:'05', title:'Distribute the risk of speaking', body:'The risk carried by one person raising sexuality can be met with a concerted campaign in which everyone participates — bringing attention to the problem while spreading the exposure, so negative attention is handled as a community rather than individually. The community supports each other when someone is harassed, but has no ongoing forum for these discussions; without one, they only happen at international events.'}
+  ],
+  tech:[
+    {n:'06', title:'Consult from inception, not at sign-off', body:'Digital technologies are frequently unfriendly to persons with disabilities in both function and interface, and accessibility arrives as an afterthought. Even projects built to assist persons with disabilities collect feedback once they are finished. Meaningful participation must run from a project’s inception through to execution.'},
+    {n:'07', title:'Stop expecting free expert labour', body:'Persons with disabilities are routinely asked to provide detailed review and feedback without compensation. Regular, paid consultation with the community is what improves the quality and inclusivity of a product.'}
+  ],
+  society:[
+    {n:'08', title:'Make stories of resistance visible', body:'Society at large bears accountability for how conversations about disability and sexuality happen. Seeing women and queer people with disabilities as more than objects of pity means making their resistance visible and respecting their agency. These conversations broaden the range of futures a woman with a disability can imagine for herself — whether or not that future includes marriage, family and sexual pleasure.'},
+    {n:'09', title:'Fund and publish accessible research', body:'There is an urgent need for more academic research into the disability community in Nepal, focused on women and queer people within it — and existing as well as new knowledge should be distributed widely in accessible formats.'}
+  ],
+  movements:[
+    {n:'10', title:'Intersect disability into your own work', body:'Intersectional movement building requires the queer rights movement, the women’s rights movement and sexual rights initiatives to bring disability into their work and activities — not as a guest agenda but as part of their own. Persons with disabilities are currently not seen as capable advocates on any issue other than disability itself, and inclusion is often tokenistic.'},
+    {n:'11', title:'Widen what sexuality is allowed to mean', body:'Even among activists, open conversations on sexuality do not happen, and mainstream judgment still treats women’s sexual expression as unacceptable. Initiatives that expand the definition and understanding of sexuality in Nepal are necessary — as is addressing privacy, consent and security within that discourse. Participants’ own understanding of privacy and data protection was low, including instances of activists posting about others without consent; activist women with disabilities should be supported with training they can carry back into their communities.'}
+  ]
+};
+
+class Component extends DCLogic {
+  state = {full:true, zoom:1, tocOpen:false, voice:'all', recTab:'gov', lorde:false, progress:0};
+
+  componentDidMount() {
+    if (this.props.startFull === false) this.setState({full:false});
+    import('./annotations.js').then(m => m.initAnnotations(document)).catch(() => {});
+    // Written straight to the DOM on an animation frame. Routing this through
+    // setState re-rendered the entire document on every scroll event, which is
+    // what made scrolling feel heavy on a long report.
+    let raf = 0;
+    const paint = () => {
+      raf = 0;
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      const bar = document.getElementById('om-progress');
+      if (bar) bar.style.width = (max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0) + '%';
+    };
+    this._onScroll = () => { if (!raf) raf = requestAnimationFrame(paint); };
+    window.addEventListener('scroll', this._onScroll, {passive:true});
+    paint();
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+
+  chip(active) {
+    return active ? {bg:'#17150F', fg:'#F7F4ED', bd:'#17150F'} : {bg:'#FFFFFF', fg:'#17150F', bd:'rgba(23,21,15,.22)'};
+  }
+
+  renderVals() {
+    const s = this.state;
+
+    const vCounts = {all: VOICES.length};
+    THEMES.forEach(t => { if (t.id !== 'all') vCounts[t.id] = VOICES.filter(v => v.theme === t.id).length; });
+    const voiceFilters = THEMES.map(t => Object.assign({
+      label: t.label, count: vCounts[t.id], pressed: String(s.voice === t.id),
+      onClick: () => this.setState({voice: t.id})
+    }, this.chip(s.voice === t.id)));
+    const themeLabel = id => (THEMES.filter(t => t.id === id)[0] || {label:''}).label;
+
+    const recTabDefs = [
+      {id:'gov', label:'Government'},
+      {id:'community', label:'Disability community'},
+      {id:'tech', label:'Technologists'},
+      {id:'society', label:'Wider society'},
+      {id:'movements', label:'Other movements'}
+    ];
+    const recTabs = recTabDefs.map(t => Object.assign({
+      label: t.label, selected: String(s.recTab === t.id),
+      onClick: () => this.setState({recTab: t.id})
+    }, this.chip(s.recTab === t.id)));
+
+    const ACT = [
+      {tag:'Everyday', title:'Birthday wishes and greetings', body:'The most common use of Facebook among participants: personal messages, greetings, keeping up with friends and family.', lorde:false},
+      {tag:'Work', title:'Job vacancies and training', body:'Sharing openings and training opportunities with the disability community, and news from disability rights groups.', lorde:false},
+      {tag:'Creative', title:'Poems, paintings, status updates', body:'Writing poems, posting pictures and artwork. One participant described Facebook as being like a friend to her.', lorde:true},
+      {tag:'Creative', title:'Singing, dancing, TikTok videos', body:'Videos of performance and everyday joy. One deaf participant said that using TikTok made her feel she could hear herself.', lorde:true},
+      {tag:'Release', title:'Venting what cannot be said aloud', body:'Writing on Facebook the things that cannot be said to someone’s face — frustration, sadness, things without another outlet.', lorde:true},
+      {tag:'Information', title:'Beauty, skincare, period pain', body:'How-to videos on acne, hair care, beauty routines, and remedies for cramps. Self-care sought online because it is not available elsewhere.', lorde:true},
+      {tag:'Information', title:'Sexual and reproductive health', body:'Searching for information on sexuality and sexual health, and sharing posts on menstruation in response to how women are spoken about.', lorde:true},
+      {tag:'Pleasure', title:'Pornography, and its absence', body:'Watching porn — and finding no representation of disabled bodies in it, nor formats accessible to blind and low-vision users.', lorde:true},
+      {tag:'Pleasure', title:'Sex toys, discussed among friends', body:'Information sought on sex toys, including by women with spinal cord injuries for whom other routes to pleasure may be closed off.', lorde:true},
+      {tag:'Intimacy', title:'Video chats and private sharing', body:'Expressing sexuality in private chats and video calls — described by one participant as easier, safer and more private than meeting in person.', lorde:true},
+      {tag:'Intimacy', title:'Dating apps', body:'Used for meeting partners, especially by the queer participant, for whom, in her words, everything starts online. Others judged them not worth the risk.', lorde:true},
+      {tag:'Advocacy', title:'Photos from sexuality conferences', body:'Posting from events on sexual and reproductive rights, deliberately with the banner visible — categorised by participants as activism, not as personal expression.', lorde:true}
+    ];
+
+    const activities = ACT.map(a => ({
+      tag: a.tag, title: a.title, body: a.body,
+      bg: s.lorde ? (a.lorde ? '#FBEEF2' : '#FFFFFF') : '#FFFFFF',
+      bd: s.lorde ? (a.lorde ? '#A4234B' : 'rgba(23,21,15,.14)') : 'rgba(23,21,15,.14)',
+      note: s.lorde
+        ? (a.lorde ? 'Erotic expression, in Lorde’s sense' : 'Outside the definition')
+        : 'Participants did not describe this as sexual expression',
+      noteFg: s.lorde ? (a.lorde ? '#A4234B' : '#6B6659') : '#6B6659'
+    }));
+
+    return {
+      full: s.full,
+      zoom: s.zoom,
+      tocOpen: s.tocOpen,
+      tocExpanded: String(s.tocOpen),
+      readTime: s.full ? '20 min · full text' : '6 min · summaries',
+      modeLabel: s.full ? 'Full text' : 'Plain summary',
+      modeDot: s.full ? '#A4234B' : '#1F5C55',
+      fullPressed: String(s.full),
+      toggleFull: () => this.setState({full: !s.full}),
+      zoomIn: () => this.setState({zoom: Math.min(1.5, +(s.zoom + 0.1).toFixed(2))}),
+      zoomOut: () => this.setState({zoom: Math.max(0.9, +(s.zoom - 0.1).toFixed(2))}),
+      toggleToc: () => this.setState({tocOpen: !s.tocOpen}),
+      closeToc: () => this.setState({tocOpen: false}),
+
+      toc: [
+        {num:'—', title:'At a glance', href:'#glance'},
+        {num:'I', title:'A spectrum of access', href:'#spectrum'},
+        {num:'II', title:'A culture of silence', href:'#silence'},
+        {num:'III', title:'What expression looks like', href:'#expression'},
+        {num:'IV', title:'The cost of being a role model', href:'#censorship'},
+        {num:'V', title:'From compliment to cybercrime', href:'#violence'},
+        {num:'—', title:'Voices', href:'#voices'},
+        {num:'VI', title:'Recommendations', href:'#forward'},
+        {num:'—', title:'Notes & glossary', href:'#notes'},
+        {num:'—', title:'About the study', href:'#about'}
+      ],
+
+      stats: [
+        {value:'32%', label:'Of persons with disabilities have access to a mobile phone', note:'Of those without one, 65% name their disability as the reason'},
+        {value:'6', label:'People completed the online survey', note:'The in-person study exists because of that number'},
+        {value:'97%', label:'Of Nepal’s social media use is Facebook', note:'Where parents, employers, friends and lovers all watch at once'},
+        {value:'72%', label:'Of unemployed persons with disabilities report no dignity in social participation', note:'56% of those employed say the same'},
+        {value:'16 + 22', label:'Interviews and focus group participants', note:'All Kathmandu-based, all identifying as women'},
+        {value:'1 in 4', label:'Have basic computer knowledge', note:'Of 2,000 households with disabilities surveyed across 59 districts'}
+      ],
+
+      spectrum: [
+        {n:'1', title:'A device of your own', sub:'Not shared, not borrowed', barrier:'Only 32% of persons with disabilities in Nepal have access to a mobile phone, and of those who do not, 65% name their disability as the reason. Every participant in this study owned a phone — which places them at the top of the distribution before the research even begins.', quote:'“Only one-fourth of respondents with disabilities had basic knowledge of computers, and only three-quarters were independently operating mobile phones.”', who:'SINTEF telephone survey across 59 districts, 2,000 households'},
+        {n:'2', title:'Data you can afford', sub:'Nepal is 13th cheapest in the world, and it is still expensive', barrier:'Cost remains high relative to per-capita income. After advocacy from disability rights groups the government provides discounted voice packs to visually impaired people who submit their disability identity at a telecom office — a real concession, and a narrow one.', quote:'“Persons with disabilities should not be only seen as beneficiaries to these services but also key stakeholders in consultations to develop national policies around ICT.”', who:'Report recommendation to government'},
+        {n:'3', title:'An interface that works with your body', sub:'Screen readers, captions, audio feedback', barrier:'Assistive technology exists but its potential is a long way from realised. Screen readers handle English better than Nepali; PDFs need a second app; uploaded images announce themselves as ‘a photo’ and nothing more. Audio-only content excludes deaf users; visual-only content excludes blind users. The default settings of the online world exclude the people this report is about.', quote:'“Sometimes, when people upload pictures, the app doesn’t dictate it. It only says that there’s a photo but we cannot know about the photo, like what the photo is about.”', who:'Interviewee who uses a screen reader'},
+        {n:'4', title:'Content in your language', sub:'Nepali, or sign language, or both', barrier:'Accessing Nepali-language websites is harder for screen readers, so blind and low-vision users visit fewer sites. For deaf and hard-of-hearing participants the barrier runs the other way: platforms where the conversation happens in English are avoided for fear of miscommunication.', quote:'“I want to learn how to use Twitter… But since the discussions there are mostly in English, I don’t want to have miscommunication because I don’t know English that much.”', who:'Deaf interviewee'},
+        {n:'5', title:'The skills, and someone to ask', sub:'Hardware and know-how are both assistive aids', barrier:'Accessibility is not only about the technology that exists but about the support needed to learn to use and navigate it. For persons with disabilities, both the hardware and the skills to use it function as assistive aids in an inaccessible world — and support is rarely funded as such.', quote:'“Having access to the internet doesn’t always mean that everyone accesses it equally; questions about how they are accessing it and where they are accessing it are also important.”', who:'Research participant'},
+        {n:'6', title:'A household that lets you use it', sub:'Access mediated by family and partners', barrier:'Protectionist attitudes towards girls and women in Nepal produce overprotective parenting, and women with disabilities face additional surveillance of their online behaviour by family and caretakers. Participants described husbands taking over their accounts, forbidding sign language use, and restricting contact with their own community.', quote:'“Previously when I was in college, I said that I would use signs to communicate but he told me not to use it with anyone. I have my own community. I should be able to use it in my community.”', who:'Deaf interviewee'},
+        {n:'7', title:'A space where you are not harassed for being there', sub:'The last barrier, and the one nobody planned for', barrier:'Beyond a carefully curated Facebook list, participants could name no safe spaces at all — unlike the first phase of this research, where gay men and activist women described secret groups. Stepping into a mainstream audience brought immediate mockery. So the circle stays small, which keeps the experience bearable and keeps the conversation contained.', quote:'“There were comments like: now, blind people who are not able to see the movie are going to say it is good, perhaps deaf people will also say they like the movie without hearing it!!! There were a lot of disgusting comments.”', who:'Focus group participants, on a YouTube interview they appeared in'}
+      ],
+
+      lordePressed: String(s.lorde),
+      lordeLabel: s.lorde ? 'Lorde’s lens: on' : 'Apply Lorde’s lens',
+      lordeBg: s.lorde ? '#A4234B' : '#FFFFFF',
+      lordeFg: s.lorde ? '#FFFFFF' : '#17150F',
+      lordeBd: s.lorde ? '#A4234B' : 'rgba(23,21,15,.28)',
+      toggleLorde: () => this.setState({lorde: !s.lorde}),
+      activities,
+
+      policing: [
+        {who:'Family and partners', how:'Husbands managing accounts and posts, brothers scolding a sister for dating online, families restricting contact with the deaf community. Access itself is mediated at home.'},
+        {who:'Strangers and commenters', how:'Messages telling a woman what she should and should not wear, and asking whether she is trying to attract and confuse men. Correction arrives as advice.'},
+        {who:'The organisation', how:'Instructions from leadership not to post club photographs, then not to post personal photographs at all, on the grounds that a leader of the future should not.'},
+        {who:'The movement itself', how:'Colleagues warning that personal captions will be taken badly and demotivate followers. Framed as being for the person’s own good, and largely unnamed within the movement.'}
+      ],
+
+      violence: [
+        {scale:'Level 1 · micro', title:'“You don’t seem disabled”', tagBg:'#F5EBD8', tagFg:'#6B4508', body:'The most common message women who fit conventional definitions of beauty receive online. Read as a compliment and often accepted as one, it depends on believing that disability and beauty are mutually exclusive — so if you are beautiful, you cannot be disabled. Photographs of foreign travel or of giving a speech draw a related reaction: shock, based on assumptions about the range of life available to a person with a disability.', quote:'“People say that my photos don’t seem like I belong to a community with disability… I post pictures of me when I go abroad as well. And, people get a shock. (Laughs)”', who:'Interviewee'},
+        {scale:'Level 2 · micro', title:'Emotional labour on demand', tagBg:'#F5EBD8', tagFg:'#6B4508', body:'Abled people asking women and queer persons with disabilities to answer their questions and satisfy their curiosity about their bodies — unpaid, unasked-for, and constant. Participants also described the opposite reaction on disclosure: people who stop talking to them altogether. Either way the relationship changes.', quote:'“There are some people who stop talking to me when they find out that I am blind, and then there are some people that get hyper curious, and start talking even more.”', who:'Interviewee'},
+        {scale:'Level 3 · ambiguous', title:'Comments you cannot categorise', tagBg:'#E4EEEC', tagFg:'#14453F', body:'Where appreciation shades into sexualisation, participants were left questioning whether their own discomfort was disproportionate. One described a photograph in a sari, taken by her brother and posted because she liked it, drawing a comment that she was very sexy and a request to meet — from someone she barely knew. She blocked him. Caution and precaution are a large part of these online lives.', quote:'“Mostly I get positive comments but some men comment ‘sexy body’ — I don’t know if that is good or bad.”', who:'Interviewee'},
+        {scale:'Level 4 · targeted', title:'Requests that use what they know about your body', tagBg:'#F7E2E8', tagFg:'#7C1739', body:'Harassers who know the nature of a person’s injuries and comment accordingly, beginning with emotional blackmail. Among amputees, the most common request is for a photograph of the stump — a framing in which private parts may also be captured. Participants had learned to recognise the pattern, and said the requests came most often from abroad.', quote:'“They know about our bodies and the level of injuries, and comment accordingly… They used to ask for pictures of my stump. I did not realise at first.”', who:'Interviewee'},
+        {scale:'Level 5 · targeted', title:'Screenshots, sex groups, unsolicited images', tagBg:'#F7E2E8', tagFg:'#7C1739', body:'Pictures shared beyond their intended recipient; screenshots forwarded onward; being added at random to sex groups on Facebook; being solicited for sex. For participants with visual disabilities there is an additional harm — receiving sexual images without knowing what has been sent.', quote:'“Some people take a screenshot of my pictures and send it to other people… and the nudes that they share may be of a different person.”', who:'Queer participant with a disability'},
+        {scale:'Level 6 · criminal', title:'Impersonation, morphed images, extortion', tagBg:'#F7E2E8', tagFg:'#7C1739', body:'Two participants had been victims of cybercrime: accounts hacked, unwanted photos and videos received, images published without consent. One described a fake profile, a demand for USD 400 for a non-existent parcel, then blackmail with an image that placed her face on someone else’s body. She filed a cyber crime report; the profile was blocked, the number could not be traced. She told only her brother — not her mother, who would judge her character, and not her friends, who might assume she had sent such pictures herself.', quote:'“I didn’t even tell my mother because she will judge me and my character. If I tell my friends, they may think that I sent him those kinds of pictures.”', who:'Interviewee'}
+      ],
+
+      voiceFilters,
+      voices: VOICES.filter(v => s.voice === 'all' || v.theme === s.voice)
+        .map(v => Object.assign({}, v, {themeLabel: themeLabel(v.theme)})),
+
+      recTabs,
+      recs: RECS[s.recTab]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "$schema": "./schemas/report.schema.json",
+  "id": "beyond-access",
+  "title": "Beyond Access",
+  "subtitle": "Women and Queer Persons with Disabilities Expressing Self and Exploring Sexuality Online",
+  "year": 2020,
+  "pages": 46,
+  "authors": ["Shubha Kayastha", "Mamata Pokharel"],
+  "support": "AmplifyChange / APC EROTICS Phase II",
+  "metrics": [
+    { "value": "7 Layers", "label": "Spectrum of Access", "note": "Hardware ownership to safe digital spaces" },
+    { "value": "0", "label": "Nepali TTS Engines", "note": "Absence of native speech synthesis in screen readers" },
+    { "value": "23", "label": "Lived Voice Testimonies", "note": "Self-censorship, romance, and digital violence" },
+    { "value": "5 Sectors", "label": "Action Recommendations", "note": "Targeting Gov, Disability, Tech, Society, Coalitions" }
+  ],
+  "headlineFinding": "Society views persons with disabilities through an oppressive binary: either as completely 'asexual' beings needing paternalistic protection, or as 'hypersexual' anomalies to be policed. Despite online harassment and surveillance, the internet remains an indispensable lifeline for disabled women and queer people to assert bodily autonomy, express desire, and find community.",
+  "chapters": [
+    {
+      "number": "I",
+      "title": "Feminist Ethical Principles & Operational Definitions",
+      "lede": "Research on sexuality, disability, and digital technology demands non-extractive feminist ethics. We prioritize participant consent, narrative sovereignty, confidentiality, and the centering of lived experience."
+    },
+    {
+      "number": "II",
+      "title": "A Spectrum of Access: Seven Progressive Layers",
+      "lede": "Digital inclusion is not binary. To fully exercise rights online, a person with disabilities must successfully navigate seven sequential layers of infrastructure, software, literacy, and social autonomy."
+    },
+    {
+      "number": "III",
+      "title": "Sexuality and Bodies of PwD — A Culture of Silence",
+      "lede": "Society views disability through a charity lens that completely erases sexuality. Disabled women are treated as perpetual children without sexual feelings, or as hypersexual burdens whose desires must be medicated and restrained."
+    },
+    {
+      "number": "IV",
+      "title": "Audre Lorde Erotic Reframing Matrix",
+      "lede": "Black feminist theorist Audre Lorde defines the erotic as a measure between the beginnings of our sense of self and the chaos of our strongest feelings—encompassing creative joy, physical pleasure, artistic passion, and deep connection."
+    },
+    {
+      "number": "V",
+      "title": "The Cost of Being a Role Model & Four Arenas of Policing",
+      "lede": "Disabled women who achieve public prominence face intense pressure to remain flawless, modest, and asexual role models. Any expression of sexuality is treated as a betrayal of the disability movement."
+    },
+    {
+      "number": "VI",
+      "title": "Recommendations across Five Sectors",
+      "lede": "A multi-stakeholder framework for ensuring dignity, accessibility, and bodily autonomy online."
+    }
+  ],
+  "recommendations": [
+    {
+      "number": "01",
+      "targetAudience": "Government",
+      "title": "Enforce WCAG 2.1 AAA on All Public Portals",
+      "details": "Mandate that all government websites, digital ID portals, and public services comply with international screen reader accessibility standards and provide sign language video alternatives."
+    },
+    {
+      "number": "02",
+      "targetAudience": "Government",
+      "title": "Subsidize Assistive Hardware & High-Speed Data",
+      "details": "Provide subsidized smartphones, braille displays, and zero-rated data packages for persons with disabilities through the Rural Telecommunications Development Fund (RTDF)."
+    },
+    {
+      "number": "03",
+      "targetAudience": "Disability Movement",
+      "title": "Integrate SRHR and Digital Rights into Disability Advocacy",
+      "details": "Move beyond charity and medical rehabilitation models to actively advocate for bodily autonomy, sexuality education, and online safety for disabled women and queer members."
+    }
+  ],
+  "references": [
+    { "id": 1, "citation": "Lorde, Audre, 1984. 'Uses of the Erotic: The Erotic as Power.' Sister Outsider: Essays and Speeches. Crossing Press." },
+    { "id": 2, "citation": "UN Convention on the Rights of Persons with Disabilities (CRPD), Articles 9 (Accessibility) & 22 (Privacy)." }
+  ]
+}

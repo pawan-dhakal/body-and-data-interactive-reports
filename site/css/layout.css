@@ -1,0 +1,377 @@
+/* ==========================================================================
+   Body & Data Design System — Layout & Reader Mechanics
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Central Content Container
+   -------------------------------------------------------------------------- */
+.site-container {
+  width: 100%;
+  max-width: var(--container-max, 1180px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 4vw, 32px);
+  padding-right: clamp(16px, 4vw, 32px);
+}
+
+/* --------------------------------------------------------------------------
+   2. App Header (Sticky Reader Control Bar)
+   -------------------------------------------------------------------------- */
+.report-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height, 62px);
+  gap: 16px;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.brand-title {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.header-pub-title {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 420px;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Reading Depth Indicator & Toggle Button */
+.btn-depth-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-default);
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-depth-toggle:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-strong);
+}
+
+.depth-indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-crimson);
+  transition: transform var(--transition-fast);
+}
+
+/* Reader-Controlled Font Zoom Button Group */
+.zoom-ctrl-group {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface-elevated);
+  overflow: hidden;
+}
+
+.zoom-btn {
+  padding: 6px 10px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.zoom-btn:hover {
+  background: var(--bg-hover);
+}
+
+.zoom-btn:focus-visible {
+  outline: 2px solid var(--accent-crimson);
+  outline-offset: -2px;
+}
+
+.zoom-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--border-subtle);
+}
+
+/* Table of Contents Trigger Button */
+.btn-toc {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-default);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-toc:hover {
+  background: var(--accent-crimson);
+  border-color: var(--accent-crimson);
+}
+
+/* Reading Progress Bar */
+.progress-track {
+  width: 100%;
+  height: 3px;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--accent-crimson);
+  transition: width 0.1s linear;
+}
+
+/* --------------------------------------------------------------------------
+   3. Two-Column Reading Layout with Sticky Marginalia
+   -------------------------------------------------------------------------- */
+.reading-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--sidebar-width, 260px);
+  gap: clamp(24px, 4vw, 44px);
+  position: relative;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .reading-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reading-main-column {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.reading-sidebar {
+  position: sticky;
+  top: calc(var(--header-height, 62px) + 24px);
+  padding: 20px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  max-height: calc(100vh - var(--header-height, 62px) - 48px);
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .reading-sidebar {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Dual-Depth Reading Mechanism Styles
+   -------------------------------------------------------------------------- */
+/* In Plain Summary Mode, hide heavy academic body paragraphs */
+body[data-reading-depth="summary"] .academic-prose {
+  display: none !important;
+}
+
+/* Highlight executive blocks in Plain Summary Mode */
+body[data-reading-depth="summary"] .glance-card,
+body[data-reading-depth="summary"] .headline-finding-box,
+body[data-reading-depth="summary"] .chapter-lede-box,
+body[data-reading-depth="summary"] .compare-list,
+body[data-reading-depth="summary"] .friction-list,
+body[data-reading-depth="summary"] .spectrum-ladder,
+body[data-reading-depth="summary"] .matrix-interactive-wrapper,
+body[data-reading-depth="summary"] .recs-grid {
+  border-left-width: 5px;
+}
+
+/* --------------------------------------------------------------------------
+   5. Table of Contents Slide-Out Drawer
+   -------------------------------------------------------------------------- */
+.toc-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(23, 21, 15, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 190;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-smooth);
+}
+
+.toc-drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.toc-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(480px, 92vw);
+  background: var(--bg-surface);
+  z-index: 200;
+  box-shadow: var(--shadow-drawer);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform var(--transition-smooth), visibility var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.toc-drawer.open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.toc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.toc-header h2 {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.toc-close-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.toc-close-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.toc-nav {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toc-link {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.toc-link:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.toc-link.active {
+  background: var(--bg-surface-elevated);
+  color: var(--accent-crimson);
+  font-weight: 600;
+  border-left: 3px solid var(--accent-crimson);
+}
+
+.toc-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.toc-title {
+  flex: 1;
+}
+
+/* --------------------------------------------------------------------------
+   6. Site Footer
+   -------------------------------------------------------------------------- */
+.site-footer {
+  margin-top: 80px;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  padding: 40px 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .header-pub-title { display: none; }
+}

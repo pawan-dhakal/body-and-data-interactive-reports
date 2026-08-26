@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#17150F;font-family:Archivo,system-ui,sans-serif}
+*{box-sizing:border-box}
+a{color:#A4234B}
+a:hover{color:#7C1739}
+</style>
+</helmet>
+
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<section data-label="Title" data-screen-label="01" data-speaker-notes="Framing: this is one feature of the research portal — the interactive reading experience for every publication we hold." style="background:#F7F4ED;color:#17150F;padding:110px 130px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;justify-content:space-between;align-items:flex-start">
+<span style="font:700 32px/1 Archivo,sans-serif;letter-spacing:-.4px">Body &amp; Data</span>
+<span style="font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B6659">Research Portal · Feature concept</span>
+</div>
+<div>
+<p style="margin:0 0 26px;font:500 26px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#A4234B">The interactive report</p>
+<h1 style="margin:0;max-width:26ch;font:400 132px/.96 Newsreader,Georgia,serif;letter-spacing:-.03em">Reading research in the browser</h1>
+<p style="margin:38px 0 0;max-width:60ch;font:300 40px/1.35 Newsreader,Georgia,serif;color:#4A463C;font-style:italic">Design directions, built on three Body &amp; Data reports: <span style="font-style:normal">Nepal’s Biometric Present</span>, <span style="font-style:normal">Mapping Laws</span> and <span style="font-style:normal">Beyond Access</span></p>
+</div>
+<div style="display:flex;gap:56px;padding-top:34px;border-top:2px solid rgba(23,21,15,.18)">
+<div><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Scope</p><p style="margin:12px 0 0;font:500 28px/1.2 Archivo,sans-serif">One reading experience, every publication</p></div>
+<div><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Status</p><p style="margin:12px 0 0;font:500 28px/1.2 Archivo,sans-serif">Three working prototypes and a homepage</p></div>
+</div>
+</section>
+
+<section data-label="The problem" data-screen-label="02" data-speaker-notes="A 56-page PDF is not a reading experience. Most people meet our research on a phone, in a browser, with three minutes." style="background:#17150F;color:#F7F4ED;padding:110px 130px;display:flex;flex-direction:column;justify-content:center;gap:62px">
+<div>
+<p style="margin:0 0 22px;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#E9A8BE">Why this exists</p>
+<h2 style="margin:0;max-width:34ch;font:400 92px/1.04 Newsreader,Georgia,serif;letter-spacing:-.02em">A PDF asks the reader to do all the work.</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+<div style="border-top:3px solid #A4234B;padding:28px 0 0">
+<p style="margin:0;font:400 84px/1 Newsreader,Georgia,serif;color:#E9A8BE">56</p>
+<p style="margin:18px 0 0;font:600 30px/1.3 Archivo,sans-serif">pages, one download</p>
+<p style="margin:12px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#B4AFA1">No way in except page one. No way to find the part that concerns you.</p>
+</div>
+<div style="border-top:3px solid #A4234B;padding:28px 0 0">
+<p style="margin:0;font:400 84px/1 Newsreader,Georgia,serif;color:#E9A8BE">18</p>
+<p style="margin:18px 0 0;font:600 30px/1.3 Archivo,sans-serif">recommendations, buried</p>
+<p style="margin:12px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#B4AFA1">The part a ministry or a funder actually needs sits on page 55.</p>
+</div>
+<div style="border-top:3px solid #A4234B;padding:28px 0 0">
+<p style="margin:0;font:400 84px/1 Newsreader,Georgia,serif;color:#E9A8BE">0</p>
+<p style="margin:18px 0 0;font:600 30px/1.3 Archivo,sans-serif">accessible entry points</p>
+<p style="margin:12px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#B4AFA1">Fixed type size, no screen-reader structure, no plain-language route in.</p>
+</div>
+</div>
+</section>
+
+<section data-label="Four formats" data-screen-label="03" data-speaker-notes="The portal will carry four formats per publication. This deck and the prototype cover only the interactive report." style="background:#F7F4ED;color:#17150F;padding:110px 130px;display:flex;flex-direction:column;justify-content:center;gap:56px">
+<div>
+<p style="margin:0 0 20px;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#A4234B">Where it sits</p>
+<h2 style="margin:0;max-width:30ch;font:400 86px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">One publication, four ways to read it</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px">
+<div style="background:#17150F;color:#F7F4ED;border-radius:20px;padding:38px 32px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#E9A8BE">This deck</p>
+<div><p style="margin:0;font:400 52px/1.06 Newsreader,Georgia,serif">Interactive report</p><p style="margin:16px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Read in the browser. Filter, expand, compare, jump.</p></div>
+</div>
+<div style="background:#fff;border:2px solid rgba(23,21,15,.16);border-radius:20px;padding:38px 32px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B6659">Later</p>
+<div><p style="margin:0;font:400 52px/1.06 Newsreader,Georgia,serif">Accessible eBook</p><p style="margin:16px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#4A463C">Reflowable EPUB for assistive tech and offline reading.</p></div>
+</div>
+<div style="background:#fff;border:2px solid rgba(23,21,15,.16);border-radius:20px;padding:38px 32px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B6659">Exists</p>
+<div><p style="margin:0;font:400 52px/1.06 Newsreader,Georgia,serif">PDF report</p><p style="margin:16px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#4A463C">The citable record. Print, archive, footnotes intact.</p></div>
+</div>
+<div style="background:#fff;border:2px solid rgba(23,21,15,.16);border-radius:20px;padding:38px 32px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B6659">Separate track</p>
+<div><p style="margin:0;font:400 52px/1.06 Newsreader,Georgia,serif">Learning modules</p><p style="margin:16px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#4A463C">Built from the same blocks, for training and workshops.</p></div>
+</div>
+</div>
+</section>
+
+<section data-label="Principles" data-screen-label="04" data-speaker-notes="Five rules that decide every layout question later. Friendlier presentation, same evidence." style="background:#F7F4ED;color:#17150F;padding:100px 130px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<h2 style="margin:0;max-width:32ch;font:400 86px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">Five rules we designed to</h2>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:22px 44px">
+<div style="display:flex;gap:24px;align-items:flex-start"><span style="font:600 24px/1 ui-monospace,Menlo,monospace;color:#A4234B;padding-top:12px">01</span><div><p style="margin:0;font:600 34px/1.2 Archivo,sans-serif">Friendlier, never lighter</p><p style="margin:10px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">Plain language and clearer structure. Every number and quotation stays exactly as published.</p></div></div>
+<div style="display:flex;gap:24px;align-items:flex-start"><span style="font:600 24px/1 ui-monospace,Menlo,monospace;color:#A4234B;padding-top:12px">02</span><div><p style="margin:0;font:600 34px/1.2 Archivo,sans-serif">Two depths, one page</p><p style="margin:10px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">A seven-minute read and a twenty-four-minute read live in the same document. The reader picks.</p></div></div>
+<div style="display:flex;gap:24px;align-items:flex-start"><span style="font:600 24px/1 ui-monospace,Menlo,monospace;color:#A4234B;padding-top:12px">03</span><div><p style="margin:0;font:600 34px/1.2 Archivo,sans-serif">Accessible by construction</p><p style="margin:10px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">Native semantics, keyboard-first, AA contrast — not a toolbar bolted on at the end.</p></div></div>
+<div style="display:flex;gap:24px;align-items:flex-start"><span style="font:600 24px/1 ui-monospace,Menlo,monospace;color:#A4234B;padding-top:12px">04</span><div><p style="margin:0;font:600 34px/1.2 Archivo,sans-serif">People before findings</p><p style="margin:10px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">The research is qualitative. Voices get their own section, filterable by who is speaking.</p></div></div>
+<div style="display:flex;gap:24px;align-items:flex-start"><span style="font:600 24px/1 ui-monospace,Menlo,monospace;color:#A4234B;padding-top:12px">05</span><div><p style="margin:0;font:600 34px/1.2 Archivo,sans-serif">Blocks, not bespoke</p><p style="margin:10px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">Everything is a reusable block type, so the next publication takes days, not months.</p></div></div>
+<div style="display:flex;gap:24px;align-items:flex-start"><span style="font:600 24px/1 ui-monospace,Menlo,monospace;color:#A4234B;padding-top:12px">06</span><div><p style="margin:0;font:600 34px/1.2 Archivo,sans-serif">No interaction without a reason</p><p style="margin:10px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">A filter earns its place only when it answers a question a reader actually has.</p></div></div>
+</div>
+</section>
+
+<section data-label="Anatomy" data-screen-label="05" data-speaker-notes="Reading order top to bottom. Everything above the chapters is the short read; chapters are the deep read." style="background:#17150F;color:#F7F4ED;padding:96px 130px;display:flex;flex-direction:column;justify-content:center;gap:44px">
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px">
+<h2 style="margin:0;max-width:26ch;font:400 82px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">Anatomy of the page</h2>
+<p style="margin:0;max-width:40ch;font:400 26px/1.45 Archivo,sans-serif;color:#B4AFA1">Eleven sections in a fixed reading order. The first four answer “what is this and why should I care” in under five minutes.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #A4234B"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">SHORT READ</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Cover</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Title, scope, three ways in.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #A4234B"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">SHORT READ</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">At a glance</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">To-scale bars, six stats, one headline finding.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #A4234B"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">SHORT READ</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Summary</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Pull-quote lede, then the three research questions.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #A4234B"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">SHORT READ</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Research areas</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Map plus a card per district, expandable.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #8A5A0B"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E0B96B">SPINE</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Timeline</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">2009–2025, filterable by policy, law, rollout, mandate, courts.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #B4AFA1"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#B4AFA1">DEEP READ</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Ch. I — Birth of the NID</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Plus six promise-vs-practice comparisons.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #B4AFA1"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#B4AFA1">DEEP READ</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Ch. II — How it is run</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Who runs the system, plus a six-step enrolment walkthrough.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #B4AFA1"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#B4AFA1">DEEP READ</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Ch. III — Disputes</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Six documented exclusion mechanisms as cards.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #A4234B"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">HUMAN</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Voices</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Twelve quotations, filtered by who is speaking.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #B4AFA1"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#B4AFA1">DEEP READ</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Ch. IV — Privacy</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Six-hop trace of where a fingerprint travels.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #1F5C55"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#7FC3B8">ACT ON IT</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">Way forward</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Eighteen recommendations, tabbed by audience.</p></div>
+<div style="background:#231F17;border-radius:16px;padding:30px 26px;border-left:5px solid #1F5C55"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#7FC3B8">CREDIT</p><p style="margin:16px 0 0;font:600 30px/1.2 Archivo,sans-serif">About &amp; cite</p><p style="margin:9px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Team, methodology, citation, credits.</p></div>
+</div>
+</section>
+
+<section data-label="Two depths" data-screen-label="06" data-speaker-notes="The single most important interaction. One toggle in the header changes the whole document's depth." style="background:#F7F4ED;color:#17150F;padding:110px 130px;display:flex;flex-direction:column;justify-content:center;gap:52px">
+<div>
+<p style="margin:0 0 20px;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#A4234B">The central interaction</p>
+<h2 style="margin:0;max-width:30ch;font:400 86px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">Plain summary, or full text</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:26px">
+<div style="background:#fff;border:2px solid #1F5C55;border-radius:20px;padding:44px">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#1F5C55">Plain summary · 7 min</p>
+<p style="margin:24px 0 0;font:400 44px/1.24 Newsreader,Georgia,serif">Every chapter keeps its pull-quote lede — one paragraph, written for a reader with no background in digital rights.</p>
+<p style="margin:26px 0 0;font:400 27px/1.5 Archivo,sans-serif;color:#4A463C">Numbers, visuals, timeline, voices and recommendations all stay. Only the long-form academic passages collapse.</p>
+</div>
+<div style="background:#fff;border:2px solid #A4234B;border-radius:20px;padding:44px">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#A4234B">Full text · 24 min</p>
+<p style="margin:24px 0 0;font:400 44px/1.24 Newsreader,Georgia,serif">The reported argument, in the report’s own voice, with its citations and caveats intact.</p>
+<p style="margin:26px 0 0;font:400 27px/1.5 Archivo,sans-serif;color:#4A463C">Default state, so researchers and journalists land on the substance without hunting for it.</p>
+</div>
+</div>
+<p style="margin:0;max-width:88ch;font:400 28px/1.5 Archivo,sans-serif;color:#4A463C">Alongside it: a text-size control that scales the whole reading column, a contents drawer, and a progress bar in the header — the three things people reach for in a long document.</p>
+</section>
+
+<section data-label="Block library" data-screen-label="07" data-speaker-notes="This is the reusable part. Every future publication is assembled from these ten block types." style="background:#17150F;color:#F7F4ED;padding:96px 130px;display:flex;flex-direction:column;justify-content:center;gap:44px">
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px">
+<h2 style="margin:0;max-width:24ch;font:400 82px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">Fourteen blocks, every publication</h2>
+<p style="margin:0;max-width:38ch;font:400 26px/1.45 Archivo,sans-serif;color:#B4AFA1">Editors choose blocks and fill them. Nothing here is specific to one report — the last four came out of building reports two and three.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px">
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Stat grid</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Figure, label, source note.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">To-scale bars</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Two or three quantities, honestly proportioned.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Chapter lede</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Plain-language paragraph + collapsible full text.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Filtered timeline</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Dated events, categorised, chip-filtered.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Compare pair</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Claim on one side, evidence on the other.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Step walkthrough</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">A process, with friction revealed per step.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Tiered structure</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Who is responsible for what, indented by tier.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Quote wall</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Attributed by role and place, filtered by group.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Place cards + map</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Field sites, with the numbers behind each.</p></div>
+<div style="border:2px solid rgba(247,244,237,.2);border-radius:14px;padding:26px 22px"><p style="margin:0;font:600 27px/1.2 Archivo,sans-serif">Tabbed recommendations</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Grouped by the audience being asked to act.</p></div>
+<div style="border:2px solid #A4234B;border-radius:14px;padding:26px 22px;background:#231F17"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">NEW</p><p style="margin:10px 0 0;font:600 27px/1.2 Archivo,sans-serif">Matrix map</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">A fold-out chart made clickable: two axes, cells of evidence.</p></div>
+<div style="border:2px solid #A4234B;border-radius:14px;padding:26px 22px;background:#231F17"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">NEW</p><p style="margin:10px 0 0;font:600 27px/1.2 Archivo,sans-serif">Layered spectrum</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">A sequence you can be stopped at, with the barrier per layer.</p></div>
+<div style="border:2px solid #A4234B;border-radius:14px;padding:26px 22px;background:#231F17"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">NEW</p><p style="margin:10px 0 0;font:600 27px/1.2 Archivo,sans-serif">Reframing toggle</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">One switch that re-reads the same evidence through a new lens.</p></div>
+<div style="border:2px solid #A4234B;border-radius:14px;padding:26px 22px;background:#231F17"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;color:#E9A8BE">NEW</p><p style="margin:10px 0 0;font:600 27px/1.2 Archivo,sans-serif">Notes &amp; glossary</p><p style="margin:10px 0 0;font:400 24px/1.38 Archivo,sans-serif;color:#B4AFA1">Citations and definitions with tooltips over real anchors.</p></div>
+</div>
+</section>
+
+<section data-label="The library" data-screen-label="07b" data-speaker-notes="Three reports live, one homepage. The point of three is that the block library now has to survive three very different shapes of research." style="background:#F7F4ED;color:#17150F;padding:100px 130px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<div>
+<p style="margin:0 0 20px;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#A4234B">Built so far</p>
+<h2 style="margin:0;max-width:30ch;font:400 86px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">Three reports and a front door</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+<div style="background:#17150F;color:#F7F4ED;border-radius:20px;padding:36px 32px;min-height:360px;display:flex;flex-direction:column;justify-content:space-between">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#E9A8BE">2025 · Digital ID</p>
+<div><p style="margin:0;font:400 46px/1.06 Newsreader,Georgia,serif">Nepal’s Biometric Present</p><p style="margin:16px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Narrative reporting. Timeline, promise-vs-practice, enrolment walkthrough, voices.</p></div>
+</div>
+<div style="background:#A4234B;color:#FFF6F8;border-radius:20px;padding:36px 32px;min-height:360px;display:flex;flex-direction:column;justify-content:space-between">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#F7D0DC">2021 · Law</p>
+<div><p style="margin:0;font:400 46px/1.06 Newsreader,Georgia,serif">Mapping Laws</p><p style="margin:16px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#F0BECD">Reference material. Policy map, 32-provision explorer, fifteen case outcomes.</p></div>
+</div>
+<div style="background:#1F5C55;color:#F1F7F5;border-radius:20px;padding:36px 32px;min-height:360px;display:flex;flex-direction:column;justify-content:space-between">
+<p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#A9D6CD">2020 · Disability</p>
+<div><p style="margin:0;font:400 46px/1.06 Newsreader,Georgia,serif">Beyond Access</p><p style="margin:16px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#9CC9C0">Lived experience. Access spectrum, reframing toggle, micro-to-criminal scale.</p></div>
+</div>
+</div>
+<p style="margin:0;max-width:96ch;font:400 28px/1.5 Archivo,sans-serif;color:#4A463C">A homepage ties them together: three cards, the four themes that run through all of them, and a short note on how to read an interactive report. That page is the template for the rest of the archive.</p>
+</section>
+
+<section data-label="Policy map" data-screen-label="07c" data-speaker-notes="The Mapping Laws fold-out chart was the single best thing in the printed report and the single worst thing to read on a phone. This is the fix." style="background:#17150F;color:#F7F4ED;padding:100px 130px;display:flex;flex-direction:column;justify-content:center;gap:50px">
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px">
+<div>
+<p style="margin:0 0 20px;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#E9A8BE">Case in point</p>
+<h2 style="margin:0;max-width:26ch;font:400 82px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">The fold-out chart, made clickable</h2>
+</div>
+<p style="margin:0;max-width:36ch;font:400 26px/1.45 Archivo,sans-serif;color:#B4AFA1">A wall-sized chart is the best thing in the printed report and the worst thing to read on a phone. Same information, four affordances added.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+<div style="background:#231F17;border-radius:18px;padding:34px 28px;border-left:5px solid #A4234B"><p style="margin:0;font:600 32px/1.2 Archivo,sans-serif">Read at a size that works</p><p style="margin:12px 0 0;font:400 24px/1.45 Archivo,sans-serif;color:#B4AFA1">The grid scrolls sideways instead of shrinking type to 6pt.</p></div>
+<div style="background:#231F17;border-radius:18px;padding:34px 28px;border-left:5px solid #A4234B"><p style="margin:0;font:600 32px/1.2 Archivo,sans-serif">Open a cell for the detail</p><p style="margin:12px 0 0;font:400 24px/1.45 Archivo,sans-serif;color:#B4AFA1">Wording and analysis appear above the grid, instead of in eight-point marginalia.</p></div>
+<div style="background:#231F17;border-radius:18px;padding:34px 28px;border-left:5px solid #E9C34A"><p style="margin:0;font:600 32px/1.2 Archivo,sans-serif">Highlight the undefined words</p><p style="margin:12px 0 0;font:400 24px/1.45 Archivo,sans-serif;color:#B4AFA1">The print version’s yellow marker becomes a switch — and an argument you can see all at once.</p></div>
+<div style="background:#231F17;border-radius:18px;padding:34px 28px;border-left:5px solid #1F5C55"><p style="margin:0;font:600 32px/1.2 Archivo,sans-serif">Say it in words too</p><p style="margin:12px 0 0;font:400 24px/1.45 Archivo,sans-serif;color:#B4AFA1">Colour never carries meaning alone; every cell states which way it cuts.</p></div>
+</div>
+</section>
+
+<section data-label="Footnotes" data-screen-label="07d" data-speaker-notes="This answers the footnotes question from the last round. Tooltips are the convenience; the anchors are the substance." style="background:#F7F4ED;color:#17150F;padding:100px 130px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<div>
+<p style="margin:0 0 20px;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#A4234B">Answered</p>
+<h2 style="margin:0;max-width:30ch;font:400 86px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">Footnotes and glossary, three ways at once</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+<div style="background:#fff;border-radius:20px;padding:38px 32px;border:2px solid rgba(23,21,15,.16)"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B6659">Layer one</p><p style="margin:16px 0 0;font:400 40px/1.14 Newsreader,Georgia,serif">A real anchor</p><p style="margin:14px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">Every marker is a link to a numbered endnote, and every endnote links back to where you were. Works with no scripting at all.</p></div>
+<div style="background:#fff;border-radius:20px;padding:38px 32px;border:2px solid #A4234B"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#A4234B">Layer two</p><p style="margin:16px 0 0;font:400 40px/1.14 Newsreader,Georgia,serif">A tooltip on top</p><p style="margin:14px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">Shown on hover and on keyboard focus, announced to screen readers, hoverable so links inside stay reachable, dismissed with Escape.</p></div>
+<div style="background:#fff;border-radius:20px;padding:38px 32px;border:2px solid rgba(23,21,15,.16)"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#6B6659">Layer three</p><p style="margin:16px 0 0;font:400 40px/1.14 Newsreader,Georgia,serif">Written out in full</p><p style="margin:14px 0 0;font:400 26px/1.45 Archivo,sans-serif;color:#4A463C">A Notes section and a Glossary at the end of every report — so the content is never trapped inside an interaction.</p></div>
+</div>
+<p style="margin:0;max-width:96ch;font:400 28px/1.5 Archivo,sans-serif;color:#4A463C">Glossary terms sit inline on first use and as a "key terms" strip near the top, so a reader with no background in digital rights has a way in before the argument starts.</p>
+</section>
+
+<section data-label="Accessibility" data-screen-label="08" data-speaker-notes="Accessibility is the subject matter of this report — the page cannot fail the people it is about." style="background:#F7F4ED;color:#17150F;padding:100px 130px;display:flex;flex-direction:column;justify-content:center;gap:46px">
+<div>
+<p style="margin:0 0 20px;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#A4234B">Non-negotiable</p>
+<h2 style="margin:0;max-width:34ch;font:400 82px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">A report about exclusion cannot exclude its readers</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+<div style="background:#fff;border-radius:18px;padding:34px 30px"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">Native semantics</p><p style="margin:12px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">Real headings, lists, figures and <span style="font-family:ui-monospace,Menlo,monospace;font-size:24px">&lt;details&gt;</span> — so screen readers and keyboards work without custom scripting.</p></div>
+<div style="background:#fff;border-radius:18px;padding:34px 30px"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">Visible focus, skip link</p><p style="margin:12px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">A 3px focus ring on everything interactive, and a skip link straight to the report body.</p></div>
+<div style="background:#fff;border-radius:18px;padding:34px 30px"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">Reader-set text size</p><p style="margin:12px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">Scales the reading column up to 150% without breaking layout, on top of browser zoom.</p></div>
+<div style="background:#fff;border-radius:18px;padding:34px 30px"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">AA contrast throughout</p><p style="margin:12px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">Ink on warm paper, one accent used only where it passes at the size it is used.</p></div>
+<div style="background:#fff;border-radius:18px;padding:34px 30px"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">Reduced motion respected</p><p style="margin:12px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">Smooth scrolling and transitions switch off when the reader’s system asks them to.</p></div>
+<div style="background:#fff;border-radius:18px;padding:34px 30px"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">Described figures</p><p style="margin:12px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">Every chart is also stated in words and numbers; the map carries a full text description.</p></div>
+</div>
+</section>
+
+<section data-label="Pipeline" data-screen-label="09" data-speaker-notes="Same source, three outputs. The blocks are the shared layer between the interactive report and the learning modules." style="background:#17150F;color:#F7F4ED;padding:110px 130px;display:flex;flex-direction:column;justify-content:center;gap:56px">
+<h2 style="margin:0;max-width:28ch;font:400 82px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">One source, three outputs</h2>
+<div style="display:flex;align-items:stretch;gap:24px">
+<div style="flex:1;background:#231F17;border-radius:18px;padding:36px 30px"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:#E9A8BE">STEP 1</p><p style="margin:16px 0 0;font:600 34px/1.2 Archivo,sans-serif">Published report</p><p style="margin:12px 0 0;font:400 24px/1.45 Archivo,sans-serif;color:#B4AFA1">The final manuscript, figures and interview record.</p></div>
+<div style="align-self:center;font:400 52px/1 Archivo,sans-serif;color:#6B6659">→</div>
+<div style="flex:1;background:#231F17;border-radius:18px;padding:36px 30px;border:2px solid #A4234B"><p style="margin:0;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;color:#E9A8BE">STEP 2</p><p style="margin:16px 0 0;font:600 34px/1.2 Archivo,sans-serif">Structured blocks</p><p style="margin:12px 0 0;font:400 24px/1.45 Archivo,sans-serif;color:#B4AFA1">Stats, timeline events, quotations, steps and recommendations, tagged once.</p></div>
+<div style="align-self:center;font:400 52px/1 Archivo,sans-serif;color:#6B6659">→</div>
+<div style="flex:1.4;display:flex;flex-direction:column;gap:14px">
+<div style="background:#231F17;border-radius:18px;padding:26px 28px;border-left:5px solid #A4234B"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">Interactive report</p><p style="margin:8px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">This prototype.</p></div>
+<div style="background:#231F17;border-radius:18px;padding:26px 28px;border-left:5px solid #1F5C55"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">Learning modules</p><p style="margin:8px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">Same blocks, sequenced as lessons with checks.</p></div>
+<div style="background:#231F17;border-radius:18px;padding:26px 28px;border-left:5px solid #8A5A0B"><p style="margin:0;font:600 30px/1.2 Archivo,sans-serif">Shareables</p><p style="margin:8px 0 0;font:400 24px/1.4 Archivo,sans-serif;color:#B4AFA1">A stat card or a quotation, exported for social and briefings.</p></div>
+</div>
+</div>
+</section>
+
+<section data-label="Decisions" data-screen-label="10" data-speaker-notes="What I need from you before this becomes the template for the whole library." style="background:#F7F4ED;color:#17150F;padding:110px 130px;display:flex;flex-direction:column;justify-content:center;gap:50px">
+<div>
+<p style="margin:0 0 20px;font:500 24px/1 ui-monospace,Menlo,monospace;letter-spacing:.18em;text-transform:uppercase;color:#A4234B">Over to you</p>
+<h2 style="margin:0;max-width:28ch;font:400 86px/1.05 Newsreader,Georgia,serif;letter-spacing:-.02em">Six decisions before we template this</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px 44px">
+<div style="border-top:2px solid rgba(23,21,15,.18);padding:22px 0 0"><p style="margin:0;font:600 32px/1.25 Archivo,sans-serif">Nepali alongside English?</p><p style="margin:9px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">A language switch changes type choices, line lengths and the plain-language pass.</p></div>
+<div style="border-top:2px solid rgba(23,21,15,.18);padding:22px 0 0"><p style="margin:0;font:600 32px/1.25 Archivo,sans-serif">Which citations make the cut</p><p style="margin:9px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">The pattern is settled; the editorial call is not. Each report currently carries 10–11 notes on the load-bearing claims, against 100+ in the PDF. All of them, or the ones that matter?</p></div>
+<div style="border-top:2px solid rgba(23,21,15,.18);padding:22px 0 0"><p style="margin:0;font:600 32px/1.25 Archivo,sans-serif">Brand system</p><p style="margin:9px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">This uses a warm-paper palette and Newsreader / Archivo. Swap in the Body &amp; Data system when you share it.</p></div>
+<div style="border-top:2px solid rgba(23,21,15,.18);padding:22px 0 0"><p style="margin:0;font:600 32px/1.25 Archivo,sans-serif">Illustration</p><p style="margin:9px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">Supriya Manandhar’s cover art and any field photography we are cleared to publish.</p></div>
+<div style="border-top:2px solid rgba(23,21,15,.18);padding:22px 0 0"><p style="margin:0;font:600 32px/1.25 Archivo,sans-serif">Search across the library</p><p style="margin:9px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">Per-report search, or portal-wide search across every publication?</p></div>
+<div style="border-top:2px solid rgba(23,21,15,.18);padding:22px 0 0"><p style="margin:0;font:600 32px/1.25 Archivo,sans-serif">Mobile first pass</p><p style="margin:9px 0 0;font:400 25px/1.45 Archivo,sans-serif;color:#4A463C">The prototype is desktop-width. Phone layouts are next if that is where your readers are.</p></div>
+</div>
+</section>
+
+</x-import>
+
+</x-dc>
+</body>
+</html>

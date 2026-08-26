@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body &amp; Data — Interactive Research Library</title>
+  <meta name="description" content="Interactive research publications on digital rights, privacy, biometric surveillance, online gender-based violence, and disability justice in Nepal.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main library content</a>
+
+  <!-- Header -->
+  <header class="report-header" role="banner">
+    <div class="site-container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-group" aria-label="Body and Data Research Library Home">
+          <span class="brand-title">Body &amp; Data</span>
+          <span class="badge badge-filled">Research Library</span>
+        </a>
+        <nav class="header-controls" aria-label="Library Navigation">
+          <div role="group" aria-label="Text Size Controls" class="zoom-ctrl-group">
+            <button type="button" id="btn-zoom-out" class="zoom-btn" aria-label="Decrease text size">A−</button>
+            <div class="zoom-divider" aria-hidden="true"></div>
+            <button type="button" id="btn-zoom-in" class="zoom-btn" aria-label="Increase text size">A+</button>
+          </div>
+          <a href="#publications" class="btn btn-sm">Publications</a>
+          <a href="#themes" class="btn btn-sm">Thematic Framework</a>
+          <a href="https://bodyanddata.org" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-accent">Official Website ↗</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <div class="site-container">
+      
+      <!-- Hero -->
+      <section class="hero-cover" aria-labelledby="hero-title">
+        <div class="hero-meta-badges">
+          <span class="badge badge-filled">Digital Publishing Initiative</span>
+          <span class="badge">Open Access</span>
+          <span class="badge badge-teal">Kathmandu, Nepal</span>
+        </div>
+        <h1 id="hero-title" class="hero-title">Interactive Research on Digital Rights, Privacy &amp; Bodily Autonomy</h1>
+        <p class="hero-subtitle">Transforming in-depth field investigations, policy matrices, and lived experiences into browser-native, accessible publications.</p>
+        <p class="hero-lead-text">
+          Body &amp; Data works towards safe, just, and accessible digital spaces for women, queer persons, and marginalized communities in Nepal. This portal hosts full-fidelity interactive editions of our major research studies—equipped with dual-depth reading modes, responsive data matrices, accessible tooltips, and qualitative voice archives.
+        </p>
+      </section>
+
+      <!-- Publications Grid -->
+      <section id="publications" class="report-section" aria-labelledby="heading-pubs">
+        <p class="eyebrow section-eyebrow">Publications Suite</p>
+        <h2 id="heading-pubs" class="section-title">Explore Interactive Research Reports</h2>
+        <p class="section-lead">Every publication features two synchronized reading depths: a comprehensive <strong>Full Text Mode</strong> with unabridged chapters, legal analyses, and citations, and an authentic <strong>Plain Summary Mode</strong> for executive review.</p>
+
+        <div class="deck-features-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 32px;">
+          
+          <!-- Publication 1: Biometrics -->
+          <article class="glance-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 5px solid var(--accent-crimson);">
+            <div>
+              <div style="display: flex; justify-content: space-between; gap: 8px; margin-bottom: 12px;">
+                <span class="badge badge-accent">Field Investigation</span>
+                <span class="badge">2025 · 56 Pages</span>
+              </div>
+              <h3 style="font-size: 1.5rem; line-height: 1.2; margin-bottom: 10px;">
+                <a href="nepal-biometric-present.html" style="color: var(--text-primary); text-decoration: none;">Nepal’s Biometric Present</a>
+              </h3>
+              <p style="font-style: italic; font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 16px;">Governance, Accessibility &amp; Accountability</p>
+              <p style="font-size: 0.925rem; line-height: 1.55; color: var(--text-secondary); margin-bottom: 20px;">
+                A comprehensive field study across Kathmandu, Sarlahi, and Khotang investigating the National Identity Card (NID) rollout. Unpacks procurement controversies with Idemia, the exclusion of 5M+ residents lacking citizenship, hardware failures on rural laborers, and privacy risks.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px;">
+                <span class="badge">Interactive Map</span>
+                <span class="badge">16-Year Timeline</span>
+                <span class="badge">6-Step Friction Walkthrough</span>
+                <span class="badge">6-Hop Dataflow Tracer</span>
+                <span class="badge">18 Recommendations</span>
+              </div>
+            </div>
+            <div class="pub-card-actions">
+              <a href="nepal-biometric-present.html" class="btn btn-primary">Read Full Report (24 min)</a>
+              <a href="nepal-biometric-present.html#glance" class="btn">Plain Summary View (7 min)</a>
+            </div>
+          </article>
+
+          <!-- Publication 2: Mapping Laws -->
+          <article class="glance-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 5px solid var(--accent-gold);">
+            <div>
+              <div style="display: flex; justify-content: space-between; gap: 8px; margin-bottom: 12px;">
+                <span class="badge" style="background: var(--accent-gold-tint); color: var(--accent-gold-hover); border-color: var(--accent-gold);">Legal Policy Mapping</span>
+                <span class="badge">2021 · 48 Pages</span>
+              </div>
+              <h3 style="font-size: 1.5rem; line-height: 1.2; margin-bottom: 10px;">
+                <a href="mapping-laws.html" style="color: var(--text-primary); text-decoration: none;">Mapping Laws Relevant to Online Violence in Nepal</a>
+              </h3>
+              <p style="font-style: italic; font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 16px;">A Human Rights &amp; Case Law Review</p>
+              <p style="font-size: 0.925rem; line-height: 1.55; color: var(--text-secondary); margin-bottom: 20px;">
+                Examines 32 legal provisions across 7 statutes through three human rights lenses: Freedom of Expression, Right to Privacy, and Freedom from Violence. Evaluates legal bottlenecks across 15 real court cases and critiques over-reliance on Section 47 of the Electronic Transaction Act.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px;">
+                <span class="badge">2D Policy Matrix Map</span>
+                <span class="badge">Undefined Terms Toggle</span>
+                <span class="badge">15 Court Case Studies</span>
+                <span class="badge">32 Provisions Explorer</span>
+              </div>
+            </div>
+            <div class="pub-card-actions">
+              <a href="mapping-laws.html" class="btn btn-primary">Read Full Report (21 min)</a>
+              <a href="mapping-laws.html#glance" class="btn">Plain Summary View (6 min)</a>
+            </div>
+          </article>
+
+          <!-- Publication 3: Beyond Access -->
+          <article class="glance-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 5px solid var(--accent-teal);">
+            <div>
+              <div style="display: flex; justify-content: space-between; gap: 8px; margin-bottom: 12px;">
+                <span class="badge badge-teal">Feminist &amp; Disability Justice</span>
+                <span class="badge">2020 · 46 Pages</span>
+              </div>
+              <h3 style="font-size: 1.5rem; line-height: 1.2; margin-bottom: 10px;">
+                <a href="beyond-access.html" style="color: var(--text-primary); text-decoration: none;">Beyond Access</a>
+              </h3>
+              <p style="font-style: italic; font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 16px;">Women and Queer Persons with Disabilities Online</p>
+              <p style="font-size: 0.925rem; line-height: 1.55; color: var(--text-secondary); margin-bottom: 20px;">
+                Documents the lived experiences of disabled women and queer individuals in Nepal exploring self-expression, sexuality, and bodily autonomy online. Reframes disability narratives using Audre Lorde’s definition of the erotic and presents a 7-layer spectrum of digital access.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px;">
+                <span class="badge">7-Layer Spectrum</span>
+                <span class="badge">Audre Lorde Reframing</span>
+                <span class="badge">6-Tier Violence Ladder</span>
+                <span class="badge">23 Lived Voices</span>
+              </div>
+            </div>
+            <div class="pub-card-actions">
+              <a href="beyond-access.html" class="btn btn-primary">Read Full Report (20 min)</a>
+              <a href="beyond-access.html#glance" class="btn">Plain Summary View (6 min)</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 4 Cross-Cutting Thematic Frameworks -->
+      <section id="themes" class="report-section" aria-labelledby="heading-themes">
+        <p class="eyebrow section-eyebrow">Thematic Analysis</p>
+        <h2 id="heading-themes" class="section-title">Four Structural Fractures Across Nepal’s Digital Landscape</h2>
+        <p class="section-lead">Across biometric registration, criminal law enforcement, and disability access, Body &amp; Data’s research reveals four recurring structural patterns of digital marginalization:</p>
+
+        <div class="deck-features-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 24px;">
+          
+          <div class="deck-feature-card">
+            <p class="deck-feature-num">Fracture 01</p>
+            <h3 class="deck-feature-title">Consent Is Missing by Design</h3>
+            <p class="deck-feature-desc">From mandatory biometric enrollment for banking and social security to reproductive privacy exceptions in the Civil Code, individual bodily and digital consent is systematically bypassed in favor of state convenience and patriarchal control.</p>
+          </div>
+
+          <div class="deck-feature-card">
+            <p class="deck-feature-num">Fracture 02</p>
+            <h3 class="deck-feature-title">Undefined &amp; Moralistic Terms</h3>
+            <p class="deck-feature-desc">Statutes routinely rely on vague phrasing—"public morality", "decency", "social harmony", "character" (charitra)—that grant arbitrary discretionary power to police and courts while silencing marginalized and queer voices.</p>
+          </div>
+
+          <div class="deck-feature-card">
+            <p class="deck-feature-num">Fracture 03</p>
+            <h3 class="deck-feature-title">Protection Operates as Control</h3>
+            <p class="deck-feature-desc">Protective frameworks frequently morph into surveillance tools. Women and persons with disabilities find their digital autonomy restricted under the guise of family safety, while the state uses security mandates to monitor citizen movement.</p>
+          </div>
+
+          <div class="deck-feature-card">
+            <p class="deck-feature-num">Fracture 04</p>
+            <h3 class="deck-feature-title">Nobody Was Consulted</h3>
+            <p class="deck-feature-desc">Digital public infrastructure and cyber policies are formulated through centralized, top-down processes that bypass local ward offices, disability organizations, feminist researchers, and affected citizens on the ground.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Reading Accessibility Tools Guide -->
+      <section class="report-section" aria-labelledby="heading-a11y">
+        <p class="eyebrow section-eyebrow">Reader Affordances</p>
+        <h2 id="heading-a11y" class="section-title">How to Use the Interactive Reader</h2>
+        
+        <div class="stat-cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 24px;">
+          <div class="stat-card">
+            <p class="stat-card-label" style="font-size: 1rem; color: var(--accent-crimson);">Dual Reading Depths</p>
+            <p class="stat-card-note">Use the header toggle to switch between Full Text (unabridged academic study) and Plain Summary (executive brief with key visuals).</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card-label" style="font-size: 1rem; color: var(--accent-teal);">Reader-Controlled Text Zoom</p>
+            <p class="stat-card-note">Click <strong>A−</strong> and <strong>A+</strong> in the navigation bar to scale typography from 85% to 140% without breaking column layouts.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card-label" style="font-size: 1rem; color: var(--accent-gold);">Accessible Annotations</p>
+            <p class="stat-card-note">Hover or focus on any footnote citation number or highlighted glossary term to trigger an accessible floating tooltip (dismissible via Escape).</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card-label" style="font-size: 1rem; color: var(--text-primary);">Table of Contents Drawer</p>
+            <p class="stat-card-note">Click <strong>Contents</strong> to open a slide-out drawer with direct chapter jumps and active scroll-spy indicators.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-inner">
+        <div>
+          <p style="font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Body &amp; Data</p>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Kathmandu, Nepal · Advancing digital rights, privacy, and bodily autonomy.</p>
+        </div>
+        <div>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">
+            Supported by Open Society Foundations (OSF), Vision for Change, and APC EROTICS / AmplifyChange.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/annotations.js"></script>
+  <script src="js/report-core.js"></script>
+</body>
+</html>

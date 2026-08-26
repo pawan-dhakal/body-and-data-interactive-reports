@@ -1,0 +1,74 @@
+{
+  "$schema": "./schemas/report.schema.json",
+  "id": "mapping-laws",
+  "title": "Mapping Laws Relevant to Online Violence in Nepal",
+  "subtitle": "A Human Rights & Case Law Review",
+  "year": 2021,
+  "pages": 48,
+  "authors": ["Shubha Kayastha", "Rita Baramu"],
+  "support": "Vision for Change",
+  "metrics": [
+    { "value": "86.2%", "label": "Experienced Online Violence", "note": "169 out of 196 surveyed internet users" },
+    { "value": "32", "label": "Provisions Analyzed", "note": "Mapped across 7 domestic laws and bills" },
+    { "value": "15", "label": "Court Case Dossiers", "note": "Evaluated in District and Appellate Courts" },
+    { "value": "90 Days", "label": "Filing Deadline Trap", "note": "Statute of limitations shutting out traumatized victims" }
+  ],
+  "headlineFinding": "Nepal’s legal framework treats online violence not as a violation of bodily autonomy and human rights, but as a breach of patriarchal 'honor' (ijjat) and 'character' (charitra). Over-reliance on Section 47 of the Electronic Transaction Act criminalizes legitimate speech while leaving survivors without effective protection or compensation.",
+  "chapters": [
+    {
+      "number": "I",
+      "title": "Introduction, Scope & Research Methodology",
+      "lede": "The study analyses the existing legal framework of Nepal concerning online violence, and compares it against three human rights lenses: Freedom of Expression, Right to Privacy, and Freedom from Violence."
+    },
+    {
+      "number": "II",
+      "title": "Three Human Rights Lenses",
+      "lede": "Evaluating domestic legislation against international standards under ICCPR, CEDAW, and the Constitution of Nepal."
+    },
+    {
+      "number": "III",
+      "title": "2D Policy Matrix: 32 Provisions across 7 Laws",
+      "lede": "Cross-mapping seven key statutes against human rights benchmarks to categorize provisions as rights-protecting, double-edged, or risk-creating."
+    },
+    {
+      "number": "IV",
+      "title": "Eight Systemic Statutory Flaws",
+      "lede": "Analyzing structural loopholes including the ETA 47 trap, vague moralistic terms, 90-day filing limits, and forced reconciliation mandates."
+    },
+    {
+      "number": "V",
+      "title": "15 Court Case Studies (Judicial Explorer)",
+      "lede": "Detailed examination of 15 real judicial cases from District to Appellate Courts."
+    },
+    {
+      "number": "VI",
+      "title": "Seven Policy Recommendations for Legal Reform",
+      "lede": "A human rights-centered roadmap for overhauling Nepal's legal response to online gender-based violence."
+    }
+  ],
+  "recommendations": [
+    {
+      "number": "01",
+      "targetAudience": "Legislature & Judiciary",
+      "title": "Enact a Specialized Online Gender-Based Violence Statute",
+      "details": "Repeal Section 47 of the ETA and replace it with a dedicated law recognizing non-consensual image sharing, cyberstalking, doxxing, and extortion as human rights violations with civil and criminal remedies."
+    },
+    {
+      "number": "02",
+      "targetAudience": "Ministry of Law",
+      "title": "Eliminate the 90-Day Statute of Limitations",
+      "details": "Amend Section 229 of the Penal Code to abolish or significantly extend the limitation period for reporting sexual harassment and online violence."
+    },
+    {
+      "number": "03",
+      "targetAudience": "Judiciary & Regulators",
+      "title": "Mandate Fast-Track Content Takedown Orders",
+      "details": "Empower courts and human rights commissions to issue emergency interim injunctions compelling tech platforms and ISPs to remove non-consensual intimate images within 24 hours."
+    }
+  ],
+  "references": [
+    { "id": 1, "citation": "Nepal Demographic and Health Survey (NDHS), 2011. Ministry of Health and Population, Government of Nepal." },
+    { "id": 2, "citation": "Nepal Police Crime Investigation Bureau Annual Statistics, 2076/77 (2019/2020), Kathmandu." },
+    { "id": 3, "citation": "CEDAW General Recommendation No. 35 on gender-based violence against women, updating GR 19." }
+  ]
+}

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F7F4ED;color:#17150F;font-family:Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#A4234B;text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:#7C1739}
+summary::-webkit-details-marker{display:none}
+summary{cursor:pointer;list-style:none}
+:focus-visible{outline:3px solid #1F5C55;outline-offset:2px;border-radius:2px}
+::selection{background:#F3D3DD}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms !important;transition-duration:.001ms !important}}
+</style>
+</helmet>
+
+<a href="#report-start" style="position:absolute;left:-9999px;top:0;z-index:100;background:#17150F;color:#fff;padding:12px 18px;font:600 14px/1 Archivo,sans-serif;border-radius:0 0 8px 0" style-focus="left:0">Skip to report content</a>
+
+<div style="min-height:100vh;background:#F7F4ED">
+
+<header style="position:sticky;top:0;z-index:40;background:#F7F4ED;border-bottom:1px solid rgba(23,21,15,.14)">
+<div style="max-width:1320px;margin:0 auto;padding:9px clamp(14px,3.5vw,30px);display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;min-height:62px">
+<div style="display:flex;align-items:baseline;gap:10px;flex:none">
+<span style="font:700 15px/1 Archivo,sans-serif;letter-spacing:-.2px">Body &amp; Data</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659;padding:5px 7px;border:1px solid rgba(23,21,15,.18);border-radius:4px;white-space:nowrap">Research Library</span>
+</div>
+<div style="flex:1;min-width:0;display:flex;align-items:baseline;gap:8px;overflow:hidden">
+<span style="font:400 13px/1.2 Newsreader,Georgia,serif;color:#4A463C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Mapping Laws relevant to online violence in Nepal</span>
+</div>
+<div style="display:flex;align-items:center;gap:8px;flex:none">
+<button type="button" onClick="{{ toggleFull }}" aria-pressed="{{ fullPressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:9px 13px;border-radius:999px;border:1px solid rgba(23,21,15,.22);background:#fff;color:#17150F;cursor:pointer;display:flex;align-items:center;gap:7px" style-hover="border-color:#17150F">
+<span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:{{ modeDot }};flex:none"></span>{{ modeLabel }}</button>
+<div role="group" aria-label="Text size" style="display:flex;align-items:center;border:1px solid rgba(23,21,15,.22);border-radius:999px;background:#fff;overflow:hidden">
+<button type="button" onClick="{{ zoomOut }}" aria-label="Decrease text size" style="border:0;background:transparent;cursor:pointer;font:600 13px/1 Archivo,sans-serif;padding:10px 11px;color:#17150F" style-hover="background:#F0ECE1">A−</button>
+<span aria-hidden="true" style="width:1px;align-self:stretch;background:rgba(23,21,15,.16)"></span>
+<button type="button" onClick="{{ zoomIn }}" aria-label="Increase text size" style="border:0;background:transparent;cursor:pointer;font:600 15px/1 Archivo,sans-serif;padding:9px 11px;color:#17150F" style-hover="background:#F0ECE1">A+</button>
+</div>
+<button type="button" onClick="{{ toggleToc }}" aria-expanded="{{ tocExpanded }}" style="font:600 12px/1 Archivo,sans-serif;padding:9px 14px;border-radius:999px;border:1px solid #17150F;background:#17150F;color:#F7F4ED;cursor:pointer">Contents</button>
+</div>
+</div>
+<div aria-hidden="true" style="height:3px;background:rgba(23,21,15,.08)"><div id="om-progress" style="height:3px;background:#A4234B;width:0%"></div></div>
+</header>
+
+<sc-if value="{{ tocOpen }}" hint-placeholder-val="{{ false }}">
+<nav aria-label="Report contents" style="position:sticky;top:65px;z-index:39;background:#fff;border-bottom:1px solid rgba(23,21,15,.14);box-shadow:0 14px 30px -18px rgba(23,21,15,.4)">
+<div style="max-width:1320px;margin:0 auto;padding:22px clamp(14px,3.5vw,30px) 26px">
+<p style="margin:0 0 14px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Jump to a section</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:8px">
+<sc-for list="{{ toc }}" as="c" hint-placeholder-count="10">
+<a href="{{ c.href }}" onClick="{{ closeToc }}" style="display:flex;gap:12px;align-items:baseline;padding:11px 13px;border-radius:8px;border:1px solid rgba(23,21,15,.12);background:#FBF9F4;text-decoration:none;color:#17150F" style-hover="border-color:#17150F;background:#F3EFE4">
+<span style="font:600 10px/1.4 ui-monospace,Menlo,monospace;color:#A4234B;flex:none;padding-top:2px">{{ c.num }}</span>
+<span style="font:500 13px/1.35 Archivo,sans-serif">{{ c.title }}</span>
+</a>
+</sc-for>
+</div>
+</div>
+</nav>
+</sc-if>
+
+<div id="report-start" style="max-width:1320px;margin:0 auto;padding:0 clamp(14px,3.5vw,30px) 120px">
+<main style="zoom:{{ zoom }}">
+
+<section aria-labelledby="cover-h" style="padding:64px 0 40px;border-bottom:1px solid rgba(23,21,15,.14)">
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 26px">
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:#A4234B;padding:6px 9px;border-radius:4px">Interactive report</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.2);padding:6px 9px;border-radius:4px">Law &amp; policy · Nepal</span>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.2);padding:6px 9px;border-radius:4px">2021</span>
+</div>
+<h1 id="cover-h" style="margin:0;max-width:22ch;font:400 clamp(40px,6vw,76px)/1.02 Newsreader,Georgia,serif;letter-spacing:-.02em;text-wrap:balance">Mapping Laws</h1>
+<p style="margin:14px 0 0;max-width:30ch;font:300 clamp(21px,2.6vw,30px)/1.24 Newsreader,Georgia,serif;color:#4A463C;font-style:italic">relevant to online violence in Nepal</p>
+<p style="margin:30px 0 0;max-width:62ch;font:400 clamp(17px,1.25vw,19.5px)/1.62 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Nepal has no single law for online gender-based violence. It has dozens of provisions that could be used — and most of them cut both ways. This report reads every one of them through three human rights lenses, and against fifteen real cases.<sup style="line-height:0"><a href="#note-1" id="ref-1" data-note="Maskey, J. &amp; Karmacharya, S. (2018). Online Violence Against Women: a continuum of offline discrimination. LOOM. Online violence is treated throughout this report as an extension of offline violence into digital platforms." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">1</a></sup><sup style="line-height:0"><a href="#note-2" id="ref-2" data-note="Kee, J. S. (2017). End Violence: Women’s rights and safety online. Association for Progressive Communications — on the psychological, mental and economic effects of online violence on women." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">2</a></sup></p>
+<div style="margin:28px 0 0;padding:18px 20px;border-radius:12px;background:#F5EBD8;border:1px solid rgba(138,90,11,.35);max-width:70ch">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B4508">Content note</p>
+<p style="margin:9px 0 0;font:400 15px/1.6 Newsreader,Georgia,serif;color:#2C2921">This report discusses sexual and gender-based violence, including non-consensual sharing of intimate images, blackmail and threats. Case summaries are factual and use the report’s own pseudonyms; defendants are unnamed here. Case detail is kept behind a click throughout.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:22px;margin:30px 0 0;padding:22px 0 0;border-top:1px solid rgba(23,21,15,.14)">
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Authors</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">Shubha Kayastha, Rita Baramu</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Published</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">Body &amp; Data, 2021</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Laws reviewed</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">Six acts and bills, plus the Constitution</p></div>
+<div><p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#6B6659">Reading time</p><p style="margin:6px 0 0;font:500 14px/1.3 Archivo,sans-serif">{{ readTime }}</p></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 0">
+<a href="#map" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;background:#17150F;color:#F7F4ED;text-decoration:none" style-hover="background:#A4234B">Open the policy map</a>
+<a href="#glance" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;border:1px solid rgba(23,21,15,.28);color:#17150F;text-decoration:none;background:#fff" style-hover="border-color:#17150F">Five-minute overview</a>
+<a href="#cases" style="font:600 14px/1 Archivo,sans-serif;padding:15px 22px;border-radius:999px;border:1px solid rgba(23,21,15,.28);color:#17150F;text-decoration:none;background:#fff" style-hover="border-color:#17150F">The fifteen cases</a>
+</div>
+</section>
+
+<section id="glance" aria-labelledby="glance-h" style="padding:52px 0 12px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">At a glance</p>
+<h2 id="glance-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The scale, and the response</h2>
+<p style="margin:0 0 28px;max-width:62ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Online violence is widespread and routinely reported. What follows it — in fines, sentences and compensation — is not proportionate.</p>
+
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:14px;padding:26px 26px 22px;margin:0 0 18px">
+<h3 style="margin:0 0 4px;font:600 15px/1.3 Archivo,sans-serif">What 196 people reported experiencing online</h3>
+<p style="margin:0 0 22px;font:400 13px/1.5 Archivo,sans-serif;color:#6B6659">Body &amp; Data survey, 2020. Respondents could report more than one form.<sup style="line-height:0"><a href="#note-6" id="ref-6" data-note="Body &amp; Data (2020). EROTICS South Asia Regional Monitoring Survey: Nepal Country Report. 86% of 196 respondents had experienced some form of online violence." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">6</a></sup></p>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 6px"><span style="font:600 13px/1.3 Archivo,sans-serif">Experienced online violence of some kind</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">86%</span></div><div style="height:22px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:22px;width:86%;background:#17150F"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 6px"><span style="font:600 13px/1.3 Archivo,sans-serif">Unwanted sexually explicit messages</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">52%</span></div><div style="height:22px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:22px;width:52%;background:#A4234B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 6px"><span style="font:600 13px/1.3 Archivo,sans-serif">Abusive comments</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">46%</span></div><div style="height:22px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:22px;width:46%;background:#A4234B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 6px"><span style="font:600 13px/1.3 Archivo,sans-serif">Name calling</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">45%</span></div><div style="height:22px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:22px;width:45%;background:#A4234B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 6px"><span style="font:600 13px/1.3 Archivo,sans-serif">Hate speech</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">39%</span></div><div style="height:22px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:22px;width:39%;background:#A4234B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 6px"><span style="font:600 13px/1.3 Archivo,sans-serif">Shaming for non-normative views or refusing advances</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">36%</span></div><div style="height:22px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:22px;width:36%;background:#A4234B"></div></div></div>
+<div><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 6px"><span style="font:600 13px/1.3 Archivo,sans-serif">Direct threats of physical or sexual violence</span><span style="font:600 15px/1 ui-monospace,Menlo,monospace">13%</span></div><div style="height:22px;border-radius:5px;background:#F0ECE1;overflow:hidden"><div style="height:22px;width:13%;background:#8A5A0B"></div></div></div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,178px),1fr));gap:12px">
+<sc-for list="{{ stats }}" as="s" hint-placeholder-count="6">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:18px 18px 16px">
+<p style="margin:0;font:600 27px/1 Newsreader,Georgia,serif;letter-spacing:-.01em;color:#A4234B">{{ s.value }}</p>
+<p style="margin:9px 0 0;font:600 12.5px/1.35 Archivo,sans-serif">{{ s.label }}</p>
+<p style="margin:5px 0 0;font:400 11.5px/1.45 Archivo,sans-serif;color:#6B6659">{{ s.note }}</p>
+</div>
+</sc-for>
+</div>
+
+<div style="margin:26px 0 0;padding:20px 22px;border-radius:12px;background:#fff;border:1px solid rgba(23,21,15,.14)">
+<p style="margin:0 0 6px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Key terms — hover, tap or tab to a term for its definition</p>
+<p style="margin:0 0 14px;font:400 13px/1.5 Archivo,sans-serif;color:#6B6659">All of these are also written out in the <a href="#glossary">glossary</a>.</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<button type="button" data-term="Online gender-based violence" data-def="Gender-based violence carried out or amplified through digital platforms — an extension of offline violence, not a separate phenomenon. It includes non-consensual sharing of images, impersonation, doxing, stalking, sextortion, hate speech and threats." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Online GBV</button>
+<button type="button" data-term="Doxing" data-def="Publishing someone’s private identifying information — phone number, address, workplace, name — without consent, usually to expose them to harassment. Several of the reviewed cases involved a victim’s contact details being posted alongside sexual content." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Doxing</button>
+<button type="button" data-term="Sextortion" data-def="Coercing a person into sexual acts, images or money by threatening to publish intimate material about them. Nepal’s current provisions on online violence do not name it." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Sextortion</button>
+<button type="button" data-term="Digital rights" data-def="Human rights — established by the UDHR, UN resolutions, international conventions, regional charters, domestic law and case law — as they are invoked in digitally networked spaces, including the agency exercised over one’s own expression and data." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Digital rights</button>
+<button type="button" data-term="Chilling effect" data-def="When the possibility of legal action — rather than any actual prosecution — makes people stop speaking. Nepal’s first deportation of a foreign national over social media posts is cited in this report as producing exactly that." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Chilling effect</button>
+<button type="button" data-term="Statute of limitations" data-def="The window within which a complaint must be filed. For domestic violence, workplace sexual harassment, breach of privacy, defamation and slander in Nepal it is 90 days — set to preserve evidence, but blind to the time trauma takes." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">Statute of limitations</button>
+<button type="button" data-term="CEDAW" data-def="The Convention on the Elimination of All Forms of Discrimination against Women, to which Nepal is a signatory. It defines violence against women as violence directed at a woman because she is a woman, or which affects women disproportionately." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">CEDAW</button>
+<button type="button" data-term="ETA" data-def="The Electronic Transaction Act 2063 (2008) — the only Nepali act that explicitly criminalises online violence, following a 2018 gender-equality amendment. It covers trolling, bullying, harassment and sharing private images, but not impersonation, doxing or sextortion." style="font:500 13px/1 Archivo,sans-serif;padding:9px 12px;border-radius:999px;border:1px dashed #A4234B;background:#FBEEF2;color:#17150F;cursor:help" style-hover="background:#F3D3DD">ETA 2008</button>
+</div>
+</div>
+
+<div style="margin:14px 0 0;padding:20px 22px;border-radius:12px;background:#EFEDE4;border:1px solid rgba(23,21,15,.12)">
+<p style="margin:0;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">The one-sentence finding</p>
+<p style="margin:10px 0 0;max-width:58ch;font:400 clamp(19px,1.75vw,23px)/1.4 Newsreader,Georgia,serif;text-wrap:pretty">Nepal does not need a new law for online violence so much as it needs the laws it already has to stop being usable against the people they were written to protect.</p>
+</div>
+</section>
+
+<section id="lenses" aria-labelledby="lenses-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">The framework</p>
+<h2 id="lenses-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Three rights, read together</h2>
+<p style="margin:0 0 26px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Every law in this report is examined through three human rights lenses. They are not separable: violating one damages the others.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px">
+<article style="background:#fff;border:1px solid rgba(23,21,15,.14);border-top:4px solid #1F5C55;border-radius:12px;padding:24px">
+<p style="margin:0;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#1F5C55">Lens one</p>
+<h3 style="margin:12px 0 0;font:400 27px/1.2 Newsreader,Georgia,serif">Freedom of expression</h3>
+<p style="margin:12px 0 0;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">Guaranteed by the UDHR and the ICCPR, and by Articles 17(2)(a) and 19 of Nepal’s Constitution — then narrowed by restrictions written in the language of morality, decency and social harmony. Sexual expression by women and queer people draws the most scrutiny.<sup style="line-height:0"><a href="#note-8" id="ref-8" data-note="Sigdel, S. et al. (2018). Freedom of Expression on the Internet in Nepal. Internet Society Nepal. On the 2018 pornography ban as censorship framed as protection: Kayastha, S. (2018), ‘The problem with Nepal’s porn ban’, The Record." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">8</a></sup></p>
+<p style="margin:14px 0 0;font:500 12px/1.5 Archivo,sans-serif;color:#6B6659">104 press freedom violations recorded April 2018–2019; 106 cases logged in Kathmandu’s cyber crime unit for “improper social media posts” under the ETA.<sup style="line-height:0"><a href="#note-4" id="ref-4" data-note="Freedom Forum (2019). Regressive Laws, Mounting Violations. Cyber crime unit figures reported by The Kathmandu Post, 15 February 2019." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">4</a></sup></p>
+</article>
+<article style="background:#fff;border:1px solid rgba(23,21,15,.14);border-top:4px solid #8A5A0B;border-radius:12px;padding:24px">
+<p style="margin:0;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#8A5A0B">Lens two</p>
+<h3 style="margin:12px 0 0;font:400 27px/1.2 Newsreader,Georgia,serif">Privacy</h3>
+<p style="margin:12px 0 0;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">Article 12 of the UDHR, Article 17 of the ICCPR and Article 28 of Nepal’s Constitution — all with an “except as provided by law” attached. The public/private split the law relies on is itself gendered: what happens inside a home has long been treated as nobody’s business.<sup style="line-height:0"><a href="#note-9" id="ref-9" data-note="Privacy International (2018). From Oppression to Liberation: Reclaiming the Right to Privacy — including the warning that treating privacy as absolute leaves us unable to see how the concept is appropriated. See also Lever, A. (2005), ‘Feminism, Democracy and the Right to Privacy’." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">9</a></sup></p>
+<p style="margin:14px 0 0;font:500 12px/1.5 Archivo,sans-serif;color:#6B6659">The UN General Assembly recognised in 2016 that women are particularly affected by privacy violations in the digital age.<sup style="line-height:0"><a href="#note-3" id="ref-3" data-note="UN General Assembly resolution 71/199 (2016); Human Rights Council resolution 34/7 (2017); Report of the Special Rapporteur on violence against women, its causes and consequences, on online violence against women and girls (2018)." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">3</a></sup></p>
+</article>
+<article style="background:#fff;border:1px solid rgba(23,21,15,.14);border-top:4px solid #A4234B;border-radius:12px;padding:24px">
+<p style="margin:0;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Lens three</p>
+<h3 style="margin:12px 0 0;font:400 27px/1.2 Newsreader,Georgia,serif">Freedom from violence</h3>
+<p style="margin:12px 0 0;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">CEDAW defines violence against women as violence directed at a woman because she is a woman. Nepal’s Constitution criminalises physical, mental, sexual and psychological violence — but only the ETA names the online form of it, and only partially.</p>
+<p style="margin:14px 0 0;font:500 12px/1.5 Archivo,sans-serif;color:#6B6659">11,738 domestic violence cases recorded in FY 2076/77; in over 90% of registered online violence cases the victims are women aged 16–25.<sup style="line-height:0"><a href="#note-5" id="ref-5" data-note="Nepal Police Crime Investigation Department, Women, Children and Senior Citizen Directorate, FY 2076/77. Age and gender breakdown from an interview with the Cyber Crime Unit, Crime Division, Metropolitan Police of Nepal, which also estimated that only around half of cases reach the unit." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">5</a></sup></p>
+</article>
+</div>
+
+<details style="margin:14px 0 0;background:#17150F;color:#F7F4ED;border:0;border-radius:14px">
+<summary style="padding:24px 26px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
+<span style="font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#E9A8BE;flex:none">Case study · expression</span>
+<span style="flex:1;min-width:240px;font:400 24px/1.24 Newsreader,Georgia,serif">The first deportation over a social media post</span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#E9A8BE;flex:none">READ +</span>
+</summary>
+<div style="padding:0 clamp(18px,3vw,26px) 26px;max-width:76ch">
+<p style="margin:0;font:400 16px/1.65 Newsreader,Georgia,serif;color:#EDE9DE">Robert Penner, a Canadian citizen working for a technology company in Nepal, wrote frequently on social media about political issues, including the rights of marginalised groups and the constitutional provisions restricting Nepali women’s right to confer citizenship. In 2016 he was held in custody for 26 hours after accusations of posting a provocative message aimed at spreading social discord, and was deported by the Department of Immigration. Authorities said he had been spreading unnecessary messages about Nepal, but did not say who had complained.<sup style="line-height:0"><a href="#note-7" id="ref-7" data-note="Sha, S. &amp; Quet, M. (2020). From Expression to Expulsion: Digital Public Spaces as Theatres of Operations in Nepal. Science, Technology and Society, pp. 386–403." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#F7F4ED;padding:1px 4px;border-radius:3px;background:#A4234B" style-hover="background:#F7F4ED;color:#17150F">7</a></sup></p>
+<p style="margin:14px 0 0;font:400 16px/1.65 Newsreader,Georgia,serif;color:#B4AFA1">It was the first case of a foreign national being removed from Nepal over social media posts. The positions Penner took were not new — they echoed the existing advocacy of many minority and women’s rights activists in Nepal. That is what made the removal effective: a chilling effect across the wider activist community, and encouragement for conservative politics.</p>
+</div>
+</details>
+</section>
+
+<section id="map" aria-labelledby="map-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">The policy map</p>
+<h2 id="map-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The whole landscape on one grid</h2>
+<p style="margin:0 0 20px;max-width:70ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">The printed report folds out into a single chart: three rights down the side, every law across the top, and each relevant provision placed where they meet. This is that chart, made clickable. Select any provision to read its wording and analysis. The same section can appear in more than one row — that is the point.</p>
+<p style="margin:-8px 0 20px;max-width:70ch;font:500 13.5px/1.55 Archivo,sans-serif;color:#6B6659">A grid this wide scrolls in both directions inside its frame. On a phone, the <a href="#explorer">law explorer</a> below holds the same 32 provisions in a single column — filterable by right, by effect and by law.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin:0 0 18px">
+<button type="button" onClick="{{ toggleAmb }}" aria-pressed="{{ ambPressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:11px 15px;border-radius:999px;cursor:pointer;border:1px solid #8A5A0B;background:#FBEFC6;color:#6B4508;display:flex;align-items:center;gap:8px" style-hover="background:#F5E3A6">
+<span aria-hidden="true" style="width:11px;height:11px;border-radius:3px;background:#E9C34A;border:1px solid #8A5A0B;flex:none"></span>{{ ambLabel }}</button>
+<div style="display:flex;flex-wrap:wrap;gap:14px">
+<span style="display:flex;align-items:center;gap:7px;font:500 11.5px/1 Archivo,sans-serif;color:#4A463C"><span aria-hidden="true" style="width:12px;height:12px;border-radius:50%;background:#1F5C55"></span>Can help a victim</span>
+<span style="display:flex;align-items:center;gap:7px;font:500 11.5px/1 Archivo,sans-serif;color:#4A463C"><span aria-hidden="true" style="width:12px;height:12px;border-radius:50%;background:#8A5A0B"></span>Cuts both ways</span>
+<span style="display:flex;align-items:center;gap:7px;font:500 11.5px/1 Archivo,sans-serif;color:#4A463C"><span aria-hidden="true" style="width:12px;height:12px;border-radius:50%;background:#A4234B"></span>Risk in itself</span>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap-reverse;gap:16px;align-items:flex-end">
+<div tabindex="0" role="group" aria-label="Policy map grid, scrolls horizontally" style="flex:1 1 560px;min-width:0;scroll-margin-top:96px;max-height:clamp(420px,72vh,760px);overflow:auto;overscroll-behavior-x:contain;border:1px solid rgba(23,21,15,.14);border-radius:14px;background:#fff">
+<div style="min-width:1120px">
+<div style="display:grid;grid-template-columns:124px repeat(7,1fr);border-bottom:1px solid rgba(23,21,15,.14);background:#F3EFE4;position:sticky;top:0;z-index:2">
+<div style="padding:14px 16px"></div>
+<sc-for list="{{ matrixLaws }}" as="l" hint-placeholder-count="7">
+<div style="padding:14px 14px;border-left:1px solid rgba(23,21,15,.1)"><p style="margin:0;font:600 12.5px/1.3 Archivo,sans-serif">{{ l }}</p></div>
+</sc-for>
+</div>
+<sc-for list="{{ matrix }}" as="row" hint-placeholder-count="3">
+<div style="display:grid;grid-template-columns:124px repeat(7,1fr);border-bottom:1px solid rgba(23,21,15,.1)">
+<div style="padding:16px 14px;background:#FBF9F4;display:flex;align-items:center">
+<p style="margin:0;font:400 19px/1.14 Newsreader,Georgia,serif">{{ row.lensLabel }}</p>
+</div>
+<sc-for list="{{ row.cells }}" as="cell" hint-placeholder-count="7">
+<div style="padding:10px 8px;border-left:1px solid rgba(23,21,15,.08);display:flex;flex-direction:column;gap:6px;align-content:flex-start">
+<sc-for list="{{ cell.items }}" as="it" hint-placeholder-count="2">
+<button type="button" onClick="{{ it.onClick }}" aria-pressed="{{ it.pressed }}" title="{{ it.sub }}" style="text-align:left;cursor:pointer;border:1px solid {{ it.bd }};background:{{ it.bg }};color:{{ it.fg }};border-radius:8px;padding:9px 10px;display:flex;gap:8px;align-items:flex-start" style-hover="border-color:#17150F">
+<span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:{{ it.dot }};flex:none;margin-top:4px"></span>
+<span><span style="display:block;font:600 11.5px/1.3 ui-monospace,Menlo,monospace">{{ it.label }}</span><span style="display:block;margin-top:3px;font:400 11px/1.35 Archivo,sans-serif;opacity:.72">{{ it.sub }}</span></span>
+</button>
+</sc-for>
+</div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+</div>
+<div style="flex:1 1 340px;min-width:min(100%,340px);order:2;position:sticky;top:72px;z-index:20">
+<sc-if value="{{ pickedEmpty }}" hint-placeholder-val="{{ true }}">
+<div style="background:#EFEDE4;border:1px dashed rgba(23,21,15,.3);border-radius:12px;padding:22px">
+<p style="margin:0;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Nothing selected</p>
+<p style="margin:12px 0 0;font:400 clamp(16px,1.2vw,18.5px)/1.5 Newsreader,Georgia,serif;color:#2C2921">Select any provision in the grid and its wording and analysis appear here. This panel stays in place while you keep exploring, so you can move across the chart and compare without losing the detail.</p>
+</div>
+</sc-if>
+<sc-if value="{{ pickedOpen }}" hint-placeholder-val="{{ false }}">
+<div role="region" aria-live="polite" aria-label="Selected provision" style="max-height:calc(100vh - 104px);overflow-y:auto;overscroll-behavior:contain;box-shadow:0 16px 34px -22px rgba(23,21,15,.55);background:#fff;border:1px solid rgba(23,21,15,.14);border-left:4px solid {{ picked.accent }};border-radius:12px;padding:20px 22px">
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;margin:0 0 14px">
+<span style="font:600 11px/1.4 ui-monospace,Menlo,monospace;color:#6B6659">{{ picked.law }}</span>
+<span style="flex:1;min-width:200px;font:600 17px/1.3 Archivo,sans-serif">{{ picked.article }} — {{ picked.title }}</span>
+<span style="font:600 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border-radius:4px;background:{{ picked.tagBg }};color:{{ picked.tagFg }}">{{ picked.stanceLabel }}</span>
+<button type="button" onClick="{{ clearPicked }}" style="font:600 11px/1 ui-monospace,Menlo,monospace;padding:8px 11px;border-radius:999px;border:1px solid rgba(23,21,15,.22);background:#F7F4ED;color:#17150F;cursor:pointer" style-hover="border-color:#17150F">CLOSE ×</button>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:22px">
+<div>
+<p style="margin:0 0 6px;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">What it says</p>
+<p style="margin:0;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ picked.text }}</p>
+</div>
+<div>
+<p style="margin:0 0 6px;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Analysis</p>
+<p style="margin:0;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ picked.analysis }}</p>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(23,21,15,.1)">
+<sc-for list="{{ picked.lensLabels }}" as="l" hint-placeholder-count="2">
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.18);padding:6px 8px;border-radius:4px">{{ l }}</span>
+</sc-for>
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#6B4508;background:#FBEFC6;padding:6px 8px;border-radius:4px">{{ picked.amb }}</span>
+</div>
+</div>
+</sc-if>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;margin:16px 0 0">
+<div style="background:#FBEFC6;border:1px solid rgba(138,90,11,.35);border-radius:12px;padding:20px">
+<p style="margin:0;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B4508">Ambiguity</p>
+<p style="margin:10px 0 12px;font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">These are the operative words. None of them is defined in the law that uses them.</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px">
+<sc-for list="{{ ambTerms }}" as="t" hint-placeholder-count="10">
+<span style="font:500 11.5px/1 Archivo,sans-serif;padding:7px 9px;border-radius:5px;background:#F3D97A;color:#4A3405">{{ t }}</span>
+</sc-for>
+</div>
+</div>
+<div style="background:#F7F4ED;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<p style="margin:0;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">How to read this chart</p>
+<ul style="margin:12px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:8px">
+<li style="font:400 14px/1.55 Newsreader,Georgia,serif;color:#2C2921">Each box is one section or article of law, placed under the law it belongs to and beside the right it touches.</li>
+<li style="font:400 14px/1.55 Newsreader,Georgia,serif;color:#2C2921">The coloured dot says which way it cuts: towards a remedy, both ways, or against the rights holder.</li>
+<li style="font:400 14px/1.55 Newsreader,Georgia,serif;color:#2C2921">Turn on <em>Highlight undefined terms</em> to see, at a glance, how much of the framework rests on words nobody has defined.</li>
+<li style="font:400 14px/1.55 Newsreader,Georgia,serif;color:#2C2921">Select a box to read its wording and the analysis. The detail panel stays put while you keep exploring — beside the grid on a wide screen, directly above it on a narrow one.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="explorer" aria-labelledby="explorer-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">The law explorer</p>
+<h2 id="explorer-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Every provision, and which way it cuts</h2>
+<p style="margin:0 0 22px;max-width:66ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Thirty-two provisions across seven laws — the six acts and bills the study reviewed, plus the constitutional articles they sit under. Filter by the right at stake, by which law it sits in, or by whether the provision helps a victim, cuts both ways, or is a risk in itself. Open any provision for the wording and the analysis.</p>
+
+<div style="display:flex;flex-direction:column;gap:14px;margin:0 0 22px">
+<div>
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Right at stake</p>
+<div role="group" aria-label="Filter provisions by right" style="display:flex;flex-wrap:wrap;gap:8px">
+<sc-for list="{{ lensFilters }}" as="f" hint-placeholder-count="4">
+<button type="button" onClick="{{ f.onClick }}" aria-pressed="{{ f.pressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:10px 14px;border-radius:999px;cursor:pointer;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};display:flex;align-items:center;gap:7px">{{ f.label }}<span style="font:600 10px/1 ui-monospace,Menlo,monospace;opacity:.7">{{ f.count }}</span></button>
+</sc-for>
+</div>
+</div>
+<div>
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Which way it cuts</p>
+<div role="group" aria-label="Filter provisions by effect" style="display:flex;flex-wrap:wrap;gap:8px">
+<sc-for list="{{ stanceFilters }}" as="f" hint-placeholder-count="4">
+<button type="button" onClick="{{ f.onClick }}" aria-pressed="{{ f.pressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:10px 14px;border-radius:999px;cursor:pointer;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};display:flex;align-items:center;gap:7px">{{ f.label }}<span style="font:600 10px/1 ui-monospace,Menlo,monospace;opacity:.7">{{ f.count }}</span></button>
+</sc-for>
+</div>
+</div>
+<div>
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Law</p>
+<div role="group" aria-label="Filter provisions by law" style="display:flex;flex-wrap:wrap;gap:8px">
+<sc-for list="{{ lawFilters }}" as="f" hint-placeholder-count="7">
+<button type="button" onClick="{{ f.onClick }}" aria-pressed="{{ f.pressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:10px 14px;border-radius:999px;cursor:pointer;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};display:flex;align-items:center;gap:7px">{{ f.label }}<span style="font:600 10px/1 ui-monospace,Menlo,monospace;opacity:.7">{{ f.count }}</span></button>
+</sc-for>
+</div>
+</div>
+</div>
+
+<p aria-live="polite" style="margin:0 0 14px;font:500 12.5px/1.5 Archivo,sans-serif;color:#4A463C">{{ provisionCount }}</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:10px;align-items:start">
+<sc-for list="{{ provisions }}" as="p" hint-placeholder-count="10">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-left:4px solid {{ p.accent }};border-radius:12px">
+<summary style="padding:16px 18px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
+<span style="font:600 11px/1.4 ui-monospace,Menlo,monospace;color:#6B6659;flex:none">{{ p.law }}</span>
+<span style="flex:1;min-width:220px;font:600 15px/1.35 Archivo,sans-serif">{{ p.article }} — {{ p.title }}</span>
+<span style="font:600 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border-radius:4px;background:{{ p.tagBg }};color:{{ p.tagFg }};flex:none">{{ p.stanceLabel }}</span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#A4234B;flex:none">READ +</span>
+</summary>
+<div style="border-top:1px solid rgba(23,21,15,.1);padding:16px 18px 18px">
+<p style="margin:0 0 6px;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">What it says</p>
+<p style="margin:0 0 16px;max-width:74ch;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ p.text }}</p>
+<p style="margin:0 0 6px;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Analysis</p>
+<p style="margin:0 0 14px;max-width:74ch;font:400 clamp(14.5px,.95vw,16px)/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ p.analysis }}</p>
+<div style="display:flex;flex-wrap:wrap;gap:7px">
+<sc-for list="{{ p.lensLabels }}" as="l" hint-placeholder-count="2">
+<span style="font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.18);padding:6px 8px;border-radius:4px">{{ l }}</span>
+</sc-for>
+</div>
+</div>
+</details>
+</sc-for>
+</div>
+</section>
+
+<section id="flaws" aria-labelledby="flaws-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">The pattern</p>
+<h2 id="flaws-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Eight flaws that recur across every law</h2>
+<p style="margin:0 0 26px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Read all thirty-two provisions together and the same eight problems appear, whichever act they sit in. These are the pitfalls annotated around the edges of the printed chart.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px">
+<sc-for list="{{ flaws }}" as="f" hint-placeholder-count="6">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:18px">
+<span style="display:block;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">{{ f.tag }}</span>
+<span style="display:block;margin-top:10px;font:400 21px/1.26 Newsreader,Georgia,serif">{{ f.title }}</span>
+<span aria-hidden="true" style="display:block;margin-top:12px;font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#6B6659">READ +</span>
+</summary>
+<div style="padding:0 18px 18px;border-top:1px solid rgba(23,21,15,.1);padding-top:14px">
+<p style="margin:0;font:400 14.5px/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ f.body }}</p>
+</div>
+</details>
+</sc-for>
+</div>
+</section>
+
+<section id="cases" aria-labelledby="cases-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Cases reviewed</p>
+<h2 id="cases-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">What the courts actually did</h2>
+<p style="margin:0 0 22px;max-width:66ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Fifteen cases of online or technology-related violence, collected from courts and offices of government attorneys along with the case files. Eight had hearings; the rest were pending at the time of review. Case detail stays closed until you open it.</p>
+<div role="group" aria-label="Filter cases by outcome" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px">
+<sc-for list="{{ caseFilters }}" as="f" hint-placeholder-count="4">
+<button type="button" onClick="{{ f.onClick }}" aria-pressed="{{ f.pressed }}" style="font:600 12px/1 Archivo,sans-serif;padding:10px 14px;border-radius:999px;cursor:pointer;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.fg }};display:flex;align-items:center;gap:7px">{{ f.label }}<span style="font:600 10px/1 ui-monospace,Menlo,monospace;opacity:.7">{{ f.count }}</span></button>
+</sc-for>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:10px;align-items:start">
+<sc-for list="{{ cases }}" as="c" hint-placeholder-count="8">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:15px 18px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
+<span style="font:600 12px/1.4 ui-monospace,Menlo,monospace;color:#A4234B;flex:none">CASE {{ c.id }}</span>
+<span style="flex:1;min-width:200px;font:600 14.5px/1.35 Archivo,sans-serif">{{ c.kind }}</span>
+<span style="font:400 12px/1.4 Archivo,sans-serif;color:#6B6659;flex:none">{{ c.where }} · {{ c.relation }}</span>
+<span style="font:600 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border-radius:4px;background:{{ c.tagBg }};color:{{ c.tagFg }};flex:none">{{ c.outcomeLabel }}</span>
+</summary>
+<div style="border-top:1px solid rgba(23,21,15,.1);padding:16px 18px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px">
+<div>
+<p style="margin:0 0 6px;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">The complaint</p>
+<p style="margin:0;font:400 14.5px/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ c.what }}</p>
+<p style="margin:12px 0 0;font:500 11.5px/1.5 ui-monospace,Menlo,monospace;color:#8A5A0B">{{ c.evidence }}</p>
+</div>
+<div>
+<p style="margin:0 0 6px;font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">The decision</p>
+<p style="margin:0;font:400 14.5px/1.62 Newsreader,Georgia,serif;color:#2C2921">{{ c.decision }}</p>
+</div>
+</div>
+</details>
+</sc-for>
+</div>
+<p style="margin:20px 0 0;max-width:70ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Read together: perpetrators were mostly men known to the victim — current or former partners, friends, colleagues, acquaintances. Where convictions came, courts framed the harm as damage to the woman’s “honour”, “dignity” and “reputation” rather than as a violation of her privacy and bodily autonomy. Compensation was rare, and usually refused because no amount had been named in the papers. Punishments for online offences are, on paper, heavier than for their offline equivalents — up to five years and Rs 100,000, against one year and Rs 10,000 — with no stated reason for the asymmetry. Given the reach of online expression, one reading is that the stringency is aimed at speech rather than at violence.<sup style="line-height:0"><a href="#note-10" id="ref-10" data-note="Body &amp; Data (2020). Unshackling Expression: A study on criminalisation of expression online in Nepal. Association for Progressive Communications." style="font:600 11px/1 ui-monospace,Menlo,monospace;text-decoration:none;color:#A4234B;padding:1px 4px;border-radius:3px;background:#F7E2E8" style-hover="background:#A4234B;color:#FFFFFF">10</a></sup></p>
+</section>
+
+<section id="justice" aria-labelledby="justice-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Chapter</p>
+<h2 id="justice-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Problems within the justice system</h2>
+<div style="max-width:66ch">
+<div style="border-left:3px solid #A4234B;padding:2px 0 2px 20px;margin:0 0 26px">
+<p style="margin:0;font:400 clamp(18px,1.4vw,21px)/1.5 Newsreader,Georgia,serif;text-wrap:pretty">Before the law can fail a victim, the process usually does: mediation instead of prosecution, no private room to report in, evidence kept in an unlocked drawer, and ninety days to act.</p>
+</div>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ true }}">
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Mediation between victim and perpetrator is treated as the first step towards “resolving” the problem rather than as a failure to address the victim’s needs. Police pressure people to negotiate and settle, and settlement generally means the victim is silenced or takes an unfair resolution.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Reporting itself exposes victims to further harm. There is no privacy at the point of filing — no separate room — so details must be given in front of other people. To register a cyber crime case the victim must hand over evidence, which may include leaked intimate images. During this research the Cyber Crime Unit was working out of a temporary tent shared with the Organised Crime Unit, and case folders containing that evidence were kept in a drawer with no lock.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">The statute of limitations ranged from three months to a year depending on the offence — ninety days for domestic violence, workplace sexual harassment, breach of privacy, defamation and slander. Advocate Subin Mulmi noted that such limits come from evidence law, but that they can stop victims filing at all when psychological harm has left them unable to act in time. The Civil Code allows late filing only for natural calamity, accident or pregnancy; psychological conditions are not among them.</p>
+<p style="margin:0 0 16px;font:400 clamp(16.5px,1.05vw,18.5px)/1.7 Newsreader,Georgia,serif;color:#2C2921;text-wrap:pretty">Technical incompetence compounded it. In several reviewed cases authorities confiscated computers when the harassment had been carried out from a mobile phone — a point the Appellate Court had to correct.</p>
+</sc-if>
+</div>
+</section>
+
+<section id="voices" aria-labelledby="voices-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Voices from the system</p>
+<h2 id="voices-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">What the people applying the law said</h2>
+<p style="margin:0 0 22px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Four key informant interviews with attorneys inside and outside government and with the Cyber Crime Unit of Nepal Police, May–June 2018. Quoted as recorded.</p>
+<div style="columns:330px;column-gap:14px">
+<sc-for list="{{ voices }}" as="v" hint-placeholder-count="6">
+<figure style="break-inside:avoid;margin:0 0 14px;background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:22px">
+<blockquote style="margin:0;font:400 18px/1.5 Newsreader,Georgia,serif;color:#17150F;text-wrap:pretty">{{ v.quote }}</blockquote>
+<figcaption style="margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(23,21,15,.1);display:flex;flex-wrap:wrap;gap:8px;align-items:baseline">
+<span style="font:600 12.5px/1.3 Archivo,sans-serif">{{ v.who }}</span>
+<span style="font:500 9.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:#4A463C;border:1px solid rgba(23,21,15,.18);padding:5px 7px;border-radius:4px">{{ v.when }}</span>
+</figcaption>
+</figure>
+</sc-for>
+</div>
+</section>
+
+<section id="forward" aria-labelledby="forward-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Recommendations</p>
+<h2 id="forward-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Seven things that would change the outcome</h2>
+<p style="margin:0 0 22px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Addressed to lawmakers, the justice system, and everyone funding the response.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:10px;align-items:start">
+<sc-for list="{{ recs }}" as="r" hint-placeholder-count="7">
+<details style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px">
+<summary style="padding:16px 18px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px">
+<span aria-hidden="true" style="font:600 11px/1 ui-monospace,Menlo,monospace;color:#A4234B;flex:none;padding-top:3px">{{ r.n }}</span>
+<span style="flex:1;font:600 15px/1.35 Archivo,sans-serif">{{ r.title }}</span>
+<span aria-hidden="true" style="font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#6B6659;flex:none">DETAIL +</span>
+</summary>
+<div style="padding:0 18px 18px clamp(18px,4vw,47px);border-top:1px solid rgba(23,21,15,.1);padding-top:14px">
+<p style="margin:0;max-width:70ch;font:400 15px/1.65 Newsreader,Georgia,serif;color:#2C2921">{{ r.body }}</p>
+</div>
+</details>
+</sc-for>
+</div>
+</section>
+
+<section id="notes" aria-labelledby="notes-h" style="padding:52px 0 12px;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">Notes &amp; glossary</p>
+<h2 id="notes-h" style="margin:0 0 8px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">Sources and terms</h2>
+<p style="margin:0 0 26px;max-width:64ch;font:400 clamp(16px,1vw,18px)/1.62 Newsreader,Georgia,serif;color:#4A463C">Every numbered marker links here, and every note links back to where you were reading. The tooltip is a shortcut, not the only route.</p>
+
+<h3 style="margin:0 0 14px;font:600 15px/1.3 Archivo,sans-serif">Notes</h3>
+<ol style="margin:0 0 40px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:8px;align-items:start">
+<li id="note-1" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">1</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Maskey, J. &amp; Karmacharya, S. (2018). <em>Online Violence Against Women: a continuum of offline discrimination.</em> LOOM.</span><a href="#ref-1" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 1 in the text">↩ back</a></li>
+<li id="note-2" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">2</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Kee, J. S. (2017). <em>End Violence: Women’s rights and safety online.</em> Association for Progressive Communications.</span><a href="#ref-2" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 2 in the text">↩ back</a></li>
+<li id="note-3" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">3</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">UN General Assembly resolution 71/199 (2016); Human Rights Council resolution 34/7 (2017); Report of the Special Rapporteur on violence against women, its causes and consequences, on online violence against women and girls (2018).</span><a href="#ref-3" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 3 in the text">↩ back</a></li>
+<li id="note-4" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">4</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Freedom Forum (2019). <em>Regressive Laws, Mounting Violations.</em> Cyber crime unit figures reported by The Kathmandu Post, 15 February 2019.</span><a href="#ref-4" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 4 in the text">↩ back</a></li>
+<li id="note-5" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">5</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Nepal Police Crime Investigation Department, Women, Children and Senior Citizen Directorate, FY 2076/77. Age and gender breakdown from an interview with the Cyber Crime Unit, Crime Division, Metropolitan Police of Nepal.</span><a href="#ref-5" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 5 in the text">↩ back</a></li>
+<li id="note-6" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">6</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Body &amp; Data (2020). <em>EROTICS South Asia Regional Monitoring Survey: Nepal Country Report.</em></span><a href="#ref-6" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 6 in the text">↩ back</a></li>
+<li id="note-7" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">7</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Sha, S. &amp; Quet, M. (2020). <em>From Expression to Expulsion: Digital Public Spaces as Theatres of Operations in Nepal.</em> Science, Technology and Society, pp. 386–403.</span><a href="#ref-7" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 7 in the text">↩ back</a></li>
+<li id="note-8" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">8</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Sigdel, S. et al. (2018). <em>Freedom of Expression on the Internet in Nepal.</em> Internet Society Nepal. Also Kayastha, S. (2018), ‘The problem with Nepal’s porn ban’, The Record.</span><a href="#ref-8" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 8 in the text">↩ back</a></li>
+<li id="note-9" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">9</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Privacy International (2018). <em>From Oppression to Liberation: Reclaiming the Right to Privacy.</em> With Lever, A. (2005), ‘Feminism, Democracy and the Right to Privacy’, Minerva vol. 9.</span><a href="#ref-9" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 9 in the text">↩ back</a></li>
+<li id="note-10" style="display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;padding:13px 14px;border-radius:8px;background:#fff;border:1px solid rgba(23,21,15,.1)"><span style="font:600 12px/1.5 ui-monospace,Menlo,monospace;color:#A4234B">10</span><span style="font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Body &amp; Data (2020). <em>Unshackling Expression: A study on criminalisation of expression online in Nepal.</em> Association for Progressive Communications.</span><a href="#ref-10" style="font:600 11px/1.6 ui-monospace,Menlo,monospace;text-decoration:none;white-space:nowrap" aria-label="Back to note 10 in the text">↩ back</a></li>
+</ol>
+
+<h3 id="glossary" style="margin:0 0 6px;font:600 15px/1.3 Archivo,sans-serif">Glossary</h3>
+<p style="margin:0 0 18px;max-width:60ch;font:400 15px/1.6 Newsreader,Georgia,serif;color:#4A463C">Terms as this report uses them.</p>
+<dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Online gender-based violence</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Gender-based violence carried out or amplified through digital platforms — an extension of offline violence rather than a separate phenomenon.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Digital rights</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Human rights as they are invoked in digitally networked spaces, including the agency a person exercises over their own expression and personal data.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Doxing</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Publishing someone’s private identifying information without consent, usually to expose them to harassment.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Sextortion</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Coercing sexual acts, images or money from a person by threatening to publish intimate material about them.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Non-consensual intimate images</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Sexual or intimate images shared without the consent of the person in them, whether or not they consented to the image being made.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Chilling effect</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">When the mere possibility of legal action, rather than any prosecution, makes people stop speaking.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Statute of limitations</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">The window within which a complaint must be filed — ninety days for several of the offences relevant here.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">CEDAW</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">The Convention on the Elimination of All Forms of Discrimination against Women, to which Nepal is a signatory.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">ETA</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Electronic Transaction Act 2063 (2008) — the only Nepali act that explicitly criminalises online violence, and only partially.</dd></div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.12);border-radius:10px;padding:16px 18px"><dt style="margin:0;font:600 14px/1.3 Archivo,sans-serif">Victim blaming</dt><dd style="margin:8px 0 0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Shifting responsibility for violence onto the person harmed — described in this report as a recurring feature of hearings, not an exception.</dd></div>
+</dl>
+</section>
+
+<section id="about" aria-labelledby="about-h" style="padding:52px 0 0;border-top:1px solid rgba(23,21,15,.14);margin-top:48px">
+<p style="margin:0 0 8px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#A4234B">About</p>
+<h2 id="about-h" style="margin:0 0 22px;font:400 clamp(26px,3.2vw,38px)/1.1 Newsreader,Georgia,serif;letter-spacing:-.01em">The study and the people behind it</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,258px),1fr));gap:12px">
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Method</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Desk review of six acts and bills through a gender lens; four key informant interviews with attorneys inside and outside government and the Cyber Crime Unit of Nepal Police (May–June 2018); and review of fifteen legal cases with case files, statements and hearings.</p>
+</div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Credits</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Authors: Shubha Kayastha, Rita Baramu. Editing and design: Supriya Manandhar. Desk study and data collection initiated by Jevina Pradhan and Sukirti Manandhar. Citation work: Dikshya Khadgi. Supported by Vision for Change.</p>
+</div>
+<div style="background:#fff;border:1px solid rgba(23,21,15,.14);border-radius:12px;padding:20px">
+<h3 style="margin:0 0 10px;font:600 14px/1.3 Archivo,sans-serif">Body &amp; Data</h3>
+<p style="margin:0;font:400 14px/1.6 Newsreader,Georgia,serif;color:#2C2921">Works to enhance understanding of and access to information on digital rights among women, queer people and marginalised groups in Nepal.</p>
+</div>
+</div>
+<div style="margin:26px 0 0;padding:22px;border-radius:12px;border:1px dashed rgba(23,21,15,.28);background:#EFEDE4">
+<p style="margin:0 0 6px;font:500 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:#6B6659">Cite this report</p>
+<p style="margin:0;font:400 14.5px/1.6 Newsreader,Georgia,serif;color:#2C2921">Kayastha, S. &amp; Baramu, R. (2021). <em>Mapping Laws relevant to online violence in Nepal: A study.</em> Kathmandu: Body &amp; Data.</p>
+</div>
+<p style="margin:34px 0 0;font:400 13px/1.6 Archivo,sans-serif;color:#6B6659;max-width:70ch">Legal analysis reflects the law as reviewed in 2021; the Information Technology Bill was pending at the time of writing. Case parties are identified only by case number, relationship and district, as in the report’s annex; defendants are not named here.</p>
+<p style="margin:22px 0 0"><a href="#report-start" style="font:600 13px/1 Archivo,sans-serif">Back to the top of the report ↑</a></p>
+</section>
+
+</main>
+</div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;startFull&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Reading&quot;,&quot;label&quot;:&quot;Open in full-text mode&quot;}}">
+const LENSES = {
+  foe: {label:'Freedom of expression', short:'Expression'},
+  privacy: {label:'Privacy', short:'Privacy'},
+  violence: {label:'Freedom from violence', short:'Violence'}
+};
+
+const STANCES = {
+  help:   {label:'Can help a victim', accent:'#1F5C55', tagBg:'#E4EEEC', tagFg:'#14453F'},
+  double: {label:'Cuts both ways',    accent:'#8A5A0B', tagBg:'#F5EBD8', tagFg:'#6B4508'},
+  risk:   {label:'Risk in itself',    accent:'#A4234B', tagBg:'#F7E2E8', tagFg:'#7C1739'}
+};
+
+const LAWS = [
+  {id:'const', label:'Constitution 2015'},
+  {id:'eta', label:'ETA 2008'},
+  {id:'code', label:'Criminal Code 2017'},
+  {id:'privacy', label:'Privacy Act 2018'},
+  {id:'itbill', label:'IT Bill 2019'},
+  {id:'dv', label:'Domestic Violence Act 2009'},
+  {id:'shw', label:'Workplace Harassment Act 2014'}
+];
+
+const P = [
+  {law:'const', article:'Art. 17(2)(a)', title:'Freedom of opinion and expression', lens:['foe'], stance:'help',
+   text:'Freedom of expression and opinion is a fundamental right of every citizen.',
+   analysis:'The anchor for any argument that online expression is protected expression. It is also immediately qualified elsewhere in the Constitution by restrictions framed in terms of national interest.'},
+  {law:'const', article:'Art. 19', title:'Press freedom and no censorship', lens:['foe'], stance:'help',
+   text:'Freedom of expression for the press, publication and broadcasting; no news item, article, editorial or audio-visual material shall be subjected to censorship.',
+   analysis:'Strong on paper. In practice the state has repeatedly blocked and filtered content without a transparent mechanism — during the 2005 royal coup, the 1996–2006 conflict, the 2010 order on explicit content and the 2018 pornography ban.'},
+  {law:'const', article:'Art. 28', title:'Right to privacy', lens:['privacy'], stance:'double',
+   text:'The privacy of a person, house, property, document, correspondence or information of anyone is inviolable — except as provided by law.',
+   analysis:'The exception is the whole problem. Privacy is absolute until a law says otherwise, and the laws that say otherwise are the ones analysed here.'},
+  {law:'const', article:'Art. 21', title:'Rights of crime victims', lens:['violence'], stance:'help',
+   text:'Victims of crime have the right to information on their case and the right to justice, rehabilitation and compensation.',
+   analysis:'Rarely exercised in the reviewed cases. Compensation was mostly refused — not because the court disputed the harm, but because no amount had been named in the victim’s papers.'},
+  {law:'const', article:'Arts. 38 & 39', title:'Violence against women and children', lens:['violence'], stance:'help',
+   text:'Criminalises physical, mental, sexual, psychological or any other kind of violence against women and minors, and oppression based on religious, social or cultural tradition. Victims have the right to compensation.',
+   analysis:'Because online violence causes mental, psycho-social and sexual harm, these articles can be used to establish that online violence is violence — the argument the rest of the legal framework keeps failing to make.'},
+
+  {law:'eta', article:'Art. 47(1)', title:'Material contrary to public morality', lens:['foe','violence'], stance:'double',
+   text:'Prohibits publishing or displaying, through a computer or the internet, any material contrary to public morality or decency, or that spreads hate or jealousy, or jeopardises social harmony.',
+   analysis:'After a 2018 amendment for gender equality, this became the only provision in Nepali law that explicitly criminalises online violence — and the one under which almost every reviewed case was decided. It is also a blanket rule that ignores consent, so the same clause that convicts a perpetrator can criminalise a victim’s own sexual expression. It covers trolling, bullying, harassment and sharing private images; it does not cover impersonation, doxing or sextortion.'},
+  {law:'eta', article:'Art. 46', title:'Damaging information with ill intent', lens:['violence'], stance:'help',
+   text:'Destroying or damaging information on any computer, diminishing its value or utility, or causing another person to do so, with ill intent, is punishable.',
+   analysis:'Useful where an account is hacked or content is destroyed — one of the reviewed cases involved a hijacked social media account.'},
+  {law:'eta', article:'Arts. 28(1) & 38(1)', title:'Access to devices of suspects', lens:['privacy'], stance:'risk',
+   text:'Authorities may access devices, materials and data belonging to citizens found to be suspect.',
+   analysis:'What counts as suspect is left to the authorities’ discretion. For activists, journalists and marginalised communities already treated with suspicion, this converts a search power into a surveillance power.'},
+
+  {law:'code', article:'Sec. 121', title:'Obscene publications', lens:['foe'], stance:'risk',
+   text:'Restricts the production, sale, publication, promotion through electronic media, purchase, rent, display, advertising or keeping of “obscene” books and brochures promoting immorality and eroticism.',
+   analysis:'Consent between adults is not contemplated, so self-expression and sexual expression can be criminalised outright.'},
+  {law:'code', article:'Sec. 122', title:'Obscene or vulgar conduct in public', lens:['foe','violence'], stance:'double',
+   text:'Restricts showing private parts, acting “obscenely” or talking “vulgarly” in public.',
+   analysis:'Genuinely useful against unsolicited sexual images — showing genitals to someone without consent is punishable, online or off. But “obscene” and “vulgar” are undefined, and are routinely stretched to cover any erotic content. Enforcing it also implies surveillance, which falls hardest on sex workers, transgender people, and young women.'},
+  {law:'code', article:'Sec. 293', title:'Recording conversations', lens:['privacy'], stance:'double',
+   text:'Prohibits listening to or recording others’ conversations without the permission of a competent authority or the consent of those involved, unless the statement was publicly made.',
+   analysis:'A privacy protection that works against victims. A perpetrator will not consent to being recorded, so a victim gathering evidence of online harassment may be committing an offence in the act of documenting one.'},
+  {law:'code', article:'Sec. 294', title:'Disclosing private information', lens:['privacy'], stance:'double',
+   text:'Prohibits disclosing private information without permission, including private information about public figures, unless compelled by law.',
+   analysis:'Directly relevant to doxing. It also has clear potential to restrict journalism and press freedom, which is why it appears in both the privacy and expression chapters of this report.'},
+  {law:'code', article:'Sec. 295', title:'Photographs and photo manipulation', lens:['privacy','violence'], stance:'double',
+   text:'Prohibits photographing a person outside a public space, or disfiguring their photographs, without consent. Photographing people incidentally in a public space is allowed.',
+   analysis:'One of the few provisions that reaches photo-morphing, which appears repeatedly in the reviewed cases. But “public place” is undefined, and the same clause can be turned against satire of public figures.'},
+  {law:'code', article:'Sec. 298', title:'Intercepting correspondence', lens:['privacy'], stance:'risk',
+   text:'Restricts obtaining or transferring any notice, information or correspondence through electronic means, or breaching anyone’s privacy, unless authorised.',
+   analysis:'Given existing discrimination in the bureaucratic and legal systems, an authorisation-based rule mainly expands what the state may lawfully do to activists, journalists and marginalised communities.'},
+  {law:'code', article:'Sec. 300', title:'Threats and harassment by electronic media', lens:['violence'], stance:'help',
+   text:'Prohibits threats, harassment or improper behaviour intended to harm or defame others through electronic media.',
+   analysis:'One of the clearest routes to prosecuting online harassment without relying on morality language — though intent must still be proved, and the burden sits with the victim.'},
+  {law:'code', article:'Secs. 305 & 306', title:'Slander and defamation', lens:['foe','violence'], stance:'double',
+   text:'Section 305 criminalises slander intended to undermine a person or their reputation. Section 306 criminalises defamation through any medium harming the reputation of a living or deceased person, with exceptions for expression supported by evidence, made for public good, to caution the person concerned, to criticise those in authority, or as part of an investigation.',
+   analysis:'The exceptions are welcome and unusually explicit. The clauses are still vague enough to criminalise legitimate expression — including sexual expression — and the reviewed convictions leaned on reputation rather than on rights.'},
+  {law:'code', article:'Sec. 224', title:'Sexual harassment', lens:['violence'], stance:'double',
+   text:'Defines sexual harassment to include touching or attempting to touch another’s private parts without consent, undressing or attempting to undress, directing others towards private space, making them touch sexual organs, or communicating obscene matters verbally, in writing or in any other form.',
+   analysis:'“Communicating obscene matters in any other form” is broad enough to reach online harassment. It is equally broad enough to be turned against consensual sexual expression.'},
+
+  {law:'privacy', article:'Sec. 3.2', title:'Consent, and its exceptions', lens:['privacy'], stance:'double',
+   text:'A person’s privacy is inviolable without their consent, except for health treatment or relief work.',
+   analysis:'The exception was tested in 2020, when information about COVID-19 patients and international travellers was published as an emergency measure. Muslim communities in Janakpur were then targeted with hate speech and death threats on the basis of misinformation. Emergency is exactly when privacy protection matters most.'},
+  {law:'privacy', article:'Sec. 4.2', title:'Private matters between spouses', lens:['privacy'], stance:'risk',
+   text:'Private matters between a heterosexual married couple are inviolable, except where necessary in a legal case running between husband and wife.',
+   analysis:'Treats marriage as a zone the law should not look into, on the assumption that family protects. The statistics say otherwise: partners and families commit a large share of domestic violence. Two of the reviewed cases were spouses. This clause makes intimate partner abuse harder to expose, not easier.'},
+  {law:'privacy', article:'Sec. 6', title:'Reproductive health and pregnancy', lens:['privacy'], stance:'double',
+   text:'Matters relating to the reproductive health and pregnancy of every woman are inviolable and shall not be made public without her consent — though they may be discussed between specialists during treatment, and may be given to family or a guardian where the person is under eighteen or of “unsound mind”.',
+   analysis:'A real protection with an ageist and ableist subtext. By presuming certain people cannot consent about their own bodies, it hands the decision to whoever is deemed their guardian — sometimes the person they need protection from. There is no equivalent provision scrutinising men’s health.'},
+  {law:'privacy', article:'Sec. 12.6', title:'Official inquiries into a person', lens:['privacy'], stance:'risk',
+   text:'Authorised officials may make inquiries into a person’s age, qualification, character, sexuality or disability, and the person concerned must comply.',
+   analysis:'A compulsion to disclose sexuality and disability on demand, with no requirement to state what the inquiry is for. It is difficult to reconcile with the right to privacy the same Act is meant to secure.'},
+  {law:'privacy', article:'Sec. 15(2)', title:'Comments on a person’s character', lens:['foe','violence'], stance:'double',
+   text:'No person shall comment on the character of any other person, except as required during a legal inquiry into their character, conduct or behaviour.',
+   analysis:'Potentially reaches slut-shaming and harassment. But “character” is vague, gendered and politically loaded — in Nepali it is used almost synonymously with virtue, to police the sexuality of women and queer people — and it is most likely to be invoked by those with authority to shut down criticism.'},
+  {law:'privacy', article:'Secs. 16.1 & 16.3', title:'Images taken or shared without consent', lens:['violence'], stance:'help',
+   text:'Prohibits photographing without consent with intent to damage character or prestige, manipulating photographs with intent to defame, and publishing, sharing or trading such pictures to annoy, distress, gain improper advantage or profit.',
+   analysis:'The closest thing in Nepali law to a provision on non-consensual intimate images and photo-morphing, both of which recur throughout the reviewed cases. Its reach into satire and criticism of powerful people is the trade-off.'},
+
+  {law:'itbill', article:'Secs. 76.1 & 76.2', title:'Personal information and conversations', lens:['privacy'], stance:'double',
+   text:'Prohibits acquiring an individual’s personal information, notices or communications through electronic means unless provided by law, and protects conversations held electronically unless consent is given to record, listen or decrypt.',
+   analysis:'It is unclear whether the restriction binds institutions and private companies or only individuals. The Bill is silent on data already held by public institutions, on data still to be collected, and on private companies given access to it.'},
+  {law:'itbill', article:'Sec. 83', title:'Cyberbullying', lens:['violence'], stance:'double',
+   text:'Prohibits cyberbullying, defined as continually harassing, teasing, demeaning, discouraging, insulting or scolding someone.',
+   analysis:'Naming cyberbullying in statute matters. But nothing defines “continually”, so how many messages constitute an offence is left to whoever is applying it.'},
+  {law:'itbill', article:'Secs. 86 & 87', title:'Pornographic material and online contact', lens:['foe','violence'], stance:'double',
+   text:'Section 86 prohibits the production, collection, distribution, publication, exhibition, transmission or purchase of pornographic material by electronic means. Section 87 prohibits using electronic media to establish an online relationship with intent to sexually exploit or carry out illegal activity.',
+   analysis:'Written to protect women and minorities, but with no acknowledgement of consent — so consensual activity between adults is prosecutable, and a victim whose intimate material is exposed can be implicated in its creation. Sex workers stand to be heavily affected.'},
+  {law:'itbill', article:'Sec. 88(1) & (2)', title:'Sovereignty, harmony and morality', lens:['foe'], stance:'risk',
+   text:'Prohibits using electronic media to attack Nepal’s sovereignty and national unity, bring communal disharmony, incite discrimination, or act against public conduct and morality.',
+   analysis:'Expansive enough to prosecute most political dissent. In a country with deep social inequality, criticism of the state or of discrimination can be recast as an attack on public harmony.'},
+  {law:'itbill', article:'Secs. 91 & 92', title:'Registration and content removal', lens:['foe'], stance:'risk',
+   text:'Section 91 allows social network sites to be banned if not registered with the Department of Information Technology. Section 92 provides for the removal of content by the Department on grounds including “offensive content”.',
+   analysis:'Sweeping powers of takedown and blocking, held by a department, with the operative term undefined and no independent review.'},
+
+  {law:'dv', article:'Sec. 2(a)', title:'Definition of domestic violence', lens:['violence'], stance:'help',
+   text:'Any form of physical, mental, sexual and economic harm perpetrated by a person against someone with whom they have a family relationship, including any act of reprimand or emotional harm.',
+   analysis:'Explicitly goes beyond physical harm, which makes it applicable to online violence committed by someone within family ties. To date, however, no case has been successfully prosecuted on the non-physical clause alone.'},
+  {law:'dv', article:'Secs. 2(c) & 2(d)', title:'Mental and sexual harm defined', lens:['violence'], stance:'help',
+   text:'Mental harm includes threats of physical torture, intimidation, reprimand, false accusation, forced eviction or emotional injury, and discrimination based on prejudice, religion, culture or custom. Sexual harm includes sexual behaviour, humiliation, discouragement or harm to self-respect.',
+   analysis:'Directly usable for extortion, blackmail and online manipulation by a family member — many online cases turn precisely on harm to self-respect.'},
+  {law:'dv', article:'Sec. 4', title:'The ninety-day window', lens:['violence'], stance:'risk',
+   text:'A complaint for an offence under this Act shall be filed within ninety days of the commission of the crime. Police or the local body must produce the perpetrator within 24 hours of a complaint.',
+   analysis:'The limit exists to protect evidence, but it assumes a victim able to act within three months. The Civil Code allows late filing for natural calamity, accident or pregnancy — not for psychological trauma. Reconciliation is also built into the process before justice is.'},
+
+  {law:'shw', article:'Sec. 4(a)', title:'Sexual harassment at work', lens:['violence'], stance:'help',
+   text:'Criminalises physical contact, showing or displaying pornographic material, expressing sexual motives in written, verbal or non-verbal form, demanding sexual favours, and flirting or harassing with sexual motive by someone in a position of power — in any workplace, public or private.',
+   analysis:'Non-verbal and written sexual expression is covered, so the Act can be read to include conduct carried out online between colleagues. Its ninety-day limit applies too.'}
+];
+
+const CASES = [
+  {id:'001', where:'Kathmandu', relation:'colleagues', kind:'Obscene messages and images by email', outcome:'pending',
+   what:'Obscene messages and photographs sent to the victim through email.', evidence:'Evidence: email records.', decision:'No decision recorded in the file at the time of review.'},
+  {id:'002', where:'Bhaktapur', relation:'former partners', kind:'Recording and leaking of a sex video; blackmail', outcome:'convicted',
+   what:'A sex video of the victim, recorded by the defendant without her knowledge during a consensual relationship, was leaked after she ended it. The defendant demanded money, then sent a copy to her brother; the video was shared widely.', evidence:'Evidence: computer CPU, mobile phone and CDs confiscated.', decision:'District Court: guilty. The court held that “serious harm” had been caused to the victim’s honour, dignity and reputation by publication of illegal material in electronic form. Six months’ imprisonment and a fine of Rs 10,000.'},
+  {id:'003', where:'Kathmandu', relation:'casual friends', kind:'Impersonation, libel and threats of rape', outcome:'convicted',
+   what:'The defendant created a fake account in the victim’s name and posted libellous material, then threatened to rape her mother and sister if she went to the police.', evidence:'Evidence: mobile phone and SIM card used to send the threats.', decision:'District Court: guilty. One year’s imprisonment, a fine of Rs 5,000, and — uniquely among these cases — compensation of Rs 75,000 to the victim for grievous harm to her life and reputation. Appellate Court upheld the decision and additionally confiscated the defendant’s mobile phone.'},
+  {id:'004', where:'Kathmandu', relation:'college friends', kind:'Doxing and cyber stalking', outcome:'convicted',
+   what:'The victim’s name and personal phone number were posted on adult websites alongside obscene messages.', evidence:'Evidence: defendant’s mobile, tablet and computer CPU seized.', decision:'District Court: fine of Rs 5,000 on the basis of a confessional statement; no compensation ordered. Appellate Court held it unnecessary to confiscate the computer or tablet, as the offence was committed from the already-confiscated mobile phone, and refused compensation because no amount had been stated in the victim’s documents.'},
+  {id:'005', where:'Kathmandu', relation:'recorded as spouses', kind:'Account takeover and obscene messages', outcome:'convicted',
+   what:'The victim’s social media account was taken over by the defendant and used to send obscene messages to other men; obscene messages and calls were also sent to the victim directly.', evidence:'Evidence: defendant’s mobile and SIM card confiscated.', decision:'District Court: fifteen days’ imprisonment and a fine of Rs 5,000. Appellate Court held it could not order compensation because the plaintiff had not stated an amount.'},
+  {id:'006', where:'Kathmandu', relation:'acquaintances', kind:'Impersonation and non-consensual images', outcome:'convicted',
+   what:'The defendant created a fake account in the victim’s name and posted images of her and of other women through it, without consent.', evidence:'Evidence: defendant’s mobile phone and SIM card seized.', decision:'District Court: fine of Rs 3,000 under section 47(1) of the ETA. Appellate Court upheld it, and refused compensation on the ground that no claim amount equivalent to the harm suffered appeared in any of the victim’s papers or testimony.'},
+  {id:'007', where:'Nawalparasi', relation:'married couple', kind:'Impersonation and libel by a spouse', outcome:'convicted',
+   what:'The defendant, the victim’s husband, made a fake profile in her name and posted libellous material through it.', evidence:'Evidence: defendant’s mobile phone, laptop and SIM card confiscated.', decision:'District Court: fine of Rs 2,000 under section 47 of the ETA. Appellate Court upheld both the verdict and the fine.'},
+  {id:'008', where:'Kathmandu', relation:'acquaintances', kind:'Unsolicited images and harassment by SMS', outcome:'convicted',
+   what:'The victim was sent unsolicited images and harassing messages.', evidence:'Evidence: mobile, SIM card, call details and SMS history.', decision:'District Court: twenty-one days’ imprisonment. No compensation, because neither the victim nor her lawyers determined an amount or presented proof of the gravity of harm. Appellate Court upheld both decisions.'},
+  {id:'009', where:'Kathmandu', relation:'eight-year live-in relationship', kind:'Obscene messages and death threats', outcome:'acquitted',
+   what:'Harassment through obscene messages and death threats sent by SMS.', evidence:'Evidence: mobile, SIM card, call details and SMS history.', decision:'District Court: acquitted. The court held that the claims did not match the call and message records supplied by Nepal Telecom, so authenticity was unproven; the burden of proving the messages came from the accused’s number lay with the plaintiff. The case had also been filed a year after the incident, beyond the statute of limitations. Appellate Court upheld the acquittal.'},
+  {id:'010', where:'Kathmandu', relation:'married couple', kind:'Doxing, identity theft, non-consensual recording, extortion', outcome:'pending',
+   what:'After leaving an abusive marriage and filing for divorce, the plaintiff found a fake profile in her name posting her photographs and libellous material, soliciting sex from others and describing her as a sex worker. She also alleged that the defendant made sex videos with other women in order to blackmail them.', evidence:'Case pending at the time of review.', decision:'No decision recorded at the time of review.'},
+  {id:'011', where:'Kathmandu', relation:'worker at the plaintiff’s house', kind:'Impersonation, sextortion, blackmail', outcome:'pending',
+   what:'A fake account in the victim’s name posted intimate photographs of the two of them. The defendant sent videos recorded without her consent during their relationship and threatened to publish them unless she continued a physical relationship; she complied under duress.', evidence:'Case pending at the time of review.', decision:'No decision recorded at the time of review.'},
+  {id:'012', where:'Chitwan and Pokhara', relation:'mother-in-law and son-in-law', kind:'Photo manipulation, impersonation, doxing', outcome:'pending',
+   what:'A fake profile posted photoshopped images placing the plaintiff’s and her family members’ faces on nude imagery, along with libellous content in her name, her phone number, and invitations to others to contact her for sex.', evidence:'Case pending at the time of review.', decision:'No decision recorded at the time of review.'},
+  {id:'013', where:'Kathmandu', relation:'stranger', kind:'Blackmail and photo manipulation', outcome:'pending',
+   what:'The plaintiff applied to have an unknown person arrested after they attempted to extort money by threatening to publish compromising pictures. She later found that images of her and her friends had been photoshopped onto nude imagery, and that a fake profile was soliciting recharge cards.', evidence:'Case pending at the time of review.', decision:'No decision recorded at the time of review.'},
+  {id:'014', where:'Kathmandu', relation:'former spouse of the plaintiff’s husband', kind:'Harassment and defamation', outcome:'pending',
+   what:'Libellous accusations posted about the plaintiff from the defendant’s own profile, along with photographs of the plaintiff published without consent, causing distress and harm to her security.', evidence:'Case pending at the time of review.', decision:'No decision recorded at the time of review.'},
+  {id:'015', where:'Siraha', relation:'former partners, as claimed by the defendant', kind:'Defamation and leaked photographs', outcome:'pending',
+   what:'A friend request from a fake profile using the plaintiff’s own photograph, followed by messages and online defamation causing mental distress, and photographs leaked without consent.', evidence:'Case pending at the time of review.', decision:'No decision recorded at the time of review.'}
+];
+
+const OUTCOMES = {
+  convicted: {label:'Convicted', tagBg:'#E4EEEC', tagFg:'#14453F'},
+  acquitted: {label:'Acquitted', tagBg:'#F7E2E8', tagFg:'#7C1739'},
+  pending:   {label:'Pending', tagBg:'#F5EBD8', tagFg:'#6B4508'}
+};
+
+// Provisions whose operative terms are left undefined in the statute — the
+// yellow highlights in the report's fold-out chart.
+const AMBIGUOUS = [
+  'Art. 28', 'Art. 47(1)', 'Sec. 121', 'Sec. 122', 'Secs. 305 & 306', 'Sec. 224',
+  'Sec. 6', 'Sec. 12.6', 'Sec. 15(2)', 'Sec. 83', 'Secs. 86 & 87', 'Sec. 88(1) & (2)',
+  'Secs. 91 & 92', 'Arts. 28(1) & 38(1)', 'Secs. 16.1 & 16.3'
+];
+
+const AMBIGUOUS_TERMS = ['obscenity', 'vulgar', 'decency', 'integrity', 'social harmony', 'public morality', 'public conduct', 'national sovereignty', 'character', 'suspicious', 'intention', 'continually', 'offensive content', 'unsound mind'];
+
+class Component extends DCLogic {
+  state = {full:true, zoom:1, tocOpen:false, lens:'all', stance:'all', law:'all', caseFilter:'all', progress:0, picked:null, highlightAmb:false};
+
+  componentDidMount() {
+    if (this.props.startFull === false) this.setState({full:false});
+    import('./annotations.js').then(m => m.initAnnotations(document)).catch(() => {});
+    // Written straight to the DOM on an animation frame. Routing this through
+    // setState re-rendered the entire document on every scroll event, which is
+    // what made scrolling feel heavy on a long report.
+    let raf = 0;
+    const paint = () => {
+      raf = 0;
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      const bar = document.getElementById('om-progress');
+      if (bar) bar.style.width = (max > 0 ? Math.min(100, (h.scrollTop / max) * 100) : 0) + '%';
+    };
+    this._onScroll = () => { if (!raf) raf = requestAnimationFrame(paint); };
+    window.addEventListener('scroll', this._onScroll, {passive:true});
+    paint();
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+
+  chip(active) {
+    return active ? {bg:'#17150F', fg:'#F7F4ED', bd:'#17150F'} : {bg:'#FFFFFF', fg:'#17150F', bd:'rgba(23,21,15,.22)'};
+  }
+
+  // On wide screens the detail panel sits beside the grid and needs no help.
+  // Once it wraps underneath, a tap on a cell would otherwise change something
+  // the reader cannot see, so bring it into view.
+  revealPanel() {
+    requestAnimationFrame(() => {
+      const p = document.querySelector('#map [role="region"]');
+      const g = document.querySelector('#map [role="group"][tabindex]');
+      if (!p || !g) return;
+      const pr = p.getBoundingClientRect(), gr = g.getBoundingClientRect();
+      const stacked = pr.left < gr.right - 4;
+      if (stacked && (pr.top < 8 || pr.bottom > window.innerHeight)) {
+        window.scrollTo({top: window.scrollY + pr.top - 76, behavior: 'smooth'});
+      }
+    });
+  }
+
+  renderVals() {
+    const s = this.state;
+
+    const matchLens = p => s.lens === 'all' || p.lens.indexOf(s.lens) > -1;
+    const matchStance = p => s.stance === 'all' || p.stance === s.stance;
+    const matchLaw = p => s.law === 'all' || p.law === s.law;
+
+    const provisions = P.filter(p => matchLens(p) && matchStance(p) && matchLaw(p)).map(p => {
+      const st = STANCES[p.stance];
+      const law = LAWS.filter(l => l.id === p.law)[0];
+      return {
+        law: law ? law.label : '',
+        article: p.article,
+        title: p.title,
+        text: p.text,
+        analysis: p.analysis,
+        stanceLabel: st.label,
+        accent: st.accent,
+        tagBg: st.tagBg,
+        tagFg: st.tagFg,
+        lensLabels: p.lens.map(l => LENSES[l].label)
+      };
+    });
+
+    const lensFilters = [{id:'all', label:'All rights'}]
+      .concat(Object.keys(LENSES).map(k => ({id:k, label:LENSES[k].label})))
+      .map(f => Object.assign({
+        label: f.label,
+        count: f.id === 'all' ? P.filter(p => matchStance(p) && matchLaw(p)).length
+                              : P.filter(p => p.lens.indexOf(f.id) > -1 && matchStance(p) && matchLaw(p)).length,
+        pressed: String(s.lens === f.id),
+        onClick: () => this.setState({lens: f.id})
+      }, this.chip(s.lens === f.id)));
+
+    const stanceFilters = [{id:'all', label:'Everything'}]
+      .concat(Object.keys(STANCES).map(k => ({id:k, label:STANCES[k].label})))
+      .map(f => Object.assign({
+        label: f.label,
+        count: f.id === 'all' ? P.filter(p => matchLens(p) && matchLaw(p)).length
+                              : P.filter(p => p.stance === f.id && matchLens(p) && matchLaw(p)).length,
+        pressed: String(s.stance === f.id),
+        onClick: () => this.setState({stance: f.id})
+      }, this.chip(s.stance === f.id)));
+
+    const lawFilters = [{id:'all', label:'All laws'}]
+      .concat(LAWS.map(l => ({id:l.id, label:l.label})))
+      .map(f => Object.assign({
+        label: f.label,
+        count: f.id === 'all' ? P.filter(p => matchLens(p) && matchStance(p)).length
+                              : P.filter(p => p.law === f.id && matchLens(p) && matchStance(p)).length,
+        pressed: String(s.law === f.id),
+        onClick: () => this.setState({law: f.id})
+      }, this.chip(s.law === f.id)));
+
+    const caseFilters = [{id:'all', label:'All fifteen'}]
+      .concat(Object.keys(OUTCOMES).map(k => ({id:k, label:OUTCOMES[k].label})))
+      .map(f => Object.assign({
+        label: f.label,
+        count: f.id === 'all' ? CASES.length : CASES.filter(c => c.outcome === f.id).length,
+        pressed: String(s.caseFilter === f.id),
+        onClick: () => this.setState({caseFilter: f.id})
+      }, this.chip(s.caseFilter === f.id)));
+
+    return {
+      full: s.full,
+      zoom: s.zoom,
+      tocOpen: s.tocOpen,
+      tocExpanded: String(s.tocOpen),
+      readTime: s.full ? '21 min · full text' : '6 min · summaries',
+      modeLabel: s.full ? 'Full text' : 'Plain summary',
+      modeDot: s.full ? '#A4234B' : '#1F5C55',
+      fullPressed: String(s.full),
+      toggleFull: () => this.setState({full: !s.full}),
+      zoomIn: () => this.setState({zoom: Math.min(1.5, +(s.zoom + 0.1).toFixed(2))}),
+      zoomOut: () => this.setState({zoom: Math.max(0.9, +(s.zoom - 0.1).toFixed(2))}),
+      toggleToc: () => this.setState({tocOpen: !s.tocOpen}),
+      closeToc: () => this.setState({tocOpen: false}),
+
+      toc: [
+        {num:'—', title:'At a glance', href:'#glance'},
+        {num:'I', title:'Three rights, read together', href:'#lenses'},
+        {num:'II', title:'The policy map', href:'#map'},
+        {num:'III', title:'The law explorer', href:'#explorer'},
+        {num:'IV', title:'Eight recurring flaws', href:'#flaws'},
+        {num:'V', title:'The fifteen cases', href:'#cases'},
+        {num:'VI', title:'Problems in the justice system', href:'#justice'},
+        {num:'—', title:'Voices from the system', href:'#voices'},
+        {num:'VII', title:'Recommendations', href:'#forward'},
+        {num:'—', title:'Notes & glossary', href:'#notes'},
+        {num:'—', title:'About the study', href:'#about'}
+      ],
+
+      stats: [
+        {value:'32', label:'Provisions analysed', note:'Across the Constitution, ETA, Criminal Code, Privacy Act, IT Bill, DV Act and Workplace Harassment Act'},
+        {value:'15', label:'Legal cases reviewed', note:'Eight had hearings; the rest were pending'},
+        {value:'90%+', label:'Of online violence victims are women aged 16–25', note:'Cyber Crime Unit, Metropolitan Police'},
+        {value:'Rs 2,000', label:'Lowest fine recorded in these cases', note:'For impersonation and libel by a spouse'},
+        {value:'1 of 15', label:'Cases where compensation was awarded', note:'Usually refused because no amount was named'},
+        {value:'90 days', label:'To file, for most relevant offences', note:'Trauma is not grounds for filing late'}
+      ],
+
+      provisionCount: 'Showing ' + provisions.length + ' of ' + P.length + ' provisions.',
+      provisions, lensFilters, stanceFilters, lawFilters,
+
+      ambTerms: AMBIGUOUS_TERMS,
+      highlightAmb: s.highlightAmb,
+      ambPressed: String(s.highlightAmb),
+      ambLabel: s.highlightAmb ? 'Undefined terms highlighted' : 'Highlight undefined terms',
+      toggleAmb: () => this.setState({highlightAmb: !s.highlightAmb}),
+      pickedOpen: s.picked !== null,
+      pickedEmpty: s.picked === null,
+      picked: (() => {
+        if (s.picked === null) return null;
+        const p = P[s.picked];
+        if (!p) return null;
+        const st = STANCES[p.stance];
+        const law = LAWS.filter(l => l.id === p.law)[0];
+        return {
+          law: law ? law.label : '', article: p.article, title: p.title,
+          text: p.text, analysis: p.analysis, stanceLabel: st.label,
+          accent: st.accent, tagBg: st.tagBg, tagFg: st.tagFg,
+          lensLabels: p.lens.map(l => LENSES[l].label),
+          amb: AMBIGUOUS.indexOf(p.article) > -1 ? 'Contains terms the statute never defines.' : 'No undefined operative terms.'
+        };
+      })(),
+      clearPicked: () => this.setState({picked: null}),
+
+      matrixLaws: LAWS.map(l => l.label),
+      matrix: Object.keys(LENSES).map(lensId => ({
+        lensLabel: LENSES[lensId].label,
+        lensShort: LENSES[lensId].short,
+        cells: LAWS.map(law => ({
+          items: P.map((p, i) => ({p:p, i:i}))
+            .filter(o => o.p.law === law.id && o.p.lens.indexOf(lensId) > -1)
+            .map(o => {
+              const st = STANCES[o.p.stance];
+              const isAmb = AMBIGUOUS.indexOf(o.p.article) > -1;
+              const on = s.picked === o.i;
+              return {
+                label: o.p.article,
+                sub: o.p.title,
+                onClick: () => this.setState({picked: on ? null : o.i}, () => { if (!on) this.revealPanel(); }),
+                pressed: String(on),
+                bg: on ? '#17150F' : (s.highlightAmb && isAmb ? '#FBEFC6' : '#FFFFFF'),
+                fg: on ? '#F7F4ED' : '#17150F',
+                bd: on ? '#17150F' : st.accent,
+                dot: st.accent
+              };
+            })
+        }))
+      })),
+
+      flaws: [
+        {tag:'Language', title:'Ambiguity by design', body:'“Obscenity”, “vulgarity”, “indecency”, “public morality”, “decency”, “social harmony”, “integrity”, “national sovereignty”, “public conduct”, “suspicious”, “intention” — used constantly, defined nowhere. The gap is filled by whoever holds power. Many of the terms are morally loaded, which turns prosecution into moral policing. “Character” is the sharpest example: in Nepali it is used almost interchangeably with virtue, and applied to control the sexuality of women and queer people.'},
+        {tag:'Consent', title:'Consent is missing from the statute', body:'The laws take a blanket approach that overlooks consent between people communicating online. Sexual content shared consensually still falls under the umbrella of obscene and immoral activity. The law does not acknowledge a person’s agency over their own body, and can end up criminalising their expression — which means a victim whose private material is exposed may be implicated in having made it.'},
+        {tag:'Power', title:'Arbitrary powers to authority', body:'Deciding what counts as public decency, or what constitutes an attack on national integrity, falls to the state. Any restriction on expression should be applied by a body independent of political and commercial influence, in a manner that is neither arbitrary nor discriminatory, with the possibility of challenge and remedy. That body does not exist here. Provisions allowing device searches of “suspicious” people extend the same discretion into surveillance.'},
+        {tag:'Evidence', title:'Evidence is hard to gather lawfully', body:'The law restricts recording communications without consent, and a perpetrator will not consent. Where the harassment happens through online communication, a victim documenting it can be exposed to prosecution themselves. Meanwhile the burden of proving intent sits with the victim, and intent is easy to deny.'},
+        {tag:'Backfire', title:'The law can punish the victim', body:'Victim blaming is routine. A government attorney described judges asking a woman why she had “betrayed” a former partner by leaving him, framing that as the reason he committed the offence. Blanket rules that ignore consent mean the same provisions used to seek justice can be turned on the person who sought it — which deters people from coming forward at all.'},
+        {tag:'Framing', title:'Paradoxical framing', body:'The benefits of these laws come with strings attached. The same provisions that let a victim of online violence seek justice contain additional clauses that can be used to restrict civil liberties. Some laws only give the semblance of securing privacy while carrying loopholes that permit arbitrary infringement of it. This dual framing recurs across almost every law cited here — it is the defining feature of the landscape, not an accident in one statute.'},
+        {tag:'Intent', title:'Proving intent is the victim’s job', body:'The Criminal Code and the IT Bill hinge criminality on the intent of the perpetrator. That is a loophole: a perpetrator can claim the harm was unintended, and the burden of proof generally falls on the victim. The law is unclear on how intent should be proved at all, which leaves authorities to decide the purpose of certain actions — space for abuse of power. Case 008 turned on exactly this: no compensation, because harm could not be evidenced.'},
+        {tag:'Framing', title:'Honour instead of rights', body:'Even where courts decided in favour of women, the reasoning rested on harm to “honour”, “dignity” and “reputation” rather than on the violation of privacy, bodily autonomy and the right to a dignified life. That framing is exclusionary before it begins: it raises the question of which victims are considered to have a reputation worth protecting.'}
+      ],
+
+      caseFilters,
+      cases: CASES.filter(c => s.caseFilter === 'all' || c.outcome === s.caseFilter).map(c => Object.assign({}, c, {
+        outcomeLabel: OUTCOMES[c.outcome].label,
+        tagBg: OUTCOMES[c.outcome].tagBg,
+        tagFg: OUTCOMES[c.outcome].tagFg
+      })),
+
+      voices: [
+        {quote:'“If we see court practice, they have only provided the minimum punishment in online harassment cases no matter how grievous the crime is. The maximum punishment so far must be around one year only.”', who:'Government attorney', when:'2018'},
+        {quote:'“We emphasised that they should not file the case, as the main reason of the law is not to produce criminals but to minimise such crimes. So we do counselling and make them say they wouldn’t repeat the mistake again. We focus on reconciliation.”', who:'Representative, Cyber Crime Unit, Teku, Kathmandu', when:'May 2018'},
+        {quote:'“Justice is not mathematics and one cannot write down how much punishment and compensation might be appropriate for a certain crime. The main basis for the compensation is the loss suffered by the victim but unfortunately there is no device to measure the mental and psychological harm suffered by the victim.”', who:'Government attorney', when:'2018'},
+        {quote:'“In most of the cybercrime cases, if the people were in a relationship, the judge questions the girl why she ‘betrayed’ him by leaving him and framing this as being the reason why the perpetrator committed those crimes.”', who:'Government attorney', when:'2018'},
+        {quote:'“I always respect females and most of my colleagues are also feminists and I have also taken CEDAW training but I think there are too many acts protecting women. In this kind of situation how can a man defend?”', who:'Senior lawyer', when:'June 2018'},
+        {quote:'“Mostly people sympathise with the innocent women from rural areas. But still people will judge the character of the girl insensitively. Cases are not always decided according to the gravity of the case but according to the position of the victim.”', who:'Government attorney', when:'June 2018'},
+        {quote:'“Most people in the justice system are sensitive, but due to lack of proper acts and with discretionary power to the judge, the justice system is weak.”', who:'Government attorney', when:'June 2018'},
+        {quote:'“Why do people need to make such videos? These factors may affect the decision of the court, and the judge will assume that when a girl herself sends her naked pictures then she must have consent.”', who:'Government attorney', when:'2018'}
+      ],
+
+      recs: [
+        {n:'01', title:'Amend the laws to recognise online violence as violence', body:'Nepal already has legal frameworks that can be used to seek remedies for non-physical violence, including online violence. What is missing is explicit recognition. Amend the existing provisions rather than writing a parallel regime for the internet.'},
+        {n:'02', title:'Recognise online violence socially, not only legally', body:'Recognition has to reach beyond the legal system into the socio-cultural one. Laws on online violence should secure the right to expression, the right to privacy and the right to be safe from violence online — together, not one at the expense of another.'},
+        {n:'03', title:'Remove the broad and vague restrictions on expression', body:'The provisions of the ETA and the IT Bill that restrict freedom of expression online through undefined terms — obscenity, decency, public morality, social harmony — must be amended so that they cannot be applied at the discretion of whoever holds power.'},
+        {n:'04', title:'Sensitise the police and the courts', body:'Authorities within the legal system need to be equipped to address mental harm — and to stop the practices documented here: arbitrarily facilitated “negotiations” between victim and perpetrator, moral policing, and victim blaming from the bench.'},
+        {n:'05', title:'Fix the consent provisions', body:'Provisions that override consent on grounds of public morality, obscenity, spreading hate or jealousy, or damaging harmonious relations between groups must be amended to a human rights approach, with explicit consideration of historically oppressed groups: women, queer people, and marginalised and underprivileged communities.'},
+        {n:'06', title:'Fund more than law enforcement', body:'Resources must go to women’s economic empowerment and education, not only to legal intervention and strengthening police and courts. Legal activism and legal literacy matter, but they are incomplete without socio-economic and cultural intervention.'},
+        {n:'07', title:'Build immediate support mechanisms', body:'State and non-state actors should provide immediate support to victims of online violence: shelter for physical safety, legal counselling, and digital safety and security support.'}
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>
